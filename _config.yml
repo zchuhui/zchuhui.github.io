@@ -3,13 +3,14 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: '庄楚辉'
-subtitle: 'zchuhui'
+title: '楚辉'
+subtitle: 'ok'
 description: '庄楚辉的个人网站'
 keywords:
 author: zchuhui
-language: en
+language: zh-CN #en
 timezone: ''
+
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -97,9 +98,13 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: ayer   # landscape ayer
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+# Toc
+toc: true
+

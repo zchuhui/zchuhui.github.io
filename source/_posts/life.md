@@ -3,6 +3,12 @@ title: 我的简历
 ---
 Welcome to my zone.
 
+tags:
+- 技术
+
+categories:
+- 关于我
+
 ## 个人简介
 ....
 
