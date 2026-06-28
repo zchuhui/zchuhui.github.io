@@ -1,0 +1,27 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { withBase } from '@/utils/url';
+
+interface Props { entry: CollectionEntry<'kb'>; }
+const { entry } = Astro.props;
+const { title, summary, category, tags } = entry.data;
+const href = withBase(`/kb/${entry.id}`);
+---
+
+<a href={href} class="card kb">
+  <span class="kb-cat">{category}</span>
+  <h3 class="kb-title">{title}</h3>
+  {summary && <p class="kb-sum">{summary}</p>}
+  <div class="kb-tags">
+    {tags.slice(0, 4).map((t) => <span class="chip">{t}</span>)}
+  </div>
+</a>
+
+<style>
+  .kb { display: block; padding: 1.2rem 1.3rem; }
+  .kb-cat { font-family: var(--font-mono); font-size: 0.72rem; color: var(--color-violet); border: 1px solid rgba(168,85,247,0.3); padding: 0.12rem 0.5rem; border-radius: 99px; }
+  .kb-title { font-size: 1.08rem; font-weight: 700; margin: 0.7rem 0 0.4rem; color: var(--color-ink); transition: color 0.2s; }
+  .kb:hover .kb-title { color: var(--color-violet); }
+  .kb-sum { color: var(--color-ink-soft); font-size: 0.88rem; line-height: 1.65; margin: 0 0 0.8rem; }
+  .kb-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+</style>

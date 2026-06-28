@@ -1,0 +1,49 @@
+---
+import { getCollection, render } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { withBase } from '@/utils/url';
+
+export const getStaticPaths = (async () => {
+  const posts = await getCollection('posts');
+  return posts.map((entry) => ({ params: { id: entry.id }, props: { entry } }));
+}) satisfies GetStaticPaths;
+
+const { entry } = Astro.props;
+const { title, description, date, tags, cover } = entry.data;
+const { Content } = await render(entry);
+const dateStr = date.toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' });
+---
+
+<BaseLayout title={title} description={description}>
+  <article class="container-x detail">
+    <a href={withBase('/blog')} class="back">← 返回文章</a>
+
+    <header class="detail-head">
+      <time class="d-date">{dateStr}</time>
+      <h1 class="detail-title">{title}</h1>
+      <p class="detail-desc">{description}</p>
+      <div class="detail-tags">
+        {tags.map((t) => <span class="chip">#{t}</span>)}
+      </div>
+    </header>
+
+    {cover && <img src={withBase(cover)} alt={title} class="detail-cover" />}
+
+    <div class="prose-space">
+      <Content />
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .detail { max-width: 46rem; padding-top: 2rem; }
+  .back { font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-ink-dim); }
+  .back:hover { color: var(--color-cyan); }
+  .detail-head { margin: 1.5rem 0 2rem; }
+  .d-date { font-family: var(--font-mono); font-size: 0.82rem; color: var(--color-cyan); }
+  .detail-title { font-size: clamp(1.9rem, 4.5vw, 2.8rem); font-weight: 900; margin: 0.6rem 0 0; line-height: 1.15; }
+  .detail-desc { color: var(--color-ink-soft); font-size: 1.05rem; line-height: 1.7; margin: 1rem 0; }
+  .detail-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .detail-cover { width: 100%; border-radius: 1rem; border: 1px solid rgba(255,255,255,0.08); margin-bottom: 2rem; }
+</style>

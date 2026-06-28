@@ -1,0 +1,80 @@
+---
+import { SITE, NAV } from '@/consts';
+import { withBase, isActive } from '@/utils/url';
+
+const current = Astro.url.pathname;
+---
+
+<header class="nav-wrap">
+  <nav class="container-x nav glass">
+    <a href={withBase('/')} class="brand">
+      <span class="brand-dot"></span>
+      <span class="brand-name">{SITE.name}</span>
+      <span class="brand-tag">/ {SITE.handle}</span>
+    </a>
+
+    <button id="nav-toggle" class="nav-toggle" aria-label="菜单" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul id="nav-menu" class="nav-menu">
+      {NAV.map((item) => (
+        <li>
+          <a
+            href={withBase(item.href)}
+            class:list={['nav-link', { active: isActive(current, withBase(item.href)) }]}
+          >{item.label}</a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .nav-wrap { position: sticky; top: 0; z-index: 50; padding: 0.8rem 0; }
+  .nav {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0.6rem 1.1rem; border-radius: 1rem;
+  }
+  .brand { display: flex; align-items: baseline; gap: 0.45rem; font-weight: 700; }
+  .brand-dot {
+    width: 9px; height: 9px; border-radius: 99px; align-self: center;
+    background: linear-gradient(var(--color-cyan), var(--color-violet));
+    box-shadow: 0 0 12px var(--color-cyan);
+  }
+  .brand-name { color: var(--color-ink); }
+  .brand-tag { font-family: var(--font-mono); font-size: 0.78rem; color: var(--color-ink-dim); }
+
+  .nav-menu { display: flex; align-items: center; gap: 0.3rem; list-style: none; margin: 0; padding: 0; }
+  .nav-link {
+    display: inline-block; padding: 0.45rem 0.85rem; border-radius: 0.6rem;
+    color: var(--color-ink-soft); font-size: 0.92rem; transition: color 0.2s, background 0.2s;
+  }
+  .nav-link:hover { color: var(--color-ink); background: rgba(255, 255, 255, 0.05); }
+  .nav-link.active { color: var(--color-cyan); background: rgba(34, 211, 238, 0.08); }
+
+  .nav-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 6px; }
+  .nav-toggle span { width: 22px; height: 2px; background: var(--color-ink); border-radius: 2px; transition: 0.3s; }
+
+  @media (max-width: 720px) {
+    .nav-toggle { display: flex; }
+    .nav-menu {
+      position: absolute; top: calc(100% + 0.5rem); right: 1.25rem; left: 1.25rem;
+      flex-direction: column; align-items: stretch; gap: 0.2rem;
+      padding: 0.6rem; border-radius: 1rem;
+      background: rgba(10, 11, 30, 0.92); backdrop-filter: blur(18px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      display: none;
+    }
+    .nav-menu.open { display: flex; }
+  }
+</style>
+
+<script>
+  const toggle = document.getElementById('nav-toggle');
+  const menu = document.getElementById('nav-menu');
+  toggle?.addEventListener('click', () => {
+    const open = menu?.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(!!open));
+  });
+</script>

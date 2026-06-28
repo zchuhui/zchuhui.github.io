@@ -1,0 +1,27 @@
+---
+import { TECH } from '@/consts';
+---
+
+<div class="tech-wall">
+  {TECH.map((t, i) => (
+    <span class="tech-item" style={`animation-delay:${i * 60}ms`}>{t}</span>
+  ))}
+</div>
+
+<style>
+  .tech-wall { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+  .tech-item {
+    font-family: var(--font-mono); font-size: 0.85rem;
+    padding: 0.5rem 0.95rem; border-radius: 0.7rem;
+    color: var(--color-ink-soft);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: transform 0.25s, color 0.25s, border-color 0.25s, box-shadow 0.25s;
+  }
+  .tech-item:hover {
+    transform: translateY(-3px);
+    color: var(--color-cyan);
+    border-color: rgba(34, 211, 238, 0.5);
+    box-shadow: 0 8px 24px -10px rgba(34, 211, 238, 0.6);
+  }
+</style>

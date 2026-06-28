@@ -1,0 +1,71 @@
+---
+// 全屏星空 / 粒子背景（Canvas）。固定定位，置于内容之后。
+---
+
+<canvas id="starfield" aria-hidden="true"></canvas>
+
+<style>
+  #starfield {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+  }
+</style>
+
+<script>
+  const canvas = document.getElementById('starfield') as HTMLCanvasElement | null;
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (canvas) {
+    const ctx = canvas.getContext('2d')!;
+    let w = 0, h = 0, dpr = Math.min(window.devicePixelRatio || 1, 2);
+    let stars: { x: number; y: number; z: number; r: number; hue: number }[] = [];
+    const mouse = { x: 0, y: 0 };
+
+    function resize() {
+      w = window.innerWidth;
+      h = window.innerHeight;
+      canvas.width = w * dpr;
+      canvas.height = h * dpr;
+      canvas.style.width = w + 'px';
+      canvas.style.height = h + 'px';
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      const count = Math.min(160, Math.floor((w * h) / 9000));
+      stars = Array.from({ length: count }, () => ({
+        x: Math.random() * w,
+        y: Math.random() * h,
+        z: Math.random() * 0.8 + 0.2,
+        r: Math.random() * 1.4 + 0.3,
+        hue: Math.random() > 0.5 ? 188 : 270, // 青 / 紫
+      }));
+    }
+
+    function render() {
+      ctx.clearRect(0, 0, w, h);
+      for (const s of stars) {
+        // 视差：靠近的星随鼠标偏移更多
+        const px = s.x + (mouse.x - w / 2) * 0.02 * s.z;
+        const py = s.y + (mouse.y - h / 2) * 0.02 * s.z;
+        ctx.beginPath();
+        ctx.arc(px, py, s.r * s.z, 0, Math.PI * 2);
+        ctx.fillStyle = `hsla(${s.hue}, 90%, 70%, ${0.25 + s.z * 0.55})`;
+        ctx.shadowBlur = 8 * s.z;
+        ctx.shadowColor = `hsla(${s.hue}, 90%, 70%, 0.8)`;
+        ctx.fill();
+        // 缓慢漂浮
+        s.y -= s.z * 0.12;
+        if (s.y < -2) { s.y = h + 2; s.x = Math.random() * w; }
+      }
+      ctx.shadowBlur = 0;
+      if (!reduce) requestAnimationFrame(render);
+    }
+
+    window.addEventListener('resize', resize, { passive: true });
+    window.addEventListener('mousemove', (e) => { mouse.x = e.clientX; mouse.y = e.clientY; }, { passive: true });
+    resize();
+    render(); // reduced-motion 时仅绘制一帧静态星空
+  }
+</script>

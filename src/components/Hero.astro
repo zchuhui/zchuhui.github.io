@@ -1,0 +1,91 @@
+---
+import { SITE, ROLES, SOCIALS } from '@/consts';
+import { withBase } from '@/utils/url';
+---
+
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <p class="hero-hi">你好，我是</p>
+      <h1 class="hero-name text-gradient">{SITE.name}</h1>
+      <p class="hero-role">
+        <span class="hero-role-prefix">&gt;</span>
+        <span id="role-type" class="cursor-caret">{ROLES[0]}</span>
+      </p>
+      <p class="hero-tagline">{SITE.tagline}</p>
+
+      <div class="hero-cta">
+        <a href={withBase('/projects')} class="btn btn-primary">查看项目</a>
+        <a href={withBase('/about')} class="btn btn-ghost">了解更多</a>
+      </div>
+
+      <div class="hero-socials">
+        {SOCIALS.map((s) => (
+          <a href={s.href} target={s.href.startsWith('http') ? '_blank' : undefined} rel="noopener" class="chip">{s.label}</a>
+        ))}
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="avatar-ring breathe">
+        <img src={withBase(SITE.avatar)} alt={SITE.name} class="avatar" />
+      </div>
+      <div class="orbit spin-slow" aria-hidden="true">
+        <span class="orbit-dot d1"></span>
+        <span class="orbit-dot d2"></span>
+        <span class="orbit-dot d3"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero { padding: 4rem 0 3rem; }
+  .hero-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 2.5rem; align-items: center; }
+  .hero-hi { font-family: var(--font-mono); color: var(--color-ink-soft); margin: 0 0 0.4rem; }
+  .hero-name { font-size: clamp(2.6rem, 7vw, 4.6rem); font-weight: 900; line-height: 1.05; margin: 0; }
+  .hero-role { font-family: var(--font-mono); font-size: clamp(1.1rem, 2.4vw, 1.5rem); color: var(--color-ink); margin: 0.8rem 0 0; display: flex; gap: 0.5rem; }
+  .hero-role-prefix { color: var(--color-cyan); }
+  .hero-tagline { color: var(--color-ink-soft); font-size: 1.05rem; margin: 1.1rem 0 0; max-width: 34rem; line-height: 1.7; }
+  .hero-cta { display: flex; gap: 0.8rem; margin: 1.8rem 0 1.2rem; flex-wrap: wrap; }
+  .hero-socials { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+  .hero-socials .chip { text-decoration: none; transition: color 0.2s, border-color 0.2s; }
+  .hero-socials .chip:hover { color: var(--color-cyan); border-color: rgba(34,211,238,0.5); }
+
+  .hero-visual { position: relative; display: grid; place-items: center; min-height: 320px; }
+  .avatar-ring {
+    width: clamp(190px, 26vw, 280px); aspect-ratio: 1; border-radius: 50%; padding: 6px;
+    background: conic-gradient(from 0deg, var(--color-cyan), var(--color-violet), var(--color-blue), var(--color-cyan));
+    display: grid; place-items: center;
+  }
+  .avatar { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; background: var(--color-space-800); border: 4px solid var(--color-space-950); }
+  .orbit { position: absolute; inset: -8%; border-radius: 50%; border: 1px dashed rgba(255,255,255,0.12); pointer-events: none; }
+  .orbit-dot { position: absolute; width: 10px; height: 10px; border-radius: 50%; box-shadow: 0 0 14px currentColor; }
+  .orbit-dot.d1 { top: -5px; left: 50%; color: var(--color-cyan); background: currentColor; }
+  .orbit-dot.d2 { bottom: 10%; right: -5px; color: var(--color-violet); background: currentColor; }
+  .orbit-dot.d3 { bottom: 6%; left: 8%; color: var(--color-blue); background: currentColor; }
+
+  @media (max-width: 820px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .hero-visual { order: -1; }
+  }
+</style>
+
+<script is:inline define:vars={{ roles: ROLES }}>
+  (() => {
+    const el = document.getElementById('role-type');
+    if (!el || !roles?.length) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    let i = 0, j = 0, deleting = false;
+    function tick() {
+      const word = roles[i % roles.length];
+      el.textContent = word.slice(0, j);
+      if (!deleting && j < word.length) { j++; }
+      else if (!deleting && j === word.length) { deleting = true; setTimeout(tick, 1400); return; }
+      else if (deleting && j > 0) { j--; }
+      else { deleting = false; i++; }
+      setTimeout(tick, deleting ? 55 : 110);
+    }
+    setTimeout(tick, 800);
+  })();
+</script>

@@ -1,0 +1,86 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Hero from '@/components/Hero.astro';
+import SectionHeader from '@/components/SectionHeader.astro';
+import Reveal from '@/components/Reveal.astro';
+import ProjectCard from '@/components/ProjectCard.astro';
+import PostCard from '@/components/PostCard.astro';
+import KbCard from '@/components/KbCard.astro';
+import TechStack from '@/components/TechStack.astro';
+
+const projects = (await getCollection('projects'))
+  .sort((a, b) => +b.data.date - +a.data.date);
+const featured = projects.filter((p) => p.data.featured).slice(0, 4);
+const featuredProjects = featured.length ? featured : projects.slice(0, 4);
+
+const posts = (await getCollection('posts'))
+  .filter((p) => !p.data.draft)
+  .sort((a, b) => +b.data.date - +a.data.date)
+  .slice(0, 3);
+
+const kb = (await getCollection('kb'))
+  .sort((a, b) => +b.data.updated - +a.data.updated)
+  .slice(0, 4);
+---
+
+<BaseLayout>
+  <div class="container-x">
+    <Hero />
+
+    <!-- 技术栈 -->
+    <section class="block">
+      <Reveal>
+        <SectionHeader eyebrow="Tech Stack" title="我的技术栈" />
+      </Reveal>
+      <Reveal delay={100}>
+        <TechStack />
+      </Reveal>
+    </section>
+
+    <!-- 精选项目 -->
+    <section class="block">
+      <Reveal>
+        <SectionHeader eyebrow="Projects" title="精选项目" moreHref="/projects" />
+      </Reveal>
+      <div class="grid grid-2">
+        {featuredProjects.map((entry, i) => (
+          <Reveal delay={i * 90}><ProjectCard entry={entry} /></Reveal>
+        ))}
+      </div>
+    </section>
+
+    <!-- 最新文章 -->
+    <section class="block">
+      <Reveal>
+        <SectionHeader eyebrow="Writing" title="最新文章" moreHref="/blog" />
+      </Reveal>
+      <div class="grid grid-3">
+        {posts.map((entry, i) => (
+          <Reveal delay={i * 90}><PostCard entry={entry} /></Reveal>
+        ))}
+      </div>
+    </section>
+
+    <!-- 知识库 -->
+    <section class="block">
+      <Reveal>
+        <SectionHeader eyebrow="Knowledge Base" title="知识库" moreHref="/kb" />
+      </Reveal>
+      <div class="grid grid-3">
+        {kb.map((entry, i) => (
+          <Reveal delay={i * 90}><KbCard entry={entry} /></Reveal>
+        ))}
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .block { margin-top: 5rem; }
+  .grid { display: grid; gap: 1.2rem; }
+  .grid-2 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+  @media (max-width: 900px) { .grid-3 { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 620px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+</style>

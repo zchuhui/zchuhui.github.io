@@ -1,0 +1,176 @@
+/* 字体（必须在 tailwind 之前 import） */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap');
+
+@import 'tailwindcss';
+
+/* ============ 设计 token（深空科技 / 玻璃拟态） ============ */
+@theme {
+  --color-space-950: #05060f;
+  --color-space-900: #0a0b1e;
+  --color-space-800: #11132e;
+  --color-space-700: #1b1e44;
+
+  --color-cyan: #22d3ee;
+  --color-violet: #a855f7;
+  --color-blue: #3b82f6;
+
+  --color-ink: #e7ecff;
+  --color-ink-soft: #aab3d6;
+  --color-ink-dim: #6b76a8;
+
+  --font-sans: 'Noto Sans SC', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
+
+  --shadow-glow: 0 0 0 1px rgba(34, 211, 238, 0.12), 0 12px 40px -12px rgba(34, 211, 238, 0.25);
+  --shadow-glow-violet: 0 0 0 1px rgba(168, 85, 247, 0.14), 0 16px 50px -16px rgba(168, 85, 247, 0.35);
+}
+
+/* ============ 基础 ============ */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  background-color: var(--color-space-950);
+  background-image:
+    radial-gradient(60rem 60rem at 15% -10%, rgba(34, 211, 238, 0.10), transparent 60%),
+    radial-gradient(50rem 50rem at 100% 0%, rgba(168, 85, 247, 0.12), transparent 55%),
+    radial-gradient(40rem 40rem at 50% 120%, rgba(59, 130, 246, 0.10), transparent 60%);
+  background-attachment: fixed;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: rgba(34, 211, 238, 0.3);
+  color: #fff;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--color-space-950); }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--color-cyan), var(--color-violet));
+  border-radius: 99px;
+  border: 2px solid var(--color-space-950);
+}
+
+/* ============ 组件工具类 ============ */
+@layer components {
+  /* 毛玻璃面 */
+  .glass {
+    background: rgba(255, 255, 255, 0.045);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1rem;
+  }
+
+  /* 渐变文字 */
+  .text-gradient {
+    background: linear-gradient(110deg, var(--color-cyan), var(--color-violet) 60%, var(--color-blue));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* 渐变描边卡片 */
+  .card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1rem;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s, border-color 0.35s;
+  }
+  .card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(34, 211, 238, 0.4);
+    box-shadow: var(--shadow-glow-violet);
+  }
+
+  /* 发光按钮 */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.4rem;
+    border-radius: 0.75rem;
+    font-weight: 500;
+    transition: transform 0.2s, box-shadow 0.3s, background 0.3s;
+  }
+  .btn-primary {
+    background: linear-gradient(110deg, var(--color-cyan), var(--color-violet));
+    color: #05060f;
+    box-shadow: 0 8px 30px -8px rgba(34, 211, 238, 0.6);
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 38px -8px rgba(168, 85, 247, 0.7); }
+  .btn-ghost {
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    color: var(--color-ink);
+  }
+  .btn-ghost:hover { border-color: rgba(34, 211, 238, 0.5); background: rgba(34, 211, 238, 0.06); }
+
+  /* 标签 chip */
+  .chip {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    padding: 0.18rem 0.6rem;
+    border-radius: 99px;
+    color: var(--color-ink-soft);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  /* 区块容器 */
+  .container-x { width: 100%; max-width: 72rem; margin-inline: auto; padding-inline: 1.25rem; }
+
+  /* 排版（文章正文） */
+  .prose-space {
+    color: var(--color-ink-soft);
+    line-height: 1.9;
+  }
+  .prose-space h1, .prose-space h2, .prose-space h3 { color: var(--color-ink); margin-top: 2em; margin-bottom: 0.6em; font-weight: 700; }
+  .prose-space h2 { font-size: 1.5rem; }
+  .prose-space h3 { font-size: 1.2rem; }
+  .prose-space p { margin: 1em 0; }
+  .prose-space a { color: var(--color-cyan); text-decoration: underline; text-underline-offset: 3px; }
+  .prose-space code { font-family: var(--font-mono); font-size: 0.88em; background: rgba(255,255,255,0.07); padding: 0.12em 0.4em; border-radius: 0.35rem; color: #d6e7ff; }
+  .prose-space pre { padding: 1.1rem 1.25rem; border-radius: 0.9rem; border: 1px solid rgba(255,255,255,0.08); overflow-x: auto; margin: 1.5em 0; }
+  .prose-space pre code { background: transparent; padding: 0; }
+  .prose-space ul, .prose-space ol { padding-left: 1.4em; margin: 1em 0; }
+  .prose-space li { margin: 0.4em 0; }
+  .prose-space blockquote { border-left: 3px solid var(--color-violet); padding-left: 1rem; color: var(--color-ink-dim); margin: 1.4em 0; }
+  .prose-space img { border-radius: 0.9rem; border: 1px solid rgba(255,255,255,0.08); }
+}
+
+/* ============ 动效 ============ */
+@keyframes float-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes breathe {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(34, 211, 238, 0.5); }
+  50% { box-shadow: 0 0 36px 6px rgba(168, 85, 247, 0.45); }
+}
+@keyframes blink { 50% { opacity: 0; } }
+@keyframes spin-slow { to { transform: rotate(360deg); } }
+
+/* 滚动揭示：默认隐藏，进入视口加 .is-visible */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+.breathe { animation: breathe 4s ease-in-out infinite; }
+.spin-slow { animation: spin-slow 16s linear infinite; }
+.cursor-caret::after { content: '▍'; color: var(--color-cyan); animation: blink 1s step-end infinite; }
+
+/* 尊重 reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+  .reveal { opacity: 1; transform: none; }
+}

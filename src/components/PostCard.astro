@@ -1,0 +1,28 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { withBase } from '@/utils/url';
+
+interface Props { entry: CollectionEntry<'posts'>; }
+const { entry } = Astro.props;
+const { title, description, date, tags } = entry.data;
+const href = withBase(`/blog/${entry.id}`);
+const dateStr = date.toLocaleDateString('zh-CN', { year: 'numeric', month: '2-digit', day: '2-digit' });
+---
+
+<a href={href} class="card post">
+  <time class="post-date">{dateStr}</time>
+  <h3 class="post-title">{title}</h3>
+  <p class="post-desc">{description}</p>
+  <div class="post-tags">
+    {tags.slice(0, 4).map((t) => <span class="chip">#{t}</span>)}
+  </div>
+</a>
+
+<style>
+  .post { display: block; padding: 1.3rem 1.4rem; }
+  .post-date { font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-cyan); }
+  .post-title { font-size: 1.2rem; font-weight: 700; margin: 0.5rem 0 0.5rem; color: var(--color-ink); transition: color 0.2s; }
+  .post:hover .post-title { color: var(--color-cyan); }
+  .post-desc { color: var(--color-ink-soft); font-size: 0.92rem; line-height: 1.7; margin: 0 0 0.9rem; }
+  .post-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+</style>

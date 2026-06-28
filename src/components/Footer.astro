@@ -1,0 +1,33 @@
+---
+import { SITE, SOCIALS } from '@/consts';
+const year = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="container-x footer-inner glass">
+    <div>
+      <p class="f-name text-gradient">{SITE.name}</p>
+      <p class="f-desc">{SITE.description}</p>
+    </div>
+    <div class="f-socials">
+      {SOCIALS.map((s) => (
+        <a href={s.href} target={s.href.startsWith('http') ? '_blank' : undefined} rel="noopener" class="chip f-social">{s.label}</a>
+      ))}
+    </div>
+  </div>
+  <p class="f-copy">© {year} {SITE.name} · Built with Astro · 部署于 GitHub Pages</p>
+</footer>
+
+<style>
+  .footer { margin-top: 6rem; padding-bottom: 2rem; }
+  .footer-inner {
+    display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center; justify-content: space-between;
+    padding: 1.6rem 1.6rem;
+  }
+  .f-name { font-weight: 700; font-size: 1.1rem; }
+  .f-desc { color: var(--color-ink-dim); font-size: 0.9rem; margin: 0.3rem 0 0; max-width: 32rem; }
+  .f-socials { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+  .f-social { text-decoration: none; transition: color 0.2s, border-color 0.2s; }
+  .f-social:hover { color: var(--color-cyan); border-color: rgba(34, 211, 238, 0.5); }
+  .f-copy { text-align: center; color: var(--color-ink-dim); font-size: 0.8rem; margin-top: 1.2rem; font-family: var(--font-mono); }
+</style>

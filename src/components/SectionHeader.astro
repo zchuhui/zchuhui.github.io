@@ -1,0 +1,30 @@
+---
+import { withBase } from '@/utils/url';
+interface Props {
+  eyebrow?: string;
+  title: string;
+  moreHref?: string;
+  moreLabel?: string;
+}
+const { eyebrow, title, moreHref, moreLabel = '查看全部' } = Astro.props;
+---
+
+<div class="sh">
+  <div>
+    {eyebrow && <p class="sh-eyebrow">{eyebrow}</p>}
+    <h2 class="sh-title">{title}</h2>
+  </div>
+  {moreHref && (
+    <a href={withBase(moreHref)} class="sh-more">{moreLabel} <span>→</span></a>
+  )}
+</div>
+
+<style>
+  .sh { display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem; margin-bottom: 1.8rem; }
+  .sh-eyebrow { font-family: var(--font-mono); font-size: 0.78rem; color: var(--color-cyan); letter-spacing: 0.12em; text-transform: uppercase; margin: 0 0 0.4rem; }
+  .sh-title { font-size: clamp(1.5rem, 3vw, 2.1rem); font-weight: 700; margin: 0; }
+  .sh-more { color: var(--color-ink-soft); font-size: 0.9rem; white-space: nowrap; transition: color 0.2s; }
+  .sh-more span { display: inline-block; transition: transform 0.2s; }
+  .sh-more:hover { color: var(--color-cyan); }
+  .sh-more:hover span { transform: translateX(4px); }
+</style>

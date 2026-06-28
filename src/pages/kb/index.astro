@@ -1,0 +1,46 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PageHeader from '@/components/PageHeader.astro';
+import Reveal from '@/components/Reveal.astro';
+import KbCard from '@/components/KbCard.astro';
+
+const entries = (await getCollection('kb'))
+  .sort((a, b) => +b.data.updated - +a.data.updated);
+
+// 按分类分组
+const groups = new Map<string, typeof entries>();
+for (const e of entries) {
+  const cat = e.data.category;
+  if (!groups.has(cat)) groups.set(cat, []);
+  groups.get(cat)!.push(e);
+}
+const grouped = [...groups.entries()];
+---
+
+<BaseLayout title="知识库" description="我整理的笔记与知识卡片。">
+  <div class="container-x">
+    <PageHeader eyebrow="Knowledge Base" title="知识库" subtitle="持续整理的学习笔记与速查卡片。" />
+
+    {grouped.map(([category, items]) => (
+      <section class="kb-group">
+        <h2 class="kb-group-title"><span class="dot"></span>{category} <span class="count">{items.length}</span></h2>
+        <div class="grid">
+          {items.map((entry, i) => (
+            <Reveal delay={i * 70}><KbCard entry={entry} /></Reveal>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+</BaseLayout>
+
+<style>
+  .kb-group { margin-top: 2.5rem; }
+  .kb-group-title { display: flex; align-items: center; gap: 0.5rem; font-size: 1.25rem; font-weight: 700; margin: 0 0 1.2rem; }
+  .dot { width: 8px; height: 8px; border-radius: 99px; background: linear-gradient(var(--color-cyan), var(--color-violet)); box-shadow: 0 0 10px var(--color-violet); }
+  .count { font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-ink-dim); }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; }
+  @media (max-width: 900px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 620px) { .grid { grid-template-columns: 1fr; } }
+</style>

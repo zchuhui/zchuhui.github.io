@@ -1,0 +1,61 @@
+---
+import { getCollection, render } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { withBase } from '@/utils/url';
+
+export const getStaticPaths = (async () => {
+  const projects = await getCollection('projects');
+  return projects.map((entry) => ({ params: { id: entry.id }, props: { entry } }));
+}) satisfies GetStaticPaths;
+
+const { entry } = Astro.props;
+const { title, description, cover, tech, tags, repo, demo, date } = entry.data;
+const { Content } = await render(entry);
+const dateStr = date.toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' });
+---
+
+<BaseLayout title={title} description={description}>
+  <article class="container-x detail">
+    <a href={withBase('/projects')} class="back">← 返回项目</a>
+
+    <header class="detail-head">
+      <h1 class="detail-title text-gradient">{title}</h1>
+      <p class="detail-desc">{description}</p>
+      <div class="detail-meta">
+        <time class="d-date">{dateStr}</time>
+        {tech.map((t) => <span class="chip">{t}</span>)}
+      </div>
+      <div class="detail-links">
+        {demo && <a href={demo} target="_blank" rel="noopener" class="btn btn-primary">在线演示 ↗</a>}
+        {repo && <a href={repo} target="_blank" rel="noopener" class="btn btn-ghost">查看源码 ↗</a>}
+      </div>
+    </header>
+
+    {cover && <img src={withBase(cover)} alt={title} class="detail-cover" />}
+
+    <div class="prose-space detail-body">
+      <Content />
+    </div>
+
+    {tags.length > 0 && (
+      <div class="detail-tags">
+        {tags.map((t) => <span class="chip">#{t}</span>)}
+      </div>
+    )}
+  </article>
+</BaseLayout>
+
+<style>
+  .detail { max-width: 50rem; padding-top: 2rem; }
+  .back { font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-ink-dim); }
+  .back:hover { color: var(--color-cyan); }
+  .detail-head { margin: 1.5rem 0 2rem; }
+  .detail-title { font-size: clamp(2rem, 5vw, 3rem); font-weight: 900; margin: 0; }
+  .detail-desc { color: var(--color-ink-soft); font-size: 1.1rem; line-height: 1.7; margin: 1rem 0 1.2rem; }
+  .detail-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
+  .d-date { font-family: var(--font-mono); font-size: 0.8rem; color: var(--color-cyan); margin-right: 0.4rem; }
+  .detail-links { display: flex; gap: 0.7rem; margin-top: 1.3rem; flex-wrap: wrap; }
+  .detail-cover { width: 100%; border-radius: 1rem; border: 1px solid rgba(255,255,255,0.08); margin-bottom: 2rem; }
+  .detail-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.08); }
+</style>

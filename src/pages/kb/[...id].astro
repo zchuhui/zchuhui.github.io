@@ -1,0 +1,48 @@
+---
+import { getCollection, render } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { withBase } from '@/utils/url';
+
+export const getStaticPaths = (async () => {
+  const entries = await getCollection('kb');
+  return entries.map((entry) => ({ params: { id: entry.id }, props: { entry } }));
+}) satisfies GetStaticPaths;
+
+const { entry } = Astro.props;
+const { title, summary, category, tags, updated } = entry.data;
+const { Content } = await render(entry);
+const dateStr = updated.toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' });
+---
+
+<BaseLayout title={title} description={summary ?? title}>
+  <article class="container-x detail">
+    <a href={withBase('/kb')} class="back">← 返回知识库</a>
+
+    <header class="detail-head">
+      <span class="chip kb-cat">{category}</span>
+      <h1 class="detail-title">{title}</h1>
+      {summary && <p class="detail-desc">{summary}</p>}
+      <div class="detail-meta">
+        <span class="d-date">更新于 {dateStr}</span>
+        {tags.map((t) => <span class="chip">{t}</span>)}
+      </div>
+    </header>
+
+    <div class="prose-space">
+      <Content />
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .detail { max-width: 46rem; padding-top: 2rem; }
+  .back { font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-ink-dim); }
+  .back:hover { color: var(--color-violet); }
+  .detail-head { margin: 1.5rem 0 2rem; }
+  .kb-cat { color: var(--color-violet); border-color: rgba(168,85,247,0.3); }
+  .detail-title { font-size: clamp(1.9rem, 4.5vw, 2.6rem); font-weight: 900; margin: 0.7rem 0 0; line-height: 1.2; }
+  .detail-desc { color: var(--color-ink-soft); font-size: 1.05rem; line-height: 1.7; margin: 1rem 0; }
+  .detail-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
+  .d-date { font-family: var(--font-mono); font-size: 0.8rem; color: var(--color-ink-dim); margin-right: 0.4rem; }
+</style>
