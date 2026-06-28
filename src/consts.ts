@@ -25,7 +25,7 @@ export const NAV = [
 // 社交链接（替换为你自己的）
 export const SOCIALS = [
   { label: 'GitHub', href: 'https://github.com/zchuhui' },
-  { label: 'X', href: 'https://x.com/yourname' },
+  { label: 'X', href: 'https://x.com/zch94622737' },
   { label: 'Email', href: 'mailto:943339564g@gmail.com' },
 ];
 
