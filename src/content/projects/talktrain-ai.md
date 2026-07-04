@@ -3,12 +3,15 @@ title: TalkTrain AI
 description: 基于 ICF MCC 标准的 AI 对话教练，支持文本与语音实时交互，帮助用户自主生成觉察与行动。
 tags: [AI教练, 对话系统]
 tech: [Go, Vue 3, OpenAI, PostgreSQL, Docker]
-repo: https://github.com/yourname/talktrain-ai
+cover: /projects/image.png
+website: https://www.dolfi.chat
 featured: true
-date: 2026-07-05
+date: 2026-05-05
 ---
 
 ## 项目简介
+
+![TalkTrain AI](/projects/image.png)
 
 TalkTrain AI 是一个 AI 对话教练产品，核心角色"海豚教练"参照 ICF MCC（国际教练联盟大师级教练）能力标准设计，不替用户做决策，而是通过高质量提问帮助用户看见自己、澄清方向并自主设计行动。
 
