@@ -1,0 +1,191 @@
+---
+title: Trae 使用指南
+summary: 字节出品的 AI IDE，免费多模型切换 + Builder 模式，国内开发者首选。
+category: AI 编辑器
+tags: [Trae, IDE, 字节, 国产]
+vendor: 字节跳动
+pricing: 免费
+official: https://www.trae.cn
+updated: 2026-07-05
+---
+
+## 工具简介
+
+Trae 是字节跳动推出的 AI 原生 IDE，基于 VS Code fork，对标 Cursor。最大亮点是**免费**且支持**多模型切换**（Claude、GPT、豆包、DeepSeek 等），对国内开发者非常友好。它的 Builder 模式（类 Agent）能自主拆解任务、读写文件、执行命令，适合不想付费又想体验强 AI 编程能力的开发者。
+
+## 核心功能
+
+### 1. 多模型自由切换
+
+内置 Claude Opus 4、GPT-5、豆包 1.6、DeepSeek V3 等主流模型，免费切换，按任务复杂度选模型。
+
+### 2. Builder 模式（Agent）
+
+类似 Cursor 的 Agent，能读取整个项目、自主拆解任务、多文件改动、执行命令、根据报错修复。
+
+### 3. Chat 模式
+
+侧边栏对话，支持 @文件、@代码库、@文档，回答带代码引用。
+
+### 4. 内置 Sidekick
+
+右侧常驻 AI 助手，可快速解释选中的代码、生成单测、重构建议。
+
+### 5. Skill 体系
+
+预置多种工程化技能（代码审查、安全扫描、调试等），也可自定义 Skill。
+
+### 6. 中文优化
+
+界面、对话、文档全中文，对中文 Prompt 理解优于海外工具。
+
+## 适用场景
+
+- 国内开发者日常编程（网络友好，无需代理）
+- 个人开发者 / 学生（免费、功能完整）
+- 多模型对比（同一个任务用不同模型跑）
+- 中文项目（注释、文档、Prompt 全中文）
+
+## 详细操作步骤
+
+### 第 1 步：下载安装
+
+访问 [trae.cn](https://www.trae.cn) 下载，支持 macOS / Windows / Linux。安装后自动导入 VS Code 配置。
+
+### 第 2 步：登录（免费）
+
+用字节账号或手机号登录，即可使用所有模型，无需付费。
+
+### 第 3 步：选择模型
+
+底部状态栏点击模型名切换：
+
+| 模型 | 适用 |
+|------|------|
+| Claude Opus 4 | 复杂重构、架构设计 |
+| GPT-5 | 通用编程、长文推理 |
+| 豆包 1.6 | 国内日常任务，响应快 |
+| DeepSeek V3 | 代码生成性价比高 |
+
+### 第 4 步：配置项目
+
+在 `.trae/documents/` 下放设计文档、规范，Builder 会自动读取。
+
+例如 `.trae/documents/coding-style.md`：
+
+```markdown
+# 代码规范
+
+- 语言：TypeScript
+- 框架：Vue 3 + Vite
+- 状态管理：Pinia
+- 命名：组件 PascalCase，函数 camelCase
+- 注释：中文
+```
+
+### 第 5 步：用 Builder 做复杂任务
+
+按 ⌘I 打开 Builder：
+
+```text
+给 src/views 下所有页面加上页面访问统计，
+  调用 utils/analytics.ts 的 trackPageView，
+  在路由守卫里统一处理，不要在每个页面手动调用。
+```
+
+Builder 会自动列出计划，多文件改动，支持中途追问。
+
+### 第 6 步：用 Chat 提问
+
+按 ⌘L 打开 Chat，@相关文件：
+
+```text
+@src/composables/useChat.ts 这个 composable 有内存泄漏吗？
+  跟我说说 onUnmounted 里需要清理什么。
+```
+
+## 实用技巧
+
+### 1. 按任务选模型
+
+- 简单补全、改注释 → 豆包 1.6（快、省）
+- 写测试、改 bug → DeepSeek V3
+- 复杂重构、设计 → Claude Opus 4
+
+### 2. 用 Builder 的"先规划后执行"
+
+```text
+先列出你的实现计划，等我确认后再开始改代码。
+```
+
+### 3. 善用 Skill
+
+Trae 内置代码审查、安全扫描等 Skill，按 ⌘Shift+P 搜索 "Skill" 调用。
+
+### 4. 自定义 Skill
+
+在 `.trae/skills/` 下定义自己的 Skill，比如"按团队规范生成 API 代码"。
+
+### 5. 中文 Prompt 效果更好
+
+Trae 对中文理解优于 Cursor，复杂需求用中文描述往往更精准。
+
+### 6. 配合豆包模型做国内项目
+
+豆包对中文语境、国内业务术语理解更深，做 To C 产品时效果优于海外模型。
+
+## 注意事项
+
+- **数据隐私**：免费版代码会上传云端处理，敏感项目慎用。
+- **模型可用性**：高峰期高级模型可能排队，建议错峰或备用模型。
+- **功能迭代快**：Trae 更新频繁，快捷键和界面可能有变化。
+- **生态**：插件市场不如 VS Code 丰富，但 VS Code 插件大多兼容。
+- **稳定性**：作为较新产品，偶尔有 bug，建议保留 VS Code 作为备份。
+
+## 实战案例
+
+### 案例 1：用豆包模型写运营落地页
+
+需求：为一个高考志愿咨询活动做一个 H5 落地页。
+
+```text
+用 Vue 3 + Tailwind 做一个高考志愿咨询 H5 落地页：
+- 顶部 banner（标题、副标题、CTA 按钮）
+- 中间 3 个卖点卡片（图标 + 标题 + 描述）
+- 底部表单（姓名、电话、提交按钮）
+- 适配移动端，配色用蓝色系
+```
+
+豆包模型对中文营销语境理解到位，一次生成的文案就很贴切。
+
+### 案例 2：用 Claude 做复杂重构
+
+需求：把一个 800 行的 `chat.vue` 拆成多个组件 + composable。
+
+切到 Claude Opus 4，开 Builder：
+
+```text
+@chat.vue 把这个文件拆成：
+- ChatWindow.vue（消息列表）
+- ChatInput.vue（输入框）
+- useChat.ts（业务逻辑 composable）
+保持功能不变，props 和 emit 重新设计。
+```
+
+Claude 会给出拆分方案，逐文件改动。
+
+### 案例 3：用 DeepSeek 批量写测试
+
+```text
+给 src/utils 下的所有工具函数写单元测试，用 vitest，
+  覆盖正常路径、边界值、异常输入，用表驱动测试。
+  每个函数一个测试文件，放到 src/utils/__tests__/。
+```
+
+DeepSeek V3 代码生成快且便宜，适合这种批量任务。
+
+## 相关条目
+
+- [Cursor 使用指南](/tools/cursor)
+- [AI 编程工具与助手](/kb/ai-coding-tools)
+- [AI 编程基础概念](/kb/ai-programming-basics)

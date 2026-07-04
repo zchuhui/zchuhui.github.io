@@ -19,6 +19,7 @@ export const NAV = [
   { label: '关于', href: '/about' },
   { label: '项目', href: '/projects' },
   { label: '文章', href: '/blog' },
+  { label: '工具', href: '/tools' },
   { label: '知识库', href: '/kb' },
 ];
 

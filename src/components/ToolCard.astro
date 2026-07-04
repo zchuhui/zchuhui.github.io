@@ -1,0 +1,34 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { withBase } from '@/utils/url';
+
+interface Props { entry: CollectionEntry<'tools'>; }
+const { entry } = Astro.props;
+const { title, summary, category, tags, vendor, pricing } = entry.data;
+const href = withBase(`/tools/${entry.id}`);
+---
+
+<a href={href} class="card tool">
+  <div class="tool-head">
+    <span class="tool-cat">{category}</span>
+    {pricing && <span class="tool-price">{pricing}</span>}
+  </div>
+  <h3 class="tool-title">{title}</h3>
+  {vendor && <p class="tool-vendor">{vendor}</p>}
+  {summary && <p class="tool-sum">{summary}</p>}
+  <div class="tool-tags">
+    {tags.slice(0, 4).map((t) => <span class="chip">{t}</span>)}
+  </div>
+</a>
+
+<style>
+  .tool { display: block; padding: 1.2rem 1.3rem; }
+  .tool-head { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
+  .tool-cat { font-family: var(--font-mono); font-size: 0.72rem; color: var(--color-cyan); border: 1px solid rgba(34,211,238,0.3); padding: 0.12rem 0.5rem; border-radius: 99px; }
+  .tool-price { font-family: var(--font-mono); font-size: 0.72rem; color: var(--color-ink-dim); }
+  .tool-title { font-size: 1.08rem; font-weight: 700; margin: 0.7rem 0 0.2rem; color: var(--color-ink); transition: color 0.2s; }
+  .tool:hover .tool-title { color: var(--color-cyan); }
+  .tool-vendor { font-size: 0.78rem; color: var(--color-ink-dim); margin: 0 0 0.5rem; }
+  .tool-sum { color: var(--color-ink-soft); font-size: 0.88rem; line-height: 1.65; margin: 0 0 0.8rem; }
+  .tool-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+</style>

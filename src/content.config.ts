@@ -42,4 +42,19 @@ const kb = defineCollection({
   }),
 });
 
-export const collections = { projects, posts, kb };
+// 工具指南
+const tools = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/tools' }),
+  schema: z.object({
+    title: z.string(),
+    summary: z.string().optional(),
+    category: z.string().default('未分类'),
+    tags: z.array(z.string()).default([]),
+    vendor: z.string().optional(),
+    pricing: z.string().optional(),
+    official: z.string().url().optional(),
+    updated: z.coerce.date(),
+  }),
+});
+
+export const collections = { projects, posts, kb, tools };
