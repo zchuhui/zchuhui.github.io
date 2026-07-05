@@ -1,6 +1,6 @@
 ---
 title: AI 编程工具与助手
-summary: 系统梳理主流 AI 编程工具：Copilot、Cursor、Trae、Claude Code 的能力对比与选型。
+summary: 系统梳理主流 AI 编程工具：Copilot、Cursor、Trae、Claude Code、Codex、OpenClaw、Hermes 的能力对比与选型。
 category: AI 编程
 tags: [AI编程, 工具, IDE]
 updated: 2026-07-05
@@ -8,13 +8,14 @@ updated: 2026-07-05
 
 ## 工具全景图
 
-AI 编程工具按形态可分为四类：
+AI 编程工具按形态可分为五类：
 
 | 类别 | 形态 | 代表产品 | 核心价值 |
 |------|------|---------|---------|
-| **编辑器内嵌** | IDE 插件 | GitHub Copilot、Cursor、Trae | 代码补全 + 对话 + Agent |
-| **终端 Agent** | CLI | Claude Code、Aider、OpenCode } | 多文件改动 + 自主执行 |
-| **代码平台** | Web/CI | Copilot for PR、Codeium } | Code Review、PR 摘要 |
+| **编辑器内嵌** | IDE 插件 / AI IDE | GitHub Copilot、Cursor、Trae | 代码补全 + 对话 + Agent |
+| **终端 Agent** | CLI | Claude Code、Codex、Aider、OpenCode | 多文件改动 + 命令验证 |
+| **自托管 Agent** | Gateway / Server | OpenClaw、Hermes Agent | 长期运行 + 工具编排 + 记忆 |
+| **代码平台** | Web/CI | Copilot for PR、Codeium | Code Review、PR 摘要 |
 | **模型 API** | SDK | OpenAI、Anthropic、通义、豆包 | 自建 AI 应用的底座 |
 
 ## 主流工具对比
@@ -40,8 +41,26 @@ AI 编程工具按形态可分为四类：
 ### Claude Code
 
 - **定位**：Anthropic 官方终端 Agent。
-- **强项**：长上下文（200K）、Tool Use 能力强、适合复杂重构与多步任务。
+- **强项**：长上下文理解、Tool Use 能力强、适合复杂重构与多步任务。
 - **适用**：命令行重度用户、需要 Agent 自主执行的场景。
+
+### Codex CLI
+
+- **定位**：OpenAI 的终端 AI 编程助手。
+- **强项**：真实仓库操作、命令验证、代码审查、MCP 和插件生态。
+- **适用**：命令行用户、需要把“改代码 + 跑测试 + 看 diff”串起来的场景。
+
+### OpenClaw
+
+- **定位**：本地优先的开源个人 AI 助手。
+- **强项**：消息渠道入口、常驻 Gateway、多工具编排、多 Agent 路由。
+- **适用**：个人助理、自动化中枢、需要从 Telegram/Slack/微信等入口调度任务的用户。
+
+### Hermes Agent
+
+- **定位**：Nous Research 的自托管长期 Agent。
+- **强项**：长期记忆、技能沉淀、多模型 provider、MCP 集成。
+- **适用**：长期任务、云端开发助理、希望 Agent 记住流程并持续改进的用户。
 
 ### Aider
 
@@ -60,21 +79,25 @@ AI 编程工具按形态可分为四类：
    │  │  ├─ 愿意付费 → Cursor
    │  │  └─ 希望免费 → Trae
    │  └─ 偏好终端
-   │     ├─ 复杂 Agent 任务 → Claude Code
+   │     ├─ 复杂仓库任务 → Claude Code / Codex
    │     └─ 开源可定制 → Aider
+   └─ 需要常驻运行、消息入口、长期记忆？
+      ├─ 消息渠道和工作流中枢 → OpenClaw
+      └─ 长期记忆和技能沉淀 → Hermes Agent
 ```
 
 ## 核心能力矩阵
 
-| 能力 | Copilot | Cursor | Trae | Claude Code |
-|------|---------|--------|------|-------------|
-| 代码补全 | ★★★★★ | ★★★★★ | ★★★★ | - |
-| 多文件改动 | ★★★ | ★★★★★ | ★★★★ | ★★★★★ |
-| 全库检索 | ★★★ | ★★★★★ | ★★★★ | ★★★★ |
-| 工具调用 | ★★ | ★★★★ | ★★★★ | ★★★★★ |
-| 终端执行 | - | ★★★ | ★★★ | ★★★★★ |
-| 模型可选性 | ★★ | ★★★★ | ★★★★★ | ★★★★ |
-| 国内可用性 | ★★ | ★★★ | ★★★★★ | ★★ |
+| 能力 | Copilot | Cursor | Trae | Claude Code | Codex | OpenClaw | Hermes |
+|------|---------|--------|------|-------------|--------|----------|--------|
+| 代码补全 | ★★★★★ | ★★★★★ | ★★★★ | - | - | - | - |
+| 多文件改动 | ★★★ | ★★★★★ | ★★★★ | ★★★★★ | ★★★★★ | ★★★ | ★★★ |
+| 全库检索 | ★★★ | ★★★★★ | ★★★★ | ★★★★ | ★★★★ | ★★★ | ★★★ |
+| 工具调用 | ★★ | ★★★★ | ★★★★ | ★★★★★ | ★★★★★ | ★★★★★ | ★★★★★ |
+| 终端执行 | - | ★★★ | ★★★ | ★★★★★ | ★★★★★ | ★★★★ | ★★★★ |
+| 常驻运行 | - | - | - | - | - | ★★★★★ | ★★★★★ |
+| 长期记忆 | - | ★★ | ★★ | ★★ | ★★ | ★★★★ | ★★★★★ |
+| 模型可选性 | ★★ | ★★★★ | ★★★★★ | ★★★★ | ★★★★ | ★★★★ | ★★★★★ |
 
 ## 使用技巧
 
@@ -108,6 +131,6 @@ AI 编程工具按形态可分为四类：
 
 ## 相关条目
 
-- [AI 编程基础概念](/kb/ai-programming-basics)
-- [AI 编程最佳实践](/kb/ai-coding-best-practices)
-- [Prompt 工程完全指南](/kb/prompt-engineering-basics)
+- [AI 编程基础概念](../ai-programming-basics)
+- [AI 编程最佳实践](../ai-coding-best-practices)
+- [Prompt 工程完全指南](../prompt-engineering-basics)

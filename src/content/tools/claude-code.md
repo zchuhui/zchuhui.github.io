@@ -1,6 +1,6 @@
 ---
 title: Claude Code 使用指南
-summary: Anthropic 官方终端 Agent，200K 长上下文 + 强工具调用，复杂任务利器。
+summary: Anthropic 官方终端 Agent，擅长长上下文理解、工具调用和复杂仓库任务。
 category: 终端 Agent
 tags: [Claude, Anthropic, 终端, Agent]
 vendor: Anthropic
@@ -11,13 +11,13 @@ updated: 2026-07-05
 
 ## 工具简介
 
-Claude Code 是 Anthropic 官方推出的终端 AI 编程助手，基于 Claude Opus 4 / Sonnet 4 模型。它以 Agent 形式运行在终端，能读写文件、执行命令、调用工具，擅长处理需要长上下文和复杂推理的编程任务。如果你面对的是"跨几十个文件的大重构"或"需要理解整个代码库才能做的事"，Claude Code 是目前最强的选择之一。
+Claude Code 是 Anthropic 官方推出的终端 AI 编程助手。它以 Agent 形式运行在终端，能读写文件、执行命令、调用工具，擅长处理需要长上下文和复杂推理的编程任务。如果你面对的是“跨几十个文件的大重构”或“需要理解整个代码库才能做的事”，Claude Code 是优先级很高的选择。
 
 ## 核心功能
 
-### 1. 超长上下文（200K Token）
+### 1. 长上下文理解
 
-能一次塞入整个中型项目的代码，理解跨文件依赖，不会"只见树木不见森林"。
+适合阅读跨文件调用链、设计文档、测试输出和历史讨论，减少只看局部文件导致的误判。
 
 ### 2. 强大的 Tool Use
 
@@ -177,7 +177,7 @@ claude -p "审查本次提交的代码，指出问题" --allowedTools "Read,Bash
 
 ## 注意事项
 
-- **成本较高**：200K 上下文 + Opus 模型单次任务可能消耗数美元，简单任务用 Sonnet。
+- **成本较高**：长上下文和强模型适合复杂任务，简单改动没必要默认使用最高规格。
 - **网络要求**：需稳定访问 Anthropic API，国内需代理。
 - **权限边界**：`allowedTools` 务必按需配置，避免误删文件。
 - **CLAUDE.md 维护**：项目规范变更后及时更新，否则 Claude 会按旧规范操作。
@@ -222,6 +222,7 @@ Claude 会按 PRD 拆解任务，逐个 PR 实现，每个 PR 都跑测试。
 
 ## 相关条目
 
-- [Codex CLI 使用指南](/tools/codex)
-- [Agent 智能体开发](/kb/agent-development)
-- [AI 编程工具与助手](/kb/ai-coding-tools)
+- [Codex CLI 使用指南](../codex)
+- [Hermes Agent 使用指南](../hermes-agent)
+- [Agent 智能体开发](../../kb/agent-development)
+- [AI 编程工具与助手](../../kb/ai-coding-tools)
