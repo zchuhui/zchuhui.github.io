@@ -1,8 +1,10 @@
 ---
 title: AI 编程基础概念
 summary: 理解 AI 编程的核心范式：从调用 API 到构建智能体，再到工程化落地。
-category: AI 编程
+category: 基础概念
+difficulty: 入门
 tags: [AI编程, 基础, 范式]
+created: 2026-07-05
 updated: 2026-07-05
 ---
 

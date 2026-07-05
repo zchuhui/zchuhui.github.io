@@ -2,10 +2,12 @@
 title: GitHub Copilot 使用指南
 summary: 老牌 AI 编程助手，深度集成 GitHub、VS Code、JetBrains 和 PR 工作流，适合团队标准化使用。
 category: IDE 插件
+difficulty: 入门
 tags: [Copilot, GitHub, IDE 插件]
 vendor: GitHub / Microsoft
 pricing: 免费起步 / Pro $10/月 / Business $19/月
 official: https://github.com/features/copilot
+created: 2026-07-05
 updated: 2026-07-05
 ---
 

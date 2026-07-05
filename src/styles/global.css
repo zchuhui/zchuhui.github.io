@@ -127,6 +127,12 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.08);
   }
 
+  /* 难度徽标 */
+  .diff-badge { font-family: var(--font-mono); font-size: 0.68rem; padding: 0.1rem 0.45rem; border-radius: 99px; border: 1px solid; }
+  .diff-easy { color: var(--color-cyan); border-color: rgba(34,211,238,0.4); background: rgba(34,211,238,0.08); }
+  .diff-mid { color: var(--color-violet); border-color: rgba(168,85,247,0.4); background: rgba(168,85,247,0.08); }
+  .diff-hard { color: #fb7185; border-color: rgba(251,113,133,0.4); background: rgba(251,113,133,0.08); }
+
   /* 区块容器 */
   .container-x { width: 100%; max-width: 72rem; margin-inline: auto; padding-inline: 1.25rem; }
 

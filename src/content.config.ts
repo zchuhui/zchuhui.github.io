@@ -36,8 +36,10 @@ const kb = defineCollection({
   schema: z.object({
     title: z.string(),
     summary: z.string().optional(),
-    category: z.string().default('未分类'),
+    category: z.enum(['基础概念', '应用范式', '工程实践', '评估运维']),
+    difficulty: z.enum(['入门', '进阶', '高级']),
     tags: z.array(z.string()).default([]),
+    created: z.coerce.date(),
     updated: z.coerce.date(),
   }),
 });
@@ -48,11 +50,13 @@ const tools = defineCollection({
   schema: z.object({
     title: z.string(),
     summary: z.string().optional(),
-    category: z.string().default('未分类'),
+    category: z.enum(['IDE 插件', 'AI 编辑器', '终端 Agent', '自托管 Agent']),
+    difficulty: z.enum(['入门', '进阶', '高级']),
     tags: z.array(z.string()).default([]),
     vendor: z.string().optional(),
     pricing: z.string().optional(),
     official: z.string().url().optional(),
+    created: z.coerce.date(),
     updated: z.coerce.date(),
   }),
 });

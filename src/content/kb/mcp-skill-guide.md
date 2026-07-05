@@ -1,8 +1,10 @@
 ---
 title: MCP 与 Skill 使用指南
 summary: 理解 MCP、工具调用和 Skill 的边界，学会把外部系统和可复用经验接入 Agent。
-category: Agent 工程
+category: 应用范式
+difficulty: 进阶
 tags: [MCP, Skill, Agent, 工具调用]
+created: 2026-07-05
 updated: 2026-07-05
 ---
 

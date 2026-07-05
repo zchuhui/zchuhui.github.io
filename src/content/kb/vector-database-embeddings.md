@@ -1,8 +1,10 @@
 ---
 title: 向量数据库与嵌入
 summary: 从 Embedding 原理到向量数据库选型，构建语义检索的底层基石。
-category: AI 编程
+category: 应用范式
+difficulty: 进阶
 tags: [向量, 嵌入, 数据库, 检索]
+created: 2026-07-05
 updated: 2026-07-05
 ---
 

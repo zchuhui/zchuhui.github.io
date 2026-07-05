@@ -1,8 +1,10 @@
 ---
 title: 上下文工程
 summary: 把正确的信息在正确时刻交给模型，是 AI 应用质量的核心工程能力。
-category: LLM
+category: 基础概念
+difficulty: 进阶
 tags: [上下文, Prompt, RAG, Agent]
+created: 2026-07-05
 updated: 2026-07-05
 ---
 

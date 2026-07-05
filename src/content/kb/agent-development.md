@@ -1,8 +1,10 @@
 ---
 title: Agent 智能体开发
 summary: 从 Tool Calling 到多 Agent 协作，构建能自主感知、决策、执行的 AI 智能体。
-category: AI 编程
+category: 应用范式
+difficulty: 进阶
 tags: [Agent, 智能体, Tool Calling, MCP]
+created: 2026-07-05
 updated: 2026-07-05
 ---
 

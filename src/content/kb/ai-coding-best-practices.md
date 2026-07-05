@@ -1,8 +1,10 @@
 ---
 title: AI 编程最佳实践
 summary: 从 Prompt 到工程化，系统总结 AI 编程的实战经验、质量保障与团队协作规范。
-category: AI 编程
+category: 工程实践
+difficulty: 进阶
 tags: [AI编程, 最佳实践, 工程化, 质量保障]
+created: 2026-07-05
 updated: 2026-07-05
 ---
 

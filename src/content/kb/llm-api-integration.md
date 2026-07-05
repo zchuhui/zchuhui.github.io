@@ -1,8 +1,10 @@
 ---
 title: LLM API 集成实践
 summary: 从零集成 LLM API：流式响应、工具调用、错误处理、重试与降级的工程实践。
-category: AI 编程
+category: 工程实践
+difficulty: 进阶
 tags: [LLM, API, 集成, SSE]
+created: 2026-07-05
 updated: 2026-07-05
 ---
 

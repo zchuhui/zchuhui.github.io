@@ -1,8 +1,10 @@
 ---
 title: AI 编程工具与助手
 summary: 系统梳理主流 AI 编程工具：Copilot、Cursor、Trae、Claude Code、Codex、OpenClaw、Hermes 的能力对比与选型。
-category: AI 编程
+category: 工程实践
+difficulty: 入门
 tags: [AI编程, 工具, IDE]
+created: 2026-07-05
 updated: 2026-07-05
 ---
 

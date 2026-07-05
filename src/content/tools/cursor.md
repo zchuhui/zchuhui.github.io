@@ -2,10 +2,12 @@
 title: Cursor 使用指南
 summary: 基于 VS Code 的 AI 原生编辑器，适合日常补全、上下文问答、多文件改动和 Agent 辅助开发。
 category: AI 编辑器
+difficulty: 入门
 tags: [Cursor, IDE, VS Code]
 vendor: Anysphere
 pricing: 免费起步 / Pro $20/月
 official: https://cursor.com
+created: 2026-07-05
 updated: 2026-07-05
 ---
 

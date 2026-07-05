@@ -4,12 +4,16 @@ import { withBase } from '@/utils/url';
 
 interface Props { entry: CollectionEntry<'kb'>; }
 const { entry } = Astro.props;
-const { title, summary, category, tags } = entry.data;
+const { title, summary, category, difficulty, tags } = entry.data;
 const href = withBase(`/kb/${entry.id}`);
+const diffClass = { '入门': 'easy', '进阶': 'mid', '高级': 'hard' }[difficulty];
 ---
 
 <a href={href} class="card kb">
-  <span class="kb-cat">{category}</span>
+  <div class="kb-head">
+    <span class="kb-cat">{category}</span>
+    <span class={`diff-badge diff-${diffClass}`}>{difficulty}</span>
+  </div>
   <h3 class="kb-title">{title}</h3>
   {summary && <p class="kb-sum">{summary}</p>}
   <div class="kb-tags">
@@ -19,6 +23,7 @@ const href = withBase(`/kb/${entry.id}`);
 
 <style>
   .kb { display: block; padding: 1.2rem 1.3rem; }
+  .kb-head { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
   .kb-cat { font-family: var(--font-mono); font-size: 0.72rem; color: var(--color-violet); border: 1px solid rgba(168,85,247,0.3); padding: 0.12rem 0.5rem; border-radius: 99px; }
   .kb-title { font-size: 1.08rem; font-weight: 700; margin: 0.7rem 0 0.4rem; color: var(--color-ink); transition: color 0.2s; }
   .kb:hover .kb-title { color: var(--color-violet); }

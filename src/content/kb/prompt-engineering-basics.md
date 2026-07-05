@@ -1,8 +1,10 @@
 ---
 title: Prompt 工程完全指南
 summary: 从定义到实战，系统掌握 Prompt 的核心原则、设计框架、场景技巧与进阶策略。
-category: LLM
+category: 基础概念
+difficulty: 入门
 tags: [Prompt, 工程, 框架, 实战]
+created: 2026-06-28
 updated: 2026-07-05
 ---
 

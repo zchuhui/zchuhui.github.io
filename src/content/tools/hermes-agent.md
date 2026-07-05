@@ -2,10 +2,12 @@
 title: Hermes Agent 使用指南
 summary: Nous Research 的自托管 Agent，强调长期记忆、技能沉淀和自我改进，适合持续型任务。
 category: 自托管 Agent
+difficulty: 高级
 tags: [Hermes, Nous Research, 自托管, Agent, 记忆]
 vendor: Nous Research
 pricing: 开源免费 / 模型与部署自理
 official: https://hermes-agent.nousresearch.com/docs/
+created: 2026-07-05
 updated: 2026-07-05
 ---
 

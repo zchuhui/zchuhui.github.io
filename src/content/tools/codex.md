@@ -2,10 +2,12 @@
 title: Codex CLI 使用指南
 summary: OpenAI 出品的终端 AI 编程助手，适合在真实仓库里完成多文件改动、命令验证和代码审查。
 category: 终端 Agent
+difficulty: 进阶
 tags: [Codex, OpenAI, 终端, Agent]
 vendor: OpenAI
 pricing: CLI 免费 / 模型按账号或 API 计费
 official: https://github.com/openai/codex
+created: 2026-07-05
 updated: 2026-07-05
 ---
 

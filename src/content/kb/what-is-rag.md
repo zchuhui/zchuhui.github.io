@@ -1,8 +1,10 @@
 ---
 title: 什么是 RAG（检索增强生成）
 summary: 让模型在回答前先"查资料"，从而更准确、可溯源、易更新。从原理到工程的完整指南。
-category: AI 编程
+category: 应用范式
+difficulty: 进阶
 tags: [RAG, 检索, 向量, 架构]
+created: 2026-06-28
 updated: 2026-07-05
 ---
 

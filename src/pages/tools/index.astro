@@ -5,8 +5,16 @@ import PageHeader from '@/components/PageHeader.astro';
 import Reveal from '@/components/Reveal.astro';
 import ToolCard from '@/components/ToolCard.astro';
 
+const CAT_ORDER = { 'IDE 插件': 0, 'AI 编辑器': 1, '终端 Agent': 2, '自托管 Agent': 3 };
+const DIFF_ORDER = { '入门': 0, '进阶': 1, '高级': 2 };
 const entries = (await getCollection('tools'))
-  .sort((a, b) => +b.data.updated - a.data.updated);
+  .sort((a, b) => {
+    const c = CAT_ORDER[a.data.category] - CAT_ORDER[b.data.category];
+    if (c) return c;
+    const d = DIFF_ORDER[a.data.difficulty] - DIFF_ORDER[b.data.difficulty];
+    if (d) return d;
+    return a.data.title.localeCompare(b.data.title, 'zh');
+  });
 
 // 按分类分组
 const groups = new Map<string, typeof entries>();

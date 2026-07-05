@@ -2,10 +2,12 @@
 title: Trae 使用指南
 summary: 字节出品的 AI IDE，主打中文体验、多模型切换和 Builder 模式，适合国内开发环境。
 category: AI 编辑器
+difficulty: 入门
 tags: [Trae, IDE, 字节, 国产]
 vendor: 字节跳动
 pricing: 免费
 official: https://www.trae.cn
+created: 2026-07-05
 updated: 2026-07-05
 ---
 

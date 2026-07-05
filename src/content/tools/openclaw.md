@@ -2,10 +2,12 @@
 title: OpenClaw 使用指南
 summary: 本地优先的开源个人 AI 助手，通过消息渠道、技能和工具把 Agent 接到真实工作流里。
 category: 自托管 Agent
+difficulty: 高级
 tags: [OpenClaw, 自托管, Agent, 自动化]
 vendor: OpenClaw
 pricing: 开源免费 / 模型与部署自理
 official: https://openclaw.ai
+created: 2026-07-05
 updated: 2026-07-05
 ---
 

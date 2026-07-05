@@ -1,8 +1,10 @@
 ---
 title: AI 模型选型指南
 summary: 从任务类型、上下文、工具调用、成本和部署约束出发，建立可复用的模型选择方法。
-category: LLM
+category: 基础概念
+difficulty: 进阶
 tags: [模型选型, LLM, 成本, 推理]
+created: 2026-07-05
 updated: 2026-07-05
 ---
 

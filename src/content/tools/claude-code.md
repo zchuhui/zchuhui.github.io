@@ -2,10 +2,12 @@
 title: Claude Code 使用指南
 summary: Anthropic 官方终端 Agent，擅长长上下文理解、工具调用和复杂仓库任务。
 category: 终端 Agent
+difficulty: 进阶
 tags: [Claude, Anthropic, 终端, Agent]
 vendor: Anthropic
 pricing: 订阅制 / API 计费
 official: https://www.anthropic.com/claude-code
+created: 2026-07-05
 updated: 2026-07-05
 ---
 

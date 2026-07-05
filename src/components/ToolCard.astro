@@ -4,13 +4,17 @@ import { withBase } from '@/utils/url';
 
 interface Props { entry: CollectionEntry<'tools'>; }
 const { entry } = Astro.props;
-const { title, summary, category, tags, vendor, pricing } = entry.data;
+const { title, summary, category, difficulty, tags, vendor, pricing } = entry.data;
 const href = withBase(`/tools/${entry.id}`);
+const diffClass = { '入门': 'easy', '进阶': 'mid', '高级': 'hard' }[difficulty];
 ---
 
 <a href={href} class="card tool">
   <div class="tool-head">
-    <span class="tool-cat">{category}</span>
+    <div class="tool-head-left">
+      <span class="tool-cat">{category}</span>
+      <span class={`diff-badge diff-${diffClass}`}>{difficulty}</span>
+    </div>
     {pricing && <span class="tool-price">{pricing}</span>}
   </div>
   <h3 class="tool-title">{title}</h3>
@@ -24,6 +28,7 @@ const href = withBase(`/tools/${entry.id}`);
 <style>
   .tool { display: block; padding: 1.2rem 1.3rem; }
   .tool-head { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
+  .tool-head-left { display: flex; align-items: center; gap: 0.4rem; }
   .tool-cat { font-family: var(--font-mono); font-size: 0.72rem; color: var(--color-cyan); border: 1px solid rgba(34,211,238,0.3); padding: 0.12rem 0.5rem; border-radius: 99px; }
   .tool-price { font-family: var(--font-mono); font-size: 0.72rem; color: var(--color-ink-dim); }
   .tool-title { font-size: 1.08rem; font-weight: 700; margin: 0.7rem 0 0.2rem; color: var(--color-ink); transition: color 0.2s; }

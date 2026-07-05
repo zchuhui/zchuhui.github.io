@@ -1,8 +1,10 @@
 ---
 title: AI 编程环境搭建
 summary: 从编辑器、终端 Agent、模型密钥、MCP 到项目规则，搭建一套可验证、可回滚的 AI 编程环境。
-category: AI 编程
+category: 工程实践
+difficulty: 入门
 tags: [开发环境, Codex, Cursor, MCP]
+created: 2026-07-05
 updated: 2026-07-05
 ---
 

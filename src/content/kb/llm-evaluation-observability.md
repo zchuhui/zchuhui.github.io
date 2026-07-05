@@ -1,8 +1,10 @@
 ---
 title: LLM 评估与可观测性
 summary: 把“感觉还行”的模型输出变成可测、可追踪、可迭代的工程系统。
-category: 工程实践
+category: 评估运维
+difficulty: 高级
 tags: [评估, 可观测性, LLMOps, 质量]
+created: 2026-07-05
 updated: 2026-07-05
 ---
 
