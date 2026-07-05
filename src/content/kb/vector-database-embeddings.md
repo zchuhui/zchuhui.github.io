@@ -155,6 +155,7 @@ const results = await client.search('docs', {
 
 ## 相关条目
 
-- [什么是 RAG](/kb/what-is-rag)
-- [AI 编程基础概念](/kb/ai-programming-basics)
-- [LLM API 集成实践](/kb/llm-api-integration)
+- [什么是 RAG](../what-is-rag)
+- [上下文工程](../context-engineering)
+- [AI 编程基础概念](../ai-programming-basics)
+- [LLM API 集成实践](../llm-api-integration)

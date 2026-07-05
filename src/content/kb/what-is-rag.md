@@ -86,7 +86,7 @@ embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
 store = Chroma.from_documents(chunks, embeddings, persist_directory="./db")
 ```
 
-选型参考 [向量数据库与嵌入](/kb/vector-database-embeddings)。
+选型参考 [向量数据库与嵌入](../vector-database-embeddings)。
 
 ## 3. 检索策略
 
@@ -197,6 +197,8 @@ reranked = co.rerank(query=query, documents=candidates, top_n=4)
 
 ## 相关条目
 
-- [向量数据库与嵌入](/kb/vector-database-embeddings)
-- [LLM API 集成实践](/kb/llm-api-integration)
-- [AI 编程基础概念](/kb/ai-programming-basics)
+- [向量数据库与嵌入](../vector-database-embeddings)
+- [上下文工程](../context-engineering)
+- [LLM 评估与可观测性](../llm-evaluation-observability)
+- [LLM API 集成实践](../llm-api-integration)
+- [AI 编程基础概念](../ai-programming-basics)

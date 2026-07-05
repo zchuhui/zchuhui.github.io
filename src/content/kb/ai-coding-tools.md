@@ -132,5 +132,8 @@ AI 编程工具按形态可分为五类：
 ## 相关条目
 
 - [AI 编程基础概念](../ai-programming-basics)
+- [AI 编程环境搭建](../ai-dev-environment)
+- [AI 模型选型指南](../model-selection-guide)
+- [MCP 与 Skill 使用指南](../mcp-skill-guide)
 - [AI 编程最佳实践](../ai-coding-best-practices)
 - [Prompt 工程完全指南](../prompt-engineering-basics)

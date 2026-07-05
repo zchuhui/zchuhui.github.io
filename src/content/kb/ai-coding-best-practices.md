@@ -244,7 +244,9 @@ function logCost(model: string, usage: TokenUsage) {
 
 ## 相关条目
 
-- [AI 编程基础概念](/kb/ai-programming-basics)
-- [AI 编程工具与助手](/kb/ai-coding-tools)
-- [Prompt 工程完全指南](/kb/prompt-engineering-basics)
-- [LLM API 集成实践](/kb/llm-api-integration)
+- [AI 编程基础概念](../ai-programming-basics)
+- [AI 编程工具与助手](../ai-coding-tools)
+- [AI 编程环境搭建](../ai-dev-environment)
+- [Prompt 工程完全指南](../prompt-engineering-basics)
+- [LLM 评估与可观测性](../llm-evaluation-observability)
+- [LLM API 集成实践](../llm-api-integration)

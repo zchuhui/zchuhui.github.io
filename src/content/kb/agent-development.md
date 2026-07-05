@@ -254,6 +254,9 @@ async function runTeam(goal: string) {
 
 ## 相关条目
 
-- [AI 编程基础概念](/kb/ai-programming-basics)
-- [LLM API 集成实践](/kb/llm-api-integration)
-- [什么是 RAG](/kb/what-is-rag)
+- [AI 编程基础概念](../ai-programming-basics)
+- [MCP 与 Skill 使用指南](../mcp-skill-guide)
+- [上下文工程](../context-engineering)
+- [LLM 评估与可观测性](../llm-evaluation-observability)
+- [LLM API 集成实践](../llm-api-integration)
+- [什么是 RAG](../what-is-rag)

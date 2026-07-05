@@ -233,6 +233,8 @@ class KeyPool {
 
 ## 相关条目
 
-- [AI 编程基础概念](/kb/ai-programming-basics)
-- [AI 编程最佳实践](/kb/ai-coding-best-practices)
-- [Agent 智能体开发](/kb/agent-development)
+- [AI 编程基础概念](../ai-programming-basics)
+- [AI 模型选型指南](../model-selection-guide)
+- [LLM 评估与可观测性](../llm-evaluation-observability)
+- [AI 编程最佳实践](../ai-coding-best-practices)
+- [Agent 智能体开发](../agent-development)
