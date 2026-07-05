@@ -56,9 +56,9 @@ console.log(res.choices[0].message.content);
 import openai "github.com/sashabaranov/go-openai"
 
 client := openai.NewClient(os.Getenv("AI_API_KEY"))
-resp, err := client.CreateChatMessage(ctx, openai.ChatMessageRequest{
+resp, err := client.CreateChatCompletion(ctx, openai.ChatCompletionRequest{
     Model: openai.GPT4oMini,
-    Messages: []openai.ChatMessage{
+    Messages: []openai.ChatCompletionMessage{
         {Role: openai.ChatMessageRoleSystem, Content: "你是助手"},
         {Role: openai.ChatMessageRoleUser, Content: "解释 RAG"},
     },

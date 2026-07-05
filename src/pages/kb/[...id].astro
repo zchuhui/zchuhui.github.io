@@ -10,17 +10,53 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths;
 
 const { entry } = Astro.props;
-const { title, summary, category, tags, updated } = entry.data;
+const { title, summary, category, difficulty, tags, updated } = entry.data;
 const { Content } = await render(entry);
+
 const dateStr = updated.toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' });
+
+// 阅读时间：中文字符 + 英文单词
+const text = entry.body ?? '';
+const cnCount = (text.match(/[\u4e00-\u9fa5]/g) || []).length;
+const wordCount = (text.match(/[a-zA-Z0-9_]+/g) || []).length;
+const readMinutes = Math.max(1, Math.ceil((cnCount + wordCount) / 300));
+
+// 难度徽标样式
+const diffClass = { '入门': 'easy', '进阶': 'mid', '高级': 'hard' }[difficulty];
+
+// TOC 由客户端脚本根据实际渲染的 H2 生成，避免 frontmatter 分词算法与 HTML 输出不一致
+
+// 上一篇 / 下一篇：按分类 → 难度 → 标题排序
+const CAT_ORDER = { '基础概念': 0, '应用范式': 1, '工程实践': 2, '评估运维': 3 };
+const DIFF_ORDER = { '入门': 0, '进阶': 1, '高级': 2 };
+const allEntries = (await getCollection('kb')).sort((a, b) => {
+  const c = CAT_ORDER[a.data.category] - CAT_ORDER[b.data.category];
+  if (c) return c;
+  const d = DIFF_ORDER[a.data.difficulty] - DIFF_ORDER[b.data.difficulty];
+  if (d) return d;
+  return a.data.title.localeCompare(b.data.title, 'zh');
+});
+const idx = allEntries.findIndex((e) => e.id === entry.id);
+const prev = idx > 0 ? allEntries[idx - 1] : undefined;
+const next = idx < allEntries.length - 1 ? allEntries[idx + 1] : undefined;
 ---
 
 <BaseLayout title={title} description={summary ?? title}>
   <article class="container-x detail">
-    <a href={withBase('/kb')} class="back">← 返回知识库</a>
+    <nav class="breadcrumb" aria-label="面包屑">
+      <a href={withBase('/')}>首页</a>
+      <span>/</span>
+      <a href={withBase('/kb')}>知识库</a>
+      <span>/</span>
+      <span class="bc-current">{category}</span>
+    </nav>
 
     <header class="detail-head">
-      <span class="chip kb-cat">{category}</span>
+      <div class="detail-badges">
+        <span class="chip kb-cat">{category}</span>
+        <span class={`diff-badge diff-${diffClass}`}>{difficulty}</span>
+        <span class="read-time">{readMinutes} 分钟阅读</span>
+      </div>
       <h1 class="detail-title">{title}</h1>
       {summary && <p class="detail-desc">{summary}</p>}
       <div class="detail-meta">
@@ -29,20 +65,123 @@ const dateStr = updated.toLocaleDateString('zh-CN', { year: 'numeric', month: 'l
       </div>
     </header>
 
-    <div class="prose-space">
-      <Content />
+    <div class="detail-body">
+      <aside class="toc" id="toc">
+        <div class="toc-title">目录</div>
+        <nav>
+          <ul id="toc-list"></ul>
+        </nav>
+      </aside>
+
+      <div class="prose-space" id="article-content">
+        <Content />
+      </div>
     </div>
+
+    <nav class="page-nav">
+      {prev ? (
+        <a href={withBase(`/kb/${prev.id}`)} class="page-link prev">
+          <span class="page-label">← 上一篇</span>
+          <span class="page-title">{prev.data.title}</span>
+        </a>
+      ) : <span />}
+      {next && (
+        <a href={withBase(`/kb/${next.id}`)} class="page-link next">
+          <span class="page-label">下一篇 →</span>
+          <span class="page-title">{next.data.title}</span>
+        </a>
+      )}
+    </nav>
   </article>
 </BaseLayout>
 
 <style>
   .detail { max-width: 46rem; padding-top: 2rem; }
-  .back { font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-ink-dim); }
-  .back:hover { color: var(--color-violet); }
-  .detail-head { margin: 1.5rem 0 2rem; }
+
+  .breadcrumb { display: flex; align-items: center; gap: 0.5rem; font-family: var(--font-mono); font-size: 0.78rem; color: var(--color-ink-dim); margin-bottom: 1.2rem; }
+  .breadcrumb a { color: var(--color-ink-dim); text-decoration: none; }
+  .breadcrumb a:hover { color: var(--color-cyan); }
+  .bc-current { color: var(--color-violet); }
+
+  .detail-head { margin: 0 0 2rem; }
+  .detail-badges { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin-bottom: 0.7rem; }
   .kb-cat { color: var(--color-violet); border-color: rgba(168,85,247,0.3); }
-  .detail-title { font-size: clamp(1.9rem, 4.5vw, 2.6rem); font-weight: 900; margin: 0.7rem 0 0; line-height: 1.2; }
+  .read-time { font-family: var(--font-mono); font-size: 0.72rem; color: var(--color-ink-dim); }
+
+  .detail-title { font-size: clamp(1.9rem, 4.5vw, 2.6rem); font-weight: 900; margin: 0; line-height: 1.2; }
   .detail-desc { color: var(--color-ink-soft); font-size: 1.05rem; line-height: 1.7; margin: 1rem 0; }
-  .detail-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
+  .detail-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; margin-top: 0.8rem; }
   .d-date { font-family: var(--font-mono); font-size: 0.8rem; color: var(--color-ink-dim); margin-right: 0.4rem; }
+
+  .detail-body { position: relative; }
+  .anchor { display: block; position: relative; top: -6rem; visibility: hidden; }
+
+  .toc {
+    margin: 0 0 2rem;
+    padding: 1rem 1.2rem;
+    border-radius: 0.9rem;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .toc-title { font-size: 0.85rem; font-weight: 700; color: var(--color-ink); margin-bottom: 0.6rem; }
+  .toc ul { list-style: none; padding: 0; margin: 0; }
+  .toc li { margin: 0.35rem 0; }
+  .toc a { font-size: 0.85rem; color: var(--color-ink-soft); text-decoration: none; }
+  .toc a:hover { color: var(--color-cyan); }
+  .toc:has(#toc-list:empty) { display: none; }
+
+  .prose-space h2 { scroll-margin-top: 6rem; }
+
+  .page-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.08); }
+  .page-link { display: flex; flex-direction: column; padding: 1rem 1.2rem; border-radius: 0.9rem; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); text-decoration: none; transition: border-color 0.2s, background 0.2s; }
+  .page-link:hover { border-color: rgba(168,85,247,0.4); background: rgba(255,255,255,0.06); }
+  .page-link.next { text-align: right; }
+  .page-label { font-family: var(--font-mono); font-size: 0.72rem; color: var(--color-ink-dim); margin-bottom: 0.3rem; }
+  .page-title { font-size: 0.95rem; font-weight: 600; color: var(--color-ink); }
+
+  @media (min-width: 1100px) {
+    .detail { max-width: 72rem; }
+    .detail-body { display: grid; grid-template-columns: 1fr 16rem; gap: 2.5rem; }
+    .toc { position: sticky; top: 6rem; align-self: start; margin: 0; }
+  }
 </style>
+
+<script>
+  (function () {
+    const article = document.getElementById('article-content');
+    const tocList = document.getElementById('toc-list');
+    if (!article || !tocList) return;
+
+    const headings = Array.from(article.querySelectorAll('h2'));
+    if (headings.length === 0) {
+      document.getElementById('toc')?.style.setProperty('display', 'none');
+      return;
+    }
+
+    const slugify = (text: string) =>
+      text
+        .toLowerCase()
+        .trim()
+        .replace(/\s+/g, '-')
+        .replace(/[^a-z0-9\u4e00-\u9fa5-]/g, '');
+
+    const used = new Set<string>();
+    headings.forEach((h) => {
+      let base = slugify(h.textContent ?? '');
+      let id = base || 'heading';
+      let i = 1;
+      while (used.has(id)) {
+        id = `${base}-${i++}`;
+      }
+      used.add(id);
+      h.id = id;
+
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      a.href = '#' + id;
+      a.textContent = h.textContent ?? '';
+      li.appendChild(a);
+      tocList.appendChild(li);
+    });
+  })();
+</script>

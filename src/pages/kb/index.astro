@@ -4,10 +4,16 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import PageHeader from '@/components/PageHeader.astro';
 import Reveal from '@/components/Reveal.astro';
 import KbCard from '@/components/KbCard.astro';
+import { withBase } from '@/utils/url';
+
+const selectedTag = Astro.url.searchParams.get('tag') ?? '';
+const allEntries = await getCollection('kb');
 
 const CAT_ORDER = { '基础概念': 0, '应用范式': 1, '工程实践': 2, '评估运维': 3 };
 const DIFF_ORDER = { '入门': 0, '进阶': 1, '高级': 2 };
-const entries = (await getCollection('kb'))
+
+const entries = allEntries
+  .filter((e) => !selectedTag || e.data.tags.includes(selectedTag))
   .sort((a, b) => {
     const c = CAT_ORDER[a.data.category] - CAT_ORDER[b.data.category];
     if (c) return c;
@@ -16,7 +22,6 @@ const entries = (await getCollection('kb'))
     return a.data.title.localeCompare(b.data.title, 'zh');
   });
 
-// 按分类分组
 const groups = new Map<string, typeof entries>();
 for (const e of entries) {
   const cat = e.data.category;
@@ -24,22 +29,65 @@ for (const e of entries) {
   groups.get(cat)!.push(e);
 }
 const grouped = [...groups.entries()];
+
+// 所有出现过的 tag 及每 tag 文章数
+const tagCounts = new Map<string, number>();
+for (const e of allEntries) {
+  for (const t of e.data.tags) {
+    tagCounts.set(t, (tagCounts.get(t) ?? 0) + 1);
+  }
+}
+const tags = Array.from(tagCounts.entries()).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'zh'));
+const pagefindBundle = withBase('/pagefind/');
+const pagefindUI = withBase('/pagefind/pagefind-ui.js');
 ---
 
-<BaseLayout title="知识库" description="我整理的笔记与知识卡片。">
+<BaseLayout title="知识库" description="我整理的 AI 编程与学习笔记，支持搜索与主题筛选。">
   <div class="container-x">
     <PageHeader eyebrow="Knowledge Base" title="知识库" subtitle="持续整理的学习笔记与速查卡片。" />
 
-    {grouped.map(([category, items]) => (
-      <section class="kb-group">
-        <h2 class="kb-group-title"><span class="dot"></span>{category} <span class="count">{items.length}</span></h2>
-        <div class="grid">
-          {items.map((entry, i) => (
-            <Reveal delay={i * 70}><KbCard entry={entry} /></Reveal>
+    <div class="kb-controls">
+      <div class="search-wrap">
+        <div id="search" class="search-box"></div>
+      </div>
+
+      {tags.length > 0 && (
+        <div class="tag-filter">
+          <span class="tag-label">主题：</span>
+          <a href={withBase('/kb')} class={`tag-chip ${!selectedTag ? 'active' : ''}`}>全部</a>
+          {tags.map(([tag, count]) => (
+            <a
+              href={`?tag=${encodeURIComponent(tag)}`}
+              class={`tag-chip ${selectedTag === tag ? 'active' : ''}`}
+            >
+              {tag} <span class="tag-count">{count}</span>
+            </a>
           ))}
         </div>
-      </section>
-    ))}
+      )}
+
+      {selectedTag && (
+        <div class="filter-bar">
+          <span>正在筛选：<strong>{selectedTag}</strong></span>
+          <a href={withBase('/kb')} class="clear-filter">清除筛选</a>
+        </div>
+      )}
+    </div>
+
+    {grouped.length === 0 ? (
+      <div class="empty">没有找到匹配“{selectedTag}”的文章。<a href={withBase('/kb')}>清除筛选</a></div>
+    ) : (
+      grouped.map(([category, items]) => (
+        <section class="kb-group">
+          <h2 class="kb-group-title"><span class="dot"></span>{category} <span class="count">{items.length}</span></h2>
+          <div class="grid">
+            {items.map((entry, i) => (
+              <Reveal delay={i * 70}><KbCard entry={entry} /></Reveal>
+            ))}
+          </div>
+        </section>
+      ))
+    )}
   </div>
 </BaseLayout>
 
@@ -51,4 +99,69 @@ const grouped = [...groups.entries()];
   .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; }
   @media (max-width: 900px) { .grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 620px) { .grid { grid-template-columns: 1fr; } }
+
+  .kb-controls { margin: 1.5rem 0 2.5rem; display: flex; flex-direction: column; gap: 1rem; }
+  .search-wrap { width: 100%; max-width: 42rem; }
+  .search-box { min-height: 3rem; }
+  #search {
+    --pagefind-ui-scale: 0.95;
+    --pagefind-ui-primary: var(--color-cyan);
+    --pagefind-ui-text: var(--color-ink);
+    --pagefind-ui-background: rgba(255,255,255,0.04);
+    --pagefind-ui-border: rgba(255,255,255,0.12);
+    --pagefind-ui-tag: var(--color-cyan);
+    --pagefind-ui-border-width: 1px;
+    --pagefind-ui-border-radius: 0.75rem;
+    --pagefind-ui-font: var(--font-sans);
+  }
+
+  .tag-filter { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; }
+  .tag-label { font-family: var(--font-mono); font-size: 0.78rem; color: var(--color-ink-dim); margin-right: 0.3rem; }
+  .tag-chip { font-family: var(--font-mono); font-size: 0.75rem; padding: 0.25rem 0.65rem; border-radius: 99px; color: var(--color-ink-soft); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); text-decoration: none; transition: all 0.2s; }
+  .tag-chip:hover { border-color: rgba(34,211,238,0.4); color: var(--color-cyan); }
+  .tag-chip.active { color: var(--color-space-950); background: var(--color-cyan); border-color: var(--color-cyan); }
+  .tag-count { opacity: 0.7; margin-left: 0.15rem; }
+
+  .filter-bar { display: flex; align-items: center; gap: 0.75rem; font-size: 0.85rem; color: var(--color-ink-soft); }
+  .clear-filter { font-family: var(--font-mono); font-size: 0.72rem; color: var(--color-cyan); text-decoration: none; }
+  .clear-filter:hover { text-decoration: underline; }
+
+  .empty { margin-top: 3rem; padding: 2rem; text-align: center; color: var(--color-ink-soft); background: rgba(255,255,255,0.04); border-radius: 1rem; }
+  .empty a { color: var(--color-cyan); text-decoration: none; }
+  .search-hint { margin: 0; padding: 0.75rem 1rem; font-size: 0.85rem; color: var(--color-ink-dim); background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 0.6rem; }
 </style>
+
+<script type="module" data-bundle={pagefindBundle} data-ui={pagefindUI}>
+  const el = document.getElementById('search');
+  const script = el?.closest('script');
+  const bundle = script?.dataset.bundle ?? '/pagefind/';
+  const uiPath = script?.dataset.ui ?? '/pagefind/pagefind-ui.js';
+  if (!el) return;
+
+  if (import.meta.env.DEV) {
+    el.innerHTML = '<p class="search-hint">构建后启用全文搜索</p>';
+    return;
+  }
+
+  try {
+    const { PagefindUI } = await import(/* @vite-ignore */ uiPath);
+    new PagefindUI({
+      element: '#search',
+      bundlePath: bundle,
+      showImages: false,
+      showSubResults: true,
+      translations: {
+        placeholder: '搜索知识库...',
+        clear_search: '清除',
+        load_more: '加载更多结果',
+        search_label: '搜索知识库',
+        zero_results: '未找到“{QUERY_STRING}”相关结果',
+        many_results: '找到 {COUNT} 个结果',
+        one_result: '找到 1 个结果',
+        alt_search: '未找到“{QUERY_STRING}”的结果。显示其他相关结果',
+      },
+    });
+  } catch {
+    el.innerHTML = '<p class="search-hint">搜索加载失败，请刷新页面</p>';
+  }
+</script>
