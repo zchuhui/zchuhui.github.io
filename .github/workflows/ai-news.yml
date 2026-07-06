@@ -1,0 +1,63 @@
+name: Update AI News
+
+on:
+  schedule:
+    # 07:20 Asia/Shanghai
+    - cron: '20 23 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ai-news
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Fetch AI news
+        run: node scripts/update-ai-news.mjs
+
+      - name: Commit updated news data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet -- src/data/ai-news.json; then
+            git add src/data/ai-news.json
+            git commit -m "Update AI news"
+            git push origin HEAD:main
+          else
+            echo "No AI news data changes"
+          fi
+
+      - name: Build site
+        run: npm run build
+
+      - name: Publish to gh-pages
+        run: |
+          tmpdir="$(mktemp -d)"
+          git worktree add --detach "$tmpdir"
+          git -C "$tmpdir" switch --orphan gh-pages-deploy
+          find "$tmpdir" -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -R dist/. "$tmpdir"/
+          touch "$tmpdir/.nojekyll"
+          git -C "$tmpdir" add -A
+          git -C "$tmpdir" commit -m "Deploy AI news"
+          git -C "$tmpdir" push origin HEAD:gh-pages --force
+          git worktree remove "$tmpdir"

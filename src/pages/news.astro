@@ -1,0 +1,376 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PageHeader from '@/components/PageHeader.astro';
+import Reveal from '@/components/Reveal.astro';
+import newsData from '@/data/ai-news.json';
+
+type NewsItem = {
+  id: string;
+  title: string;
+  url: string;
+  source: string;
+  sourceUrl: string;
+  publishedAt: string;
+  summary?: string;
+  tags: string[];
+  category: string;
+};
+
+type SourceStatus = {
+  name: string;
+  url: string;
+  ok: boolean;
+  count: number;
+  error?: string;
+};
+
+const items = (newsData.items as NewsItem[]).sort(
+  (a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt),
+);
+const sources = newsData.sources as SourceStatus[];
+const generatedAt = new Date(newsData.generatedAt);
+const categories = [...new Set(items.map((item) => item.category))];
+
+const dateFormatter = new Intl.DateTimeFormat('zh-CN', {
+  month: '2-digit',
+  day: '2-digit',
+  hour: '2-digit',
+  minute: '2-digit',
+});
+const generatedFormatter = new Intl.DateTimeFormat('zh-CN', {
+  year: 'numeric',
+  month: '2-digit',
+  day: '2-digit',
+  hour: '2-digit',
+  minute: '2-digit',
+});
+
+function formatDate(value: string) {
+  const date = new Date(value);
+  return Number.isNaN(date.getTime()) ? '未知时间' : dateFormatter.format(date);
+}
+---
+
+<BaseLayout title="AI 要闻" description="每日自动收集的 AI 公司动态、产品更新与研究论文。">
+  <div class="container-x">
+    <PageHeader eyebrow="AI News" title="AI 要闻" subtitle="每日自动汇总 AI 公司动态、产品更新与研究论文。" />
+
+    <section class="news-overview" aria-label="更新概览">
+      <div class="overview-main">
+        <span class="overview-label">Last Sync</span>
+        <strong>{generatedFormatter.format(generatedAt)}</strong>
+      </div>
+      <div class="overview-stats">
+        <span>{items.length} 条</span>
+        <span>{sources.filter((source) => source.ok).length}/{sources.length} 源可用</span>
+      </div>
+    </section>
+
+    {categories.length > 0 && (
+      <div class="category-strip" aria-label="分类">
+        {categories.map((category) => (
+          <a href={`#${category}`} class="category-chip">{category}</a>
+        ))}
+      </div>
+    )}
+
+    {items.length === 0 ? (
+      <div class="empty-news">
+        暂无要闻。自动任务下一次运行后会填充内容。
+      </div>
+    ) : (
+      categories.map((category) => {
+        const group = items.filter((item) => item.category === category);
+        return (
+          <section class="news-group" id={category}>
+            <div class="group-head">
+              <h2><span class="dot"></span>{category}</h2>
+              <span>{group.length}</span>
+            </div>
+
+            <div class="news-list">
+              {group.map((item, index) => (
+                <Reveal delay={index * 55}>
+                  <article class="news-card card">
+                    <div class="news-meta">
+                      <a href={item.sourceUrl} class="source" target="_blank" rel="noopener noreferrer">
+                        {item.source}
+                      </a>
+                      <time datetime={item.publishedAt}>{formatDate(item.publishedAt)}</time>
+                    </div>
+
+                    <h3>
+                      <a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}</a>
+                    </h3>
+
+                    {item.summary && <p>{item.summary}</p>}
+
+                    <div class="news-foot">
+                      <div class="tags">
+                        {item.tags.map((tag) => <span class="chip">{tag}</span>)}
+                      </div>
+                      <a class="read-link" href={item.url} target="_blank" rel="noopener noreferrer">原文 ↗</a>
+                    </div>
+                  </article>
+                </Reveal>
+              ))}
+            </div>
+          </section>
+        );
+      })
+    )}
+
+    <section class="source-panel" aria-label="新闻源状态">
+      <h2>新闻源</h2>
+      <div class="source-grid">
+        {sources.map((source) => (
+          <a href={source.url} class={`source-row ${source.ok ? 'ok' : 'warn'}`} target="_blank" rel="noopener noreferrer">
+            <span>{source.name}</span>
+            <small>{source.ok ? `${source.count} 条` : (source.error ?? '抓取失败')}</small>
+          </a>
+        ))}
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .news-overview {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 0 auto 1.2rem;
+    padding: 1rem 1.15rem;
+    max-width: 54rem;
+    border-radius: 0.8rem;
+    background: rgba(255, 255, 255, 0.045);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .overview-main {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+  }
+
+  .overview-label,
+  .overview-stats,
+  .source-row small,
+  .news-meta {
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+  }
+
+  .overview-label,
+  .overview-stats,
+  .source-row small,
+  .news-meta time {
+    color: var(--color-ink-dim);
+  }
+
+  .overview-main strong {
+    color: var(--color-ink);
+    font-size: 0.95rem;
+  }
+
+  .overview-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: flex-end;
+  }
+
+  .overview-stats span {
+    padding: 0.18rem 0.55rem;
+    border-radius: 99px;
+    background: rgba(34, 211, 238, 0.08);
+    border: 1px solid rgba(34, 211, 238, 0.18);
+    color: var(--color-cyan);
+  }
+
+  .category-strip {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2.8rem;
+  }
+
+  .category-chip {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--color-ink-soft);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.3rem 0.75rem;
+    border-radius: 99px;
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  .category-chip:hover {
+    color: var(--color-cyan);
+    border-color: rgba(34, 211, 238, 0.4);
+  }
+
+  .news-group {
+    scroll-margin-top: 6rem;
+    margin-top: 2.8rem;
+  }
+
+  .group-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .group-head h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    margin: 0;
+    font-size: 1.25rem;
+  }
+
+  .group-head span {
+    font-family: var(--font-mono);
+    color: var(--color-ink-dim);
+    font-size: 0.78rem;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 99px;
+    background: linear-gradient(var(--color-cyan), var(--color-violet));
+    box-shadow: 0 0 10px var(--color-violet);
+  }
+
+  .news-list {
+    display: grid;
+    gap: 0.9rem;
+  }
+
+  .news-card {
+    padding: 1.1rem 1.2rem;
+  }
+
+  .news-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.65rem;
+  }
+
+  .source {
+    color: var(--color-cyan);
+  }
+
+  .news-card h3 {
+    margin: 0;
+    font-size: 1.12rem;
+    line-height: 1.5;
+  }
+
+  .news-card h3 a {
+    color: var(--color-ink);
+    transition: color 0.2s;
+  }
+
+  .news-card h3 a:hover {
+    color: var(--color-cyan);
+  }
+
+  .news-card p {
+    margin: 0.65rem 0 0;
+    color: var(--color-ink-soft);
+    line-height: 1.7;
+    font-size: 0.92rem;
+  }
+
+  .news-foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 0.95rem;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+
+  .read-link {
+    flex: 0 0 auto;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--color-violet);
+  }
+
+  .source-panel {
+    margin: 3.5rem 0 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .source-panel h2 {
+    font-size: 1rem;
+    margin: 0 0 1rem;
+    color: var(--color-ink-soft);
+  }
+
+  .source-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+  }
+
+  .source-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.75rem 0.85rem;
+    border-radius: 0.7rem;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--color-ink-soft);
+  }
+
+  .source-row.ok small {
+    color: var(--color-cyan);
+  }
+
+  .source-row.warn small {
+    color: #fb7185;
+  }
+
+  .empty-news {
+    padding: 2rem;
+    text-align: center;
+    color: var(--color-ink-soft);
+    border-radius: 0.8rem;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  @media (max-width: 800px) {
+    .news-overview,
+    .news-foot {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .overview-stats {
+      justify-content: flex-start;
+    }
+
+    .source-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
