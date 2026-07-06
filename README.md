@@ -42,12 +42,16 @@ npm run preview  # 预览构建产物
 
 ## 📦 部署到 GitHub Pages
 
-1. **改 `astro.config.mjs`** 顶部的 `SITE` 和 `BASE`：
-   - 用户主页仓库 `<用户名>.github.io` → `SITE='https://<用户名>.github.io'`，`BASE='/'`
-   - 普通项目仓库（如 `myhome`） → `SITE='https://<用户名>.github.io'`，`BASE='/myhome/'`
-2. 把代码推到 GitHub 仓库的 `main` 分支。
+当前目标地址是 `https://zchuhui.github.io/`，需要使用 GitHub 用户主页仓库：
+
+1. 在 GitHub 将仓库改名为 `zchuhui.github.io`，或新建 `zchuhui.github.io` 仓库后把本项目代码推过去。
+2. 确认 `astro.config.mjs` 顶部保持：
+   - `SITE='https://zchuhui.github.io'`
+   - `BASE='/'`
 3. 仓库 **Settings → Pages → Source** 选 **GitHub Actions**。
-4. 之后每次 `git push` 都会通过 [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) 自动构建并发布。
+4. 把代码推到 `main` 分支。之后每次 `git push` 都会通过 [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) 自动构建并发布。
+
+如果仓库仍叫 `myhome`，GitHub Pages 默认地址仍会是 `https://zchuhui.github.io/myhome/`。
 
 ## 🗂 目录结构
 

@@ -4,11 +4,10 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 
-// ⚠️ 部署前请修改下面两项以匹配你的 GitHub 仓库：
-//   - 用户主页仓库 <用户名>.github.io  → site: 'https://<用户名>.github.io', base: '/'
-//   - 普通项目仓库（如 myhome）       → site: 'https://<用户名>.github.io', base: '/myhome/'
+// GitHub 用户主页仓库 zchuhui.github.io：
+//   site 指向根域，base 必须为 '/'，否则静态资源和站内链接会继续带 /myhome/ 前缀。
 const SITE = 'https://zchuhui.github.io';
-const BASE = '/myhome/';
+const BASE = '/';
 
 // https://astro.build/config
 export default defineConfig({

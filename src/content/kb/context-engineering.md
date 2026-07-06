@@ -119,7 +119,7 @@ go test ./...
 - 丰富知识库模块
 
 # 重要约束
-- GitHub Pages base 为 /myhome/
+- GitHub Pages base 为 /
 ```
 
 ### 4. 文件索引
