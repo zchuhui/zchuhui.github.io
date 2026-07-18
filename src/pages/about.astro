@@ -8,9 +8,21 @@ import { withBase } from '@/utils/url';
 
 // 经历时间线（替换为你自己的）
 const timeline = [
-  { year: '2026', title: 'AI Builder · 独立开发', desc: '专注 LLM 应用与 Agent 产品的设计与落地。' },
-  { year: '2025', title: '开源与分享', desc: '开始系统地构建并开源 AI 工具，持续写作沉淀方法论。' },
-  { year: '2024', title: '进入 AI 领域', desc: '从工程转向 AI，深入 RAG、Agent 与提示工程实践。' },
+  {
+    year: '2026',
+    title: 'AI Builder · 独立开发',
+    desc: '专注 LLM 应用与 Agent 产品的设计与落地，从 0 到 1 构建 AI 驱动的产品矩阵。',
+  },
+  {
+    year: '2019 ~ 2025',
+    title: '全栈开发工程师',
+    desc: '从 Python 到 Go 到 K8s、Docker、Helm，独立交付业务系统与基础设施，积累了扎实的工程功底。',
+  },
+  {
+    year: '2014 ~ 2018',
+    title: '前端开发',
+    desc: '从切图仔到前端工程师，掌握了 JavaScript、CSS、HTML、Vue、React、Next.js 与工程化体系，奠定了编程的基石。',
+  },
 ];
 
 // 我能做什么
@@ -35,8 +47,18 @@ const skills = [
         </div>
         <div class="intro-text">
           <h2 class="intro-name">我是 <span class="text-gradient">{SITE.name}</span></h2>
-          <p>一名 <strong>AI Builder</strong>。我热衷于把前沿的 AI 能力变成真正好用的产品 —— 让想法长出会思考的形态。</p>
-          <p>我相信构建是最好的学习方式。这里记录我做过的项目、写下的思考，以及一路积累的知识。</p>
+          <p>
+            以前是一名全栈开发工程师，深耕前后端多年，从 Python 到 Go，从 Vue 到 React，写过业务系统也搭过基础设施。
+            现在，我的身份是 <strong>AI Builder</strong> —— 不再只是写代码，而是用代码把智能编织进产品里。
+          </p>
+          <p>
+            我热衷于 AI 落地：不是追热点、跑 Demo，而是把 RAG、Agent、MCP 这些前沿能力，真正工程化、产品化，
+            变成用户拿起来就能用的东西。让想法长出会思考的形态。
+          </p>
+          <p>
+            我相信构建是最好的学习方式。这里记录我做过的项目、写下的思考、以及一路积累的知识 ——
+            既是自己的沉淀，也希望能给同行的人一点启发。
+          </p>
           <div class="intro-socials">
             {SOCIALS.map((s) => (
               <a href={s.href} target={s.href.startsWith('http') ? '_blank' : undefined} rel="noopener" class="chip">{s.label}</a>

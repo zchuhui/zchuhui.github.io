@@ -34,9 +34,25 @@ export const SOCIALS = [
 // 首页 Hero 轮播标语
 export const ROLES = ['AI Builder', 'LLM 应用开发者', 'Agent 设计师', '独立产品创造者'];
 
-// 技术栈展示
+// 技术栈展示（全部列出，自行挑选删减）
 export const TECH = [
-  'Python', 'TypeScript', 'LLM', 'RAG', 'Agents',
-  'LangChain', 'PyTorch', 'React', 'Astro', 'Vector DB',
-  'Prompt Eng.', 'MCP',
+  // --- 后端 ---
+  'Python', 'Go',
+  'Django', 'FastAPI', 'Flask', 'Spring Boot', 'Gin', 'Express', 'Nest.js',
+  'MySQL', 'PostgreSQL', 'MongoDB', 'Redis', 
+  'gRPC', 'GraphQL', 'REST API',
+  // --- 前端 ---
+  'JavaScript', 'TypeScript', 'Node.js', 'React', 'Next.js', 'Vue', 'Nuxt', 'Astro', 'Svelte',
+  'Tailwind CSS', 'Ant Design', 'Shadcn/ui',
+  // --- AI / LLM ---
+  'LLM', 'RAG', 'Agents', 'Prompt Eng.', 'MCP', 'A2A',
+  'LangChain', 'LlamaIndex', 'Dify', 'Coze',
+  'Fine-tuning', 'Agentic Workflow',
+  // --- 运维 / DevOps ---
+  'Docker', 'Kubernetes', 'Helm',
+  'GitHub Actions', 'CI/CD', 'Jenkins',
+  'Nginx', 'Prometheus', 'Grafana',
+  'Linux', 'Shell',
+  // --- 其他 ---
+  'Git', 'VS Code', 'Cursor','Trae','Codex','Claude'
 ];
