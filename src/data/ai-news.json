@@ -1,26 +1,13 @@
 {
-  "generatedAt": "2026-07-18T00:10:03.525Z",
+  "generatedAt": "2026-07-19T00:10:55.154Z",
   "items": [
-    {
-      "id": "1xzv2yp",
-      "title": "A scorecard for the AI age",
-      "url": "https://openai.com/index/a-scorecard-for-the-ai-age",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-07-17T10:00:00.000Z",
-      "summary": "Sarah Friar, CFO of OpenAI, introduces a practical AI scorecard to measure ROI through useful work, cost per successful task, dependability, and return on compute.",
-      "tags": [
-        "AI"
-      ],
-      "category": "公司动态"
-    },
     {
       "id": "10wnkr9",
       "title": "Intelligent Three Level Learning Architecture for Autonomous UAV Swarms in Search and Rescue",
       "url": "https://arxiv.org/abs/2607.14093",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14093v1 Announce Type: new Abstract: This paper presents a novel three level hierarchical learning architecture for autonomous UAV swarms performing search and rescue operations. Unlike conventional approaches that apply a single learning paradigm a",
       "tags": [
         "模型",
@@ -35,7 +22,7 @@
       "url": "https://arxiv.org/abs/2607.14095",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14095v1 Announce Type: new Abstract: Retrieval Augmented Generation (RAG) has proven to be a widely successful process at improving the quality of outputs from a Large Language Model (LLM) for wider context. However, RAG systems typically retrieve c",
       "tags": [
         "模型",
@@ -49,7 +36,7 @@
       "url": "https://arxiv.org/abs/2607.14096",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14096v1 Announce Type: new Abstract: In predictive modeling, the ability to explain why a model produces a given target prediction has become increasingly important [5, 10]. Black-box models do not provide a transparent description of the internal m",
       "tags": [
         "模型",
@@ -64,7 +51,7 @@
       "url": "https://arxiv.org/abs/2607.14097",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14097v1 Announce Type: new Abstract: We introduce RegNetAgents, an AI-oriented multi-agent framework for structured, query-driven regulatory candidate identification across heterogeneous gene regulatory networks. The system enables unified analysis ",
       "tags": [
         "模型",
@@ -79,7 +66,7 @@
       "url": "https://arxiv.org/abs/2607.14115",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14115v1 Announce Type: new Abstract: Inspired by how humans communicate spatial information, language-guided geo-localization has gained significant traction for its intuitive and practical value. Despite this progress, most methods still rely on a ",
       "tags": [
         "模型",
@@ -94,7 +81,7 @@
       "url": "https://arxiv.org/abs/2607.14126",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14126v1 Announce Type: new Abstract: Type 1 Diabetes (T1D) is a chronic, life-threatening autoimmune condition characterized by the complete destruction of insulin-producing pancreatic beta cells. While Artificial Pancreas Systems (APS) powered by R",
       "tags": [
         "模型",
@@ -109,7 +96,7 @@
       "url": "https://arxiv.org/abs/2607.14141",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14141v1 Announce Type: new Abstract: Bayesian Belief Networks (BBNs) are powerful tools for decision-making under uncertainty. However, building their structures and estimating parameters are difficult. Currently, researchers must choose between rel",
       "tags": [
         "模型",
@@ -124,7 +111,7 @@
       "url": "https://arxiv.org/abs/2607.14144",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14144v1 Announce Type: new Abstract: The Platonic Representation Hypothesis (PRH) holds that as models scale, representations of heterogeneous networks converge toward a shared model of reality. We propose its sequel and boundary, the Capability Con",
       "tags": [
         "模型",
@@ -139,7 +126,7 @@
       "url": "https://arxiv.org/abs/2607.14145",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14145v1 Announce Type: new Abstract: Tool-augmented large language model agents excel at long-horizon tasks, yet they are typically post-trained on fixed toolsets. When tasks demand new tools, these agents struggle to incorporate them effectively, a",
       "tags": [
         "模型",
@@ -154,7 +141,7 @@
       "url": "https://arxiv.org/abs/2607.14149",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14149v1 Announce Type: new Abstract: Although large language models (LLMs) have set benchmarks for zero-shot reasoning, their deployment remains cost-prohibitive and environmentally taxing. Small Language Models (SLMs) offer a sustainable alternativ",
       "tags": [
         "模型",
@@ -169,7 +156,7 @@
       "url": "https://arxiv.org/abs/2607.14158",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14158v1 Announce Type: new Abstract: This position paper explores how Agentic AI and Model Context Protocol (MCP) can support power-grid studies in a Transmission System Operator (TSO) context. We focus on integrating Large Language Models with nume",
       "tags": [
         "模型",
@@ -184,7 +171,7 @@
       "url": "https://arxiv.org/abs/2607.14159",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14159v1 Announce Type: new Abstract: An agent harness is the external control layer that turns a base LLM into an executable agent by managing context, tools, orchestration, memory, decoding, and output handling. While harness design strongly affect",
       "tags": [
         "模型",
@@ -199,7 +186,7 @@
       "url": "https://arxiv.org/abs/2607.14169",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14169v1 Announce Type: new Abstract: Large language models can synthesize a game's rules as executable code - a Code World Model (CWM) - which a classical planner then searches over. Such models are typically accepted when they reach high transition",
       "tags": [
         "模型",
@@ -213,7 +200,7 @@
       "url": "https://arxiv.org/abs/2607.14178",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14178v1 Announce Type: new Abstract: Recent advances in Large Language Models have fueled autonomous AI agents capable of tackling complex scientific tasks, yet existing automated research systems remain predominantly focused on empirically driven d",
       "tags": [
         "模型",
@@ -228,7 +215,7 @@
       "url": "https://arxiv.org/abs/2607.14187",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14187v1 Announce Type: new Abstract: Embodied cognition requires agents to connect high-level task reasoning with the physical states to be achieved. We introduce Hy-Embodied-RxBrain, an embodied cognition foundation model with joint language-visual",
       "tags": [
         "模型",
@@ -243,7 +230,7 @@
       "url": "https://arxiv.org/abs/2607.14197",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14197v1 Announce Type: new Abstract: Artificial Intelligence (AI) answer engines now field a growing share of the questions that analysts, scholars, and the public ask about issues of peace and conflict. Large Language Models (LLMs) are known to hal",
       "tags": [
         "模型",
@@ -258,7 +245,7 @@
       "url": "https://arxiv.org/abs/2607.14240",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14240v1 Announce Type: new Abstract: Current alignment approaches typically focus on emulating human behavior using static representations of human preferences, failing to capture the dynamic, context-dependent nature of real-world human-AI interact",
       "tags": [
         "模型",
@@ -273,7 +260,7 @@
       "url": "https://arxiv.org/abs/2607.14246",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14246v1 Announce Type: new Abstract: Generative models are steered with knobs -- prompts, guidance scales, property tags. Turn one as hard as you like and, past a point, it stops moving the property you care about. We find that ceiling is not a shor",
       "tags": [
         "模型",
@@ -288,7 +275,7 @@
       "url": "https://arxiv.org/abs/2607.14256",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14256v1 Announce Type: new Abstract: Multimodal Large Language Models (MLLMs) are increasingly deployed for nuanced content safety and moderation tasks, yet they remain vulnerable to adversarial attacks and out-of-distribution edge cases. Traditiona",
       "tags": [
         "模型",
@@ -303,7 +290,7 @@
       "url": "https://arxiv.org/abs/2607.14275",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14275v1 Announce Type: new Abstract: Context engineering has become central to building reliable AI agents, yet it remains largely unmeasured. Agents do not fail in isolation: their behavior is shaped by the instructions, tools, memory, retrieved kn",
       "tags": [
         "Agent",
@@ -317,7 +304,7 @@
       "url": "https://arxiv.org/abs/2607.14301",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14301v1 Announce Type: new Abstract: As generative AI (GenAI) becomes increasingly embedded in undergraduate academic writing, how students rely on these tools, rather than simply whether they use them, has become a central question for learning, ac",
       "tags": [
         "模型",
@@ -331,7 +318,7 @@
       "url": "https://arxiv.org/abs/2607.14306",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14306v1 Announce Type: new Abstract: In this paper, we study the connection between an LLM's output distribution and the data used to train it. Specifically, we study the degree to which an LLM's next-token distribution agrees with the empirical nex",
       "tags": [
         "模型",
@@ -346,7 +333,7 @@
       "url": "https://arxiv.org/abs/2607.14309",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14309v1 Announce Type: new Abstract: The rapid development of Large Language Models (LLMs) and Artificial Intelligent (AI) powered autonomous agents has fundamentally changed the existing forms of software governance. In spite of the rigorous standa",
       "tags": [
         "模型",
@@ -361,7 +348,7 @@
       "url": "https://arxiv.org/abs/2607.14386",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14386v1 Announce Type: new Abstract: Data science tasks span from closed-ended information extraction to open-ended analysis, presenting significant challenges for automation. Recent AI agents powered by language models show promise for handling suc",
       "tags": [
         "模型",
@@ -376,7 +363,7 @@
       "url": "https://arxiv.org/abs/2607.14387",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14387v1 Announce Type: new Abstract: Validating autonomous driving systems requires diverse, regulation-compliant test scenarios. In simulation-based testing, scenarios are defined as executable scripts. Yet automatically generating such scripts fro",
       "tags": [
         "模型",
@@ -391,7 +378,7 @@
       "url": "https://arxiv.org/abs/2607.14391",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14391v1 Announce Type: new Abstract: This study concentrates on predicting stock prices in the Egyptian market, focusing on the EGX30, an influential financial hub in the Middle East. While most research focuses on global stocks, there's a growing n",
       "tags": [
         "模型",
@@ -406,7 +393,7 @@
       "url": "https://arxiv.org/abs/2607.14396",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14396v1 Announce Type: new Abstract: Product catalogs are the backbone of e-commerce sites, yet a large number of structured attributes (SAs) -- such as material, color, and shape -- often have missing values. Typically, SA values are extracted from",
       "tags": [
         "模型",
@@ -421,7 +408,7 @@
       "url": "https://arxiv.org/abs/2607.14399",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14399v1 Announce Type: new Abstract: Evaluations of language-model honesty read the model's verdicts as evidence about the model. We test the instrument instead. We built a text-adventure world where the game engine, not any model, knows whether the",
       "tags": [
         "模型",
@@ -436,7 +423,7 @@
       "url": "https://arxiv.org/abs/2607.14408",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14408v1 Announce Type: new Abstract: A self-evolving agentic loop repeatedly proposes a tweaked version of an agent (its prompt template or program) and accepts or rejects the change based on a per-iteration quality signal. Designing that signal is ",
       "tags": [
         "Agent",
@@ -450,7 +437,7 @@
       "url": "https://arxiv.org/abs/2607.14416",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14416v1 Announce Type: new Abstract: The interconnected nature of global financial systems makes them vulnerable to systemic risks, where the failure of a few institutions can trigger catastrophic cascading defaults. Traditional risk models often fa",
       "tags": [
         "模型",
@@ -465,7 +452,7 @@
       "url": "https://arxiv.org/abs/2607.14427",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14427v1 Announce Type: new Abstract: A depth-recurrent transformer applies a weight-tied core a variable number of times, and prior work has shown that training with a randomized recursion count yields one checkpoint usable across a range of inferen",
       "tags": [
         "模型",
@@ -480,7 +467,7 @@
       "url": "https://arxiv.org/abs/2607.14443",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14443v1 Announce Type: new Abstract: Computer-use agents are becoming capable software operators, but their interface to desktop applications is still often a brittle motor layer: they look at screenshots, predict coordinates, click, and hope that t",
       "tags": [
         "模型",
@@ -495,7 +482,7 @@
       "url": "https://arxiv.org/abs/2607.14485",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14485v1 Announce Type: new Abstract: Large language model (LLM)-based generative agents simulate human behavior through long-horizon decision-making processes that comprise intermediate steps such as planning, memory retrieval, reflection, and actio",
       "tags": [
         "模型",
@@ -510,7 +497,7 @@
       "url": "https://arxiv.org/abs/2607.14494",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14494v1 Announce Type: new Abstract: Complex knowledge base question answering (KBQA) is commonly approached through either information retrieval over a question-specific subgraph or semantic parsing into an executable logical form. We study the lat",
       "tags": [
         "模型",
@@ -525,8 +512,23 @@
       "url": "https://arxiv.org/abs/2607.14499",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-17T04:00:00.000Z",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
       "summary": "arXiv:2607.14499v1 Announce Type: new Abstract: Multi-modal Large Language Models (MLLMs) have made substantial advances on benchmarks, yet their real-world effectiveness remains uncertain. This gap stems from the fundamental misalignment between benchmarks in",
+      "tags": [
+        "模型",
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "10wno9r",
+      "title": "VLT: A Vision-Language-Time Series Multimodal Foundation Model for Industrial Intelligence",
+      "url": "https://arxiv.org/abs/2607.14510",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-07-18T04:00:00.000Z",
+      "summary": "arXiv:2607.14510v1 Announce Type: new Abstract: Industrial time series serve as the foundation for Prognostics and Health Management (PHM) to ensure the reliability and safety of industrial equipment such as aero-engines. However, existing approaches are typic",
       "tags": [
         "模型",
         "产品",
@@ -564,7 +566,7 @@
       "name": "arXiv cs.CL",
       "url": "https://export.arxiv.org/rss/cs.CL",
       "ok": true,
-      "count": 131
+      "count": 0
     }
   ],
   "warnings": []
