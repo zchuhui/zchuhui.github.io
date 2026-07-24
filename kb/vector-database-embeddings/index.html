@@ -1,0 +1,251 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>向量数据库与嵌入 · 庄楚辉</title><meta name="description" content="从 Embedding 原理到向量数据库选型，构建语义检索的底层基石。"><link rel="canonical" href="https://zchuhui.github.io/kb/vector-database-embeddings/"><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:title" content="向量数据库与嵌入 · 庄楚辉"><meta property="og:description" content="从 Embedding 原理到向量数据库选型，构建语义检索的底层基石。"><meta property="og:image" content="https://zchuhui.github.io/og.svg"><meta property="og:url" content="https://zchuhui.github.io/kb/vector-database-embeddings/"><meta name="twitter:card" content="summary_large_image"><meta name="generator" content="Astro v5.18.2"><link rel="stylesheet" href="/_astro/about.Dditgxr6.css">
+<style>.detail[data-astro-cid-amjbiojg]{max-width:46rem;padding-top:2rem}.breadcrumb[data-astro-cid-amjbiojg]{display:flex;align-items:center;gap:.5rem;font-family:var(--font-mono);font-size:.78rem;color:var(--color-ink-dim);margin-bottom:1.2rem}.breadcrumb[data-astro-cid-amjbiojg] a[data-astro-cid-amjbiojg]{color:var(--color-ink-dim);text-decoration:none}.breadcrumb[data-astro-cid-amjbiojg] a[data-astro-cid-amjbiojg]:hover{color:var(--color-cyan)}.bc-current[data-astro-cid-amjbiojg]{color:var(--color-violet)}.detail-head[data-astro-cid-amjbiojg]{margin:0 0 2rem}.detail-badges[data-astro-cid-amjbiojg]{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin-bottom:.7rem}.kb-cat[data-astro-cid-amjbiojg]{color:var(--color-violet);border-color:#a855f74d}.read-time[data-astro-cid-amjbiojg]{font-family:var(--font-mono);font-size:.72rem;color:var(--color-ink-dim)}.detail-title[data-astro-cid-amjbiojg]{font-size:clamp(1.9rem,4.5vw,2.6rem);font-weight:900;margin:0;line-height:1.2}.detail-desc[data-astro-cid-amjbiojg]{color:var(--color-ink-soft);font-size:1.05rem;line-height:1.7;margin:1rem 0}.detail-meta[data-astro-cid-amjbiojg]{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;margin-top:.8rem}.d-date[data-astro-cid-amjbiojg]{font-family:var(--font-mono);font-size:.8rem;color:var(--color-ink-dim);margin-right:.4rem}.detail-body[data-astro-cid-amjbiojg]{position:relative}.anchor[data-astro-cid-amjbiojg]{display:block;position:relative;top:-6rem;visibility:hidden}.toc[data-astro-cid-amjbiojg]{margin:0 0 2rem;padding:1rem 1.2rem;border-radius:.9rem;background:#ffffff0a;border:1px solid rgba(255,255,255,.08)}.toc-title[data-astro-cid-amjbiojg]{font-size:.85rem;font-weight:700;color:var(--color-ink);margin-bottom:.6rem}.toc[data-astro-cid-amjbiojg] ul[data-astro-cid-amjbiojg]{list-style:none;padding:0;margin:0}.toc[data-astro-cid-amjbiojg] li[data-astro-cid-amjbiojg]{margin:.35rem 0}.toc[data-astro-cid-amjbiojg] a[data-astro-cid-amjbiojg]{font-size:.85rem;color:var(--color-ink-soft);text-decoration:none}.toc[data-astro-cid-amjbiojg] a[data-astro-cid-amjbiojg]:hover{color:var(--color-cyan)}.toc[data-astro-cid-amjbiojg]:has(#toc-list:empty){display:none}.prose-space[data-astro-cid-amjbiojg] h2[data-astro-cid-amjbiojg]{scroll-margin-top:6rem}.page-nav[data-astro-cid-amjbiojg]{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.08)}.page-link[data-astro-cid-amjbiojg]{display:flex;flex-direction:column;padding:1rem 1.2rem;border-radius:.9rem;background:#ffffff0a;border:1px solid rgba(255,255,255,.08);text-decoration:none;transition:border-color .2s,background .2s}.page-link[data-astro-cid-amjbiojg]:hover{border-color:#a855f766;background:#ffffff0f}.page-link[data-astro-cid-amjbiojg].next{text-align:right}.page-label[data-astro-cid-amjbiojg]{font-family:var(--font-mono);font-size:.72rem;color:var(--color-ink-dim);margin-bottom:.3rem}.page-title[data-astro-cid-amjbiojg]{font-size:.95rem;font-weight:600;color:var(--color-ink)}@media(min-width:1100px){.detail[data-astro-cid-amjbiojg]{max-width:72rem}.detail-body[data-astro-cid-amjbiojg]{display:grid;grid-template-columns:1fr 16rem;gap:2.5rem}.toc[data-astro-cid-amjbiojg]{position:sticky;top:6rem;align-self:start;margin:0}}
+</style></head> <body> <canvas id="starfield" aria-hidden="true" data-astro-cid-ra7sfcwn></canvas>  <script type="module">const a=document.getElementById("starfield"),m=window.matchMedia("(prefers-reduced-motion: reduce)").matches;if(a){let s=function(){n=window.innerWidth,o=window.innerHeight,a.width=n*i,a.height=o*i,a.style.width=n+"px",a.style.height=o+"px",t.setTransform(i,0,0,i,0,0);const e=Math.min(160,Math.floor(n*o/9e3));h=Array.from({length:e},()=>({x:Math.random()*n,y:Math.random()*o,z:Math.random()*.8+.2,r:Math.random()*1.4+.3,hue:Math.random()>.5?188:270}))},d=function(){t.clearRect(0,0,n,o);for(const e of h){const c=e.x+(r.x-n/2)*.02*e.z,l=e.y+(r.y-o/2)*.02*e.z;t.beginPath(),t.arc(c,l,e.r*e.z,0,Math.PI*2),t.fillStyle=`hsla(${e.hue}, 90%, 70%, ${.25+e.z*.55})`,t.shadowBlur=8*e.z,t.shadowColor=`hsla(${e.hue}, 90%, 70%, 0.8)`,t.fill(),e.y-=e.z*.12,e.y<-2&&(e.y=o+2,e.x=Math.random()*n)}t.shadowBlur=0,m||requestAnimationFrame(d)};const t=a.getContext("2d");let n=0,o=0,i=Math.min(window.devicePixelRatio||1,2),h=[];const r={x:0,y:0};window.addEventListener("resize",s,{passive:!0}),window.addEventListener("mousemove",e=>{r.x=e.clientX,r.y=e.clientY},{passive:!0}),s(),d()}</script> <header class="nav-wrap" data-astro-cid-dmqpwcec> <nav class="container-x nav glass" data-astro-cid-dmqpwcec> <a href="/" class="brand" data-astro-cid-dmqpwcec> <span class="brand-dot" data-astro-cid-dmqpwcec></span> <span class="brand-name" data-astro-cid-dmqpwcec>庄楚辉</span> <span class="brand-tag" data-astro-cid-dmqpwcec>/ AI Builder</span> </a> <button id="nav-toggle" class="nav-toggle" aria-label="菜单" aria-expanded="false" data-astro-cid-dmqpwcec> <span data-astro-cid-dmqpwcec></span><span data-astro-cid-dmqpwcec></span><span data-astro-cid-dmqpwcec></span> </button> <ul id="nav-menu" class="nav-menu" data-astro-cid-dmqpwcec> <li data-astro-cid-dmqpwcec> <a href="/" class="nav-link" data-astro-cid-dmqpwcec>首页</a> </li><li data-astro-cid-dmqpwcec> <a href="/about" class="nav-link" data-astro-cid-dmqpwcec>关于</a> </li><li data-astro-cid-dmqpwcec> <a href="/projects" class="nav-link" data-astro-cid-dmqpwcec>项目</a> </li><li data-astro-cid-dmqpwcec> <a href="/blog" class="nav-link" data-astro-cid-dmqpwcec>文章</a> </li><li data-astro-cid-dmqpwcec> <a href="/news" class="nav-link" data-astro-cid-dmqpwcec>AI 要闻</a> </li><li data-astro-cid-dmqpwcec> <a href="/tools" class="nav-link" data-astro-cid-dmqpwcec>工具</a> </li><li data-astro-cid-dmqpwcec> <a href="/kb" class="nav-link active" data-astro-cid-dmqpwcec>知识库</a> </li> </ul> </nav> </header>  <script type="module">const e=document.getElementById("nav-toggle"),n=document.getElementById("nav-menu");e?.addEventListener("click",()=>{const t=n?.classList.toggle("open");e.setAttribute("aria-expanded",String(!!t))});</script> <main>  <article class="container-x detail" data-astro-cid-amjbiojg> <nav class="breadcrumb" aria-label="面包屑" data-astro-cid-amjbiojg> <a href="/" data-astro-cid-amjbiojg>首页</a> <span data-astro-cid-amjbiojg>/</span> <a href="/kb" data-astro-cid-amjbiojg>知识库</a> <span data-astro-cid-amjbiojg>/</span> <span class="bc-current" data-astro-cid-amjbiojg>应用范式</span> </nav> <header class="detail-head" data-astro-cid-amjbiojg> <div class="detail-badges" data-astro-cid-amjbiojg> <span class="chip kb-cat" data-astro-cid-amjbiojg>应用范式</span> <span class="diff-badge diff-mid" data-astro-cid-amjbiojg>进阶</span> <span class="read-time" data-astro-cid-amjbiojg>3 分钟阅读</span> </div> <h1 class="detail-title" data-astro-cid-amjbiojg>向量数据库与嵌入</h1> <p class="detail-desc" data-astro-cid-amjbiojg>从 Embedding 原理到向量数据库选型，构建语义检索的底层基石。</p> <div class="detail-meta" data-astro-cid-amjbiojg> <span class="d-date" data-astro-cid-amjbiojg>更新于 2026年7月5日</span> <span class="chip" data-astro-cid-amjbiojg>向量</span><span class="chip" data-astro-cid-amjbiojg>嵌入</span><span class="chip" data-astro-cid-amjbiojg>数据库</span><span class="chip" data-astro-cid-amjbiojg>检索</span> </div> </header> <div class="detail-body" data-astro-cid-amjbiojg> <aside class="toc" id="toc" data-astro-cid-amjbiojg> <div class="toc-title" data-astro-cid-amjbiojg>目录</div> <nav data-astro-cid-amjbiojg> <ul id="toc-list" data-astro-cid-amjbiojg></ul> </nav> </aside> <div class="prose-space" id="article-content" data-astro-cid-amjbiojg> <h2 id="什么是-embedding">什么是 Embedding</h2>
+<p>Embedding（嵌入）是把文本、图片等非结构化数据映射为固定维度的浮点向量，使语义相近的内容在向量空间中距离也相近。</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>"如何重置密码" → [0.12, -0.34, 0.56, ..., 0.78]  (1536 维)</span></span>
+<span class="line"><span>"忘记密码怎么办" → [0.11, -0.32, 0.55, ..., 0.77]  (语义相近，向量也相近)</span></span>
+<span class="line"><span>"今天的天气" → [-0.45, 0.23, -0.11, ..., 0.02]  (语义不同，向量差异大)</span></span></code></pre>
+<h2 id="相似度计算">相似度计算</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>度量</th><th>公式</th><th>特点</th></tr></thead><tbody><tr><td><strong>余弦相似度</strong></td><td>cos(a, b)</td><td>最常用，关注方向</td></tr><tr><td><strong>点积</strong></td><td>a · b</td><td>归一化后等价于余弦</td></tr><tr><td><strong>欧氏距离</strong></td><td>‖a - b‖</td><td>关注绝对距离</td></tr><tr><td><strong>L2 归一化点积</strong></td><td>归一化后点积</td><td>主流向量库默认</td></tr></tbody></table>
+<h2 id="主流-embedding-模型">主流 Embedding 模型</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>模型</th><th>维度</th><th>特点</th><th>适用</th></tr></thead><tbody><tr><td>OpenAI text-embedding-3-small</td><td>1536</td><td>通用、便宜</td><td>海外项目</td></tr><tr><td>OpenAI text-embedding-3-large</td><td>3072</td><td>精度高</td><td>高质量需求</td></tr><tr><td>BGE-M3</td><td>1024</td><td>开源、中英双语</td><td>国内项目、私有部署</td></tr><tr><td>Cohere embed-v3</td><td>1024</td><td>多语言</td><td>海外</td></tr><tr><td>Jina embeddings v3</td><td>1024</td><td>长文本友好</td><td>长文档检索</td></tr></tbody></table>
+<h3 id="选型建议">选型建议</h3>
+<ul>
+<li><strong>国内/私有部署</strong> → BGE-M3（开源、中文好）</li>
+<li><strong>海外 SaaS</strong> → OpenAI text-embedding-3-small（性价比高）</li>
+<li><strong>极致质量</strong> → OpenAI text-embedding-3-large 或 Cohere v3</li>
+</ul>
+<h2 id="向量数据库选型">向量数据库选型</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>数据库</th><th>类型</th><th>特点</th><th>适用规模</th></tr></thead><tbody><tr><td><strong>Chroma</strong></td><td>嵌入式</td><td>轻量、零配置</td><td>原型、小规模</td></tr><tr><td><strong>Qdrant</strong></td><td>独立服务</td><td>Rust 写、高性能</td><td>中大规模</td></tr><tr><td><strong>Milvus</strong></td><td>分布式</td><td>可水平扩展</td><td>大规模生产</td></tr><tr><td><strong>pgvector</strong></td><td>PostgreSQL 扩展</td><td>与业务库共用</td><td>已有 PG 的项目</td></tr><tr><td><strong>Pinecone</strong></td><td>托管 SaaS</td><td>全托管、省心</td><td>不想运维</td></tr><tr><td><strong>Weaviate</strong></td><td>独立服务</td><td>内置混合检索</td><td>多模态</td></tr></tbody></table>
+<h3 id="决策树">决策树</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>数据规模 &#x3C; 10 万条？</span></span>
+<span class="line"><span>├─ 是 → Chroma 或 pgvector</span></span>
+<span class="line"><span>└─ 否</span></span>
+<span class="line"><span>   ├─ 需要全托管？ → Pinecone</span></span>
+<span class="line"><span>   └─ 自建</span></span>
+<span class="line"><span>      ├─ 已有 PostgreSQL？ → pgvector</span></span>
+<span class="line"><span>      ├─ 需要混合检索？ → Weaviate / Qdrant</span></span>
+<span class="line"><span>      └─ 超大规模（亿级）？ → Milvus</span></span></code></pre>
+<h2 id="实战示例">实战示例</h2>
+<h3 id="python--chroma">Python + Chroma</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="python"><code><span class="line"><span style="color:#C792EA;font-style:italic">import</span><span style="color:#D6DEEB"> chromadb</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D6DEEB">client </span><span style="color:#C792EA">=</span><span style="color:#D6DEEB"> chromadb.</span><span style="color:#B2CCD6">PersistentClient</span><span style="color:#D6DEEB">(</span><span style="color:#D7DBE0">path</span><span style="color:#C792EA">=</span><span style="color:#D9F5DD">"</span><span style="color:#ECC48D">./vector_db</span><span style="color:#D9F5DD">"</span><span style="color:#D6DEEB">)</span></span>
+<span class="line"><span style="color:#D6DEEB">collection </span><span style="color:#C792EA">=</span><span style="color:#D6DEEB"> client.</span><span style="color:#B2CCD6">get_or_create_collection</span><span style="color:#D6DEEB">(</span><span style="color:#D9F5DD">"</span><span style="color:#ECC48D">docs</span><span style="color:#D9F5DD">"</span><span style="color:#D6DEEB">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#637777;font-style:italic"># 入库</span></span>
+<span class="line"><span style="color:#D6DEEB">collection.</span><span style="color:#B2CCD6">add</span><span style="color:#D6DEEB">(</span></span>
+<span class="line"><span style="color:#D7DBE0">    ids</span><span style="color:#C792EA">=</span><span style="color:#D9F5DD">[</span><span style="color:#D9F5DD">"</span><span style="color:#ECC48D">1</span><span style="color:#D9F5DD">"</span><span style="color:#82AAFF">, </span><span style="color:#D9F5DD">"</span><span style="color:#ECC48D">2</span><span style="color:#D9F5DD">"</span><span style="color:#D9F5DD">],</span></span>
+<span class="line"><span style="color:#D7DBE0">    documents</span><span style="color:#C792EA">=</span><span style="color:#D9F5DD">[</span><span style="color:#D9F5DD">"</span><span style="color:#ECC48D">如何重置密码</span><span style="color:#D9F5DD">"</span><span style="color:#82AAFF">, </span><span style="color:#D9F5DD">"</span><span style="color:#ECC48D">忘记密码怎么办</span><span style="color:#D9F5DD">"</span><span style="color:#D9F5DD">],</span></span>
+<span class="line"><span style="color:#D7DBE0">    metadatas</span><span style="color:#C792EA">=</span><span style="color:#D9F5DD">[</span><span style="color:#82AAFF">{</span><span style="color:#D9F5DD">"</span><span style="color:#ECC48D">source</span><span style="color:#D9F5DD">"</span><span style="color:#82AAFF">: </span><span style="color:#D9F5DD">"</span><span style="color:#ECC48D">faq.md</span><span style="color:#D9F5DD">"</span><span style="color:#82AAFF">}, {</span><span style="color:#D9F5DD">"</span><span style="color:#ECC48D">source</span><span style="color:#D9F5DD">"</span><span style="color:#82AAFF">: </span><span style="color:#D9F5DD">"</span><span style="color:#ECC48D">faq.md</span><span style="color:#D9F5DD">"</span><span style="color:#82AAFF">}</span><span style="color:#D9F5DD">],</span></span>
+<span class="line"><span style="color:#D6DEEB">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#637777;font-style:italic"># 检索</span></span>
+<span class="line"><span style="color:#D6DEEB">results </span><span style="color:#C792EA">=</span><span style="color:#D6DEEB"> collection.</span><span style="color:#B2CCD6">query</span><span style="color:#D6DEEB">(</span></span>
+<span class="line"><span style="color:#D7DBE0">    query_texts</span><span style="color:#C792EA">=</span><span style="color:#D9F5DD">[</span><span style="color:#D9F5DD">"</span><span style="color:#ECC48D">密码忘了</span><span style="color:#D9F5DD">"</span><span style="color:#D9F5DD">],</span></span>
+<span class="line"><span style="color:#D7DBE0">    n_results</span><span style="color:#C792EA">=</span><span style="color:#F78C6C">2</span><span style="color:#D9F5DD">,</span></span>
+<span class="line"><span style="color:#D6DEEB">)</span></span></code></pre>
+<h3 id="typescript--qdrant">TypeScript + Qdrant</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="typescript"><code><span class="line"><span style="color:#C792EA;font-style:italic">import</span><span style="color:#D6DEEB"> { QdrantClient } </span><span style="color:#C792EA;font-style:italic">from</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">@qdrant/js-client-rest</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#C792EA">const</span><span style="color:#82AAFF;font-style:italic"> client</span><span style="color:#C792EA"> =</span><span style="color:#7FDBCA"> new</span><span style="color:#82AAFF;font-style:italic"> QdrantClient</span><span style="color:#D6DEEB">(</span><span style="color:#C792EA">{</span><span style="color:#C792EA;font-style:italic"> url</span><span style="color:#C792EA">:</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">http://localhost:6333</span><span style="color:#D9F5DD">'</span><span style="color:#C792EA"> }</span><span style="color:#D6DEEB">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#C792EA;font-style:italic">await</span><span style="color:#D6DEEB"> client</span><span style="color:#C792EA;font-style:italic">.</span><span style="color:#82AAFF;font-style:italic">createCollection</span><span style="color:#D6DEEB">(</span><span style="color:#D9F5DD">'</span><span style="color:#ECC48D">docs</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB">, {</span></span>
+<span class="line"><span style="color:#D6DEEB">  vectors: { size: </span><span style="color:#F78C6C">1024</span><span style="color:#D6DEEB">, distance: </span><span style="color:#D9F5DD">'</span><span style="color:#ECC48D">Cosine</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB"> },</span></span>
+<span class="line"><span style="color:#D6DEEB">});</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#637777;font-style:italic">// 入库</span></span>
+<span class="line"><span style="color:#C792EA;font-style:italic">await</span><span style="color:#D6DEEB"> client</span><span style="color:#C792EA;font-style:italic">.</span><span style="color:#82AAFF;font-style:italic">upsert</span><span style="color:#D6DEEB">(</span><span style="color:#D9F5DD">'</span><span style="color:#ECC48D">docs</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB">, {</span></span>
+<span class="line"><span style="color:#D6DEEB">  points: [</span></span>
+<span class="line"><span style="color:#D6DEEB">    { id: </span><span style="color:#F78C6C">1</span><span style="color:#D6DEEB">, vector: embedding1, payload: { text: </span><span style="color:#D9F5DD">'</span><span style="color:#ECC48D">...</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB">, source: </span><span style="color:#D9F5DD">'</span><span style="color:#ECC48D">a.md</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB"> } },</span></span>
+<span class="line"><span style="color:#D6DEEB">  ],</span></span>
+<span class="line"><span style="color:#D6DEEB">});</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#637777;font-style:italic">// 检索</span></span>
+<span class="line"><span style="color:#C792EA">const</span><span style="color:#82AAFF;font-style:italic"> results</span><span style="color:#C792EA"> =</span><span style="color:#C792EA;font-style:italic"> await </span><span style="color:#D6DEEB;font-style:italic">client</span><span style="color:#C792EA;font-style:italic">.</span><span style="color:#82AAFF;font-style:italic">search</span><span style="color:#D6DEEB">(</span><span style="color:#D9F5DD">'</span><span style="color:#ECC48D">docs</span><span style="color:#D9F5DD">'</span><span style="color:#C792EA">,</span><span style="color:#C792EA"> {</span></span>
+<span class="line"><span style="color:#C792EA;font-style:italic">  vector</span><span style="color:#C792EA">:</span><span style="color:#D6DEEB;font-style:italic"> queryEmbedding</span><span style="color:#C792EA">,</span></span>
+<span class="line"><span style="color:#C792EA;font-style:italic">  limit</span><span style="color:#C792EA">:</span><span style="color:#F78C6C"> 5</span><span style="color:#C792EA">,</span></span>
+<span class="line"><span style="color:#C792EA;font-style:italic">  filter</span><span style="color:#C792EA">:</span><span style="color:#C792EA"> {</span><span style="color:#C792EA;font-style:italic"> must</span><span style="color:#C792EA">:</span><span style="color:#D6DEEB"> [{</span><span style="color:#D6DEEB;font-style:italic"> key</span><span style="color:#D6DEEB">:</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">source</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB">,</span><span style="color:#D6DEEB;font-style:italic"> match</span><span style="color:#D6DEEB">:</span><span style="color:#D6DEEB"> {</span><span style="color:#D6DEEB;font-style:italic"> value</span><span style="color:#D6DEEB">:</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">a.md</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB"> }</span><span style="color:#D6DEEB"> }]</span><span style="color:#C792EA"> },</span></span>
+<span class="line"><span style="color:#C792EA">}</span><span style="color:#D6DEEB">);</span></span></code></pre>
+<h2 id="性能优化">性能优化</h2>
+<h3 id="索引算法">索引算法</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>算法</th><th>原理</th><th>特点</th></tr></thead><tbody><tr><td><strong>HNSW</strong></td><td>分层小世界图</td><td>查询快、内存高，主流选择</td></tr><tr><td><strong>IVF</strong></td><td>倒排文件</td><td>内存省、需训练</td></tr><tr><td><strong>PQ</strong></td><td>乘积量化</td><td>压缩向量、精度有损</td></tr><tr><td><strong>HNSW + PQ</strong></td><td>组合</td><td>平衡速度与内存</td></tr></tbody></table>
+<h3 id="实战技巧">实战技巧</h3>
+<ol>
+<li><strong>批量入库</strong>：单次请求 100-1000 条，避免逐条写入。</li>
+<li><strong>异步 embedding</strong>：先批量生成向量再入库，避免阻塞。</li>
+<li><strong>过滤前置</strong>：用 metadata filter 先缩小范围再向量搜索。</li>
+<li><strong>分区集合</strong>：按业务域分 collection，避免跨域噪声。</li>
+<li><strong>缓存热点</strong>：高频查询结果缓存。</li>
+</ol>
+<h2 id="常见问题">常见问题</h2>
+<h3 id="q-向量维度怎么选">Q: 向量维度怎么选？</h3>
+<p>维度越高表达力越强，但内存和计算成本也越高。1024 是性价比之选，3072 适合极致质量。</p>
+<h3 id="q-为什么我的检索效果差">Q: 为什么我的检索效果差？</h3>
+<ul>
+<li>检查 embedding 模型是否匹配语言（中文用 BGE，英文用 OpenAI）</li>
+<li>检查分块策略是否合理</li>
+<li>尝试混合检索（向量 + BM25）</li>
+<li>加 Rerank</li>
+</ul>
+<h3 id="q-数据更新怎么办">Q: 数据更新怎么办？</h3>
+<ul>
+<li>增量：新数据直接 upsert</li>
+<li>修改：按 id 删除旧向量，插入新的</li>
+<li>删除：按 id 或 filter 删除</li>
+</ul>
+<h2 id="相关条目">相关条目</h2>
+<ul>
+<li><a href="../what-is-rag">什么是 RAG</a></li>
+<li><a href="../context-engineering">上下文工程</a></li>
+<li><a href="../ai-programming-basics">AI 编程基础概念</a></li>
+<li><a href="../llm-api-integration">LLM API 集成实践</a></li>
+</ul> </div> </div> <nav class="page-nav" data-astro-cid-amjbiojg> <a href="/kb/what-is-rag" class="page-link prev" data-astro-cid-amjbiojg> <span class="page-label" data-astro-cid-amjbiojg>← 上一篇</span> <span class="page-title" data-astro-cid-amjbiojg>什么是 RAG（检索增强生成）</span> </a> <a href="/kb/agent-development" class="page-link next" data-astro-cid-amjbiojg> <span class="page-label" data-astro-cid-amjbiojg>下一篇 →</span> <span class="page-title" data-astro-cid-amjbiojg>Agent 智能体开发</span> </a> </nav> </article>  </main> <footer class="footer" data-astro-cid-sz7xmlte> <div class="container-x footer-inner glass" data-astro-cid-sz7xmlte> <div data-astro-cid-sz7xmlte> <p class="f-name text-gradient" data-astro-cid-sz7xmlte>庄楚辉</p> <p class="f-desc" data-astro-cid-sz7xmlte>一名 AI Builder —— 构建智能产品、分享思考与知识。</p> </div> <div class="f-socials" data-astro-cid-sz7xmlte> <a href="https://github.com/zchuhui" target="_blank" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>GitHub</a><a href="https://x.com/zch94622737" target="_blank" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>X</a><a href="mailto:943339564g@gmail.com" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>Email</a> </div> </div> <p class="f-copy" data-astro-cid-sz7xmlte>© 2026 庄楚辉 · Built with Astro · 部署于 GitHub Pages</p> </footer>  <!-- 全局滚动揭示 --> <script type="module">const s=new IntersectionObserver(e=>{for(const r of e)r.isIntersecting&&(r.target.classList.add("is-visible"),s.unobserve(r.target))},{threshold:.12});document.querySelectorAll(".reveal").forEach(e=>s.observe(e));</script> </body> </html>  <script type="module">(function(){const o=document.getElementById("article-content"),c=document.getElementById("toc-list");if(!o||!c)return;const l=Array.from(o.querySelectorAll("h2"));if(l.length===0){document.getElementById("toc")?.style.setProperty("display","none");return}const i=e=>e.toLowerCase().trim().replace(/\s+/g,"-").replace(/[^a-z0-9\u4e00-\u9fa5-]/g,""),a=new Set;l.forEach(e=>{let r=i(e.textContent??""),t=r||"heading",s=1;for(;a.has(t);)t=`${r}-${s++}`;a.add(t),e.id=t;const d=document.createElement("li"),n=document.createElement("a");n.href="#"+t,n.textContent=e.textContent??"",d.appendChild(n),c.appendChild(d)})})();</script>

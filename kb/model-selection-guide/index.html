@@ -1,0 +1,166 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>AI 模型选型指南 · 庄楚辉</title><meta name="description" content="从任务类型、上下文、工具调用、成本和部署约束出发，建立可复用的模型选择方法。"><link rel="canonical" href="https://zchuhui.github.io/kb/model-selection-guide/"><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:title" content="AI 模型选型指南 · 庄楚辉"><meta property="og:description" content="从任务类型、上下文、工具调用、成本和部署约束出发，建立可复用的模型选择方法。"><meta property="og:image" content="https://zchuhui.github.io/og.svg"><meta property="og:url" content="https://zchuhui.github.io/kb/model-selection-guide/"><meta name="twitter:card" content="summary_large_image"><meta name="generator" content="Astro v5.18.2"><link rel="stylesheet" href="/_astro/about.Dditgxr6.css">
+<style>.detail[data-astro-cid-amjbiojg]{max-width:46rem;padding-top:2rem}.breadcrumb[data-astro-cid-amjbiojg]{display:flex;align-items:center;gap:.5rem;font-family:var(--font-mono);font-size:.78rem;color:var(--color-ink-dim);margin-bottom:1.2rem}.breadcrumb[data-astro-cid-amjbiojg] a[data-astro-cid-amjbiojg]{color:var(--color-ink-dim);text-decoration:none}.breadcrumb[data-astro-cid-amjbiojg] a[data-astro-cid-amjbiojg]:hover{color:var(--color-cyan)}.bc-current[data-astro-cid-amjbiojg]{color:var(--color-violet)}.detail-head[data-astro-cid-amjbiojg]{margin:0 0 2rem}.detail-badges[data-astro-cid-amjbiojg]{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin-bottom:.7rem}.kb-cat[data-astro-cid-amjbiojg]{color:var(--color-violet);border-color:#a855f74d}.read-time[data-astro-cid-amjbiojg]{font-family:var(--font-mono);font-size:.72rem;color:var(--color-ink-dim)}.detail-title[data-astro-cid-amjbiojg]{font-size:clamp(1.9rem,4.5vw,2.6rem);font-weight:900;margin:0;line-height:1.2}.detail-desc[data-astro-cid-amjbiojg]{color:var(--color-ink-soft);font-size:1.05rem;line-height:1.7;margin:1rem 0}.detail-meta[data-astro-cid-amjbiojg]{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;margin-top:.8rem}.d-date[data-astro-cid-amjbiojg]{font-family:var(--font-mono);font-size:.8rem;color:var(--color-ink-dim);margin-right:.4rem}.detail-body[data-astro-cid-amjbiojg]{position:relative}.anchor[data-astro-cid-amjbiojg]{display:block;position:relative;top:-6rem;visibility:hidden}.toc[data-astro-cid-amjbiojg]{margin:0 0 2rem;padding:1rem 1.2rem;border-radius:.9rem;background:#ffffff0a;border:1px solid rgba(255,255,255,.08)}.toc-title[data-astro-cid-amjbiojg]{font-size:.85rem;font-weight:700;color:var(--color-ink);margin-bottom:.6rem}.toc[data-astro-cid-amjbiojg] ul[data-astro-cid-amjbiojg]{list-style:none;padding:0;margin:0}.toc[data-astro-cid-amjbiojg] li[data-astro-cid-amjbiojg]{margin:.35rem 0}.toc[data-astro-cid-amjbiojg] a[data-astro-cid-amjbiojg]{font-size:.85rem;color:var(--color-ink-soft);text-decoration:none}.toc[data-astro-cid-amjbiojg] a[data-astro-cid-amjbiojg]:hover{color:var(--color-cyan)}.toc[data-astro-cid-amjbiojg]:has(#toc-list:empty){display:none}.prose-space[data-astro-cid-amjbiojg] h2[data-astro-cid-amjbiojg]{scroll-margin-top:6rem}.page-nav[data-astro-cid-amjbiojg]{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.08)}.page-link[data-astro-cid-amjbiojg]{display:flex;flex-direction:column;padding:1rem 1.2rem;border-radius:.9rem;background:#ffffff0a;border:1px solid rgba(255,255,255,.08);text-decoration:none;transition:border-color .2s,background .2s}.page-link[data-astro-cid-amjbiojg]:hover{border-color:#a855f766;background:#ffffff0f}.page-link[data-astro-cid-amjbiojg].next{text-align:right}.page-label[data-astro-cid-amjbiojg]{font-family:var(--font-mono);font-size:.72rem;color:var(--color-ink-dim);margin-bottom:.3rem}.page-title[data-astro-cid-amjbiojg]{font-size:.95rem;font-weight:600;color:var(--color-ink)}@media(min-width:1100px){.detail[data-astro-cid-amjbiojg]{max-width:72rem}.detail-body[data-astro-cid-amjbiojg]{display:grid;grid-template-columns:1fr 16rem;gap:2.5rem}.toc[data-astro-cid-amjbiojg]{position:sticky;top:6rem;align-self:start;margin:0}}
+</style></head> <body> <canvas id="starfield" aria-hidden="true" data-astro-cid-ra7sfcwn></canvas>  <script type="module">const a=document.getElementById("starfield"),m=window.matchMedia("(prefers-reduced-motion: reduce)").matches;if(a){let s=function(){n=window.innerWidth,o=window.innerHeight,a.width=n*i,a.height=o*i,a.style.width=n+"px",a.style.height=o+"px",t.setTransform(i,0,0,i,0,0);const e=Math.min(160,Math.floor(n*o/9e3));h=Array.from({length:e},()=>({x:Math.random()*n,y:Math.random()*o,z:Math.random()*.8+.2,r:Math.random()*1.4+.3,hue:Math.random()>.5?188:270}))},d=function(){t.clearRect(0,0,n,o);for(const e of h){const c=e.x+(r.x-n/2)*.02*e.z,l=e.y+(r.y-o/2)*.02*e.z;t.beginPath(),t.arc(c,l,e.r*e.z,0,Math.PI*2),t.fillStyle=`hsla(${e.hue}, 90%, 70%, ${.25+e.z*.55})`,t.shadowBlur=8*e.z,t.shadowColor=`hsla(${e.hue}, 90%, 70%, 0.8)`,t.fill(),e.y-=e.z*.12,e.y<-2&&(e.y=o+2,e.x=Math.random()*n)}t.shadowBlur=0,m||requestAnimationFrame(d)};const t=a.getContext("2d");let n=0,o=0,i=Math.min(window.devicePixelRatio||1,2),h=[];const r={x:0,y:0};window.addEventListener("resize",s,{passive:!0}),window.addEventListener("mousemove",e=>{r.x=e.clientX,r.y=e.clientY},{passive:!0}),s(),d()}</script> <header class="nav-wrap" data-astro-cid-dmqpwcec> <nav class="container-x nav glass" data-astro-cid-dmqpwcec> <a href="/" class="brand" data-astro-cid-dmqpwcec> <span class="brand-dot" data-astro-cid-dmqpwcec></span> <span class="brand-name" data-astro-cid-dmqpwcec>庄楚辉</span> <span class="brand-tag" data-astro-cid-dmqpwcec>/ AI Builder</span> </a> <button id="nav-toggle" class="nav-toggle" aria-label="菜单" aria-expanded="false" data-astro-cid-dmqpwcec> <span data-astro-cid-dmqpwcec></span><span data-astro-cid-dmqpwcec></span><span data-astro-cid-dmqpwcec></span> </button> <ul id="nav-menu" class="nav-menu" data-astro-cid-dmqpwcec> <li data-astro-cid-dmqpwcec> <a href="/" class="nav-link" data-astro-cid-dmqpwcec>首页</a> </li><li data-astro-cid-dmqpwcec> <a href="/about" class="nav-link" data-astro-cid-dmqpwcec>关于</a> </li><li data-astro-cid-dmqpwcec> <a href="/projects" class="nav-link" data-astro-cid-dmqpwcec>项目</a> </li><li data-astro-cid-dmqpwcec> <a href="/blog" class="nav-link" data-astro-cid-dmqpwcec>文章</a> </li><li data-astro-cid-dmqpwcec> <a href="/news" class="nav-link" data-astro-cid-dmqpwcec>AI 要闻</a> </li><li data-astro-cid-dmqpwcec> <a href="/tools" class="nav-link" data-astro-cid-dmqpwcec>工具</a> </li><li data-astro-cid-dmqpwcec> <a href="/kb" class="nav-link active" data-astro-cid-dmqpwcec>知识库</a> </li> </ul> </nav> </header>  <script type="module">const e=document.getElementById("nav-toggle"),n=document.getElementById("nav-menu");e?.addEventListener("click",()=>{const t=n?.classList.toggle("open");e.setAttribute("aria-expanded",String(!!t))});</script> <main>  <article class="container-x detail" data-astro-cid-amjbiojg> <nav class="breadcrumb" aria-label="面包屑" data-astro-cid-amjbiojg> <a href="/" data-astro-cid-amjbiojg>首页</a> <span data-astro-cid-amjbiojg>/</span> <a href="/kb" data-astro-cid-amjbiojg>知识库</a> <span data-astro-cid-amjbiojg>/</span> <span class="bc-current" data-astro-cid-amjbiojg>基础概念</span> </nav> <header class="detail-head" data-astro-cid-amjbiojg> <div class="detail-badges" data-astro-cid-amjbiojg> <span class="chip kb-cat" data-astro-cid-amjbiojg>基础概念</span> <span class="diff-badge diff-mid" data-astro-cid-amjbiojg>进阶</span> <span class="read-time" data-astro-cid-amjbiojg>4 分钟阅读</span> </div> <h1 class="detail-title" data-astro-cid-amjbiojg>AI 模型选型指南</h1> <p class="detail-desc" data-astro-cid-amjbiojg>从任务类型、上下文、工具调用、成本和部署约束出发，建立可复用的模型选择方法。</p> <div class="detail-meta" data-astro-cid-amjbiojg> <span class="d-date" data-astro-cid-amjbiojg>更新于 2026年7月5日</span> <span class="chip" data-astro-cid-amjbiojg>模型选型</span><span class="chip" data-astro-cid-amjbiojg>LLM</span><span class="chip" data-astro-cid-amjbiojg>成本</span><span class="chip" data-astro-cid-amjbiojg>推理</span> </div> </header> <div class="detail-body" data-astro-cid-amjbiojg> <aside class="toc" id="toc" data-astro-cid-amjbiojg> <div class="toc-title" data-astro-cid-amjbiojg>目录</div> <nav data-astro-cid-amjbiojg> <ul id="toc-list" data-astro-cid-amjbiojg></ul> </nav> </aside> <div class="prose-space" id="article-content" data-astro-cid-amjbiojg> <h2 id="先看任务不先看榜单">先看任务，不先看榜单</h2>
+<p>模型选型最常见的误区，是一上来问“哪个模型最强”。真实项目里更重要的问题是：</p>
+<ul>
+<li>任务是否需要强推理？</li>
+<li>是否需要读很长的上下文？</li>
+<li>是否需要工具调用或结构化输出？</li>
+<li>是否需要稳定低延迟？</li>
+<li>数据能不能出境？</li>
+<li>成本能不能被业务承受？</li>
+</ul>
+<p>一个模型在排行榜上很强，不代表它适合你的场景。选型的目标不是“用最强模型”，而是“用刚好能稳定完成任务的模型”。</p>
+<h2 id="五类典型任务">五类典型任务</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>任务类型</th><th>关键能力</th><th>模型选择</th></tr></thead><tbody><tr><td>日常问答 / 摘要</td><td>速度、成本、中文表达</td><td>快模型、通用模型</td></tr><tr><td>代码生成 / 调试</td><td>指令跟随、代码上下文、工具调用</td><td>编程优化模型</td></tr><tr><td>复杂规划 / 架构</td><td>推理深度、长上下文</td><td>强推理模型</td></tr><tr><td>RAG 问答</td><td>忠实引用、低幻觉</td><td>通用模型 + 好检索</td></tr><tr><td>Agent 自动执行</td><td>工具调用、错误恢复、长任务稳定性</td><td>Agent 友好模型</td></tr></tbody></table>
+<h2 id="选型维度">选型维度</h2>
+<h3 id="1-质量">1. 质量</h3>
+<p>质量不是“回答看起来聪明”，而是能否稳定满足你的业务标准。</p>
+<p>评估重点：</p>
+<ul>
+<li>事实是否正确</li>
+<li>是否遵守输出格式</li>
+<li>是否能处理边界情况</li>
+<li>是否会编造不存在的 API、字段、文件</li>
+<li>是否能基于工具结果修正判断</li>
+</ul>
+<h3 id="2-上下文长度">2. 上下文长度</h3>
+<p>长上下文适合：</p>
+<ul>
+<li>阅读大型代码库</li>
+<li>分析长合同、长报告</li>
+<li>多轮对话记忆</li>
+<li>一次性塞入大量日志</li>
+</ul>
+<p>但长上下文不是免费午餐。上下文越长，成本越高，噪声越多，模型越可能抓不住重点。很多时候，好的检索和摘要比盲目塞满上下文更可靠。</p>
+<h3 id="3-工具调用">3. 工具调用</h3>
+<p>Agent 场景优先看工具调用能力：</p>
+<ul>
+<li>是否能稳定选择正确工具</li>
+<li>参数是否符合 schema</li>
+<li>工具失败后能否重试或换方案</li>
+<li>是否会循环调用同一工具</li>
+<li>是否能区分“工具事实”和“自己猜测”</li>
+</ul>
+<p>如果模型工具调用不稳定，再强的自然语言能力也很难落地。</p>
+<h3 id="4-成本和延迟">4. 成本和延迟</h3>
+<p>把任务分层：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>层级</th><th>任务</th><th>推荐策略</th></tr></thead><tbody><tr><td>L1</td><td>分类、改写、摘要</td><td>快模型</td></tr><tr><td>L2</td><td>普通代码、结构化提取</td><td>中等模型</td></tr><tr><td>L3</td><td>复杂推理、架构、Agent</td><td>强模型</td></tr></tbody></table>
+<p>不要让所有请求默认走最贵模型。生产系统通常要做路由：简单任务走快模型，失败或不确定时再升级到强模型。</p>
+<h3 id="5-数据与部署">5. 数据与部署</h3>
+<p>如果涉及客户数据、源代码、财务、医疗、合同，应优先确认：</p>
+<ul>
+<li>数据是否允许发到第三方 API</li>
+<li>是否需要私有化或本地部署</li>
+<li>是否有审计日志</li>
+<li>是否能做密钥隔离和访问控制</li>
+<li>是否满足所在行业的合规要求</li>
+</ul>
+<h2 id="决策流程">决策流程</h2>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>任务是否高风险？</span></span>
+<span class="line"><span>├─ 是 → 先确认合规与人工审核，不直接自动化</span></span>
+<span class="line"><span>└─ 否</span></span>
+<span class="line"><span>   ├─ 是否需要长上下文？</span></span>
+<span class="line"><span>   │  ├─ 是 → 长上下文模型 / RAG / 摘要压缩</span></span>
+<span class="line"><span>   │  └─ 否</span></span>
+<span class="line"><span>   ├─ 是否需要工具调用？</span></span>
+<span class="line"><span>   │  ├─ 是 → Agent 友好模型</span></span>
+<span class="line"><span>   │  └─ 否</span></span>
+<span class="line"><span>   ├─ 是否对延迟敏感？</span></span>
+<span class="line"><span>   │  ├─ 是 → 快模型优先，必要时降级质量</span></span>
+<span class="line"><span>   │  └─ 否 → 质量优先</span></span></code></pre>
+<h2 id="最小评测集">最小评测集</h2>
+<p>选模型前，先做一个 30-50 条的小评测集。每条包含：</p>
+<ul>
+<li>输入</li>
+<li>理想输出</li>
+<li>禁止行为</li>
+<li>判断标准</li>
+<li>真实业务样例</li>
+</ul>
+<p>示例：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="yaml"><code><span class="line"><span style="color:#D6DEEB">- </span><span style="color:#7FDBCA">id</span><span style="color:#D6DEEB">: </span><span style="color:#ECC48D">code-review-001</span></span>
+<span class="line"><span style="color:#7FDBCA">  task</span><span style="color:#D6DEEB">: </span><span style="color:#ECC48D">审查一段 Express 登录接口</span></span>
+<span class="line"><span style="color:#7FDBCA">  must_find</span><span style="color:#D6DEEB">:</span></span>
+<span class="line"><span style="color:#D6DEEB">    - </span><span style="color:#ECC48D">密码错误不应暴露用户是否存在</span></span>
+<span class="line"><span style="color:#D6DEEB">    - </span><span style="color:#ECC48D">缺少限流</span></span>
+<span class="line"><span style="color:#7FDBCA">  must_not</span><span style="color:#D6DEEB">:</span></span>
+<span class="line"><span style="color:#D6DEEB">    - </span><span style="color:#ECC48D">编造不存在的中间件</span></span>
+<span class="line"><span style="color:#7FDBCA">  score</span><span style="color:#D6DEEB">:</span></span>
+<span class="line"><span style="color:#7FDBCA">    correctness</span><span style="color:#D6DEEB">: </span><span style="color:#ECC48D">0-5</span></span>
+<span class="line"><span style="color:#7FDBCA">    usefulness</span><span style="color:#D6DEEB">: </span><span style="color:#ECC48D">0-5</span></span>
+<span class="line"><span style="color:#7FDBCA">    format</span><span style="color:#D6DEEB">: </span><span style="color:#ECC48D">0-2</span></span></code></pre>
+<h2 id="常见错误">常见错误</h2>
+<ul>
+<li><strong>只看榜单</strong>：榜单任务和你的业务任务通常不同。</li>
+<li><strong>只测一次</strong>：模型输出有波动，要多样本、多轮测试。</li>
+<li><strong>忽略失败成本</strong>：客服、财务、代码自动修改这类场景，错一次代价很高。</li>
+<li><strong>不做路由</strong>：所有任务都走一个模型，成本和质量都不稳。</li>
+<li><strong>不记录版本</strong>：模型升级后行为变化，必须记录模型名、版本、提示词和评测结果。</li>
+</ul>
+<h2 id="相关条目">相关条目</h2>
+<ul>
+<li><a href="../llm-api-integration">LLM API 集成实践</a></li>
+<li><a href="../context-engineering">上下文工程</a></li>
+<li><a href="../ai-coding-tools">AI 编程工具与助手</a></li>
+</ul> </div> </div> <nav class="page-nav" data-astro-cid-amjbiojg> <a href="/kb/context-engineering" class="page-link prev" data-astro-cid-amjbiojg> <span class="page-label" data-astro-cid-amjbiojg>← 上一篇</span> <span class="page-title" data-astro-cid-amjbiojg>上下文工程</span> </a> <a href="/kb/what-is-rag" class="page-link next" data-astro-cid-amjbiojg> <span class="page-label" data-astro-cid-amjbiojg>下一篇 →</span> <span class="page-title" data-astro-cid-amjbiojg>什么是 RAG（检索增强生成）</span> </a> </nav> </article>  </main> <footer class="footer" data-astro-cid-sz7xmlte> <div class="container-x footer-inner glass" data-astro-cid-sz7xmlte> <div data-astro-cid-sz7xmlte> <p class="f-name text-gradient" data-astro-cid-sz7xmlte>庄楚辉</p> <p class="f-desc" data-astro-cid-sz7xmlte>一名 AI Builder —— 构建智能产品、分享思考与知识。</p> </div> <div class="f-socials" data-astro-cid-sz7xmlte> <a href="https://github.com/zchuhui" target="_blank" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>GitHub</a><a href="https://x.com/zch94622737" target="_blank" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>X</a><a href="mailto:943339564g@gmail.com" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>Email</a> </div> </div> <p class="f-copy" data-astro-cid-sz7xmlte>© 2026 庄楚辉 · Built with Astro · 部署于 GitHub Pages</p> </footer>  <!-- 全局滚动揭示 --> <script type="module">const s=new IntersectionObserver(e=>{for(const r of e)r.isIntersecting&&(r.target.classList.add("is-visible"),s.unobserve(r.target))},{threshold:.12});document.querySelectorAll(".reveal").forEach(e=>s.observe(e));</script> </body> </html>  <script type="module">(function(){const o=document.getElementById("article-content"),c=document.getElementById("toc-list");if(!o||!c)return;const l=Array.from(o.querySelectorAll("h2"));if(l.length===0){document.getElementById("toc")?.style.setProperty("display","none");return}const i=e=>e.toLowerCase().trim().replace(/\s+/g,"-").replace(/[^a-z0-9\u4e00-\u9fa5-]/g,""),a=new Set;l.forEach(e=>{let r=i(e.textContent??""),t=r||"heading",s=1;for(;a.has(t);)t=`${r}-${s++}`;a.add(t),e.id=t;const d=document.createElement("li"),n=document.createElement("a");n.href="#"+t,n.textContent=e.textContent??"",d.appendChild(n),c.appendChild(d)})})();</script>

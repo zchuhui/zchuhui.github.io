@@ -1,0 +1,191 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>MCP 与 Skill 使用指南 · 庄楚辉</title><meta name="description" content="理解 MCP、工具调用和 Skill 的边界，学会把外部系统和可复用经验接入 Agent。"><link rel="canonical" href="https://zchuhui.github.io/kb/mcp-skill-guide/"><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:title" content="MCP 与 Skill 使用指南 · 庄楚辉"><meta property="og:description" content="理解 MCP、工具调用和 Skill 的边界，学会把外部系统和可复用经验接入 Agent。"><meta property="og:image" content="https://zchuhui.github.io/og.svg"><meta property="og:url" content="https://zchuhui.github.io/kb/mcp-skill-guide/"><meta name="twitter:card" content="summary_large_image"><meta name="generator" content="Astro v5.18.2"><link rel="stylesheet" href="/_astro/about.Dditgxr6.css">
+<style>.detail[data-astro-cid-amjbiojg]{max-width:46rem;padding-top:2rem}.breadcrumb[data-astro-cid-amjbiojg]{display:flex;align-items:center;gap:.5rem;font-family:var(--font-mono);font-size:.78rem;color:var(--color-ink-dim);margin-bottom:1.2rem}.breadcrumb[data-astro-cid-amjbiojg] a[data-astro-cid-amjbiojg]{color:var(--color-ink-dim);text-decoration:none}.breadcrumb[data-astro-cid-amjbiojg] a[data-astro-cid-amjbiojg]:hover{color:var(--color-cyan)}.bc-current[data-astro-cid-amjbiojg]{color:var(--color-violet)}.detail-head[data-astro-cid-amjbiojg]{margin:0 0 2rem}.detail-badges[data-astro-cid-amjbiojg]{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin-bottom:.7rem}.kb-cat[data-astro-cid-amjbiojg]{color:var(--color-violet);border-color:#a855f74d}.read-time[data-astro-cid-amjbiojg]{font-family:var(--font-mono);font-size:.72rem;color:var(--color-ink-dim)}.detail-title[data-astro-cid-amjbiojg]{font-size:clamp(1.9rem,4.5vw,2.6rem);font-weight:900;margin:0;line-height:1.2}.detail-desc[data-astro-cid-amjbiojg]{color:var(--color-ink-soft);font-size:1.05rem;line-height:1.7;margin:1rem 0}.detail-meta[data-astro-cid-amjbiojg]{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;margin-top:.8rem}.d-date[data-astro-cid-amjbiojg]{font-family:var(--font-mono);font-size:.8rem;color:var(--color-ink-dim);margin-right:.4rem}.detail-body[data-astro-cid-amjbiojg]{position:relative}.anchor[data-astro-cid-amjbiojg]{display:block;position:relative;top:-6rem;visibility:hidden}.toc[data-astro-cid-amjbiojg]{margin:0 0 2rem;padding:1rem 1.2rem;border-radius:.9rem;background:#ffffff0a;border:1px solid rgba(255,255,255,.08)}.toc-title[data-astro-cid-amjbiojg]{font-size:.85rem;font-weight:700;color:var(--color-ink);margin-bottom:.6rem}.toc[data-astro-cid-amjbiojg] ul[data-astro-cid-amjbiojg]{list-style:none;padding:0;margin:0}.toc[data-astro-cid-amjbiojg] li[data-astro-cid-amjbiojg]{margin:.35rem 0}.toc[data-astro-cid-amjbiojg] a[data-astro-cid-amjbiojg]{font-size:.85rem;color:var(--color-ink-soft);text-decoration:none}.toc[data-astro-cid-amjbiojg] a[data-astro-cid-amjbiojg]:hover{color:var(--color-cyan)}.toc[data-astro-cid-amjbiojg]:has(#toc-list:empty){display:none}.prose-space[data-astro-cid-amjbiojg] h2[data-astro-cid-amjbiojg]{scroll-margin-top:6rem}.page-nav[data-astro-cid-amjbiojg]{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.08)}.page-link[data-astro-cid-amjbiojg]{display:flex;flex-direction:column;padding:1rem 1.2rem;border-radius:.9rem;background:#ffffff0a;border:1px solid rgba(255,255,255,.08);text-decoration:none;transition:border-color .2s,background .2s}.page-link[data-astro-cid-amjbiojg]:hover{border-color:#a855f766;background:#ffffff0f}.page-link[data-astro-cid-amjbiojg].next{text-align:right}.page-label[data-astro-cid-amjbiojg]{font-family:var(--font-mono);font-size:.72rem;color:var(--color-ink-dim);margin-bottom:.3rem}.page-title[data-astro-cid-amjbiojg]{font-size:.95rem;font-weight:600;color:var(--color-ink)}@media(min-width:1100px){.detail[data-astro-cid-amjbiojg]{max-width:72rem}.detail-body[data-astro-cid-amjbiojg]{display:grid;grid-template-columns:1fr 16rem;gap:2.5rem}.toc[data-astro-cid-amjbiojg]{position:sticky;top:6rem;align-self:start;margin:0}}
+</style></head> <body> <canvas id="starfield" aria-hidden="true" data-astro-cid-ra7sfcwn></canvas>  <script type="module">const a=document.getElementById("starfield"),m=window.matchMedia("(prefers-reduced-motion: reduce)").matches;if(a){let s=function(){n=window.innerWidth,o=window.innerHeight,a.width=n*i,a.height=o*i,a.style.width=n+"px",a.style.height=o+"px",t.setTransform(i,0,0,i,0,0);const e=Math.min(160,Math.floor(n*o/9e3));h=Array.from({length:e},()=>({x:Math.random()*n,y:Math.random()*o,z:Math.random()*.8+.2,r:Math.random()*1.4+.3,hue:Math.random()>.5?188:270}))},d=function(){t.clearRect(0,0,n,o);for(const e of h){const c=e.x+(r.x-n/2)*.02*e.z,l=e.y+(r.y-o/2)*.02*e.z;t.beginPath(),t.arc(c,l,e.r*e.z,0,Math.PI*2),t.fillStyle=`hsla(${e.hue}, 90%, 70%, ${.25+e.z*.55})`,t.shadowBlur=8*e.z,t.shadowColor=`hsla(${e.hue}, 90%, 70%, 0.8)`,t.fill(),e.y-=e.z*.12,e.y<-2&&(e.y=o+2,e.x=Math.random()*n)}t.shadowBlur=0,m||requestAnimationFrame(d)};const t=a.getContext("2d");let n=0,o=0,i=Math.min(window.devicePixelRatio||1,2),h=[];const r={x:0,y:0};window.addEventListener("resize",s,{passive:!0}),window.addEventListener("mousemove",e=>{r.x=e.clientX,r.y=e.clientY},{passive:!0}),s(),d()}</script> <header class="nav-wrap" data-astro-cid-dmqpwcec> <nav class="container-x nav glass" data-astro-cid-dmqpwcec> <a href="/" class="brand" data-astro-cid-dmqpwcec> <span class="brand-dot" data-astro-cid-dmqpwcec></span> <span class="brand-name" data-astro-cid-dmqpwcec>庄楚辉</span> <span class="brand-tag" data-astro-cid-dmqpwcec>/ AI Builder</span> </a> <button id="nav-toggle" class="nav-toggle" aria-label="菜单" aria-expanded="false" data-astro-cid-dmqpwcec> <span data-astro-cid-dmqpwcec></span><span data-astro-cid-dmqpwcec></span><span data-astro-cid-dmqpwcec></span> </button> <ul id="nav-menu" class="nav-menu" data-astro-cid-dmqpwcec> <li data-astro-cid-dmqpwcec> <a href="/" class="nav-link" data-astro-cid-dmqpwcec>首页</a> </li><li data-astro-cid-dmqpwcec> <a href="/about" class="nav-link" data-astro-cid-dmqpwcec>关于</a> </li><li data-astro-cid-dmqpwcec> <a href="/projects" class="nav-link" data-astro-cid-dmqpwcec>项目</a> </li><li data-astro-cid-dmqpwcec> <a href="/blog" class="nav-link" data-astro-cid-dmqpwcec>文章</a> </li><li data-astro-cid-dmqpwcec> <a href="/news" class="nav-link" data-astro-cid-dmqpwcec>AI 要闻</a> </li><li data-astro-cid-dmqpwcec> <a href="/tools" class="nav-link" data-astro-cid-dmqpwcec>工具</a> </li><li data-astro-cid-dmqpwcec> <a href="/kb" class="nav-link active" data-astro-cid-dmqpwcec>知识库</a> </li> </ul> </nav> </header>  <script type="module">const e=document.getElementById("nav-toggle"),n=document.getElementById("nav-menu");e?.addEventListener("click",()=>{const t=n?.classList.toggle("open");e.setAttribute("aria-expanded",String(!!t))});</script> <main>  <article class="container-x detail" data-astro-cid-amjbiojg> <nav class="breadcrumb" aria-label="面包屑" data-astro-cid-amjbiojg> <a href="/" data-astro-cid-amjbiojg>首页</a> <span data-astro-cid-amjbiojg>/</span> <a href="/kb" data-astro-cid-amjbiojg>知识库</a> <span data-astro-cid-amjbiojg>/</span> <span class="bc-current" data-astro-cid-amjbiojg>应用范式</span> </nav> <header class="detail-head" data-astro-cid-amjbiojg> <div class="detail-badges" data-astro-cid-amjbiojg> <span class="chip kb-cat" data-astro-cid-amjbiojg>应用范式</span> <span class="diff-badge diff-mid" data-astro-cid-amjbiojg>进阶</span> <span class="read-time" data-astro-cid-amjbiojg>4 分钟阅读</span> </div> <h1 class="detail-title" data-astro-cid-amjbiojg>MCP 与 Skill 使用指南</h1> <p class="detail-desc" data-astro-cid-amjbiojg>理解 MCP、工具调用和 Skill 的边界，学会把外部系统和可复用经验接入 Agent。</p> <div class="detail-meta" data-astro-cid-amjbiojg> <span class="d-date" data-astro-cid-amjbiojg>更新于 2026年7月5日</span> <span class="chip" data-astro-cid-amjbiojg>MCP</span><span class="chip" data-astro-cid-amjbiojg>Skill</span><span class="chip" data-astro-cid-amjbiojg>Agent</span><span class="chip" data-astro-cid-amjbiojg>工具调用</span> </div> </header> <div class="detail-body" data-astro-cid-amjbiojg> <aside class="toc" id="toc" data-astro-cid-amjbiojg> <div class="toc-title" data-astro-cid-amjbiojg>目录</div> <nav data-astro-cid-amjbiojg> <ul id="toc-list" data-astro-cid-amjbiojg></ul> </nav> </aside> <div class="prose-space" id="article-content" data-astro-cid-amjbiojg> <h2 id="一句话区分">一句话区分</h2>
+<p>MCP 是“接工具和数据”的协议，Skill 是“沉淀做事方法”的说明书。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>概念</th><th>解决什么问题</th><th>例子</th></tr></thead><tbody><tr><td>Tool Calling</td><td>模型调用一个函数</td><td><code>search_docs(query)</code></td></tr><tr><td>MCP</td><td>标准化暴露工具、资源、Prompt</td><td>GitHub MCP、Postgres MCP</td></tr><tr><td>Skill</td><td>告诉 Agent 如何完成某类任务</td><td>“如何排版公众号文章”</td></tr></tbody></table>
+<h2 id="mcp-适合什么">MCP 适合什么</h2>
+<p>MCP（Model Context Protocol）适合把外部能力接给 Agent：</p>
+<ul>
+<li>数据库查询</li>
+<li>GitHub Issue / PR</li>
+<li>文件系统</li>
+<li>内部业务 API</li>
+<li>浏览器自动化</li>
+<li>知识库检索</li>
+<li>任务系统</li>
+</ul>
+<p>它的价值是标准化：不同 Agent 可以用相似方式发现工具、读取资源、调用能力。</p>
+<h2 id="skill-适合什么">Skill 适合什么</h2>
+<p>Skill 适合沉淀经验和流程：</p>
+<ul>
+<li>固定的写作格式</li>
+<li>某类代码审查清单</li>
+<li>项目启动流程</li>
+<li>数据分析步骤</li>
+<li>文件转换规范</li>
+<li>业务术语解释</li>
+</ul>
+<p>Skill 不一定提供外部工具。它更像“操作手册 + 示例 + 可复用脚本”。</p>
+<h2 id="什么时候用-mcp什么时候用-skill">什么时候用 MCP，什么时候用 Skill</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>场景</th><th>选择</th></tr></thead><tbody><tr><td>需要查数据库</td><td>MCP</td></tr><tr><td>需要调用内部 API</td><td>MCP</td></tr><tr><td>需要固定写作风格</td><td>Skill</td></tr><tr><td>需要复用一套排查流程</td><td>Skill</td></tr><tr><td>需要先查数据再按流程写报告</td><td>MCP + Skill</td></tr><tr><td>只是一段提示词模板</td><td>Skill 或项目规则</td></tr></tbody></table>
+<h2 id="mcp-的基本结构">MCP 的基本结构</h2>
+<p>一个 MCP Server 通常暴露三类能力：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>类型</th><th>含义</th></tr></thead><tbody><tr><td>Tools</td><td>可执行动作，如查询、写入、搜索</td></tr><tr><td>Resources</td><td>可读取资源，如文档、文件、数据库记录</td></tr><tr><td>Prompts</td><td>可复用提示模板</td></tr></tbody></table>
+<p>Agent 通过 MCP Client 连接 MCP Server，然后把可用工具暴露给模型。</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>Agent / IDE / CLI</span></span>
+<span class="line"><span>  ↓ MCP Client</span></span>
+<span class="line"><span>MCP Server</span></span>
+<span class="line"><span>  ├─ tools: search_issue, query_db</span></span>
+<span class="line"><span>  ├─ resources: docs://handbook</span></span>
+<span class="line"><span>  └─ prompts: review_pr</span></span></code></pre>
+<h2 id="codex-中添加-mcp">Codex 中添加 MCP</h2>
+<p>添加 stdio MCP：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">codex</span><span style="color:#ECC48D"> mcp</span><span style="color:#ECC48D"> add</span><span style="color:#ECC48D"> filesystem</span><span style="color:#82AAFF"> --</span><span style="color:#ECC48D"> npx</span><span style="color:#82AAFF"> -y</span><span style="color:#ECC48D"> @modelcontextprotocol/server-filesystem</span><span style="color:#ECC48D"> .</span></span></code></pre>
+<p>添加 HTTP MCP：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">codex</span><span style="color:#ECC48D"> mcp</span><span style="color:#ECC48D"> add</span><span style="color:#ECC48D"> seller</span><span style="color:#82AAFF"> --url</span><span style="color:#ECC48D"> https://example.com/mcp</span></span></code></pre>
+<p>HTTP Bearer Token：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#C792EA;font-style:italic">export</span><span style="color:#C5E478"> SELLER_MCP_TOKEN</span><span style="color:#C792EA">=</span><span style="color:#D9F5DD">"</span><span style="color:#ECC48D">...</span><span style="color:#D9F5DD">"</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">codex</span><span style="color:#ECC48D"> mcp</span><span style="color:#ECC48D"> add</span><span style="color:#ECC48D"> seller</span><span style="color:#82AAFF"> --url</span><span style="color:#ECC48D"> https://example.com/mcp</span><span style="color:#82AAFF"> --bearer-token-env-var</span><span style="color:#ECC48D"> SELLER_MCP_TOKEN</span></span></code></pre>
+<p>查看和删除：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">codex</span><span style="color:#ECC48D"> mcp</span><span style="color:#ECC48D"> list</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">codex</span><span style="color:#ECC48D"> mcp</span><span style="color:#ECC48D"> get</span><span style="color:#ECC48D"> seller</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">codex</span><span style="color:#ECC48D"> mcp</span><span style="color:#ECC48D"> remove</span><span style="color:#ECC48D"> seller</span></span></code></pre>
+<p>如果 MCP 需要 OAuth：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">codex</span><span style="color:#ECC48D"> mcp</span><span style="color:#ECC48D"> login</span><span style="color:#ECC48D"> seller</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">codex</span><span style="color:#ECC48D"> mcp</span><span style="color:#ECC48D"> logout</span><span style="color:#ECC48D"> seller</span></span></code></pre>
+<h2 id="mcp-设计原则">MCP 设计原则</h2>
+<h3 id="1-工具要小而清晰">1. 工具要小而清晰</h3>
+<p>不要做一个万能工具：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>bad: execute_anything(input)</span></span>
+<span class="line"><span>good: search_products(keyword, marketplace, limit)</span></span></code></pre>
+<p>工具越具体，模型越容易选对。</p>
+<h3 id="2-schema-要严格">2. Schema 要严格</h3>
+<p>参数类型、必填字段、枚举值都要写清楚。不要把复杂 JSON 塞进一个 <code>text</code> 字段。</p>
+<h3 id="3-返回要可控">3. 返回要可控</h3>
+<p>工具结果不要无限长：</p>
+<ul>
+<li>设置 limit</li>
+<li>分页</li>
+<li>摘要</li>
+<li>只返回必要字段</li>
+<li>大结果返回资源链接</li>
+</ul>
+<h3 id="4-权限要最小化">4. 权限要最小化</h3>
+<p>数据库优先只读账号。GitHub token 只给必要 repo。生产写操作必须人工确认。</p>
+<h2 id="skill-的基本结构">Skill 的基本结构</h2>
+<p>一个好的 Skill 至少包含：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>触发场景：什么时候使用</span></span>
+<span class="line"><span>输入要求：需要用户提供什么</span></span>
+<span class="line"><span>操作步骤：按什么顺序做</span></span>
+<span class="line"><span>质量标准：怎么判断做好了</span></span>
+<span class="line"><span>常见错误：哪些坑要避免</span></span>
+<span class="line"><span>示例输出：最终应该长什么样</span></span></code></pre>
+<h2 id="写-skill-的模板">写 Skill 的模板</h2>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#82B1FF"># Skill: PR Review</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#82B1FF">## 何时使用</span></span>
+<span class="line"><span style="color:#D6DEEB">当用户要求审查 PR 或 diff。</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#82B1FF">## 步骤</span></span>
+<span class="line"><span style="color:#D9F5DD">1.</span><span style="color:#D6DEEB"> 先阅读变更文件列表</span></span>
+<span class="line"><span style="color:#D9F5DD">2.</span><span style="color:#D6DEEB"> 优先找 bug、回归、测试缺口</span></span>
+<span class="line"><span style="color:#D9F5DD">3.</span><span style="color:#D6DEEB"> 按严重程度排序</span></span>
+<span class="line"><span style="color:#D9F5DD">4.</span><span style="color:#D6DEEB"> 每个问题给文件和行号</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#82B1FF">## 输出格式</span></span>
+<span class="line"><span style="color:#D9F5DD">-</span><span style="color:#D6DEEB"> Findings</span></span>
+<span class="line"><span style="color:#D9F5DD">-</span><span style="color:#D6DEEB"> Open Questions</span></span>
+<span class="line"><span style="color:#D9F5DD">-</span><span style="color:#D6DEEB"> Test Gaps</span></span></code></pre>
+<h2 id="常见错误">常见错误</h2>
+<ul>
+<li><strong>把 MCP 当数据库代理</strong>：没有权限、审计、限流设计。</li>
+<li><strong>把 Skill 写成散文</strong>：Agent 不知道何时用、怎么用。</li>
+<li><strong>工具太宽泛</strong>：模型容易传错参数或做危险动作。</li>
+<li><strong>没有验证命令</strong>：Agent 完成后无法证明结果。</li>
+<li><strong>把密钥写进配置示例</strong>：应使用环境变量。</li>
+</ul>
+<h2 id="相关条目">相关条目</h2>
+<ul>
+<li><a href="../agent-development">Agent 智能体开发</a></li>
+<li><a href="../ai-dev-environment">AI 编程环境搭建</a></li>
+<li><a href="../context-engineering">上下文工程</a></li>
+</ul> </div> </div> <nav class="page-nav" data-astro-cid-amjbiojg> <a href="/kb/agent-development" class="page-link prev" data-astro-cid-amjbiojg> <span class="page-label" data-astro-cid-amjbiojg>← 上一篇</span> <span class="page-title" data-astro-cid-amjbiojg>Agent 智能体开发</span> </a> <a href="/kb/ai-coding-tools" class="page-link next" data-astro-cid-amjbiojg> <span class="page-label" data-astro-cid-amjbiojg>下一篇 →</span> <span class="page-title" data-astro-cid-amjbiojg>AI 编程工具与助手</span> </a> </nav> </article>  </main> <footer class="footer" data-astro-cid-sz7xmlte> <div class="container-x footer-inner glass" data-astro-cid-sz7xmlte> <div data-astro-cid-sz7xmlte> <p class="f-name text-gradient" data-astro-cid-sz7xmlte>庄楚辉</p> <p class="f-desc" data-astro-cid-sz7xmlte>一名 AI Builder —— 构建智能产品、分享思考与知识。</p> </div> <div class="f-socials" data-astro-cid-sz7xmlte> <a href="https://github.com/zchuhui" target="_blank" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>GitHub</a><a href="https://x.com/zch94622737" target="_blank" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>X</a><a href="mailto:943339564g@gmail.com" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>Email</a> </div> </div> <p class="f-copy" data-astro-cid-sz7xmlte>© 2026 庄楚辉 · Built with Astro · 部署于 GitHub Pages</p> </footer>  <!-- 全局滚动揭示 --> <script type="module">const s=new IntersectionObserver(e=>{for(const r of e)r.isIntersecting&&(r.target.classList.add("is-visible"),s.unobserve(r.target))},{threshold:.12});document.querySelectorAll(".reveal").forEach(e=>s.observe(e));</script> </body> </html>  <script type="module">(function(){const o=document.getElementById("article-content"),c=document.getElementById("toc-list");if(!o||!c)return;const l=Array.from(o.querySelectorAll("h2"));if(l.length===0){document.getElementById("toc")?.style.setProperty("display","none");return}const i=e=>e.toLowerCase().trim().replace(/\s+/g,"-").replace(/[^a-z0-9\u4e00-\u9fa5-]/g,""),a=new Set;l.forEach(e=>{let r=i(e.textContent??""),t=r||"heading",s=1;for(;a.has(t);)t=`${r}-${s++}`;a.add(t),e.id=t;const d=document.createElement("li"),n=document.createElement("a");n.href="#"+t,n.textContent=e.textContent??"",d.appendChild(n),c.appendChild(d)})})();</script>

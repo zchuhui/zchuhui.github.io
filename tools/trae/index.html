@@ -1,0 +1,131 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>Trae 使用指南 · 庄楚辉</title><meta name="description" content="字节出品的 AI IDE，主打中文体验、多模型切换和 Builder 模式，适合国内开发环境。"><link rel="canonical" href="https://zchuhui.github.io/tools/trae/"><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:title" content="Trae 使用指南 · 庄楚辉"><meta property="og:description" content="字节出品的 AI IDE，主打中文体验、多模型切换和 Builder 模式，适合国内开发环境。"><meta property="og:image" content="https://zchuhui.github.io/og.svg"><meta property="og:url" content="https://zchuhui.github.io/tools/trae/"><meta name="twitter:card" content="summary_large_image"><meta name="generator" content="Astro v5.18.2"><link rel="stylesheet" href="/_astro/about.Dditgxr6.css">
+<style>.detail[data-astro-cid-6kazcgig]{max-width:46rem;padding-top:2rem}.back[data-astro-cid-6kazcgig]{font-family:var(--font-mono);font-size:.85rem;color:var(--color-ink-dim)}.back[data-astro-cid-6kazcgig]:hover{color:var(--color-cyan)}.detail-head[data-astro-cid-6kazcgig]{margin:1.5rem 0 2rem}.tool-cat[data-astro-cid-6kazcgig]{color:var(--color-cyan);border-color:#22d3ee4d}.detail-title[data-astro-cid-6kazcgig]{font-size:clamp(1.9rem,4.5vw,2.6rem);font-weight:900;margin:.7rem 0 0;line-height:1.2}.detail-desc[data-astro-cid-6kazcgig]{color:var(--color-ink-soft);font-size:1.05rem;line-height:1.7;margin:1rem 0}.detail-meta[data-astro-cid-6kazcgig]{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center}.d-date[data-astro-cid-6kazcgig]{font-family:var(--font-mono);font-size:.8rem;color:var(--color-ink-dim);margin-right:.4rem}.official-link[data-astro-cid-6kazcgig]{display:inline-block;margin-top:1rem;font-family:var(--font-mono);font-size:.85rem;color:var(--color-cyan)}.official-link[data-astro-cid-6kazcgig]:hover{text-decoration:underline}
+</style></head> <body> <canvas id="starfield" aria-hidden="true" data-astro-cid-ra7sfcwn></canvas>  <script type="module">const a=document.getElementById("starfield"),m=window.matchMedia("(prefers-reduced-motion: reduce)").matches;if(a){let s=function(){n=window.innerWidth,o=window.innerHeight,a.width=n*i,a.height=o*i,a.style.width=n+"px",a.style.height=o+"px",t.setTransform(i,0,0,i,0,0);const e=Math.min(160,Math.floor(n*o/9e3));h=Array.from({length:e},()=>({x:Math.random()*n,y:Math.random()*o,z:Math.random()*.8+.2,r:Math.random()*1.4+.3,hue:Math.random()>.5?188:270}))},d=function(){t.clearRect(0,0,n,o);for(const e of h){const c=e.x+(r.x-n/2)*.02*e.z,l=e.y+(r.y-o/2)*.02*e.z;t.beginPath(),t.arc(c,l,e.r*e.z,0,Math.PI*2),t.fillStyle=`hsla(${e.hue}, 90%, 70%, ${.25+e.z*.55})`,t.shadowBlur=8*e.z,t.shadowColor=`hsla(${e.hue}, 90%, 70%, 0.8)`,t.fill(),e.y-=e.z*.12,e.y<-2&&(e.y=o+2,e.x=Math.random()*n)}t.shadowBlur=0,m||requestAnimationFrame(d)};const t=a.getContext("2d");let n=0,o=0,i=Math.min(window.devicePixelRatio||1,2),h=[];const r={x:0,y:0};window.addEventListener("resize",s,{passive:!0}),window.addEventListener("mousemove",e=>{r.x=e.clientX,r.y=e.clientY},{passive:!0}),s(),d()}</script> <header class="nav-wrap" data-astro-cid-dmqpwcec> <nav class="container-x nav glass" data-astro-cid-dmqpwcec> <a href="/" class="brand" data-astro-cid-dmqpwcec> <span class="brand-dot" data-astro-cid-dmqpwcec></span> <span class="brand-name" data-astro-cid-dmqpwcec>庄楚辉</span> <span class="brand-tag" data-astro-cid-dmqpwcec>/ AI Builder</span> </a> <button id="nav-toggle" class="nav-toggle" aria-label="菜单" aria-expanded="false" data-astro-cid-dmqpwcec> <span data-astro-cid-dmqpwcec></span><span data-astro-cid-dmqpwcec></span><span data-astro-cid-dmqpwcec></span> </button> <ul id="nav-menu" class="nav-menu" data-astro-cid-dmqpwcec> <li data-astro-cid-dmqpwcec> <a href="/" class="nav-link" data-astro-cid-dmqpwcec>首页</a> </li><li data-astro-cid-dmqpwcec> <a href="/about" class="nav-link" data-astro-cid-dmqpwcec>关于</a> </li><li data-astro-cid-dmqpwcec> <a href="/projects" class="nav-link" data-astro-cid-dmqpwcec>项目</a> </li><li data-astro-cid-dmqpwcec> <a href="/blog" class="nav-link" data-astro-cid-dmqpwcec>文章</a> </li><li data-astro-cid-dmqpwcec> <a href="/news" class="nav-link" data-astro-cid-dmqpwcec>AI 要闻</a> </li><li data-astro-cid-dmqpwcec> <a href="/tools" class="nav-link active" data-astro-cid-dmqpwcec>工具</a> </li><li data-astro-cid-dmqpwcec> <a href="/kb" class="nav-link" data-astro-cid-dmqpwcec>知识库</a> </li> </ul> </nav> </header>  <script type="module">const e=document.getElementById("nav-toggle"),n=document.getElementById("nav-menu");e?.addEventListener("click",()=>{const t=n?.classList.toggle("open");e.setAttribute("aria-expanded",String(!!t))});</script> <main>  <article class="container-x detail" data-astro-cid-6kazcgig> <a href="/tools" class="back" data-astro-cid-6kazcgig>← 返回工具指南</a> <header class="detail-head" data-astro-cid-6kazcgig> <span class="chip tool-cat" data-astro-cid-6kazcgig>AI 编辑器</span> <h1 class="detail-title" data-astro-cid-6kazcgig>Trae 使用指南</h1> <p class="detail-desc" data-astro-cid-6kazcgig>字节出品的 AI IDE，主打中文体验、多模型切换和 Builder 模式，适合国内开发环境。</p> <div class="detail-meta" data-astro-cid-6kazcgig> <span class="d-date" data-astro-cid-6kazcgig>更新于 2026年7月5日</span> <span class="chip" data-astro-cid-6kazcgig>字节跳动</span> <span class="chip" data-astro-cid-6kazcgig>免费</span> <span class="chip" data-astro-cid-6kazcgig>Trae</span><span class="chip" data-astro-cid-6kazcgig>IDE</span><span class="chip" data-astro-cid-6kazcgig>字节</span><span class="chip" data-astro-cid-6kazcgig>国产</span> </div> <a href="https://www.trae.cn" target="_blank" rel="noopener" class="official-link" data-astro-cid-6kazcgig>访问官网 ↗</a> </header> <div class="prose-space" data-astro-cid-6kazcgig> <h2 id="工具简介">工具简介</h2>
+<p>Trae 是字节跳动推出的 AI 原生 IDE，基于 VS Code fork，对标 Cursor。它的优势是中文体验、本土网络环境、多模型切换和 Builder 模式。Builder 能自主拆解任务、读写文件、执行命令，适合想在国内环境里快速体验 AI 编程工作流的开发者。</p>
+<h2 id="核心功能">核心功能</h2>
+<h3 id="1-多模型自由切换">1. 多模型自由切换</h3>
+<p>支持在多个模型之间切换，按任务复杂度选择：简单解释和补全用轻量模型，复杂重构和架构分析用更强模型。</p>
+<h3 id="2-builder-模式agent">2. Builder 模式（Agent）</h3>
+<p>类似 Cursor 的 Agent，能读取整个项目、自主拆解任务、多文件改动、执行命令、根据报错修复。</p>
+<h3 id="3-chat-模式">3. Chat 模式</h3>
+<p>侧边栏对话，支持 @文件、@代码库、@文档，回答带代码引用。</p>
+<h3 id="4-内置-sidekick">4. 内置 Sidekick</h3>
+<p>右侧常驻 AI 助手，可快速解释选中的代码、生成单测、重构建议。</p>
+<h3 id="5-skill-体系">5. Skill 体系</h3>
+<p>预置多种工程化技能（代码审查、安全扫描、调试等），也可自定义 Skill。</p>
+<h3 id="6-中文优化">6. 中文优化</h3>
+<p>界面、对话、文档全中文，对中文 Prompt 理解优于海外工具。</p>
+<h2 id="适用场景">适用场景</h2>
+<ul>
+<li>国内开发者日常编程（网络友好，无需代理）</li>
+<li>个人开发者 / 学生（免费、功能完整）</li>
+<li>多模型对比（同一个任务用不同模型跑）</li>
+<li>中文项目（注释、文档、Prompt 全中文）</li>
+</ul>
+<h2 id="详细操作步骤">详细操作步骤</h2>
+<h3 id="第-1-步下载安装">第 1 步：下载安装</h3>
+<p>访问 <a href="https://www.trae.cn">trae.cn</a> 下载，支持 macOS / Windows / Linux。安装后自动导入 VS Code 配置。</p>
+<h3 id="第-2-步登录免费">第 2 步：登录（免费）</h3>
+<p>用字节账号或手机号登录，即可使用所有模型，无需付费。</p>
+<h3 id="第-3-步选择模型">第 3 步：选择模型</h3>
+<p>底部状态栏点击模型名切换：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>模型类型</th><th>适用</th></tr></thead><tbody><tr><td>强推理模型</td><td>复杂重构、架构设计、长链路 bug</td></tr><tr><td>通用编程模型</td><td>日常开发、测试生成、文档补齐</td></tr><tr><td>中文优化模型</td><td>中文业务、运营页面、国内产品文案</td></tr><tr><td>轻量模型</td><td>改注释、解释代码、简单脚本</td></tr></tbody></table>
+<h3 id="第-4-步配置项目">第 4 步：配置项目</h3>
+<p>在 <code>.trae/documents/</code> 下放设计文档、规范，Builder 会自动读取。</p>
+<p>例如 <code>.trae/documents/coding-style.md</code>：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#82B1FF"># 代码规范</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D9F5DD">-</span><span style="color:#D6DEEB"> 语言：TypeScript</span></span>
+<span class="line"><span style="color:#D9F5DD">-</span><span style="color:#D6DEEB"> 框架：Vue 3 + Vite</span></span>
+<span class="line"><span style="color:#D9F5DD">-</span><span style="color:#D6DEEB"> 状态管理：Pinia</span></span>
+<span class="line"><span style="color:#D9F5DD">-</span><span style="color:#D6DEEB"> 命名：组件 PascalCase，函数 camelCase</span></span>
+<span class="line"><span style="color:#D9F5DD">-</span><span style="color:#D6DEEB"> 注释：中文</span></span></code></pre>
+<h3 id="第-5-步用-builder-做复杂任务">第 5 步：用 Builder 做复杂任务</h3>
+<p>按 ⌘I 打开 Builder：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>给 src/views 下所有页面加上页面访问统计，</span></span>
+<span class="line"><span>  调用 utils/analytics.ts 的 trackPageView，</span></span>
+<span class="line"><span>  在路由守卫里统一处理，不要在每个页面手动调用。</span></span></code></pre>
+<p>Builder 会自动列出计划，多文件改动，支持中途追问。</p>
+<h3 id="第-6-步用-chat-提问">第 6 步：用 Chat 提问</h3>
+<p>按 ⌘L 打开 Chat，@相关文件：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>@src/composables/useChat.ts 这个 composable 有内存泄漏吗？</span></span>
+<span class="line"><span>  跟我说说 onUnmounted 里需要清理什么。</span></span></code></pre>
+<h2 id="实用技巧">实用技巧</h2>
+<h3 id="1-按任务选模型">1. 按任务选模型</h3>
+<ul>
+<li>简单补全、改注释 → 轻量或中文优化模型</li>
+<li>写测试、改 bug → 通用编程模型</li>
+<li>复杂重构、设计 → 强推理模型</li>
+</ul>
+<h3 id="2-用-builder-的先规划后执行">2. 用 Builder 的”先规划后执行”</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>先列出你的实现计划，等我确认后再开始改代码。</span></span></code></pre>
+<h3 id="3-善用-skill">3. 善用 Skill</h3>
+<p>Trae 内置代码审查、安全扫描等 Skill，按 ⌘Shift+P 搜索 “Skill” 调用。</p>
+<h3 id="4-自定义-skill">4. 自定义 Skill</h3>
+<p>在 <code>.trae/skills/</code> 下定义自己的 Skill，比如”按团队规范生成 API 代码”。</p>
+<h3 id="5-中文-prompt-效果更好">5. 中文 Prompt 效果更好</h3>
+<p>Trae 对中文理解优于 Cursor，复杂需求用中文描述往往更精准。</p>
+<h3 id="6-配合豆包模型做国内项目">6. 配合豆包模型做国内项目</h3>
+<p>豆包对中文语境、国内业务术语理解更深，做 To C 产品时效果优于海外模型。</p>
+<h2 id="注意事项">注意事项</h2>
+<ul>
+<li><strong>数据隐私</strong>：免费版代码会上传云端处理，敏感项目慎用。</li>
+<li><strong>模型可用性</strong>：高峰期高级模型可能排队，建议错峰或备用模型。</li>
+<li><strong>功能迭代快</strong>：Trae 更新频繁，快捷键和界面可能有变化。</li>
+<li><strong>生态</strong>：插件市场不如 VS Code 丰富，但 VS Code 插件大多兼容。</li>
+<li><strong>稳定性</strong>：作为较新产品，偶尔有 bug，建议保留 VS Code 作为备份。</li>
+</ul>
+<h2 id="实战案例">实战案例</h2>
+<h3 id="案例-1用豆包模型写运营落地页">案例 1：用豆包模型写运营落地页</h3>
+<p>需求：为一个高考志愿咨询活动做一个 H5 落地页。</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>用 Vue 3 + Tailwind 做一个高考志愿咨询 H5 落地页：</span></span>
+<span class="line"><span>- 顶部 banner（标题、副标题、CTA 按钮）</span></span>
+<span class="line"><span>- 中间 3 个卖点卡片（图标 + 标题 + 描述）</span></span>
+<span class="line"><span>- 底部表单（姓名、电话、提交按钮）</span></span>
+<span class="line"><span>- 适配移动端，配色用蓝色系</span></span></code></pre>
+<p>豆包模型对中文营销语境理解到位，一次生成的文案就很贴切。</p>
+<h3 id="案例-2用-claude-做复杂重构">案例 2：用 Claude 做复杂重构</h3>
+<p>需求：把一个 800 行的 <code>chat.vue</code> 拆成多个组件 + composable。</p>
+<p>切到强推理模型，开 Builder：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>@chat.vue 把这个文件拆成：</span></span>
+<span class="line"><span>- ChatWindow.vue（消息列表）</span></span>
+<span class="line"><span>- ChatInput.vue（输入框）</span></span>
+<span class="line"><span>- useChat.ts（业务逻辑 composable）</span></span>
+<span class="line"><span>保持功能不变，props 和 emit 重新设计。</span></span></code></pre>
+<p>Claude 会给出拆分方案，逐文件改动。</p>
+<h3 id="案例-3用-deepseek-批量写测试">案例 3：用 DeepSeek 批量写测试</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>给 src/utils 下的所有工具函数写单元测试，用 vitest，</span></span>
+<span class="line"><span>  覆盖正常路径、边界值、异常输入，用表驱动测试。</span></span>
+<span class="line"><span>  每个函数一个测试文件，放到 src/utils/__tests__/。</span></span></code></pre>
+<p>批量测试生成更看重速度和稳定格式，适合选择响应快、成本低的编程模型。</p>
+<h2 id="相关条目">相关条目</h2>
+<ul>
+<li><a href="../cursor">Cursor 使用指南</a></li>
+<li><a href="../../kb/ai-coding-tools">AI 编程工具与助手</a></li>
+<li><a href="../../kb/ai-programming-basics">AI 编程基础概念</a></li>
+</ul> </div> </article>  </main> <footer class="footer" data-astro-cid-sz7xmlte> <div class="container-x footer-inner glass" data-astro-cid-sz7xmlte> <div data-astro-cid-sz7xmlte> <p class="f-name text-gradient" data-astro-cid-sz7xmlte>庄楚辉</p> <p class="f-desc" data-astro-cid-sz7xmlte>一名 AI Builder —— 构建智能产品、分享思考与知识。</p> </div> <div class="f-socials" data-astro-cid-sz7xmlte> <a href="https://github.com/zchuhui" target="_blank" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>GitHub</a><a href="https://x.com/zch94622737" target="_blank" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>X</a><a href="mailto:943339564g@gmail.com" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>Email</a> </div> </div> <p class="f-copy" data-astro-cid-sz7xmlte>© 2026 庄楚辉 · Built with Astro · 部署于 GitHub Pages</p> </footer>  <!-- 全局滚动揭示 --> <script type="module">const s=new IntersectionObserver(e=>{for(const r of e)r.isIntersecting&&(r.target.classList.add("is-visible"),s.unobserve(r.target))},{threshold:.12});document.querySelectorAll(".reveal").forEach(e=>s.observe(e));</script> </body> </html> 

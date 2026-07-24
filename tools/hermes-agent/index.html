@@ -1,0 +1,89 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>Hermes Agent 使用指南 · 庄楚辉</title><meta name="description" content="Nous Research 的自托管 Agent，强调长期记忆、技能沉淀和自我改进，适合持续型任务。"><link rel="canonical" href="https://zchuhui.github.io/tools/hermes-agent/"><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:title" content="Hermes Agent 使用指南 · 庄楚辉"><meta property="og:description" content="Nous Research 的自托管 Agent，强调长期记忆、技能沉淀和自我改进，适合持续型任务。"><meta property="og:image" content="https://zchuhui.github.io/og.svg"><meta property="og:url" content="https://zchuhui.github.io/tools/hermes-agent/"><meta name="twitter:card" content="summary_large_image"><meta name="generator" content="Astro v5.18.2"><link rel="stylesheet" href="/_astro/about.Dditgxr6.css">
+<style>.detail[data-astro-cid-6kazcgig]{max-width:46rem;padding-top:2rem}.back[data-astro-cid-6kazcgig]{font-family:var(--font-mono);font-size:.85rem;color:var(--color-ink-dim)}.back[data-astro-cid-6kazcgig]:hover{color:var(--color-cyan)}.detail-head[data-astro-cid-6kazcgig]{margin:1.5rem 0 2rem}.tool-cat[data-astro-cid-6kazcgig]{color:var(--color-cyan);border-color:#22d3ee4d}.detail-title[data-astro-cid-6kazcgig]{font-size:clamp(1.9rem,4.5vw,2.6rem);font-weight:900;margin:.7rem 0 0;line-height:1.2}.detail-desc[data-astro-cid-6kazcgig]{color:var(--color-ink-soft);font-size:1.05rem;line-height:1.7;margin:1rem 0}.detail-meta[data-astro-cid-6kazcgig]{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center}.d-date[data-astro-cid-6kazcgig]{font-family:var(--font-mono);font-size:.8rem;color:var(--color-ink-dim);margin-right:.4rem}.official-link[data-astro-cid-6kazcgig]{display:inline-block;margin-top:1rem;font-family:var(--font-mono);font-size:.85rem;color:var(--color-cyan)}.official-link[data-astro-cid-6kazcgig]:hover{text-decoration:underline}
+</style></head> <body> <canvas id="starfield" aria-hidden="true" data-astro-cid-ra7sfcwn></canvas>  <script type="module">const a=document.getElementById("starfield"),m=window.matchMedia("(prefers-reduced-motion: reduce)").matches;if(a){let s=function(){n=window.innerWidth,o=window.innerHeight,a.width=n*i,a.height=o*i,a.style.width=n+"px",a.style.height=o+"px",t.setTransform(i,0,0,i,0,0);const e=Math.min(160,Math.floor(n*o/9e3));h=Array.from({length:e},()=>({x:Math.random()*n,y:Math.random()*o,z:Math.random()*.8+.2,r:Math.random()*1.4+.3,hue:Math.random()>.5?188:270}))},d=function(){t.clearRect(0,0,n,o);for(const e of h){const c=e.x+(r.x-n/2)*.02*e.z,l=e.y+(r.y-o/2)*.02*e.z;t.beginPath(),t.arc(c,l,e.r*e.z,0,Math.PI*2),t.fillStyle=`hsla(${e.hue}, 90%, 70%, ${.25+e.z*.55})`,t.shadowBlur=8*e.z,t.shadowColor=`hsla(${e.hue}, 90%, 70%, 0.8)`,t.fill(),e.y-=e.z*.12,e.y<-2&&(e.y=o+2,e.x=Math.random()*n)}t.shadowBlur=0,m||requestAnimationFrame(d)};const t=a.getContext("2d");let n=0,o=0,i=Math.min(window.devicePixelRatio||1,2),h=[];const r={x:0,y:0};window.addEventListener("resize",s,{passive:!0}),window.addEventListener("mousemove",e=>{r.x=e.clientX,r.y=e.clientY},{passive:!0}),s(),d()}</script> <header class="nav-wrap" data-astro-cid-dmqpwcec> <nav class="container-x nav glass" data-astro-cid-dmqpwcec> <a href="/" class="brand" data-astro-cid-dmqpwcec> <span class="brand-dot" data-astro-cid-dmqpwcec></span> <span class="brand-name" data-astro-cid-dmqpwcec>庄楚辉</span> <span class="brand-tag" data-astro-cid-dmqpwcec>/ AI Builder</span> </a> <button id="nav-toggle" class="nav-toggle" aria-label="菜单" aria-expanded="false" data-astro-cid-dmqpwcec> <span data-astro-cid-dmqpwcec></span><span data-astro-cid-dmqpwcec></span><span data-astro-cid-dmqpwcec></span> </button> <ul id="nav-menu" class="nav-menu" data-astro-cid-dmqpwcec> <li data-astro-cid-dmqpwcec> <a href="/" class="nav-link" data-astro-cid-dmqpwcec>首页</a> </li><li data-astro-cid-dmqpwcec> <a href="/about" class="nav-link" data-astro-cid-dmqpwcec>关于</a> </li><li data-astro-cid-dmqpwcec> <a href="/projects" class="nav-link" data-astro-cid-dmqpwcec>项目</a> </li><li data-astro-cid-dmqpwcec> <a href="/blog" class="nav-link" data-astro-cid-dmqpwcec>文章</a> </li><li data-astro-cid-dmqpwcec> <a href="/news" class="nav-link" data-astro-cid-dmqpwcec>AI 要闻</a> </li><li data-astro-cid-dmqpwcec> <a href="/tools" class="nav-link active" data-astro-cid-dmqpwcec>工具</a> </li><li data-astro-cid-dmqpwcec> <a href="/kb" class="nav-link" data-astro-cid-dmqpwcec>知识库</a> </li> </ul> </nav> </header>  <script type="module">const e=document.getElementById("nav-toggle"),n=document.getElementById("nav-menu");e?.addEventListener("click",()=>{const t=n?.classList.toggle("open");e.setAttribute("aria-expanded",String(!!t))});</script> <main>  <article class="container-x detail" data-astro-cid-6kazcgig> <a href="/tools" class="back" data-astro-cid-6kazcgig>← 返回工具指南</a> <header class="detail-head" data-astro-cid-6kazcgig> <span class="chip tool-cat" data-astro-cid-6kazcgig>自托管 Agent</span> <h1 class="detail-title" data-astro-cid-6kazcgig>Hermes Agent 使用指南</h1> <p class="detail-desc" data-astro-cid-6kazcgig>Nous Research 的自托管 Agent，强调长期记忆、技能沉淀和自我改进，适合持续型任务。</p> <div class="detail-meta" data-astro-cid-6kazcgig> <span class="d-date" data-astro-cid-6kazcgig>更新于 2026年7月5日</span> <span class="chip" data-astro-cid-6kazcgig>Nous Research</span> <span class="chip" data-astro-cid-6kazcgig>开源免费 / 模型与部署自理</span> <span class="chip" data-astro-cid-6kazcgig>Hermes</span><span class="chip" data-astro-cid-6kazcgig>Nous Research</span><span class="chip" data-astro-cid-6kazcgig>自托管</span><span class="chip" data-astro-cid-6kazcgig>Agent</span><span class="chip" data-astro-cid-6kazcgig>记忆</span> </div> <a href="https://hermes-agent.nousresearch.com/docs/" target="_blank" rel="noopener" class="official-link" data-astro-cid-6kazcgig>访问官网 ↗</a> </header> <div class="prose-space" data-astro-cid-6kazcgig> <h2 id="工具简介">工具简介</h2>
+<p>Hermes Agent 是 Nous Research 推出的自托管 AI Agent。它的核心卖点不是“生成一段代码”，而是把任务执行、长期记忆、技能沉淀和多模型接入组合起来，让 Agent 在持续使用中积累你的偏好、工作流和可复用技能。</p>
+<p>它更像一个可以部署在本机、VPS 或容器里的长期工作代理。你可以通过 CLI、桌面端、编辑器 ACP、MCP 和各种模型提供方来使用它。</p>
+<h2 id="核心功能">核心功能</h2>
+<h3 id="1-长期记忆">1. 长期记忆</h3>
+<p>Hermes 会保存会话、偏好和任务经验，用于后续任务的上下文恢复。适合长期跟进同一类工作，而不是一次性问答。</p>
+<h3 id="2-技能学习">2. 技能学习</h3>
+<p>它强调从任务中沉淀技能：当某类操作反复出现，可以让 Agent 把步骤、命令和注意事项固化下来。</p>
+<h3 id="3-多模型提供方">3. 多模型提供方</h3>
+<p>Hermes 支持通过 <code>hermes model</code> 配置不同模型来源，包括 Nous Portal、OpenAI Codex、GitHub Copilot、Anthropic、OpenRouter 以及多种 API Key 提供方。</p>
+<h3 id="4-mcp-集成">4. MCP 集成</h3>
+<p>可以通过 MCP 连接 GitHub、数据库、任务系统、知识库和内部服务，让 Agent 访问真实工具，而不是只停留在文本建议。</p>
+<h3 id="5-桌面端与-cli">5. 桌面端与 CLI</h3>
+<p>既可以用命令行运行，也可以安装 Hermes Desktop。对需要长期会话和本地可视化管理的人，桌面端更直观。</p>
+<h2 id="适用场景">适用场景</h2>
+<ul>
+<li>持续型个人 Agent：长期记录偏好、任务和工作方式。</li>
+<li>云端开发助理：部署到 VPS，让它在远程环境里处理任务。</li>
+<li>多模型工作台：统一切换 Codex、Copilot、Anthropic、OpenRouter 等模型来源。</li>
+<li>技能沉淀实验：把重复操作固化成可复用技能。</li>
+<li>带记忆的自动化助手：结合 MCP，把业务系统和个人工作流串起来。</li>
+</ul>
+<h2 id="详细操作步骤">详细操作步骤</h2>
+<h3 id="第-1-步安装">第 1 步：安装</h3>
+<p>macOS 或 Windows 用户可以优先使用 Hermes Desktop 安装器。只需要 CLI 的用户，可以运行官方安装脚本：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -fsSL</span><span style="color:#ECC48D"> https://hermes-agent.nousresearch.com/install.sh</span><span style="color:#7FDBCA"> |</span><span style="color:#82AAFF;font-style:italic"> bash</span></span></code></pre>
+<p>Windows 原生命令行可使用 PowerShell：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="powershell"><code><span class="line"><span style="color:#D6DEEB">iex (irm https:</span><span style="color:#C792EA">//</span><span style="color:#7FDBCAFF">hermes-agent.nousresearch.com</span><span style="color:#C792EA">/</span><span style="color:#D6DEEB">install.ps1)</span></span></code></pre>
+<p>安装后打开新终端，确认命令可用：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">hermes</span><span style="color:#ECC48D"> version</span></span></code></pre>
+<h3 id="第-2-步配置模型">第 2 步：配置模型</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">hermes</span><span style="color:#ECC48D"> model</span></span></code></pre>
+<p>这个向导会让你选择模型提供方并完成 OAuth 或 API Key 配置。不要把密钥写进 Prompt；通过 Hermes 的配置向导或环境文件管理。</p>
+<h3 id="第-3-步启动会话">第 3 步：启动会话</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">hermes</span><span style="color:#ECC48D"> chat</span></span></code></pre>
+<p>在会话里可以直接描述目标：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>帮我梳理这个仓库的主要模块，找出最适合接入 MCP 的三个地方。</span></span></code></pre>
+<h3 id="第-4-步配置-mcp">第 4 步：配置 MCP</h3>
+<p>如果使用标准安装脚本，MCP 支持通常已经包含。你可以先列出和测试 MCP：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">hermes</span><span style="color:#ECC48D"> mcp</span><span style="color:#ECC48D"> list</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">hermes</span><span style="color:#ECC48D"> mcp</span><span style="color:#ECC48D"> test</span><span style="color:#ECC48D"> github</span></span></code></pre>
+<p>如果是手工安装，按官方文档补装 MCP extra。</p>
+<h3 id="第-5-步使用桌面端">第 5 步：使用桌面端</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">hermes</span><span style="color:#ECC48D"> desktop</span></span></code></pre>
+<p>桌面端适合管理长会话、查看任务状态和日常使用。CLI 更适合脚本化和服务器环境。</p>
+<h2 id="实用技巧">实用技巧</h2>
+<h3 id="1-让它记住可复用流程">1. 让它记住可复用流程</h3>
+<p>当 Hermes 完成一类重复任务后，明确要求它沉淀步骤：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>把这次排查流程总结成一个技能：</span></span>
+<span class="line"><span>触发条件、需要检查的命令、常见错误、最后的验证方式。</span></span></code></pre>
+<h3 id="2-把模型按任务分层">2. 把模型按任务分层</h3>
+<p>简单整理用便宜模型，复杂推理用强模型，代码落地用你最信任的编程模型。不要所有任务都默认最贵模型。</p>
+<h3 id="3-用-profile-隔离身份">3. 用 Profile 隔离身份</h3>
+<p>个人任务、客户项目、公司项目最好用不同 profile，避免记忆、密钥和上下文串在一起。</p>
+<h3 id="4-给-mcp-工具做最小权限">4. 给 MCP 工具做最小权限</h3>
+<p>数据库只给只读账号，GitHub token 只给必要 repo，任务系统只暴露需要的操作。Hermes 的长期记忆和工具调用能力越强，越要控制权限边界。</p>
+<h3 id="5-定期清理和备份">5. 定期清理和备份</h3>
+<p>长期 Agent 会积累会话、技能、配置和日志。定期备份 <code>~/.hermes</code>，也定期清理不再需要的记忆和工具。</p>
+<h2 id="注意事项">注意事项</h2>
+<ul>
+<li><strong>不要把它当无人值守员工</strong>：长期记忆不等于稳定判断，高风险动作仍需人工确认。</li>
+<li><strong>模型来源复杂</strong>：不同 provider 的模型名、上下文长度、计费和限额不同，配置时要记录清楚。</li>
+<li><strong>MCP 需要单独验证</strong>：工具能发现不代表当前会话一定能使用，关键工具要用 <code>hermes mcp test</code> 和真实任务验证。</li>
+<li><strong>密钥隔离</strong>：不要把个人 Copilot、Anthropic、OpenAI、GitHub token 混用在不可信项目里。</li>
+<li><strong>升级前备份</strong>：自托管 Agent 迭代快，升级前保存配置和重要会话。</li>
+</ul>
+<h2 id="实战案例">实战案例</h2>
+<h3 id="案例-1把排障流程变成技能">案例 1：把排障流程变成技能</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>阅读最近一次 CI 失败记录，定位失败原因。</span></span>
+<span class="line"><span>修复前先列出验证命令；修复后把排查步骤沉淀成 skill。</span></span></code></pre>
+<h3 id="案例-2远程开发助理">案例 2：远程开发助理</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>在这个 VPS 上检查 product-research-ai 的后台任务状态：</span></span>
+<span class="line"><span>- 看服务是否运行</span></span>
+<span class="line"><span>- 看最近 100 行日志</span></span>
+<span class="line"><span>- 不要重启服务，除非我确认</span></span></code></pre>
+<h3 id="案例-3多模型对比">案例 3：多模型对比</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>同一个 bug，请分别用当前默认模型和 Copilot provider 分析，</span></span>
+<span class="line"><span>只比较定位路径、风险判断和建议改动，不要直接改文件。</span></span></code></pre>
+<h2 id="选型建议">选型建议</h2>
+<p>如果你需要的是“在编辑器里快速写代码”，Hermes 不是第一选择。<br>
+如果你需要的是“长期跟随你、记住流程、能沉淀技能、能部署到服务器”的 Agent，Hermes 值得单独评估。</p>
+<h2 id="相关条目">相关条目</h2>
+<ul>
+<li><a href="../openclaw">OpenClaw 使用指南</a></li>
+<li><a href="../codex">Codex CLI 使用指南</a></li>
+<li><a href="../../kb/agent-development">Agent 智能体开发</a></li>
+</ul> </div> </article>  </main> <footer class="footer" data-astro-cid-sz7xmlte> <div class="container-x footer-inner glass" data-astro-cid-sz7xmlte> <div data-astro-cid-sz7xmlte> <p class="f-name text-gradient" data-astro-cid-sz7xmlte>庄楚辉</p> <p class="f-desc" data-astro-cid-sz7xmlte>一名 AI Builder —— 构建智能产品、分享思考与知识。</p> </div> <div class="f-socials" data-astro-cid-sz7xmlte> <a href="https://github.com/zchuhui" target="_blank" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>GitHub</a><a href="https://x.com/zch94622737" target="_blank" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>X</a><a href="mailto:943339564g@gmail.com" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>Email</a> </div> </div> <p class="f-copy" data-astro-cid-sz7xmlte>© 2026 庄楚辉 · Built with Astro · 部署于 GitHub Pages</p> </footer>  <!-- 全局滚动揭示 --> <script type="module">const s=new IntersectionObserver(e=>{for(const r of e)r.isIntersecting&&(r.target.classList.add("is-visible"),s.unobserve(r.target))},{threshold:.12});document.querySelectorAll(".reveal").forEach(e=>s.observe(e));</script> </body> </html> 

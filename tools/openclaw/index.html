@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>OpenClaw 使用指南 · 庄楚辉</title><meta name="description" content="本地优先的开源个人 AI 助手，通过消息渠道、技能和工具把 Agent 接到真实工作流里。"><link rel="canonical" href="https://zchuhui.github.io/tools/openclaw/"><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:title" content="OpenClaw 使用指南 · 庄楚辉"><meta property="og:description" content="本地优先的开源个人 AI 助手，通过消息渠道、技能和工具把 Agent 接到真实工作流里。"><meta property="og:image" content="https://zchuhui.github.io/og.svg"><meta property="og:url" content="https://zchuhui.github.io/tools/openclaw/"><meta name="twitter:card" content="summary_large_image"><meta name="generator" content="Astro v5.18.2"><link rel="stylesheet" href="/_astro/about.Dditgxr6.css">
+<style>.detail[data-astro-cid-6kazcgig]{max-width:46rem;padding-top:2rem}.back[data-astro-cid-6kazcgig]{font-family:var(--font-mono);font-size:.85rem;color:var(--color-ink-dim)}.back[data-astro-cid-6kazcgig]:hover{color:var(--color-cyan)}.detail-head[data-astro-cid-6kazcgig]{margin:1.5rem 0 2rem}.tool-cat[data-astro-cid-6kazcgig]{color:var(--color-cyan);border-color:#22d3ee4d}.detail-title[data-astro-cid-6kazcgig]{font-size:clamp(1.9rem,4.5vw,2.6rem);font-weight:900;margin:.7rem 0 0;line-height:1.2}.detail-desc[data-astro-cid-6kazcgig]{color:var(--color-ink-soft);font-size:1.05rem;line-height:1.7;margin:1rem 0}.detail-meta[data-astro-cid-6kazcgig]{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center}.d-date[data-astro-cid-6kazcgig]{font-family:var(--font-mono);font-size:.8rem;color:var(--color-ink-dim);margin-right:.4rem}.official-link[data-astro-cid-6kazcgig]{display:inline-block;margin-top:1rem;font-family:var(--font-mono);font-size:.85rem;color:var(--color-cyan)}.official-link[data-astro-cid-6kazcgig]:hover{text-decoration:underline}
+</style></head> <body> <canvas id="starfield" aria-hidden="true" data-astro-cid-ra7sfcwn></canvas>  <script type="module">const a=document.getElementById("starfield"),m=window.matchMedia("(prefers-reduced-motion: reduce)").matches;if(a){let s=function(){n=window.innerWidth,o=window.innerHeight,a.width=n*i,a.height=o*i,a.style.width=n+"px",a.style.height=o+"px",t.setTransform(i,0,0,i,0,0);const e=Math.min(160,Math.floor(n*o/9e3));h=Array.from({length:e},()=>({x:Math.random()*n,y:Math.random()*o,z:Math.random()*.8+.2,r:Math.random()*1.4+.3,hue:Math.random()>.5?188:270}))},d=function(){t.clearRect(0,0,n,o);for(const e of h){const c=e.x+(r.x-n/2)*.02*e.z,l=e.y+(r.y-o/2)*.02*e.z;t.beginPath(),t.arc(c,l,e.r*e.z,0,Math.PI*2),t.fillStyle=`hsla(${e.hue}, 90%, 70%, ${.25+e.z*.55})`,t.shadowBlur=8*e.z,t.shadowColor=`hsla(${e.hue}, 90%, 70%, 0.8)`,t.fill(),e.y-=e.z*.12,e.y<-2&&(e.y=o+2,e.x=Math.random()*n)}t.shadowBlur=0,m||requestAnimationFrame(d)};const t=a.getContext("2d");let n=0,o=0,i=Math.min(window.devicePixelRatio||1,2),h=[];const r={x:0,y:0};window.addEventListener("resize",s,{passive:!0}),window.addEventListener("mousemove",e=>{r.x=e.clientX,r.y=e.clientY},{passive:!0}),s(),d()}</script> <header class="nav-wrap" data-astro-cid-dmqpwcec> <nav class="container-x nav glass" data-astro-cid-dmqpwcec> <a href="/" class="brand" data-astro-cid-dmqpwcec> <span class="brand-dot" data-astro-cid-dmqpwcec></span> <span class="brand-name" data-astro-cid-dmqpwcec>庄楚辉</span> <span class="brand-tag" data-astro-cid-dmqpwcec>/ AI Builder</span> </a> <button id="nav-toggle" class="nav-toggle" aria-label="菜单" aria-expanded="false" data-astro-cid-dmqpwcec> <span data-astro-cid-dmqpwcec></span><span data-astro-cid-dmqpwcec></span><span data-astro-cid-dmqpwcec></span> </button> <ul id="nav-menu" class="nav-menu" data-astro-cid-dmqpwcec> <li data-astro-cid-dmqpwcec> <a href="/" class="nav-link" data-astro-cid-dmqpwcec>首页</a> </li><li data-astro-cid-dmqpwcec> <a href="/about" class="nav-link" data-astro-cid-dmqpwcec>关于</a> </li><li data-astro-cid-dmqpwcec> <a href="/projects" class="nav-link" data-astro-cid-dmqpwcec>项目</a> </li><li data-astro-cid-dmqpwcec> <a href="/blog" class="nav-link" data-astro-cid-dmqpwcec>文章</a> </li><li data-astro-cid-dmqpwcec> <a href="/news" class="nav-link" data-astro-cid-dmqpwcec>AI 要闻</a> </li><li data-astro-cid-dmqpwcec> <a href="/tools" class="nav-link active" data-astro-cid-dmqpwcec>工具</a> </li><li data-astro-cid-dmqpwcec> <a href="/kb" class="nav-link" data-astro-cid-dmqpwcec>知识库</a> </li> </ul> </nav> </header>  <script type="module">const e=document.getElementById("nav-toggle"),n=document.getElementById("nav-menu");e?.addEventListener("click",()=>{const t=n?.classList.toggle("open");e.setAttribute("aria-expanded",String(!!t))});</script> <main>  <article class="container-x detail" data-astro-cid-6kazcgig> <a href="/tools" class="back" data-astro-cid-6kazcgig>← 返回工具指南</a> <header class="detail-head" data-astro-cid-6kazcgig> <span class="chip tool-cat" data-astro-cid-6kazcgig>自托管 Agent</span> <h1 class="detail-title" data-astro-cid-6kazcgig>OpenClaw 使用指南</h1> <p class="detail-desc" data-astro-cid-6kazcgig>本地优先的开源个人 AI 助手，通过消息渠道、技能和工具把 Agent 接到真实工作流里。</p> <div class="detail-meta" data-astro-cid-6kazcgig> <span class="d-date" data-astro-cid-6kazcgig>更新于 2026年7月5日</span> <span class="chip" data-astro-cid-6kazcgig>OpenClaw</span> <span class="chip" data-astro-cid-6kazcgig>开源免费 / 模型与部署自理</span> <span class="chip" data-astro-cid-6kazcgig>OpenClaw</span><span class="chip" data-astro-cid-6kazcgig>自托管</span><span class="chip" data-astro-cid-6kazcgig>Agent</span><span class="chip" data-astro-cid-6kazcgig>自动化</span> </div> <a href="https://openclaw.ai" target="_blank" rel="noopener" class="official-link" data-astro-cid-6kazcgig>访问官网 ↗</a> </header> <div class="prose-space" data-astro-cid-6kazcgig> <h2 id="工具简介">工具简介</h2>
+<p>OpenClaw 是一个本地优先的开源个人 AI 助手。它不是传统 IDE 插件，而是一个长期运行的 Agent Gateway：你把它部署在自己的电脑、服务器或工作机上，再通过 Telegram、Slack、Discord、WhatsApp、微信等消息渠道和它对话，让它调用浏览器、文件、Shell、日历、邮件、自动化脚本等工具。</p>
+<p>它适合做“个人工作流中枢”，而不是单纯做代码补全。如果你的目标是让 AI 持续接收消息、定时执行任务、协调多个工具，OpenClaw 比 Cursor、Copilot 这类编辑器工具更贴近需求。</p>
+<h2 id="核心功能">核心功能</h2>
+<h3 id="1-local-first-gateway">1. Local-first Gateway</h3>
+<p>OpenClaw 的 Gateway 是控制平面，负责管理会话、渠道、工具、技能和事件。核心数据和权限更多掌握在你自己的设备或服务器上。</p>
+<h3 id="2-多渠道入口">2. 多渠道入口</h3>
+<p>支持把同一个助手接入多种消息渠道。常见做法是用 Telegram 或 Slack 做个人命令入口，用 Discord/企业 IM 做团队入口。</p>
+<h3 id="3-工具与技能系统">3. 工具与技能系统</h3>
+<p>Agent 可以调用浏览器、Canvas、节点、Cron、会话和消息平台动作，也可以通过技能扩展固定工作流。</p>
+<h3 id="4-多-agent-路由">4. 多 Agent 路由</h3>
+<p>可以把不同渠道、账号或联系人路由到不同 Agent，分别绑定工作区和会话，避免个人任务、团队任务、自动化任务混在一起。</p>
+<h3 id="5-常驻运行">5. 常驻运行</h3>
+<p>通过 daemon 模式让 Gateway 常驻运行，适合做提醒、巡检、收件箱处理、PR 跟进、例行报告生成等任务。</p>
+<h2 id="适用场景">适用场景</h2>
+<ul>
+<li>个人 AI 助理：从聊天工具里安排任务、查信息、生成草稿。</li>
+<li>自动化中枢：把定时任务、脚本、Webhook 和 AI 判断串起来。</li>
+<li>远程工作流控制：手机上发消息，让家里或服务器上的 Agent 执行操作。</li>
+<li>多工具编排：把浏览器、文件、消息、日历、邮件和 MCP Server 接在一起。</li>
+<li>实验性 Agent 平台：研究长期运行 Agent 的权限、记忆、技能和路由设计。</li>
+</ul>
+<h2 id="详细操作步骤">详细操作步骤</h2>
+<h3 id="第-1-步准备运行环境">第 1 步：准备运行环境</h3>
+<p>官方推荐 Node 24，也支持较新的 Node 22 版本。先确认本机环境：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">node</span><span style="color:#82AAFF"> --version</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">npm</span><span style="color:#82AAFF"> --version</span></span></code></pre>
+<h3 id="第-2-步安装-openclaw">第 2 步：安装 OpenClaw</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">npm</span><span style="color:#ECC48D"> install</span><span style="color:#82AAFF"> -g</span><span style="color:#ECC48D"> openclaw@latest</span></span></code></pre>
+<p>安装后检查：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">openclaw</span><span style="color:#82AAFF"> --version</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">openclaw</span><span style="color:#ECC48D"> doctor</span></span></code></pre>
+<h3 id="第-3-步完成首次引导">第 3 步：完成首次引导</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">openclaw</span><span style="color:#ECC48D"> onboard</span><span style="color:#82AAFF"> --install-daemon</span></span></code></pre>
+<p>这个命令会引导你配置 Gateway、工作区、渠道和技能，并把 Gateway 安装成常驻服务。</p>
+<h3 id="第-4-步检查-gateway">第 4 步：检查 Gateway</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">openclaw</span><span style="color:#ECC48D"> gateway</span><span style="color:#ECC48D"> status</span></span></code></pre>
+<p>如果要临时调试，可以停掉 daemon，改用前台模式：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">openclaw</span><span style="color:#ECC48D"> gateway</span><span style="color:#ECC48D"> stop</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">openclaw</span><span style="color:#ECC48D"> gateway</span><span style="color:#82AAFF"> --port</span><span style="color:#F78C6C"> 18789</span><span style="color:#82AAFF"> --verbose</span></span></code></pre>
+<h3 id="第-5-步发送第一条任务">第 5 步：发送第一条任务</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">openclaw</span><span style="color:#ECC48D"> agent</span><span style="color:#82AAFF"> --message</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">整理今天未完成的开发任务，按优先级列出下一步</span><span style="color:#D9F5DD">"</span></span></code></pre>
+<p>接入消息渠道后，也可以直接从 Telegram、Slack、Discord 等入口发消息。</p>
+<h2 id="实用技巧">实用技巧</h2>
+<h3 id="1-先从只读任务开始">1. 先从只读任务开始</h3>
+<p>第一周不要急着让它改文件、发邮件或执行生产命令。先让它做汇总、提醒、检索、草稿生成，观察输出稳定性。</p>
+<h3 id="2-给不同场景拆-agent">2. 给不同场景拆 Agent</h3>
+<p>个人助理、代码助理、运营助理、巡检助理最好分开配置。这样权限、工作区、记忆和日志都更清楚。</p>
+<h3 id="3-把危险动作放进确认流程">3. 把危险动作放进确认流程</h3>
+<p>发邮件、删文件、改数据库、执行部署这类动作，都应该要求人工确认。OpenClaw 的价值是编排，不是跳过权限边界。</p>
+<h3 id="4-用-cron-做例行工作">4. 用 Cron 做例行工作</h3>
+<p>适合做日报、周报、收件箱清理、依赖更新提醒、PR 状态巡检、监控告警汇总。</p>
+<h3 id="5-和-mcp-配合">5. 和 MCP 配合</h3>
+<p>把 GitHub、Postgres、Notion、Todoist、内部 API 做成 MCP Server，再让 OpenClaw 统一调度，比把所有能力塞进一个脚本更可维护。</p>
+<h2 id="注意事项">注意事项</h2>
+<ul>
+<li><strong>权限风险</strong>：默认主会话的工具可能直接运行在宿主机上，接入远程渠道前必须重新检查沙箱、白名单和 DM 策略。</li>
+<li><strong>渠道安全</strong>：聊天消息是非可信输入，尤其是群聊、公开频道和转发消息，不要让它直接触发高权限动作。</li>
+<li><strong>运维成本</strong>：常驻 Agent 需要日志、备份、升级、密钥轮换和异常恢复。</li>
+<li><strong>模型成本</strong>：复杂自动化可能频繁调用大模型，要设置预算和使用记录。</li>
+<li><strong>稳定性预期</strong>：它更适合可回滚、可审计的辅助工作，不适合无人监管地操作关键资产。</li>
+</ul>
+<h2 id="实战案例">实战案例</h2>
+<h3 id="案例-1个人开发日报">案例 1：个人开发日报</h3>
+<p>每天晚上自动收集 GitHub PR、Issue、日历和本地提交记录，生成一份日报草稿：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>每天 20:30 汇总今天的 GitHub 活动、日历会议和 TODO，</span></span>
+<span class="line"><span>按「完成 / 阻塞 / 明天计划」输出到 Slack 私信，不要自动发送到群。</span></span></code></pre>
+<h3 id="案例-2pr-跟进助手">案例 2：PR 跟进助手</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>每 2 小时检查我负责的 PR：</span></span>
+<span class="line"><span>- 有 CI 失败就汇总失败 job 和关键日志</span></span>
+<span class="line"><span>- 有 review comment 就按文件分组</span></span>
+<span class="line"><span>- 只发提醒，不自动 push 代码</span></span></code></pre>
+<h3 id="案例-3个人知识库入口">案例 3：个人知识库入口</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>当我在 Telegram 发「记录：」开头的消息时，</span></span>
+<span class="line"><span>整理成一条结构化笔记，打上主题标签，</span></span>
+<span class="line"><span>写入我的 Markdown 知识库，等待我确认后再提交。</span></span></code></pre>
+<h2 id="选型建议">选型建议</h2>
+<p>如果你主要是在 IDE 里写代码，优先用 Cursor、Copilot 或 Codex。<br>
+如果你想要一个接入聊天渠道、常驻运行、能协调多个工具的个人 Agent，再考虑 OpenClaw。</p>
+<h2 id="相关条目">相关条目</h2>
+<ul>
+<li><a href="../hermes-agent">Hermes Agent 使用指南</a></li>
+<li><a href="../codex">Codex CLI 使用指南</a></li>
+<li><a href="../../kb/agent-development">Agent 智能体开发</a></li>
+</ul> </div> </article>  </main> <footer class="footer" data-astro-cid-sz7xmlte> <div class="container-x footer-inner glass" data-astro-cid-sz7xmlte> <div data-astro-cid-sz7xmlte> <p class="f-name text-gradient" data-astro-cid-sz7xmlte>庄楚辉</p> <p class="f-desc" data-astro-cid-sz7xmlte>一名 AI Builder —— 构建智能产品、分享思考与知识。</p> </div> <div class="f-socials" data-astro-cid-sz7xmlte> <a href="https://github.com/zchuhui" target="_blank" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>GitHub</a><a href="https://x.com/zch94622737" target="_blank" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>X</a><a href="mailto:943339564g@gmail.com" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>Email</a> </div> </div> <p class="f-copy" data-astro-cid-sz7xmlte>© 2026 庄楚辉 · Built with Astro · 部署于 GitHub Pages</p> </footer>  <!-- 全局滚动揭示 --> <script type="module">const s=new IntersectionObserver(e=>{for(const r of e)r.isIntersecting&&(r.target.classList.add("is-visible"),s.unobserve(r.target))},{threshold:.12});document.querySelectorAll(".reveal").forEach(e=>s.observe(e));</script> </body> </html> 

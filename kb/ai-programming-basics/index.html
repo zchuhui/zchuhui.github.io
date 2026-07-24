@@ -1,0 +1,114 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>AI 编程基础概念 · 庄楚辉</title><meta name="description" content="理解 AI 编程的核心范式：从调用 API 到构建智能体，再到工程化落地。"><link rel="canonical" href="https://zchuhui.github.io/kb/ai-programming-basics/"><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:title" content="AI 编程基础概念 · 庄楚辉"><meta property="og:description" content="理解 AI 编程的核心范式：从调用 API 到构建智能体，再到工程化落地。"><meta property="og:image" content="https://zchuhui.github.io/og.svg"><meta property="og:url" content="https://zchuhui.github.io/kb/ai-programming-basics/"><meta name="twitter:card" content="summary_large_image"><meta name="generator" content="Astro v5.18.2"><link rel="stylesheet" href="/_astro/about.Dditgxr6.css">
+<style>.detail[data-astro-cid-amjbiojg]{max-width:46rem;padding-top:2rem}.breadcrumb[data-astro-cid-amjbiojg]{display:flex;align-items:center;gap:.5rem;font-family:var(--font-mono);font-size:.78rem;color:var(--color-ink-dim);margin-bottom:1.2rem}.breadcrumb[data-astro-cid-amjbiojg] a[data-astro-cid-amjbiojg]{color:var(--color-ink-dim);text-decoration:none}.breadcrumb[data-astro-cid-amjbiojg] a[data-astro-cid-amjbiojg]:hover{color:var(--color-cyan)}.bc-current[data-astro-cid-amjbiojg]{color:var(--color-violet)}.detail-head[data-astro-cid-amjbiojg]{margin:0 0 2rem}.detail-badges[data-astro-cid-amjbiojg]{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin-bottom:.7rem}.kb-cat[data-astro-cid-amjbiojg]{color:var(--color-violet);border-color:#a855f74d}.read-time[data-astro-cid-amjbiojg]{font-family:var(--font-mono);font-size:.72rem;color:var(--color-ink-dim)}.detail-title[data-astro-cid-amjbiojg]{font-size:clamp(1.9rem,4.5vw,2.6rem);font-weight:900;margin:0;line-height:1.2}.detail-desc[data-astro-cid-amjbiojg]{color:var(--color-ink-soft);font-size:1.05rem;line-height:1.7;margin:1rem 0}.detail-meta[data-astro-cid-amjbiojg]{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;margin-top:.8rem}.d-date[data-astro-cid-amjbiojg]{font-family:var(--font-mono);font-size:.8rem;color:var(--color-ink-dim);margin-right:.4rem}.detail-body[data-astro-cid-amjbiojg]{position:relative}.anchor[data-astro-cid-amjbiojg]{display:block;position:relative;top:-6rem;visibility:hidden}.toc[data-astro-cid-amjbiojg]{margin:0 0 2rem;padding:1rem 1.2rem;border-radius:.9rem;background:#ffffff0a;border:1px solid rgba(255,255,255,.08)}.toc-title[data-astro-cid-amjbiojg]{font-size:.85rem;font-weight:700;color:var(--color-ink);margin-bottom:.6rem}.toc[data-astro-cid-amjbiojg] ul[data-astro-cid-amjbiojg]{list-style:none;padding:0;margin:0}.toc[data-astro-cid-amjbiojg] li[data-astro-cid-amjbiojg]{margin:.35rem 0}.toc[data-astro-cid-amjbiojg] a[data-astro-cid-amjbiojg]{font-size:.85rem;color:var(--color-ink-soft);text-decoration:none}.toc[data-astro-cid-amjbiojg] a[data-astro-cid-amjbiojg]:hover{color:var(--color-cyan)}.toc[data-astro-cid-amjbiojg]:has(#toc-list:empty){display:none}.prose-space[data-astro-cid-amjbiojg] h2[data-astro-cid-amjbiojg]{scroll-margin-top:6rem}.page-nav[data-astro-cid-amjbiojg]{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.08)}.page-link[data-astro-cid-amjbiojg]{display:flex;flex-direction:column;padding:1rem 1.2rem;border-radius:.9rem;background:#ffffff0a;border:1px solid rgba(255,255,255,.08);text-decoration:none;transition:border-color .2s,background .2s}.page-link[data-astro-cid-amjbiojg]:hover{border-color:#a855f766;background:#ffffff0f}.page-link[data-astro-cid-amjbiojg].next{text-align:right}.page-label[data-astro-cid-amjbiojg]{font-family:var(--font-mono);font-size:.72rem;color:var(--color-ink-dim);margin-bottom:.3rem}.page-title[data-astro-cid-amjbiojg]{font-size:.95rem;font-weight:600;color:var(--color-ink)}@media(min-width:1100px){.detail[data-astro-cid-amjbiojg]{max-width:72rem}.detail-body[data-astro-cid-amjbiojg]{display:grid;grid-template-columns:1fr 16rem;gap:2.5rem}.toc[data-astro-cid-amjbiojg]{position:sticky;top:6rem;align-self:start;margin:0}}
+</style></head> <body> <canvas id="starfield" aria-hidden="true" data-astro-cid-ra7sfcwn></canvas>  <script type="module">const a=document.getElementById("starfield"),m=window.matchMedia("(prefers-reduced-motion: reduce)").matches;if(a){let s=function(){n=window.innerWidth,o=window.innerHeight,a.width=n*i,a.height=o*i,a.style.width=n+"px",a.style.height=o+"px",t.setTransform(i,0,0,i,0,0);const e=Math.min(160,Math.floor(n*o/9e3));h=Array.from({length:e},()=>({x:Math.random()*n,y:Math.random()*o,z:Math.random()*.8+.2,r:Math.random()*1.4+.3,hue:Math.random()>.5?188:270}))},d=function(){t.clearRect(0,0,n,o);for(const e of h){const c=e.x+(r.x-n/2)*.02*e.z,l=e.y+(r.y-o/2)*.02*e.z;t.beginPath(),t.arc(c,l,e.r*e.z,0,Math.PI*2),t.fillStyle=`hsla(${e.hue}, 90%, 70%, ${.25+e.z*.55})`,t.shadowBlur=8*e.z,t.shadowColor=`hsla(${e.hue}, 90%, 70%, 0.8)`,t.fill(),e.y-=e.z*.12,e.y<-2&&(e.y=o+2,e.x=Math.random()*n)}t.shadowBlur=0,m||requestAnimationFrame(d)};const t=a.getContext("2d");let n=0,o=0,i=Math.min(window.devicePixelRatio||1,2),h=[];const r={x:0,y:0};window.addEventListener("resize",s,{passive:!0}),window.addEventListener("mousemove",e=>{r.x=e.clientX,r.y=e.clientY},{passive:!0}),s(),d()}</script> <header class="nav-wrap" data-astro-cid-dmqpwcec> <nav class="container-x nav glass" data-astro-cid-dmqpwcec> <a href="/" class="brand" data-astro-cid-dmqpwcec> <span class="brand-dot" data-astro-cid-dmqpwcec></span> <span class="brand-name" data-astro-cid-dmqpwcec>庄楚辉</span> <span class="brand-tag" data-astro-cid-dmqpwcec>/ AI Builder</span> </a> <button id="nav-toggle" class="nav-toggle" aria-label="菜单" aria-expanded="false" data-astro-cid-dmqpwcec> <span data-astro-cid-dmqpwcec></span><span data-astro-cid-dmqpwcec></span><span data-astro-cid-dmqpwcec></span> </button> <ul id="nav-menu" class="nav-menu" data-astro-cid-dmqpwcec> <li data-astro-cid-dmqpwcec> <a href="/" class="nav-link" data-astro-cid-dmqpwcec>首页</a> </li><li data-astro-cid-dmqpwcec> <a href="/about" class="nav-link" data-astro-cid-dmqpwcec>关于</a> </li><li data-astro-cid-dmqpwcec> <a href="/projects" class="nav-link" data-astro-cid-dmqpwcec>项目</a> </li><li data-astro-cid-dmqpwcec> <a href="/blog" class="nav-link" data-astro-cid-dmqpwcec>文章</a> </li><li data-astro-cid-dmqpwcec> <a href="/news" class="nav-link" data-astro-cid-dmqpwcec>AI 要闻</a> </li><li data-astro-cid-dmqpwcec> <a href="/tools" class="nav-link" data-astro-cid-dmqpwcec>工具</a> </li><li data-astro-cid-dmqpwcec> <a href="/kb" class="nav-link active" data-astro-cid-dmqpwcec>知识库</a> </li> </ul> </nav> </header>  <script type="module">const e=document.getElementById("nav-toggle"),n=document.getElementById("nav-menu");e?.addEventListener("click",()=>{const t=n?.classList.toggle("open");e.setAttribute("aria-expanded",String(!!t))});</script> <main>  <article class="container-x detail" data-astro-cid-amjbiojg> <nav class="breadcrumb" aria-label="面包屑" data-astro-cid-amjbiojg> <a href="/" data-astro-cid-amjbiojg>首页</a> <span data-astro-cid-amjbiojg>/</span> <a href="/kb" data-astro-cid-amjbiojg>知识库</a> <span data-astro-cid-amjbiojg>/</span> <span class="bc-current" data-astro-cid-amjbiojg>基础概念</span> </nav> <header class="detail-head" data-astro-cid-amjbiojg> <div class="detail-badges" data-astro-cid-amjbiojg> <span class="chip kb-cat" data-astro-cid-amjbiojg>基础概念</span> <span class="diff-badge diff-easy" data-astro-cid-amjbiojg>入门</span> <span class="read-time" data-astro-cid-amjbiojg>3 分钟阅读</span> </div> <h1 class="detail-title" data-astro-cid-amjbiojg>AI 编程基础概念</h1> <p class="detail-desc" data-astro-cid-amjbiojg>理解 AI 编程的核心范式：从调用 API 到构建智能体，再到工程化落地。</p> <div class="detail-meta" data-astro-cid-amjbiojg> <span class="d-date" data-astro-cid-amjbiojg>更新于 2026年7月5日</span> <span class="chip" data-astro-cid-amjbiojg>AI编程</span><span class="chip" data-astro-cid-amjbiojg>基础</span><span class="chip" data-astro-cid-amjbiojg>范式</span> </div> </header> <div class="detail-body" data-astro-cid-amjbiojg> <aside class="toc" id="toc" data-astro-cid-amjbiojg> <div class="toc-title" data-astro-cid-amjbiojg>目录</div> <nav data-astro-cid-amjbiojg> <ul id="toc-list" data-astro-cid-amjbiojg></ul> </nav> </aside> <div class="prose-space" id="article-content" data-astro-cid-amjbiojg> <h2 id="什么是-ai-编程">什么是 AI 编程</h2>
+<p>AI 编程（AI-Assisted Programming）是指在软件开发全生命周期中引入大语言模型（LLM）能力，以提升编码、调试、测试、文档和架构设计效率的工程实践。它不仅包含”让 AI 写代码”，更涵盖需求拆解、代码审查、测试生成、性能优化等环节。</p>
+<h2 id="三种核心范式">三种核心范式</h2>
+<h3 id="1-copilot-模式人机协作">1. Copilot 模式（人机协作）</h3>
+<p>开发者主导，AI 辅助。典型场景：代码补全、解释代码、生成单测、重构建议。</p>
+<ul>
+<li><strong>特点</strong>：人在回路，AI 输出作为草稿，由开发者审查采纳。</li>
+<li><strong>适用</strong>：日常开发、学习新框架、跨语言迁移。</li>
+</ul>
+<h3 id="2-agent-模式自主执行">2. Agent 模式（自主执行）</h3>
+<p>AI 主导，按目标自主拆解、执行、验证。典型场景：给定一个 Issue，Agent 自动读代码、改代码、跑测试、提 PR。</p>
+<ul>
+<li><strong>特点</strong>：AI 拥有工具调用能力（文件读写、Shell、浏览器）。</li>
+<li><strong>适用</strong>：明确边界的小任务、批量重构、CI 自动修复。</li>
+</ul>
+<h3 id="3-pipeline-模式流程编排">3. Pipeline 模式（流程编排）</h3>
+<p>将 AI 嵌入研发流程的特定环节，如 Code Review、Commit Message 生成、PR 摘要、文档同步。</p>
+<ul>
+<li><strong>特点</strong>：AI 作为流水线的一环，输入输出确定。</li>
+<li><strong>适用</strong>：团队工程化、质量门禁、自动化运营。</li>
+</ul>
+<h2 id="关键术语">关键术语</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>术语</th><th>含义</th></tr></thead><tbody><tr><td><strong>Context Window</strong></td><td>模型一次能处理的输入 token 上限，决定可塞入的代码量</td></tr><tr><td><strong>Token</strong></td><td>模型处理的最小文本单元，1 个汉字约 1-2 token，1 个英文单词约 1 token</td></tr><tr><td><strong>Embedding</strong></td><td>把文本映射为向量，用于语义检索和相似度计算</td></tr><tr><td><strong>Tool Calling</strong></td><td>模型通过结构化输出触发外部工具（函数、API）</td></tr><tr><td><strong>MCP</strong></td><td>Model Context Protocol，AI 与外部工具/数据源的标准化协议</td></tr><tr><td><strong>RAG</strong></td><td>检索增强生成，先查知识库再生成回答</td></tr><tr><td><strong>Fine-tuning</strong></td><td>在基础模型上用领域数据继续训练，定制行为</td></tr><tr><td><strong>Hallucination</strong></td><td>模型编造不存在的事实，是 AI 编程的主要风险</td></tr></tbody></table>
+<h2 id="ai-编程的能力边界">AI 编程的能力边界</h2>
+<h3 id="擅长">擅长</h3>
+<ul>
+<li>模板化代码生成（CRUD、数据转换、配置文件）</li>
+<li>代码解释与文档撰写</li>
+<li>单元测试与边界用例发现</li>
+<li>跨语言翻译、框架迁移</li>
+<li>已知模式的 bug 定位</li>
+</ul>
+<h3 id="不擅长">不擅长</h3>
+<ul>
+<li>复杂业务逻辑的自主设计（缺乏全局上下文）</li>
+<li>涉及隐性领域知识的判断</li>
+<li>性能敏感的底层优化</li>
+<li>跨多服务的分布式一致性设计</li>
+<li>创新性架构方案</li>
+</ul>
+<h2 id="工程化核心挑战">工程化核心挑战</h2>
+<ol>
+<li><strong>上下文管理</strong>：如何把相关代码、文档、规范精准送入模型？</li>
+<li><strong>质量保障</strong>：AI 生成的代码如何自动校验（类型、测试、Lint）？</li>
+<li><strong>成本控制</strong>：Token 消耗如何计量与优化？</li>
+<li><strong>安全合规</strong>：代码隐私、密钥泄漏、许可证风险如何防范？</li>
+<li><strong>可观测性</strong>：AI 调用链如何追踪、复盘、持续改进？</li>
+</ol>
+<h2 id="学习路径建议">学习路径建议</h2>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>1. 掌握 Prompt 工程基础</span></span>
+<span class="line"><span>   ↓</span></span>
+<span class="line"><span>2. 学会模型选型与上下文工程</span></span>
+<span class="line"><span>   ↓</span></span>
+<span class="line"><span>3. 熟练使用 Copilot 类工具（Cursor、Trae、Copilot）</span></span>
+<span class="line"><span>   ↓</span></span>
+<span class="line"><span>4. 学会调用 LLM API（OpenAI / Claude / 国产模型）</span></span>
+<span class="line"><span>   ↓</span></span>
+<span class="line"><span>5. 理解 RAG 与向量检索</span></span>
+<span class="line"><span>   ↓</span></span>
+<span class="line"><span>6. 实践 Tool Calling 与 Agent 开发</span></span>
+<span class="line"><span>   ↓</span></span>
+<span class="line"><span>7. 构建端到端 AI 应用（含评估、监控、迭代）</span></span></code></pre>
+<h2 id="相关条目">相关条目</h2>
+<ul>
+<li><a href="../prompt-engineering-basics">Prompt 工程完全指南</a></li>
+<li><a href="../model-selection-guide">AI 模型选型指南</a></li>
+<li><a href="../context-engineering">上下文工程</a></li>
+<li><a href="../what-is-rag">什么是 RAG</a></li>
+<li><a href="../ai-coding-tools">AI 编程工具与助手</a></li>
+<li><a href="../llm-api-integration">LLM API 集成实践</a></li>
+</ul> </div> </div> <nav class="page-nav" data-astro-cid-amjbiojg> <span data-astro-cid-amjbiojg></span> <a href="/kb/prompt-engineering-basics" class="page-link next" data-astro-cid-amjbiojg> <span class="page-label" data-astro-cid-amjbiojg>下一篇 →</span> <span class="page-title" data-astro-cid-amjbiojg>Prompt 工程完全指南</span> </a> </nav> </article>  </main> <footer class="footer" data-astro-cid-sz7xmlte> <div class="container-x footer-inner glass" data-astro-cid-sz7xmlte> <div data-astro-cid-sz7xmlte> <p class="f-name text-gradient" data-astro-cid-sz7xmlte>庄楚辉</p> <p class="f-desc" data-astro-cid-sz7xmlte>一名 AI Builder —— 构建智能产品、分享思考与知识。</p> </div> <div class="f-socials" data-astro-cid-sz7xmlte> <a href="https://github.com/zchuhui" target="_blank" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>GitHub</a><a href="https://x.com/zch94622737" target="_blank" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>X</a><a href="mailto:943339564g@gmail.com" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>Email</a> </div> </div> <p class="f-copy" data-astro-cid-sz7xmlte>© 2026 庄楚辉 · Built with Astro · 部署于 GitHub Pages</p> </footer>  <!-- 全局滚动揭示 --> <script type="module">const s=new IntersectionObserver(e=>{for(const r of e)r.isIntersecting&&(r.target.classList.add("is-visible"),s.unobserve(r.target))},{threshold:.12});document.querySelectorAll(".reveal").forEach(e=>s.observe(e));</script> </body> </html>  <script type="module">(function(){const o=document.getElementById("article-content"),c=document.getElementById("toc-list");if(!o||!c)return;const l=Array.from(o.querySelectorAll("h2"));if(l.length===0){document.getElementById("toc")?.style.setProperty("display","none");return}const i=e=>e.toLowerCase().trim().replace(/\s+/g,"-").replace(/[^a-z0-9\u4e00-\u9fa5-]/g,""),a=new Set;l.forEach(e=>{let r=i(e.textContent??""),t=r||"heading",s=1;for(;a.has(t);)t=`${r}-${s++}`;a.add(t),e.id=t;const d=document.createElement("li"),n=document.createElement("a");n.href="#"+t,n.textContent=e.textContent??"",d.appendChild(n),c.appendChild(d)})})();</script>

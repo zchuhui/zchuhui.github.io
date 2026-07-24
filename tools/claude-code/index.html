@@ -1,0 +1,123 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>Claude Code 使用指南 · 庄楚辉</title><meta name="description" content="Anthropic 官方终端 Agent，擅长长上下文理解、工具调用和复杂仓库任务。"><link rel="canonical" href="https://zchuhui.github.io/tools/claude-code/"><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:title" content="Claude Code 使用指南 · 庄楚辉"><meta property="og:description" content="Anthropic 官方终端 Agent，擅长长上下文理解、工具调用和复杂仓库任务。"><meta property="og:image" content="https://zchuhui.github.io/og.svg"><meta property="og:url" content="https://zchuhui.github.io/tools/claude-code/"><meta name="twitter:card" content="summary_large_image"><meta name="generator" content="Astro v5.18.2"><link rel="stylesheet" href="/_astro/about.Dditgxr6.css">
+<style>.detail[data-astro-cid-6kazcgig]{max-width:46rem;padding-top:2rem}.back[data-astro-cid-6kazcgig]{font-family:var(--font-mono);font-size:.85rem;color:var(--color-ink-dim)}.back[data-astro-cid-6kazcgig]:hover{color:var(--color-cyan)}.detail-head[data-astro-cid-6kazcgig]{margin:1.5rem 0 2rem}.tool-cat[data-astro-cid-6kazcgig]{color:var(--color-cyan);border-color:#22d3ee4d}.detail-title[data-astro-cid-6kazcgig]{font-size:clamp(1.9rem,4.5vw,2.6rem);font-weight:900;margin:.7rem 0 0;line-height:1.2}.detail-desc[data-astro-cid-6kazcgig]{color:var(--color-ink-soft);font-size:1.05rem;line-height:1.7;margin:1rem 0}.detail-meta[data-astro-cid-6kazcgig]{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center}.d-date[data-astro-cid-6kazcgig]{font-family:var(--font-mono);font-size:.8rem;color:var(--color-ink-dim);margin-right:.4rem}.official-link[data-astro-cid-6kazcgig]{display:inline-block;margin-top:1rem;font-family:var(--font-mono);font-size:.85rem;color:var(--color-cyan)}.official-link[data-astro-cid-6kazcgig]:hover{text-decoration:underline}
+</style></head> <body> <canvas id="starfield" aria-hidden="true" data-astro-cid-ra7sfcwn></canvas>  <script type="module">const a=document.getElementById("starfield"),m=window.matchMedia("(prefers-reduced-motion: reduce)").matches;if(a){let s=function(){n=window.innerWidth,o=window.innerHeight,a.width=n*i,a.height=o*i,a.style.width=n+"px",a.style.height=o+"px",t.setTransform(i,0,0,i,0,0);const e=Math.min(160,Math.floor(n*o/9e3));h=Array.from({length:e},()=>({x:Math.random()*n,y:Math.random()*o,z:Math.random()*.8+.2,r:Math.random()*1.4+.3,hue:Math.random()>.5?188:270}))},d=function(){t.clearRect(0,0,n,o);for(const e of h){const c=e.x+(r.x-n/2)*.02*e.z,l=e.y+(r.y-o/2)*.02*e.z;t.beginPath(),t.arc(c,l,e.r*e.z,0,Math.PI*2),t.fillStyle=`hsla(${e.hue}, 90%, 70%, ${.25+e.z*.55})`,t.shadowBlur=8*e.z,t.shadowColor=`hsla(${e.hue}, 90%, 70%, 0.8)`,t.fill(),e.y-=e.z*.12,e.y<-2&&(e.y=o+2,e.x=Math.random()*n)}t.shadowBlur=0,m||requestAnimationFrame(d)};const t=a.getContext("2d");let n=0,o=0,i=Math.min(window.devicePixelRatio||1,2),h=[];const r={x:0,y:0};window.addEventListener("resize",s,{passive:!0}),window.addEventListener("mousemove",e=>{r.x=e.clientX,r.y=e.clientY},{passive:!0}),s(),d()}</script> <header class="nav-wrap" data-astro-cid-dmqpwcec> <nav class="container-x nav glass" data-astro-cid-dmqpwcec> <a href="/" class="brand" data-astro-cid-dmqpwcec> <span class="brand-dot" data-astro-cid-dmqpwcec></span> <span class="brand-name" data-astro-cid-dmqpwcec>庄楚辉</span> <span class="brand-tag" data-astro-cid-dmqpwcec>/ AI Builder</span> </a> <button id="nav-toggle" class="nav-toggle" aria-label="菜单" aria-expanded="false" data-astro-cid-dmqpwcec> <span data-astro-cid-dmqpwcec></span><span data-astro-cid-dmqpwcec></span><span data-astro-cid-dmqpwcec></span> </button> <ul id="nav-menu" class="nav-menu" data-astro-cid-dmqpwcec> <li data-astro-cid-dmqpwcec> <a href="/" class="nav-link" data-astro-cid-dmqpwcec>首页</a> </li><li data-astro-cid-dmqpwcec> <a href="/about" class="nav-link" data-astro-cid-dmqpwcec>关于</a> </li><li data-astro-cid-dmqpwcec> <a href="/projects" class="nav-link" data-astro-cid-dmqpwcec>项目</a> </li><li data-astro-cid-dmqpwcec> <a href="/blog" class="nav-link" data-astro-cid-dmqpwcec>文章</a> </li><li data-astro-cid-dmqpwcec> <a href="/news" class="nav-link" data-astro-cid-dmqpwcec>AI 要闻</a> </li><li data-astro-cid-dmqpwcec> <a href="/tools" class="nav-link active" data-astro-cid-dmqpwcec>工具</a> </li><li data-astro-cid-dmqpwcec> <a href="/kb" class="nav-link" data-astro-cid-dmqpwcec>知识库</a> </li> </ul> </nav> </header>  <script type="module">const e=document.getElementById("nav-toggle"),n=document.getElementById("nav-menu");e?.addEventListener("click",()=>{const t=n?.classList.toggle("open");e.setAttribute("aria-expanded",String(!!t))});</script> <main>  <article class="container-x detail" data-astro-cid-6kazcgig> <a href="/tools" class="back" data-astro-cid-6kazcgig>← 返回工具指南</a> <header class="detail-head" data-astro-cid-6kazcgig> <span class="chip tool-cat" data-astro-cid-6kazcgig>终端 Agent</span> <h1 class="detail-title" data-astro-cid-6kazcgig>Claude Code 使用指南</h1> <p class="detail-desc" data-astro-cid-6kazcgig>Anthropic 官方终端 Agent，擅长长上下文理解、工具调用和复杂仓库任务。</p> <div class="detail-meta" data-astro-cid-6kazcgig> <span class="d-date" data-astro-cid-6kazcgig>更新于 2026年7月5日</span> <span class="chip" data-astro-cid-6kazcgig>Anthropic</span> <span class="chip" data-astro-cid-6kazcgig>订阅制 / API 计费</span> <span class="chip" data-astro-cid-6kazcgig>Claude</span><span class="chip" data-astro-cid-6kazcgig>Anthropic</span><span class="chip" data-astro-cid-6kazcgig>终端</span><span class="chip" data-astro-cid-6kazcgig>Agent</span> </div> <a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener" class="official-link" data-astro-cid-6kazcgig>访问官网 ↗</a> </header> <div class="prose-space" data-astro-cid-6kazcgig> <h2 id="工具简介">工具简介</h2>
+<p>Claude Code 是 Anthropic 官方推出的终端 AI 编程助手。它以 Agent 形式运行在终端，能读写文件、执行命令、调用工具，擅长处理需要长上下文和复杂推理的编程任务。如果你面对的是“跨几十个文件的大重构”或“需要理解整个代码库才能做的事”，Claude Code 是优先级很高的选择。</p>
+<h2 id="核心功能">核心功能</h2>
+<h3 id="1-长上下文理解">1. 长上下文理解</h3>
+<p>适合阅读跨文件调用链、设计文档、测试输出和历史讨论，减少只看局部文件导致的误判。</p>
+<h3 id="2-强大的-tool-use">2. 强大的 Tool Use</h3>
+<p>原生支持函数调用，能定义任意工具（读文件、跑命令、调 API），让 Claude 自主决定何时调用。</p>
+<h3 id="3-多步推理react">3. 多步推理（ReAct）</h3>
+<p>面对复杂任务，Claude 会先思考、再行动、观察结果、再调整，循环直到完成。</p>
+<h3 id="4-项目记忆claudemd">4. 项目记忆（CLAUDE.md）</h3>
+<p>读取项目根目录的 <code>CLAUDE.md</code> 作为持久化指令，理解项目规范、架构、约定。</p>
+<h3 id="5-mcp-集成">5. MCP 集成</h3>
+<p>支持 Model Context Protocol，可连接数据库、API、内部工具，扩展能力边界。</p>
+<h2 id="适用场景">适用场景</h2>
+<ul>
+<li>大规模重构（跨几十个文件的改动）</li>
+<li>复杂 bug 定位（需要理解整个调用链）</li>
+<li>架构设计与方案对比</li>
+<li>代码库文档生成</li>
+<li>把需求文档转成可运行代码</li>
+</ul>
+<h2 id="详细操作步骤">详细操作步骤</h2>
+<h3 id="第-1-步安装">第 1 步：安装</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">npm</span><span style="color:#ECC48D"> install</span><span style="color:#82AAFF"> -g</span><span style="color:#ECC48D"> @anthropic-ai/claude-code</span></span></code></pre>
+<h3 id="第-2-步登录">第 2 步：登录</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">claude</span></span></code></pre>
+<p>首次运行会引导登录 Anthropic 账号（订阅 Claude Pro/Max）或配置 API Key。</p>
+<h3 id="第-3-步创建项目记忆">第 3 步：创建项目记忆</h3>
+<p>在项目根目录新建 <code>CLAUDE.md</code>：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#82B1FF"># 项目：TalkTrain AI</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#82B1FF">## 技术栈</span></span>
+<span class="line"><span style="color:#D9F5DD">-</span><span style="color:#D6DEEB"> 后端：Go 1.25 + Gin + GORM + PostgreSQL</span></span>
+<span class="line"><span style="color:#D9F5DD">-</span><span style="color:#D6DEEB"> 前端：Vue 3 + TypeScript + Tailwind</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#82B1FF">## 目录结构</span></span>
+<span class="line"><span style="color:#D9F5DD">-</span><span style="color:#D6DEEB"> backend/internal/api：HTTP 路由</span></span>
+<span class="line"><span style="color:#D9F5DD">-</span><span style="color:#D6DEEB"> backend/internal/service：业务逻辑</span></span>
+<span class="line"><span style="color:#D9F5DD">-</span><span style="color:#D6DEEB"> backend/internal/model：数据模型</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#82B1FF">## 规范</span></span>
+<span class="line"><span style="color:#D9F5DD">-</span><span style="color:#D6DEEB"> 错误统一用 pkg/response 返回</span></span>
+<span class="line"><span style="color:#D9F5DD">-</span><span style="color:#D6DEEB"> 提交前跑 make test</span></span>
+<span class="line"><span style="color:#D9F5DD">-</span><span style="color:#D6DEEB"> 注释用中文</span></span></code></pre>
+<h3 id="第-4-步交互模式">第 4 步：交互模式</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">claude</span></span></code></pre>
+<p>进入交互式对话：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>> 分析 backend/internal/api/chat.go 的 SendMessage 函数，</span></span>
+<span class="line"><span>  找出所有可能的并发安全问题，并给出修复方案。</span></span></code></pre>
+<p>Claude 会读取相关文件、分析代码、给出方案，确认后直接修改。</p>
+<h3 id="第-5-步非交互模式">第 5 步：非交互模式</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">claude</span><span style="color:#82AAFF"> -p</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">修复 make test 报错</span><span style="color:#D9F5DD">"</span><span style="color:#82AAFF"> --allowedTools</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">Bash,Edit</span><span style="color:#D9F5DD">"</span></span></code></pre>
+<p>适合 CI 自动化。</p>
+<h3 id="第-6-步使用-mcp-扩展能力">第 6 步：使用 MCP 扩展能力</h3>
+<p>在 <code>.claude/mcp.json</code> 配置外部工具：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="json"><code><span class="line"><span style="color:#D6DEEB">{</span></span>
+<span class="line"><span style="color:#7FDBCA">  "mcpServers"</span><span style="color:#D6DEEB">: {</span></span>
+<span class="line"><span style="color:#7FDBCA">    "postgres"</span><span style="color:#D6DEEB">: {</span></span>
+<span class="line"><span style="color:#7FDBCA">      "command"</span><span style="color:#D6DEEB">: </span><span style="color:#D9F5DD">"</span><span style="color:#C789D6">npx</span><span style="color:#D9F5DD">"</span><span style="color:#D6DEEB">,</span></span>
+<span class="line"><span style="color:#7FDBCA">      "args"</span><span style="color:#D6DEEB">: [</span><span style="color:#D9F5DD">"</span><span style="color:#C789D6">-y</span><span style="color:#D9F5DD">"</span><span style="color:#D6DEEB">, </span><span style="color:#D9F5DD">"</span><span style="color:#C789D6">@modelcontextprotocol/server-postgres</span><span style="color:#D9F5DD">"</span><span style="color:#D6DEEB">],</span></span>
+<span class="line"><span style="color:#7FDBCA">      "env"</span><span style="color:#D6DEEB">: { </span><span style="color:#7FDBCA">"DATABASE_URL"</span><span style="color:#D6DEEB">: </span><span style="color:#D9F5DD">"</span><span style="color:#C789D6">postgresql://...</span><span style="color:#D9F5DD">"</span><span style="color:#D6DEEB"> }</span></span>
+<span class="line"><span style="color:#D6DEEB">    }</span></span>
+<span class="line"><span style="color:#D6DEEB">  }</span></span>
+<span class="line"><span style="color:#D6DEEB">}</span></span></code></pre>
+<p>配置后 Claude 能直接查询数据库。</p>
+<h2 id="实用技巧">实用技巧</h2>
+<h3 id="1-用---allowedtools-控制权限">1. 用 <code>--allowedTools</code> 控制权限</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">claude</span><span style="color:#82AAFF"> --allowedTools</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">Read,Write</span><span style="color:#D9F5DD">"</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">只读分析，不改代码</span><span style="color:#D9F5DD">"</span></span></code></pre>
+<p>只允许读和写，不允许执行命令。</p>
+<h3 id="2-用-subagent-处理子任务">2. 用 subagent 处理子任务</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>用 subagent 搜索所有调用 SendMessage 的地方，</span></span>
+<span class="line"><span>  然后告诉我哪些地方传了空 user。</span></span></code></pre>
+<p>Claude 会启动子任务并行搜索，不污染主对话上下文。</p>
+<h3 id="3-让-claude-写-todo">3. 让 Claude 写 TODO</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>把以下任务拆成 5 个子任务，写到 TODO.md，</span></span>
+<span class="line"><span>  然后逐个执行，每完成一个就在 TODO.md 打勾。</span></span></code></pre>
+<p>适合管理多步骤任务。</p>
+<h3 id="4-用---continue-继续上次对话">4. 用 <code>--continue</code> 继续上次对话</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">claude</span><span style="color:#82AAFF"> --continue</span></span></code></pre>
+<p>恢复上次的上下文，继续未完成的任务。</p>
+<h3 id="5-用-cost-查看消耗">5. 用 /cost 查看消耗</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>/cost</span></span></code></pre>
+<p>实时查看本次会话的 token 消耗和费用估算。</p>
+<h3 id="6-配合-git-hook">6. 配合 Git Hook</h3>
+<p>在 <code>.git/hooks/pre-commit</code> 里调用 Claude 做代码审查：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#637777;font-style:italic">#!/bin/sh</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">claude</span><span style="color:#82AAFF"> -p</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">审查本次提交的代码，指出问题</span><span style="color:#D9F5DD">"</span><span style="color:#82AAFF"> --allowedTools</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">Read,Bash</span><span style="color:#D9F5DD">"</span></span></code></pre>
+<h2 id="注意事项">注意事项</h2>
+<ul>
+<li><strong>成本较高</strong>：长上下文和强模型适合复杂任务，简单改动没必要默认使用最高规格。</li>
+<li><strong>网络要求</strong>：需稳定访问 Anthropic API，国内需代理。</li>
+<li><strong>权限边界</strong>：<code>allowedTools</code> 务必按需配置，避免误删文件。</li>
+<li><strong>CLAUDE.md 维护</strong>：项目规范变更后及时更新，否则 Claude 会按旧规范操作。</li>
+<li><strong>敏感数据</strong>：不要把密钥、客户数据贴进对话。</li>
+</ul>
+<h2 id="实战案例">实战案例</h2>
+<h3 id="案例-1跨-30-个文件的-api-重构">案例 1：跨 30 个文件的 API 重构</h3>
+<p>需求：把所有 <code>ctx.JSON(...)</code> 的直接返回改成统一的 <code>response.Success(ctx, data)</code>。</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">claude</span></span>
+<span class="line"><span style="color:#7FDBCA">></span><span style="color:#D6DEEB"> 把 backend/internal/api 下所有 handler 的直接 ctx.JSON 返回，</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">  改成用</span><span style="color:#ECC48D"> pkg/response.Success</span><span style="color:#ECC48D"> /</span><span style="color:#ECC48D"> response.Error</span><span style="color:#ECC48D"> 包装，</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">  保持</span><span style="color:#ECC48D"> HTTP</span><span style="color:#ECC48D"> 状态码和响应体结构不变。</span></span></code></pre>
+<p>Claude 会扫描所有 handler，列出改动计划，逐文件修改，最后跑测试验证。</p>
+<h3 id="案例-2复杂-bug-定位">案例 2：复杂 bug 定位</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>生产环境偶发 500 报错，日志只有 "nil pointer dereference"。</span></span>
+<span class="line"><span>阅读 backend/internal/service/chat.go 和它调用的所有 model，</span></span>
+<span class="line"><span>找出哪里可能解引用了 nil 指针，给出修复方案。</span></span></code></pre>
+<p>Claude 会顺着调用链分析 5-6 个文件，定位到 <code>session.User</code> 可能为 nil 的情况。</p>
+<h3 id="案例-3从需求文档生成功能">案例 3：从需求文档生成功能</h3>
+<p>把 PRD 文档贴进来：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>根据 docs/voice-chat-prd.md 实现语音聊天功能，</span></span>
+<span class="line"><span>  后端用 WebSocket，前端用 WebRTC，</span></span>
+<span class="line"><span>  分成 3 个 PR 提交：协议、后端、前端。</span></span></code></pre>
+<p>Claude 会按 PRD 拆解任务，逐个 PR 实现，每个 PR 都跑测试。</p>
+<h2 id="相关条目">相关条目</h2>
+<ul>
+<li><a href="../codex">Codex CLI 使用指南</a></li>
+<li><a href="../hermes-agent">Hermes Agent 使用指南</a></li>
+<li><a href="../../kb/agent-development">Agent 智能体开发</a></li>
+<li><a href="../../kb/ai-coding-tools">AI 编程工具与助手</a></li>
+</ul> </div> </article>  </main> <footer class="footer" data-astro-cid-sz7xmlte> <div class="container-x footer-inner glass" data-astro-cid-sz7xmlte> <div data-astro-cid-sz7xmlte> <p class="f-name text-gradient" data-astro-cid-sz7xmlte>庄楚辉</p> <p class="f-desc" data-astro-cid-sz7xmlte>一名 AI Builder —— 构建智能产品、分享思考与知识。</p> </div> <div class="f-socials" data-astro-cid-sz7xmlte> <a href="https://github.com/zchuhui" target="_blank" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>GitHub</a><a href="https://x.com/zch94622737" target="_blank" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>X</a><a href="mailto:943339564g@gmail.com" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>Email</a> </div> </div> <p class="f-copy" data-astro-cid-sz7xmlte>© 2026 庄楚辉 · Built with Astro · 部署于 GitHub Pages</p> </footer>  <!-- 全局滚动揭示 --> <script type="module">const s=new IntersectionObserver(e=>{for(const r of e)r.isIntersecting&&(r.target.classList.add("is-visible"),s.unobserve(r.target))},{threshold:.12});document.querySelectorAll(".reveal").forEach(e=>s.observe(e));</script> </body> </html> 

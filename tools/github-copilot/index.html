@@ -1,0 +1,155 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>GitHub Copilot 使用指南 · 庄楚辉</title><meta name="description" content="老牌 AI 编程助手，深度集成 GitHub、VS Code、JetBrains 和 PR 工作流，适合团队标准化使用。"><link rel="canonical" href="https://zchuhui.github.io/tools/github-copilot/"><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:title" content="GitHub Copilot 使用指南 · 庄楚辉"><meta property="og:description" content="老牌 AI 编程助手，深度集成 GitHub、VS Code、JetBrains 和 PR 工作流，适合团队标准化使用。"><meta property="og:image" content="https://zchuhui.github.io/og.svg"><meta property="og:url" content="https://zchuhui.github.io/tools/github-copilot/"><meta name="twitter:card" content="summary_large_image"><meta name="generator" content="Astro v5.18.2"><link rel="stylesheet" href="/_astro/about.Dditgxr6.css">
+<style>.detail[data-astro-cid-6kazcgig]{max-width:46rem;padding-top:2rem}.back[data-astro-cid-6kazcgig]{font-family:var(--font-mono);font-size:.85rem;color:var(--color-ink-dim)}.back[data-astro-cid-6kazcgig]:hover{color:var(--color-cyan)}.detail-head[data-astro-cid-6kazcgig]{margin:1.5rem 0 2rem}.tool-cat[data-astro-cid-6kazcgig]{color:var(--color-cyan);border-color:#22d3ee4d}.detail-title[data-astro-cid-6kazcgig]{font-size:clamp(1.9rem,4.5vw,2.6rem);font-weight:900;margin:.7rem 0 0;line-height:1.2}.detail-desc[data-astro-cid-6kazcgig]{color:var(--color-ink-soft);font-size:1.05rem;line-height:1.7;margin:1rem 0}.detail-meta[data-astro-cid-6kazcgig]{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center}.d-date[data-astro-cid-6kazcgig]{font-family:var(--font-mono);font-size:.8rem;color:var(--color-ink-dim);margin-right:.4rem}.official-link[data-astro-cid-6kazcgig]{display:inline-block;margin-top:1rem;font-family:var(--font-mono);font-size:.85rem;color:var(--color-cyan)}.official-link[data-astro-cid-6kazcgig]:hover{text-decoration:underline}
+</style></head> <body> <canvas id="starfield" aria-hidden="true" data-astro-cid-ra7sfcwn></canvas>  <script type="module">const a=document.getElementById("starfield"),m=window.matchMedia("(prefers-reduced-motion: reduce)").matches;if(a){let s=function(){n=window.innerWidth,o=window.innerHeight,a.width=n*i,a.height=o*i,a.style.width=n+"px",a.style.height=o+"px",t.setTransform(i,0,0,i,0,0);const e=Math.min(160,Math.floor(n*o/9e3));h=Array.from({length:e},()=>({x:Math.random()*n,y:Math.random()*o,z:Math.random()*.8+.2,r:Math.random()*1.4+.3,hue:Math.random()>.5?188:270}))},d=function(){t.clearRect(0,0,n,o);for(const e of h){const c=e.x+(r.x-n/2)*.02*e.z,l=e.y+(r.y-o/2)*.02*e.z;t.beginPath(),t.arc(c,l,e.r*e.z,0,Math.PI*2),t.fillStyle=`hsla(${e.hue}, 90%, 70%, ${.25+e.z*.55})`,t.shadowBlur=8*e.z,t.shadowColor=`hsla(${e.hue}, 90%, 70%, 0.8)`,t.fill(),e.y-=e.z*.12,e.y<-2&&(e.y=o+2,e.x=Math.random()*n)}t.shadowBlur=0,m||requestAnimationFrame(d)};const t=a.getContext("2d");let n=0,o=0,i=Math.min(window.devicePixelRatio||1,2),h=[];const r={x:0,y:0};window.addEventListener("resize",s,{passive:!0}),window.addEventListener("mousemove",e=>{r.x=e.clientX,r.y=e.clientY},{passive:!0}),s(),d()}</script> <header class="nav-wrap" data-astro-cid-dmqpwcec> <nav class="container-x nav glass" data-astro-cid-dmqpwcec> <a href="/" class="brand" data-astro-cid-dmqpwcec> <span class="brand-dot" data-astro-cid-dmqpwcec></span> <span class="brand-name" data-astro-cid-dmqpwcec>庄楚辉</span> <span class="brand-tag" data-astro-cid-dmqpwcec>/ AI Builder</span> </a> <button id="nav-toggle" class="nav-toggle" aria-label="菜单" aria-expanded="false" data-astro-cid-dmqpwcec> <span data-astro-cid-dmqpwcec></span><span data-astro-cid-dmqpwcec></span><span data-astro-cid-dmqpwcec></span> </button> <ul id="nav-menu" class="nav-menu" data-astro-cid-dmqpwcec> <li data-astro-cid-dmqpwcec> <a href="/" class="nav-link" data-astro-cid-dmqpwcec>首页</a> </li><li data-astro-cid-dmqpwcec> <a href="/about" class="nav-link" data-astro-cid-dmqpwcec>关于</a> </li><li data-astro-cid-dmqpwcec> <a href="/projects" class="nav-link" data-astro-cid-dmqpwcec>项目</a> </li><li data-astro-cid-dmqpwcec> <a href="/blog" class="nav-link" data-astro-cid-dmqpwcec>文章</a> </li><li data-astro-cid-dmqpwcec> <a href="/news" class="nav-link" data-astro-cid-dmqpwcec>AI 要闻</a> </li><li data-astro-cid-dmqpwcec> <a href="/tools" class="nav-link active" data-astro-cid-dmqpwcec>工具</a> </li><li data-astro-cid-dmqpwcec> <a href="/kb" class="nav-link" data-astro-cid-dmqpwcec>知识库</a> </li> </ul> </nav> </header>  <script type="module">const e=document.getElementById("nav-toggle"),n=document.getElementById("nav-menu");e?.addEventListener("click",()=>{const t=n?.classList.toggle("open");e.setAttribute("aria-expanded",String(!!t))});</script> <main>  <article class="container-x detail" data-astro-cid-6kazcgig> <a href="/tools" class="back" data-astro-cid-6kazcgig>← 返回工具指南</a> <header class="detail-head" data-astro-cid-6kazcgig> <span class="chip tool-cat" data-astro-cid-6kazcgig>IDE 插件</span> <h1 class="detail-title" data-astro-cid-6kazcgig>GitHub Copilot 使用指南</h1> <p class="detail-desc" data-astro-cid-6kazcgig>老牌 AI 编程助手，深度集成 GitHub、VS Code、JetBrains 和 PR 工作流，适合团队标准化使用。</p> <div class="detail-meta" data-astro-cid-6kazcgig> <span class="d-date" data-astro-cid-6kazcgig>更新于 2026年7月5日</span> <span class="chip" data-astro-cid-6kazcgig>GitHub / Microsoft</span> <span class="chip" data-astro-cid-6kazcgig>免费起步 / Pro $10/月 / Business $19/月</span> <span class="chip" data-astro-cid-6kazcgig>Copilot</span><span class="chip" data-astro-cid-6kazcgig>GitHub</span><span class="chip" data-astro-cid-6kazcgig>IDE 插件</span> </div> <a href="https://github.com/features/copilot" target="_blank" rel="noopener" class="official-link" data-astro-cid-6kazcgig>访问官网 ↗</a> </header> <div class="prose-space" data-astro-cid-6kazcgig> <h2 id="工具简介">工具简介</h2>
+<p>GitHub Copilot 是最早大规模商用的 AI 编程助手之一。它以插件形式集成到 VS Code、JetBrains、Neovim 等主流编辑器，提供代码补全、对话、多文件改动、PR 摘要和评审辅助等能力。它最大的优势不是单点模型能力，而是和 GitHub 工作流、企业管理、权限与审计体系结合得深。</p>
+<h2 id="核心功能">核心功能</h2>
+<h3 id="1-代码补全ghost-text">1. 代码补全（Ghost Text）</h3>
+<p>边写边提示，按 Tab 接受。支持整行、整段、甚至整个函数的补全。</p>
+<h3 id="2-copilot-chat">2. Copilot Chat</h3>
+<p>侧边栏对话，能 @ 文件、@ 工作区、@ 终端，理解项目上下文。</p>
+<h3 id="3-copilot-edits">3. Copilot Edits</h3>
+<p>多文件改动模式（类似 Cursor Composer），描述需求后同时改动多个文件。</p>
+<h3 id="4-copilot-agent">4. Copilot Agent</h3>
+<p>Agent 模式，能执行命令、跑测试、自主修复，目前预览中。</p>
+<h3 id="5-pr-评审">5. PR 评审</h3>
+<p>GitHub PR 页面自动生成变更摘要、提出审查意见，减轻 Review 负担。</p>
+<h3 id="6-copilot-cli">6. Copilot CLI</h3>
+<p>终端里用 <code>gh copilot</code> 解释命令、生成 Shell 脚本。</p>
+<h2 id="适用场景">适用场景</h2>
+<ul>
+<li>企业团队（合规、审计、IP 保护）</li>
+<li>已深度使用 GitHub 生态的团队</li>
+<li>多编辑器混用的开发者（VS Code + JetBrains）</li>
+<li>Code Review 自动化</li>
+<li>学习新语言 / 新框架</li>
+</ul>
+<h2 id="详细操作步骤">详细操作步骤</h2>
+<h3 id="第-1-步订阅">第 1 步：订阅</h3>
+<p>访问 <a href="https://github.com/features/copilot">github.com/features/copilot</a> 查看当前套餐。个人版适合独立开发者，Business / Enterprise 更适合需要组织管理、策略控制和审计的团队。</p>
+<h3 id="第-2-步安装插件">第 2 步：安装插件</h3>
+<p><strong>VS Code</strong>：扩展商店搜索 “GitHub Copilot” 安装。</p>
+<p><strong>JetBrains</strong>：Settings → Plugins → 搜索安装。</p>
+<p>登录 GitHub 账号授权即可。</p>
+<h3 id="第-3-步配置-githubcopilot-instructionsmd">第 3 步：配置 .github/copilot-instructions.md</h3>
+<p>在项目根目录创建指令文件，让 Copilot 遵循项目规范：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#82B1FF"># 项目规范</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D6DEEB">我们是一个 Go + Vue 3 的全栈项目。</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D6DEEB">代码风格：</span></span>
+<span class="line"><span style="color:#D9F5DD">-</span><span style="color:#D6DEEB"> Go：遵循Effective Go，用 gofmt</span></span>
+<span class="line"><span style="color:#D9F5DD">-</span><span style="color:#D6DEEB"> Vue：Composition API，&#x3C;script setup></span></span>
+<span class="line"><span style="color:#D9F5DD">-</span><span style="color:#D6DEEB"> 注释用中文</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D6DEEB">禁止：</span></span>
+<span class="line"><span style="color:#D9F5DD">-</span><span style="color:#D6DEEB"> 不要引入新依赖</span></span>
+<span class="line"><span style="color:#D9F5DD">-</span><span style="color:#D6DEEB"> 不要用 any 类型</span></span></code></pre>
+<h3 id="第-4-步日常使用">第 4 步：日常使用</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>操作</th><th>快捷键（VS Code）</th><th>用途</th></tr></thead><tbody><tr><td>接受补全</td><td>Tab</td><td>接受 Ghost Text</td></tr><tr><td>触发 Chat</td><td>⌃⌘I</td><td>侧边栏对话</td></tr><tr><td>触发 Edits</td><td>⌃⌘I → Edits</td><td>多文件改动</td></tr><tr><td>内联聊天</td><td>⌥⌘I</td><td>选中代码后直接对话</td></tr><tr><td>解释代码</td><td>右键 → Copilot → Explain</td><td>选中代码解释</td></tr></tbody></table>
+<h3 id="第-5-步用-edits-做多文件改动">第 5 步：用 Edits 做多文件改动</h3>
+<p>按 ⌃⌘I 切到 Edits 模式：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>把 src/api 下所有 fetch 调用改成 axios，</span></span>
+<span class="line"><span>  统一错误处理，加请求拦截器注入 token。</span></span></code></pre>
+<p>Copilot 列出改动文件，逐个 diff 审查。</p>
+<h3 id="第-6-步pr-评审">第 6 步：PR 评审</h3>
+<p>在 GitHub PR 页面，Copilot 自动生成：</p>
+<ul>
+<li>变更摘要（改了什么、为什么）</li>
+<li>风险点提示</li>
+<li>建议修改</li>
+</ul>
+<p>点击 “Apply suggestion” 一键采纳。</p>
+<h2 id="实用技巧">实用技巧</h2>
+<h3 id="1-用注释引导补全">1. 用注释引导补全</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="typescript"><code><span class="line"><span style="color:#637777;font-style:italic">// 写一个防抖函数，延迟 300ms，支持立即执行选项</span></span>
+<span class="line"><span style="color:#C792EA">function</span><span style="color:#82AAFF;font-style:italic"> debounce</span><span style="color:#D9F5DD">(</span></span></code></pre>
+<p>Copilot 会根据注释生成符合要求的实现。</p>
+<h3 id="2-用-workspace-让-ai-全局思考">2. 用 @workspace 让 AI 全局思考</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>@workspace 这个项目的鉴权是怎么实现的？画一下流程。</span></span></code></pre>
+<p>Copilot 会扫描整个工作区给出答案。</p>
+<h3 id="3-用-terminal-解释报错">3. 用 @terminal 解释报错</h3>
+<p>终端报错后：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>@terminal 解释这个错误，并给出修复方案。</span></span></code></pre>
+<p>Copilot 读取终端输出，直接给方案。</p>
+<h3 id="4-用-inline-chat-改选中代码">4. 用 Inline Chat 改选中代码</h3>
+<p>选中一段代码，按 ⌥⌘I：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>把这个循环改成 map + filter 链式调用</span></span></code></pre>
+<p>Copilot 直接替换选中代码。</p>
+<h3 id="5-用-copilot-instructionsmd-控制风格">5. 用 copilot-instructions.md 控制风格</h3>
+<p>把团队规范写进去，所有 AI 操作都会遵循，比每次对话重复说高效。</p>
+<h3 id="6-用-gh-copilot-在终端提问">6. 用 gh copilot 在终端提问</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">gh</span><span style="color:#ECC48D"> copilot</span><span style="color:#ECC48D"> explain</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">awk '{print </span><span style="color:#D7DBE0">$2</span><span style="color:#ECC48D">}' file.txt</span><span style="color:#D9F5DD">"</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">gh</span><span style="color:#ECC48D"> copilot</span><span style="color:#ECC48D"> suggest</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">找出占用 80 端口的进程</span><span style="color:#D9F5DD">"</span></span></code></pre>
+<h2 id="注意事项">注意事项</h2>
+<ul>
+<li><strong>企业合规</strong>：Business 版开启 IP 保障，代码不用于训练，适合企业。</li>
+<li><strong>配额限制</strong>：Free 版有月度限额，重度使用建议升级 Pro。</li>
+<li><strong>模型选择</strong>：可用模型会随套餐和地区变化，按任务复杂度切换，不要把具体模型名写进团队规范。</li>
+<li><strong>补全噪声</strong>：有时会补全不相关代码，按 Esc 拒绝，不要盲目 Tab。</li>
+<li><strong>隐私</strong>：免费版代码会发送到云端处理，敏感项目用 Business 版。</li>
+<li><strong>不要 Accept All</strong>：多文件改动一定要 diff 审查。</li>
+</ul>
+<h2 id="实战案例">实战案例</h2>
+<h3 id="案例-1用-edits-把-class-组件改-hooks">案例 1：用 Edits 把 Class 组件改 Hooks</h3>
+<p>需求：把 React 项目里所有类组件重构成函数组件。</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>@workspace 把 src/components 下所有 class 组件改成函数组件，</span></span>
+<span class="line"><span>  state 用 useState，副作用用 useEffect，</span></span>
+<span class="line"><span>  保持 props 类型不变。</span></span></code></pre>
+<p>Copilot 列出 8 个待改文件，逐个 diff 审查。</p>
+<h3 id="案例-2用-pr-评审加速-code-review">案例 2：用 PR 评审加速 Code Review</h3>
+<p>提交 PR 后，Copilot 自动生成摘要：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>本次变更：新增用户注册接口</span></span>
+<span class="line"><span>- 新增 auth/register.go</span></span>
+<span class="line"><span>- 修改 router.go，添加 /register 路由</span></span>
+<span class="line"><span>- 新增 register_test.go</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>风险点：</span></span>
+<span class="line"><span>- register.go:42 密码未做强度校验</span></span>
+<span class="line"><span>- 建议在 ValidatePassword 函数中加长度检查</span></span></code></pre>
+<p>点击 “Apply suggestion” 一键修复，节省 Review 时间。</p>
+<h3 id="案例-3用-inline-chat-学习新框架">案例 3：用 Inline Chat 学习新框架</h3>
+<p>打开一个 Astro 文件，选中不懂的部分：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>解释这段 Astro 代码，并告诉我 content collection 是什么概念。</span></span></code></pre>
+<p>Copilot 结合官方文档和项目代码给出解释，比单独查文档更高效。</p>
+<h2 id="相关条目">相关条目</h2>
+<ul>
+<li><a href="../cursor">Cursor 使用指南</a></li>
+<li><a href="../trae">Trae 使用指南</a></li>
+<li><a href="../../kb/ai-coding-tools">AI 编程工具与助手</a></li>
+<li><a href="../../kb/ai-coding-best-practices">AI 编程最佳实践</a></li>
+</ul> </div> </article>  </main> <footer class="footer" data-astro-cid-sz7xmlte> <div class="container-x footer-inner glass" data-astro-cid-sz7xmlte> <div data-astro-cid-sz7xmlte> <p class="f-name text-gradient" data-astro-cid-sz7xmlte>庄楚辉</p> <p class="f-desc" data-astro-cid-sz7xmlte>一名 AI Builder —— 构建智能产品、分享思考与知识。</p> </div> <div class="f-socials" data-astro-cid-sz7xmlte> <a href="https://github.com/zchuhui" target="_blank" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>GitHub</a><a href="https://x.com/zch94622737" target="_blank" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>X</a><a href="mailto:943339564g@gmail.com" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>Email</a> </div> </div> <p class="f-copy" data-astro-cid-sz7xmlte>© 2026 庄楚辉 · Built with Astro · 部署于 GitHub Pages</p> </footer>  <!-- 全局滚动揭示 --> <script type="module">const s=new IntersectionObserver(e=>{for(const r of e)r.isIntersecting&&(r.target.classList.add("is-visible"),s.unobserve(r.target))},{threshold:.12});document.querySelectorAll(".reveal").forEach(e=>s.observe(e));</script> </body> </html> 

@@ -1,0 +1,391 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>Agent 智能体开发 · 庄楚辉</title><meta name="description" content="从 Tool Calling 到多 Agent 协作，构建能自主感知、决策、执行的 AI 智能体。"><link rel="canonical" href="https://zchuhui.github.io/kb/agent-development/"><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:title" content="Agent 智能体开发 · 庄楚辉"><meta property="og:description" content="从 Tool Calling 到多 Agent 协作，构建能自主感知、决策、执行的 AI 智能体。"><meta property="og:image" content="https://zchuhui.github.io/og.svg"><meta property="og:url" content="https://zchuhui.github.io/kb/agent-development/"><meta name="twitter:card" content="summary_large_image"><meta name="generator" content="Astro v5.18.2"><link rel="stylesheet" href="/_astro/about.Dditgxr6.css">
+<style>.detail[data-astro-cid-amjbiojg]{max-width:46rem;padding-top:2rem}.breadcrumb[data-astro-cid-amjbiojg]{display:flex;align-items:center;gap:.5rem;font-family:var(--font-mono);font-size:.78rem;color:var(--color-ink-dim);margin-bottom:1.2rem}.breadcrumb[data-astro-cid-amjbiojg] a[data-astro-cid-amjbiojg]{color:var(--color-ink-dim);text-decoration:none}.breadcrumb[data-astro-cid-amjbiojg] a[data-astro-cid-amjbiojg]:hover{color:var(--color-cyan)}.bc-current[data-astro-cid-amjbiojg]{color:var(--color-violet)}.detail-head[data-astro-cid-amjbiojg]{margin:0 0 2rem}.detail-badges[data-astro-cid-amjbiojg]{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin-bottom:.7rem}.kb-cat[data-astro-cid-amjbiojg]{color:var(--color-violet);border-color:#a855f74d}.read-time[data-astro-cid-amjbiojg]{font-family:var(--font-mono);font-size:.72rem;color:var(--color-ink-dim)}.detail-title[data-astro-cid-amjbiojg]{font-size:clamp(1.9rem,4.5vw,2.6rem);font-weight:900;margin:0;line-height:1.2}.detail-desc[data-astro-cid-amjbiojg]{color:var(--color-ink-soft);font-size:1.05rem;line-height:1.7;margin:1rem 0}.detail-meta[data-astro-cid-amjbiojg]{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;margin-top:.8rem}.d-date[data-astro-cid-amjbiojg]{font-family:var(--font-mono);font-size:.8rem;color:var(--color-ink-dim);margin-right:.4rem}.detail-body[data-astro-cid-amjbiojg]{position:relative}.anchor[data-astro-cid-amjbiojg]{display:block;position:relative;top:-6rem;visibility:hidden}.toc[data-astro-cid-amjbiojg]{margin:0 0 2rem;padding:1rem 1.2rem;border-radius:.9rem;background:#ffffff0a;border:1px solid rgba(255,255,255,.08)}.toc-title[data-astro-cid-amjbiojg]{font-size:.85rem;font-weight:700;color:var(--color-ink);margin-bottom:.6rem}.toc[data-astro-cid-amjbiojg] ul[data-astro-cid-amjbiojg]{list-style:none;padding:0;margin:0}.toc[data-astro-cid-amjbiojg] li[data-astro-cid-amjbiojg]{margin:.35rem 0}.toc[data-astro-cid-amjbiojg] a[data-astro-cid-amjbiojg]{font-size:.85rem;color:var(--color-ink-soft);text-decoration:none}.toc[data-astro-cid-amjbiojg] a[data-astro-cid-amjbiojg]:hover{color:var(--color-cyan)}.toc[data-astro-cid-amjbiojg]:has(#toc-list:empty){display:none}.prose-space[data-astro-cid-amjbiojg] h2[data-astro-cid-amjbiojg]{scroll-margin-top:6rem}.page-nav[data-astro-cid-amjbiojg]{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.08)}.page-link[data-astro-cid-amjbiojg]{display:flex;flex-direction:column;padding:1rem 1.2rem;border-radius:.9rem;background:#ffffff0a;border:1px solid rgba(255,255,255,.08);text-decoration:none;transition:border-color .2s,background .2s}.page-link[data-astro-cid-amjbiojg]:hover{border-color:#a855f766;background:#ffffff0f}.page-link[data-astro-cid-amjbiojg].next{text-align:right}.page-label[data-astro-cid-amjbiojg]{font-family:var(--font-mono);font-size:.72rem;color:var(--color-ink-dim);margin-bottom:.3rem}.page-title[data-astro-cid-amjbiojg]{font-size:.95rem;font-weight:600;color:var(--color-ink)}@media(min-width:1100px){.detail[data-astro-cid-amjbiojg]{max-width:72rem}.detail-body[data-astro-cid-amjbiojg]{display:grid;grid-template-columns:1fr 16rem;gap:2.5rem}.toc[data-astro-cid-amjbiojg]{position:sticky;top:6rem;align-self:start;margin:0}}
+</style></head> <body> <canvas id="starfield" aria-hidden="true" data-astro-cid-ra7sfcwn></canvas>  <script type="module">const a=document.getElementById("starfield"),m=window.matchMedia("(prefers-reduced-motion: reduce)").matches;if(a){let s=function(){n=window.innerWidth,o=window.innerHeight,a.width=n*i,a.height=o*i,a.style.width=n+"px",a.style.height=o+"px",t.setTransform(i,0,0,i,0,0);const e=Math.min(160,Math.floor(n*o/9e3));h=Array.from({length:e},()=>({x:Math.random()*n,y:Math.random()*o,z:Math.random()*.8+.2,r:Math.random()*1.4+.3,hue:Math.random()>.5?188:270}))},d=function(){t.clearRect(0,0,n,o);for(const e of h){const c=e.x+(r.x-n/2)*.02*e.z,l=e.y+(r.y-o/2)*.02*e.z;t.beginPath(),t.arc(c,l,e.r*e.z,0,Math.PI*2),t.fillStyle=`hsla(${e.hue}, 90%, 70%, ${.25+e.z*.55})`,t.shadowBlur=8*e.z,t.shadowColor=`hsla(${e.hue}, 90%, 70%, 0.8)`,t.fill(),e.y-=e.z*.12,e.y<-2&&(e.y=o+2,e.x=Math.random()*n)}t.shadowBlur=0,m||requestAnimationFrame(d)};const t=a.getContext("2d");let n=0,o=0,i=Math.min(window.devicePixelRatio||1,2),h=[];const r={x:0,y:0};window.addEventListener("resize",s,{passive:!0}),window.addEventListener("mousemove",e=>{r.x=e.clientX,r.y=e.clientY},{passive:!0}),s(),d()}</script> <header class="nav-wrap" data-astro-cid-dmqpwcec> <nav class="container-x nav glass" data-astro-cid-dmqpwcec> <a href="/" class="brand" data-astro-cid-dmqpwcec> <span class="brand-dot" data-astro-cid-dmqpwcec></span> <span class="brand-name" data-astro-cid-dmqpwcec>庄楚辉</span> <span class="brand-tag" data-astro-cid-dmqpwcec>/ AI Builder</span> </a> <button id="nav-toggle" class="nav-toggle" aria-label="菜单" aria-expanded="false" data-astro-cid-dmqpwcec> <span data-astro-cid-dmqpwcec></span><span data-astro-cid-dmqpwcec></span><span data-astro-cid-dmqpwcec></span> </button> <ul id="nav-menu" class="nav-menu" data-astro-cid-dmqpwcec> <li data-astro-cid-dmqpwcec> <a href="/" class="nav-link" data-astro-cid-dmqpwcec>首页</a> </li><li data-astro-cid-dmqpwcec> <a href="/about" class="nav-link" data-astro-cid-dmqpwcec>关于</a> </li><li data-astro-cid-dmqpwcec> <a href="/projects" class="nav-link" data-astro-cid-dmqpwcec>项目</a> </li><li data-astro-cid-dmqpwcec> <a href="/blog" class="nav-link" data-astro-cid-dmqpwcec>文章</a> </li><li data-astro-cid-dmqpwcec> <a href="/news" class="nav-link" data-astro-cid-dmqpwcec>AI 要闻</a> </li><li data-astro-cid-dmqpwcec> <a href="/tools" class="nav-link" data-astro-cid-dmqpwcec>工具</a> </li><li data-astro-cid-dmqpwcec> <a href="/kb" class="nav-link active" data-astro-cid-dmqpwcec>知识库</a> </li> </ul> </nav> </header>  <script type="module">const e=document.getElementById("nav-toggle"),n=document.getElementById("nav-menu");e?.addEventListener("click",()=>{const t=n?.classList.toggle("open");e.setAttribute("aria-expanded",String(!!t))});</script> <main>  <article class="container-x detail" data-astro-cid-amjbiojg> <nav class="breadcrumb" aria-label="面包屑" data-astro-cid-amjbiojg> <a href="/" data-astro-cid-amjbiojg>首页</a> <span data-astro-cid-amjbiojg>/</span> <a href="/kb" data-astro-cid-amjbiojg>知识库</a> <span data-astro-cid-amjbiojg>/</span> <span class="bc-current" data-astro-cid-amjbiojg>应用范式</span> </nav> <header class="detail-head" data-astro-cid-amjbiojg> <div class="detail-badges" data-astro-cid-amjbiojg> <span class="chip kb-cat" data-astro-cid-amjbiojg>应用范式</span> <span class="diff-badge diff-mid" data-astro-cid-amjbiojg>进阶</span> <span class="read-time" data-astro-cid-amjbiojg>5 分钟阅读</span> </div> <h1 class="detail-title" data-astro-cid-amjbiojg>Agent 智能体开发</h1> <p class="detail-desc" data-astro-cid-amjbiojg>从 Tool Calling 到多 Agent 协作，构建能自主感知、决策、执行的 AI 智能体。</p> <div class="detail-meta" data-astro-cid-amjbiojg> <span class="d-date" data-astro-cid-amjbiojg>更新于 2026年7月5日</span> <span class="chip" data-astro-cid-amjbiojg>Agent</span><span class="chip" data-astro-cid-amjbiojg>智能体</span><span class="chip" data-astro-cid-amjbiojg>Tool Calling</span><span class="chip" data-astro-cid-amjbiojg>MCP</span> </div> </header> <div class="detail-body" data-astro-cid-amjbiojg> <aside class="toc" id="toc" data-astro-cid-amjbiojg> <div class="toc-title" data-astro-cid-amjbiojg>目录</div> <nav data-astro-cid-amjbiojg> <ul id="toc-list" data-astro-cid-amjbiojg></ul> </nav> </aside> <div class="prose-space" id="article-content" data-astro-cid-amjbiojg> <h2 id="什么是-ai-agent">什么是 AI Agent</h2>
+<p>Agent（智能体）是以 LLM 为大脑，具备<strong>感知→规划→行动→反思</strong>循环的系统。它不只是”问答机器人”，而是能自主拆解任务、调用工具、根据反馈调整策略，直到完成目标。</p>
+<h2 id="agent-vs-chatbot">Agent vs Chatbot</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>维度</th><th>Chatbot</th><th>Agent</th></tr></thead><tbody><tr><td>交互</td><td>单轮问答</td><td>多轮自主执行</td></tr><tr><td>工具</td><td>无</td><td>可调用函数、API、Shell</td></tr><tr><td>决策</td><td>用户驱动</td><td>目标驱动，自主拆解</td></tr><tr><td>反馈</td><td>无</td><td>观察结果，调整下一步</td></tr><tr><td>终止</td><td>用户结束</td><td>达成目标或判定失败</td></tr></tbody></table>
+<h2 id="核心循环">核心循环</h2>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>用户目标</span></span>
+<span class="line"><span>  ↓</span></span>
+<span class="line"><span>[ 感知 ]  接收输入与工具执行结果</span></span>
+<span class="line"><span>  ↓</span></span>
+<span class="line"><span>[ 规划 ]  LLM 决定下一步动作（Thought → Action）</span></span>
+<span class="line"><span>  ↓</span></span>
+<span class="line"><span>[ 行动 ]  调用工具（函数 / API / Shell / 浏览器）</span></span>
+<span class="line"><span>  ↓</span></span>
+<span class="line"><span>[ 观察 ]  获取工具返回结果（Observation）</span></span>
+<span class="line"><span>  ↓</span></span>
+<span class="line"><span>[ 反思 ]  是否达成目标？</span></span>
+<span class="line"><span>  ├─ 是 → 返回最终结果</span></span>
+<span class="line"><span>  └─ 否 → 回到规划</span></span></code></pre>
+<p>这个循环被称为 <strong>ReAct</strong>（Reasoning + Acting）模式，是 Agent 的基础范式。</p>
+<h2 id="工具调用tool-calling">工具调用（Tool Calling）</h2>
+<p>工具是 Agent 的”手”，决定了它能做什么。</p>
+<h3 id="定义工具">定义工具</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="typescript"><code><span class="line"><span style="color:#C792EA">const</span><span style="color:#82AAFF;font-style:italic"> tools</span><span style="color:#C792EA"> =</span><span style="color:#D6DEEB"> [</span></span>
+<span class="line"><span style="color:#D6DEEB">  {</span></span>
+<span class="line"><span style="color:#D6DEEB;font-style:italic">    type</span><span style="color:#D6DEEB">:</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">function</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB">,</span></span>
+<span class="line"><span style="color:#D6DEEB;font-style:italic">    function</span><span style="color:#D6DEEB">:</span><span style="color:#D6DEEB"> {</span></span>
+<span class="line"><span style="color:#D6DEEB;font-style:italic">      name</span><span style="color:#D6DEEB">:</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">search_docs</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB">,</span></span>
+<span class="line"><span style="color:#D6DEEB;font-style:italic">      description</span><span style="color:#D6DEEB">:</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">在文档库中搜索相关内容</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB">,</span></span>
+<span class="line"><span style="color:#D6DEEB;font-style:italic">      parameters</span><span style="color:#D6DEEB">:</span><span style="color:#D6DEEB"> {</span></span>
+<span class="line"><span style="color:#D6DEEB;font-style:italic">        type</span><span style="color:#D6DEEB">:</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">object</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB">,</span></span>
+<span class="line"><span style="color:#D6DEEB;font-style:italic">        properties</span><span style="color:#D6DEEB">:</span><span style="color:#D6DEEB"> {</span></span>
+<span class="line"><span style="color:#D6DEEB;font-style:italic">          query</span><span style="color:#D6DEEB">:</span><span style="color:#D6DEEB"> {</span><span style="color:#D6DEEB;font-style:italic"> type</span><span style="color:#D6DEEB">:</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">string</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB">,</span><span style="color:#D6DEEB;font-style:italic"> description</span><span style="color:#D6DEEB">:</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">搜索关键词</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB"> },</span></span>
+<span class="line"><span style="color:#D6DEEB;font-style:italic">          top_k</span><span style="color:#D6DEEB">:</span><span style="color:#D6DEEB"> {</span><span style="color:#D6DEEB;font-style:italic"> type</span><span style="color:#D6DEEB">:</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">number</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB">,</span><span style="color:#D6DEEB;font-style:italic"> description</span><span style="color:#D6DEEB">:</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">返回条数</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB">,</span><span style="color:#D6DEEB;font-style:italic"> default</span><span style="color:#D6DEEB">:</span><span style="color:#F78C6C"> 5</span><span style="color:#D6DEEB"> },</span></span>
+<span class="line"><span style="color:#D6DEEB">        },</span></span>
+<span class="line"><span style="color:#D6DEEB;font-style:italic">        required</span><span style="color:#D6DEEB">:</span><span style="color:#D6DEEB"> [</span><span style="color:#D9F5DD">'</span><span style="color:#ECC48D">query</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB">],</span></span>
+<span class="line"><span style="color:#D6DEEB">      },</span></span>
+<span class="line"><span style="color:#D6DEEB">    },</span></span>
+<span class="line"><span style="color:#D6DEEB">  },</span></span>
+<span class="line"><span style="color:#D6DEEB">  {</span></span>
+<span class="line"><span style="color:#D6DEEB;font-style:italic">    type</span><span style="color:#D6DEEB">:</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">function</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB">,</span></span>
+<span class="line"><span style="color:#D6DEEB;font-style:italic">    function</span><span style="color:#D6DEEB">:</span><span style="color:#D6DEEB"> {</span></span>
+<span class="line"><span style="color:#D6DEEB;font-style:italic">      name</span><span style="color:#D6DEEB">:</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">run_code</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB">,</span></span>
+<span class="line"><span style="color:#D6DEEB;font-style:italic">      description</span><span style="color:#D6DEEB">:</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">执行 Python 代码并返回输出</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB">,</span></span>
+<span class="line"><span style="color:#D6DEEB;font-style:italic">      parameters</span><span style="color:#D6DEEB">:</span><span style="color:#D6DEEB"> {</span></span>
+<span class="line"><span style="color:#D6DEEB;font-style:italic">        type</span><span style="color:#D6DEEB">:</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">object</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB">,</span></span>
+<span class="line"><span style="color:#D6DEEB;font-style:italic">        properties</span><span style="color:#D6DEEB">:</span><span style="color:#D6DEEB"> {</span></span>
+<span class="line"><span style="color:#D6DEEB;font-style:italic">          code</span><span style="color:#D6DEEB">:</span><span style="color:#D6DEEB"> {</span><span style="color:#D6DEEB;font-style:italic"> type</span><span style="color:#D6DEEB">:</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">string</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB">,</span><span style="color:#D6DEEB;font-style:italic"> description</span><span style="color:#D6DEEB">:</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">Python 代码</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB"> },</span></span>
+<span class="line"><span style="color:#D6DEEB">        },</span></span>
+<span class="line"><span style="color:#D6DEEB;font-style:italic">        required</span><span style="color:#D6DEEB">:</span><span style="color:#D6DEEB"> [</span><span style="color:#D9F5DD">'</span><span style="color:#ECC48D">code</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB">],</span></span>
+<span class="line"><span style="color:#D6DEEB">      },</span></span>
+<span class="line"><span style="color:#D6DEEB">    },</span></span>
+<span class="line"><span style="color:#D6DEEB">  },</span></span>
+<span class="line"><span style="color:#D6DEEB">];</span></span></code></pre>
+<h3 id="执行循环">执行循环</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="typescript"><code><span class="line"><span style="color:#C792EA;font-style:italic">async</span><span style="color:#C792EA"> function</span><span style="color:#82AAFF;font-style:italic"> runAgent</span><span style="color:#D9F5DD">(</span><span style="color:#D7DBE0">userMessage</span><span style="color:#7FDBCA">:</span><span style="color:#C5E478"> string</span><span style="color:#D6DEEB">, </span><span style="color:#D7DBE0">tools</span><span style="color:#7FDBCA">:</span><span style="color:#FFCB8B"> Tool</span><span style="color:#D6DEEB">[]</span><span style="color:#D9F5DD">)</span><span style="color:#D6DEEB"> {</span></span>
+<span class="line"><span style="color:#C792EA">  const</span><span style="color:#82AAFF;font-style:italic"> messages</span><span style="color:#C792EA"> =</span><span style="color:#D6DEEB"> [{</span><span style="color:#D6DEEB;font-style:italic"> role</span><span style="color:#D6DEEB">:</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">user</span><span style="color:#D9F5DD">'</span><span style="color:#5F7E97">,</span><span style="color:#D6DEEB;font-style:italic"> content</span><span style="color:#D6DEEB">:</span><span style="color:#D6DEEB;font-style:italic"> userMessage </span><span style="color:#D6DEEB">}];</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#C792EA;font-style:italic">  for</span><span style="color:#D6DEEB"> (</span><span style="color:#C792EA">let</span><span style="color:#D6DEEB;font-style:italic"> step</span><span style="color:#C792EA"> =</span><span style="color:#F78C6C"> 0</span><span style="color:#D6DEEB">; step </span><span style="color:#C792EA">&#x3C;</span><span style="color:#F78C6C"> 10</span><span style="color:#D6DEEB">; step</span><span style="color:#C792EA">++</span><span style="color:#D6DEEB">) { </span><span style="color:#637777;font-style:italic">// 限制最大步数</span></span>
+<span class="line"><span style="color:#C792EA">    const</span><span style="color:#82AAFF;font-style:italic"> res</span><span style="color:#C792EA"> =</span><span style="color:#C792EA;font-style:italic"> await </span><span style="color:#D6DEEB;font-style:italic">client</span><span style="color:#C792EA;font-style:italic">.</span><span style="color:#FAF39F;font-style:italic">chat</span><span style="color:#C792EA;font-style:italic">.</span><span style="color:#FAF39F;font-style:italic">completions</span><span style="color:#C792EA;font-style:italic">.</span><span style="color:#82AAFF;font-style:italic">create</span><span style="color:#D6DEEB">(</span><span style="color:#C792EA">{</span></span>
+<span class="line"><span style="color:#C792EA;font-style:italic">      model</span><span style="color:#C792EA">:</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">gpt-4o-mini</span><span style="color:#D9F5DD">'</span><span style="color:#5F7E97">,</span></span>
+<span class="line"><span style="color:#D6DEEB;font-style:italic">      messages</span><span style="color:#5F7E97">,</span></span>
+<span class="line"><span style="color:#D6DEEB;font-style:italic">      tools</span><span style="color:#5F7E97">,</span></span>
+<span class="line"><span style="color:#C792EA">    }</span><span style="color:#D6DEEB">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#C792EA">    const</span><span style="color:#82AAFF;font-style:italic"> msg</span><span style="color:#C792EA"> =</span><span style="color:#D6DEEB;font-style:italic"> res</span><span style="color:#C792EA;font-style:italic">.</span><span style="color:#BAEBE2;font-style:italic">choices</span><span style="color:#D6DEEB">[</span><span style="color:#F78C6C">0</span><span style="color:#D6DEEB">]</span><span style="color:#C792EA;font-style:italic">.</span><span style="color:#BAEBE2;font-style:italic">message</span><span style="color:#D6DEEB">;</span></span>
+<span class="line"><span style="color:#D6DEEB">    messages</span><span style="color:#C792EA;font-style:italic">.</span><span style="color:#82AAFF;font-style:italic">push</span><span style="color:#D6DEEB">(msg);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#637777;font-style:italic">    // 没有工具调用 → Agent 给出最终答案</span></span>
+<span class="line"><span style="color:#C792EA">    if</span><span style="color:#D6DEEB"> (</span><span style="color:#C792EA">!</span><span style="color:#D6DEEB">msg</span><span style="color:#C792EA;font-style:italic">.</span><span style="color:#FAF39F;font-style:italic">tool_calls</span><span style="color:#C792EA;font-style:italic">?.</span><span style="color:#7FDBCA">length</span><span style="color:#D6DEEB">) {</span></span>
+<span class="line"><span style="color:#C792EA;font-style:italic">      return</span><span style="color:#D6DEEB"> msg</span><span style="color:#C792EA;font-style:italic">.</span><span style="color:#BAEBE2">content</span><span style="color:#D6DEEB">;</span></span>
+<span class="line"><span style="color:#D6DEEB">    }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#637777;font-style:italic">    // 执行所有工具调用</span></span>
+<span class="line"><span style="color:#C792EA;font-style:italic">    for</span><span style="color:#D6DEEB"> (</span><span style="color:#C792EA">const</span><span style="color:#82AAFF;font-style:italic"> call</span><span style="color:#7FDBCA"> of</span><span style="color:#D6DEEB"> msg</span><span style="color:#C792EA;font-style:italic">.</span><span style="color:#BAEBE2">tool_calls</span><span style="color:#D6DEEB">) {</span></span>
+<span class="line"><span style="color:#C792EA">      const</span><span style="color:#82AAFF;font-style:italic"> args</span><span style="color:#C792EA"> =</span><span style="color:#82AAFF;font-style:italic"> JSON</span><span style="color:#C792EA;font-style:italic">.</span><span style="color:#82AAFF;font-style:italic">parse</span><span style="color:#D6DEEB">(</span><span style="color:#D6DEEB;font-style:italic">call</span><span style="color:#C792EA;font-style:italic">.</span><span style="color:#FAF39F;font-style:italic">function</span><span style="color:#C792EA;font-style:italic">.</span><span style="color:#BAEBE2;font-style:italic">arguments</span><span style="color:#D6DEEB">);</span></span>
+<span class="line"><span style="color:#C792EA">      const</span><span style="color:#82AAFF;font-style:italic"> result</span><span style="color:#C792EA"> =</span><span style="color:#C792EA;font-style:italic"> await </span><span style="color:#82AAFF;font-style:italic">executeTool</span><span style="color:#D6DEEB">(</span><span style="color:#D6DEEB;font-style:italic">call</span><span style="color:#C792EA;font-style:italic">.</span><span style="color:#FAF39F;font-style:italic">function</span><span style="color:#C792EA;font-style:italic">.</span><span style="color:#BAEBE2;font-style:italic">name</span><span style="color:#5F7E97">,</span><span style="color:#D6DEEB;font-style:italic"> args</span><span style="color:#D6DEEB">);</span></span>
+<span class="line"><span style="color:#D6DEEB">      messages</span><span style="color:#C792EA;font-style:italic">.</span><span style="color:#82AAFF;font-style:italic">push</span><span style="color:#D6DEEB">({</span></span>
+<span class="line"><span style="color:#D6DEEB">        role: </span><span style="color:#D9F5DD">'</span><span style="color:#ECC48D">tool</span><span style="color:#D9F5DD">'</span><span style="color:#5F7E97">,</span></span>
+<span class="line"><span style="color:#D6DEEB">        tool_call_id: call</span><span style="color:#C792EA;font-style:italic">.</span><span style="color:#BAEBE2">id</span><span style="color:#5F7E97">,</span></span>
+<span class="line"><span style="color:#D6DEEB">        content: </span><span style="color:#82AAFF">JSON</span><span style="color:#C792EA;font-style:italic">.</span><span style="color:#82AAFF;font-style:italic">stringify</span><span style="color:#D6DEEB">(result)</span><span style="color:#5F7E97">,</span></span>
+<span class="line"><span style="color:#D6DEEB">      });</span></span>
+<span class="line"><span style="color:#D6DEEB">    }</span></span>
+<span class="line"><span style="color:#D6DEEB">  }</span></span>
+<span class="line"><span style="color:#C792EA;font-style:italic">  throw</span><span style="color:#7FDBCA"> new</span><span style="color:#82AAFF;font-style:italic"> Error</span><span style="color:#D6DEEB">(</span><span style="color:#D9F5DD">'</span><span style="color:#ECC48D">超过最大步数</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB">);</span></span>
+<span class="line"><span style="color:#D6DEEB">}</span></span></code></pre>
+<h2 id="常用工具集">常用工具集</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>工具类别</th><th>示例</th><th>用途</th></tr></thead><tbody><tr><td><strong>检索</strong></td><td>向量检索、Web 搜索</td><td>获取知识</td></tr><tr><td><strong>代码执行</strong></td><td>Python REPL、Shell</td><td>计算、数据处理</td></tr><tr><td><strong>文件操作</strong></td><td>读写文件</td><td>代码编辑、文档处理</td></tr><tr><td><strong>API 调用</strong></td><td>HTTP 请求</td><td>接入外部服务</td></tr><tr><td><strong>浏览器</strong></td><td>Playwright、Puppeteer</td><td>网页操作、截图</td></tr><tr><td><strong>数据库</strong></td><td>SQL 查询</td><td>数据分析</td></tr></tbody></table>
+<h2 id="mcpmodel-context-protocol">MCP（Model Context Protocol）</h2>
+<p>MCP 是 Anthropic 提出的标准化协议，让 Agent 与外部工具/数据源以统一方式连接，类似”AI 的 USB 接口”。</p>
+<h3 id="核心概念">核心概念</h3>
+<ul>
+<li><strong>MCP Server</strong>：暴露工具、资源、Prompt 模板的服务进程。</li>
+<li><strong>MCP Client</strong>：Agent 侧的连接器，发现并调用 Server 提供的能力。</li>
+<li><strong>Transport</strong>：通信方式（stdio、SSE、HTTP）。</li>
+</ul>
+<h3 id="价值">价值</h3>
+<ul>
+<li><strong>解耦</strong>：工具实现与 Agent 逻辑分离。</li>
+<li><strong>复用</strong>：一个 MCP Server 可被多个 Agent 使用。</li>
+<li><strong>生态</strong>：社区共享 Server，即插即用。</li>
+</ul>
+<h3 id="示例">示例</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="typescript"><code><span class="line"><span style="color:#637777;font-style:italic">// 一个简单的 MCP Server，暴露"读文件"工具</span></span>
+<span class="line"><span style="color:#C792EA;font-style:italic">import</span><span style="color:#D6DEEB"> { Server } </span><span style="color:#C792EA;font-style:italic">from</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">@modelcontextprotocol/sdk/server</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#C792EA">const</span><span style="color:#82AAFF;font-style:italic"> server</span><span style="color:#C792EA"> =</span><span style="color:#7FDBCA"> new</span><span style="color:#82AAFF;font-style:italic"> Server</span><span style="color:#D6DEEB">(</span><span style="color:#C792EA">{</span></span>
+<span class="line"><span style="color:#C792EA;font-style:italic">  name</span><span style="color:#C792EA">:</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">file-reader</span><span style="color:#D9F5DD">'</span><span style="color:#C792EA">,</span></span>
+<span class="line"><span style="color:#C792EA;font-style:italic">  tools</span><span style="color:#C792EA">:</span><span style="color:#D6DEEB"> [{</span></span>
+<span class="line"><span style="color:#D6DEEB;font-style:italic">    name</span><span style="color:#D6DEEB">:</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">read_file</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB">,</span></span>
+<span class="line"><span style="color:#D6DEEB;font-style:italic">    description</span><span style="color:#D6DEEB">:</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">读取文件内容</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB">,</span></span>
+<span class="line"><span style="color:#D6DEEB;font-style:italic">    inputSchema</span><span style="color:#D6DEEB">:</span><span style="color:#D6DEEB"> {</span></span>
+<span class="line"><span style="color:#D6DEEB;font-style:italic">      type</span><span style="color:#D6DEEB">:</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">object</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB">,</span></span>
+<span class="line"><span style="color:#D6DEEB;font-style:italic">      properties</span><span style="color:#D6DEEB">:</span><span style="color:#D6DEEB"> {</span><span style="color:#D6DEEB;font-style:italic"> path</span><span style="color:#D6DEEB">:</span><span style="color:#D6DEEB"> {</span><span style="color:#D6DEEB;font-style:italic"> type</span><span style="color:#D6DEEB">:</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">string</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB"> }</span><span style="color:#D6DEEB"> },</span></span>
+<span class="line"><span style="color:#D6DEEB;font-style:italic">      required</span><span style="color:#D6DEEB">:</span><span style="color:#D6DEEB"> [</span><span style="color:#D9F5DD">'</span><span style="color:#ECC48D">path</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB">],</span></span>
+<span class="line"><span style="color:#D6DEEB">    },</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">    handler</span><span style="color:#D6DEEB">:</span><span style="color:#C792EA;font-style:italic"> async</span><span style="color:#D9F5DD"> (</span><span style="color:#D6DEEB">{</span><span style="color:#D7DBE0;font-style:italic"> path</span><span style="color:#D6DEEB"> }</span><span style="color:#D9F5DD">)</span><span style="color:#C792EA"> =></span><span style="color:#D6DEEB"> {</span></span>
+<span class="line"><span style="color:#C792EA">      const</span><span style="color:#82AAFF;font-style:italic"> content</span><span style="color:#C792EA"> =</span><span style="color:#C792EA;font-style:italic"> await </span><span style="color:#D6DEEB;font-style:italic">fs</span><span style="color:#C792EA;font-style:italic">.</span><span style="color:#82AAFF;font-style:italic">readFile</span><span style="color:#D6DEEB">(</span><span style="color:#D6DEEB;font-style:italic">path</span><span style="color:#C792EA">,</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">utf-8</span><span style="color:#D9F5DD">'</span><span style="color:#D6DEEB">);</span></span>
+<span class="line"><span style="color:#C792EA;font-style:italic">      return</span><span style="color:#D6DEEB"> {</span><span style="color:#D6DEEB;font-style:italic"> content </span><span style="color:#D6DEEB">};</span></span>
+<span class="line"><span style="color:#D6DEEB">    },</span></span>
+<span class="line"><span style="color:#D6DEEB">  }]</span><span style="color:#C792EA">,</span></span>
+<span class="line"><span style="color:#C792EA">}</span><span style="color:#D6DEEB">);</span></span></code></pre>
+<h2 id="多-agent-协作">多 Agent 协作</h2>
+<p>复杂任务单个 Agent 难以胜任，多 Agent 分工协作更高效。</p>
+<h3 id="常见编排模式">常见编排模式</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>模式</th><th>说明</th><th>适用</th></tr></thead><tbody><tr><td><strong>串行流水线</strong></td><td>A → B → C 依次传递</td><td>内容生产、数据处理</td></tr><tr><td><strong>主管-工人</strong></td><td>一个 Manager 拆任务，分发给 Worker</td><td>复杂项目</td></tr><tr><td><strong>辩论</strong></td><td>多 Agent 各持立场，相互质疑</td><td>决策、方案评估</td></tr><tr><td><strong>并行投票</strong></td><td>多 Agent 并行解同一题，取多数</td><td>提升准确率</td></tr></tbody></table>
+<h3 id="示例主管-工人">示例：主管-工人</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="typescript"><code><span class="line"><span style="color:#C792EA;font-style:italic">async</span><span style="color:#C792EA"> function</span><span style="color:#82AAFF;font-style:italic"> runTeam</span><span style="color:#D9F5DD">(</span><span style="color:#D7DBE0">goal</span><span style="color:#7FDBCA">:</span><span style="color:#C5E478"> string</span><span style="color:#D9F5DD">)</span><span style="color:#D6DEEB"> {</span></span>
+<span class="line"><span style="color:#637777;font-style:italic">  // 1. Manager 拆解任务</span></span>
+<span class="line"><span style="color:#C792EA">  const</span><span style="color:#82AAFF;font-style:italic"> plan</span><span style="color:#C792EA"> =</span><span style="color:#C792EA;font-style:italic"> await </span><span style="color:#D6DEEB;font-style:italic">manager</span><span style="color:#C792EA;font-style:italic">.</span><span style="color:#82AAFF;font-style:italic">think</span><span style="color:#D6DEEB">(</span><span style="color:#D6DEEB">`</span><span style="color:#ECC48D;font-style:italic">请把以下目标拆成 3 个子任务：</span><span style="color:#D3423E">${</span><span style="color:#D6DEEB;font-style:italic">goal</span><span style="color:#D3423E">}</span><span style="color:#D6DEEB">`</span><span style="color:#D6DEEB">);</span></span>
+<span class="line"><span style="color:#C792EA">  const</span><span style="color:#82AAFF;font-style:italic"> subtasks</span><span style="color:#C792EA"> =</span><span style="color:#82AAFF;font-style:italic"> JSON</span><span style="color:#C792EA;font-style:italic">.</span><span style="color:#82AAFF;font-style:italic">parse</span><span style="color:#D6DEEB">(</span><span style="color:#D6DEEB;font-style:italic">plan</span><span style="color:#D6DEEB">)</span><span style="color:#C792EA;font-style:italic">.</span><span style="color:#BAEBE2;font-style:italic">subtasks</span><span style="color:#D6DEEB">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#637777;font-style:italic">  // 2. 并行分发给 Worker</span></span>
+<span class="line"><span style="color:#C792EA">  const</span><span style="color:#82AAFF;font-style:italic"> results</span><span style="color:#C792EA"> =</span><span style="color:#C792EA;font-style:italic"> await </span><span style="color:#C5E478;font-style:italic">Promise</span><span style="color:#C792EA;font-style:italic">.</span><span style="color:#82AAFF;font-style:italic">all</span><span style="color:#D6DEEB">(</span></span>
+<span class="line"><span style="color:#D6DEEB;font-style:italic">    subtasks</span><span style="color:#C792EA;font-style:italic">.</span><span style="color:#82AAFF;font-style:italic">map</span><span style="color:#D6DEEB">(</span><span style="color:#D7DBE0;font-style:italic">task</span><span style="color:#C792EA"> =></span><span style="color:#D6DEEB;font-style:italic"> worker</span><span style="color:#C792EA;font-style:italic">.</span><span style="color:#82AAFF;font-style:italic">execute</span><span style="color:#D6DEEB">(</span><span style="color:#D6DEEB;font-style:italic">task</span><span style="color:#D6DEEB">))</span></span>
+<span class="line"><span style="color:#D6DEEB">  );</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#637777;font-style:italic">  // 3. Manager 汇总</span></span>
+<span class="line"><span style="color:#C792EA">  const</span><span style="color:#82AAFF;font-style:italic"> final</span><span style="color:#C792EA"> =</span><span style="color:#C792EA;font-style:italic"> await </span><span style="color:#D6DEEB;font-style:italic">manager</span><span style="color:#C792EA;font-style:italic">.</span><span style="color:#82AAFF;font-style:italic">think</span><span style="color:#D6DEEB">(</span><span style="color:#D6DEEB">`</span><span style="color:#ECC48D;font-style:italic">基于以下子结果给出最终答案：</span><span style="color:#D3423E">${</span><span style="color:#82AAFF;font-style:italic">JSON</span><span style="color:#C792EA;font-style:italic">.</span><span style="color:#82AAFF;font-style:italic">stringify</span><span style="color:#D6DEEB">(</span><span style="color:#D6DEEB;font-style:italic">results</span><span style="color:#D6DEEB">)</span><span style="color:#D3423E">}</span><span style="color:#D6DEEB">`</span><span style="color:#D6DEEB">);</span></span>
+<span class="line"><span style="color:#C792EA;font-style:italic">  return</span><span style="color:#D6DEEB"> final;</span></span>
+<span class="line"><span style="color:#D6DEEB">}</span></span></code></pre>
+<h2 id="框架选型">框架选型</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>框架</th><th>语言</th><th>特点</th><th>适用</th></tr></thead><tbody><tr><td><strong>LangGraph</strong></td><td>Python</td><td>状态机、可视化</td><td>复杂工作流</td></tr><tr><td><strong>LlamaIndex</strong></td><td>Python</td><td>RAG 友好</td><td>知识型 Agent</td></tr><tr><td><strong>AutoGen</strong></td><td>Python</td><td>多 Agent 对话</td><td>协作场景</td></tr><tr><td><strong>CrewAI</strong></td><td>Python</td><td>角色扮演</td><td>任务委派</td></tr><tr><td><strong>Vercel AI SDK</strong></td><td>TypeScript</td><td>前端友好</td><td>Web 应用</td></tr><tr><td><strong>Mastra</strong></td><td>TypeScript</td><td>TS 原生、类型安全</td><td>全栈项目</td></tr></tbody></table>
+<h2 id="工程化要点">工程化要点</h2>
+<h3 id="1-安全边界">1. 安全边界</h3>
+<ul>
+<li><strong>权限最小化</strong>：工具只暴露必要能力。</li>
+<li><strong>沙箱执行</strong>：代码执行用 Docker/WASM 隔离。</li>
+<li><strong>人工审批</strong>：高风险操作（发邮件、删数据）需人工确认。</li>
+<li><strong>速率限制</strong>：防止单次任务消耗过多资源。</li>
+</ul>
+<h3 id="2-可控性">2. 可控性</h3>
+<ul>
+<li><strong>最大步数</strong>：避免无限循环。</li>
+<li><strong>超时</strong>：单步和整体都要有超时。</li>
+<li><strong>检查点</strong>：长流程中间状态持久化，可恢复。</li>
+<li><strong>人工介入</strong>：关键节点支持暂停等待人类确认。</li>
+</ul>
+<h3 id="3-可观测性">3. 可观测性</h3>
+<ul>
+<li><strong>执行轨迹</strong>：记录每一步的 Thought、Action、Observation。</li>
+<li><strong>Token 消耗</strong>：按 Agent、按工具统计。</li>
+<li><strong>成功率</strong>：按任务类型统计完成率。</li>
+<li><strong>失败分析</strong>：失败时回放完整轨迹。</li>
+</ul>
+<h3 id="4-评估">4. 评估</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>维度</th><th>指标</th></tr></thead><tbody><tr><td><strong>任务完成率</strong></td><td>达成目标的比例</td></tr><tr><td><strong>效率</strong></td><td>平均步数、平均耗时</td></tr><tr><td><strong>工具使用</strong></td><td>工具调用准确率、冗余调用率</td></tr><tr><td><strong>成本</strong></td><td>平均 Token 消耗</td></tr></tbody></table>
+<h2 id="常见陷阱">常见陷阱</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>陷阱</th><th>表现</th><th>应对</th></tr></thead><tbody><tr><td><strong>循环调用</strong></td><td>反复调用同一工具</td><td>检测重复，强制终止</td></tr><tr><td><strong>工具幻觉</strong></td><td>调用不存在的工具或编造参数</td><td>严格 schema 校验</td></tr><tr><td><strong>上下文爆炸</strong></td><td>工具结果太长撑爆上下文</td><td>结果摘要 + 历史裁剪</td></tr><tr><td><strong>目标漂移</strong></td><td>越执行越偏离原目标</td><td>每步对照目标检查</td></tr><tr><td><strong>过度规划</strong></td><td>一直在规划不行动</td><td>限制规划步数</td></tr></tbody></table>
+<h2 id="相关条目">相关条目</h2>
+<ul>
+<li><a href="../ai-programming-basics">AI 编程基础概念</a></li>
+<li><a href="../mcp-skill-guide">MCP 与 Skill 使用指南</a></li>
+<li><a href="../context-engineering">上下文工程</a></li>
+<li><a href="../llm-evaluation-observability">LLM 评估与可观测性</a></li>
+<li><a href="../llm-api-integration">LLM API 集成实践</a></li>
+<li><a href="../what-is-rag">什么是 RAG</a></li>
+</ul> </div> </div> <nav class="page-nav" data-astro-cid-amjbiojg> <a href="/kb/vector-database-embeddings" class="page-link prev" data-astro-cid-amjbiojg> <span class="page-label" data-astro-cid-amjbiojg>← 上一篇</span> <span class="page-title" data-astro-cid-amjbiojg>向量数据库与嵌入</span> </a> <a href="/kb/mcp-skill-guide" class="page-link next" data-astro-cid-amjbiojg> <span class="page-label" data-astro-cid-amjbiojg>下一篇 →</span> <span class="page-title" data-astro-cid-amjbiojg>MCP 与 Skill 使用指南</span> </a> </nav> </article>  </main> <footer class="footer" data-astro-cid-sz7xmlte> <div class="container-x footer-inner glass" data-astro-cid-sz7xmlte> <div data-astro-cid-sz7xmlte> <p class="f-name text-gradient" data-astro-cid-sz7xmlte>庄楚辉</p> <p class="f-desc" data-astro-cid-sz7xmlte>一名 AI Builder —— 构建智能产品、分享思考与知识。</p> </div> <div class="f-socials" data-astro-cid-sz7xmlte> <a href="https://github.com/zchuhui" target="_blank" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>GitHub</a><a href="https://x.com/zch94622737" target="_blank" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>X</a><a href="mailto:943339564g@gmail.com" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>Email</a> </div> </div> <p class="f-copy" data-astro-cid-sz7xmlte>© 2026 庄楚辉 · Built with Astro · 部署于 GitHub Pages</p> </footer>  <!-- 全局滚动揭示 --> <script type="module">const s=new IntersectionObserver(e=>{for(const r of e)r.isIntersecting&&(r.target.classList.add("is-visible"),s.unobserve(r.target))},{threshold:.12});document.querySelectorAll(".reveal").forEach(e=>s.observe(e));</script> </body> </html>  <script type="module">(function(){const o=document.getElementById("article-content"),c=document.getElementById("toc-list");if(!o||!c)return;const l=Array.from(o.querySelectorAll("h2"));if(l.length===0){document.getElementById("toc")?.style.setProperty("display","none");return}const i=e=>e.toLowerCase().trim().replace(/\s+/g,"-").replace(/[^a-z0-9\u4e00-\u9fa5-]/g,""),a=new Set;l.forEach(e=>{let r=i(e.textContent??""),t=r||"heading",s=1;for(;a.has(t);)t=`${r}-${s++}`;a.add(t),e.id=t;const d=document.createElement("li"),n=document.createElement("a");n.href="#"+t,n.textContent=e.textContent??"",d.appendChild(n),c.appendChild(d)})})();</script>
