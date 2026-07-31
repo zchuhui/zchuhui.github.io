@@ -1,33 +1,16 @@
 {
-  "generatedAt": "2026-07-30T00:11:38.919Z",
+  "generatedAt": "2026-07-31T00:15:53.663Z",
   "items": [
     {
-      "id": "ypol8k",
-      "title": "How enabling two settings tripled our scores on the ARC-AGI-3 benchmark",
-      "url": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+      "id": "o03uqi",
+      "title": "Advancing the price-performance frontier with GPT-5.6",
+      "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
       "source": "OpenAI",
       "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-07-29T15:00:00.000Z",
-      "summary": "How two API settings improved GPT-5.6 performance on ARC-AGI-3, boosting scores and efficiency by retaining reasoning and enabling compaction.",
+      "publishedAt": "2026-07-30T10:00:00.000Z",
+      "summary": "Explore lower GPT‑5.6 pricing for Luna and Terra—and how OpenAI’s more efficient models help enterprises deploy AI workflows at scale.",
       "tags": [
-        "模型",
-        "产品",
-        "研究"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "ylqgoj",
-      "title": "Accelerating scientific discovery with ChatGPT for Academic Researchers",
-      "url": "https://openai.com/index/chatgpt-for-academic-researchers",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-07-29T10:00:00.000Z",
-      "summary": "OpenAI is giving 100,000 academic researchers free access to ChatGPT's most advanced AI models to accelerate scientific research, collaboration, and discovery.",
-      "tags": [
-        "模型",
-        "产品",
-        "研究"
+        "模型"
       ],
       "category": "公司动态"
     },
@@ -37,8 +20,8 @@
       "url": "https://arxiv.org/abs/2607.24758",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
-      "summary": "arXiv:2607.24758v1 Announce Type: new Abstract: Large language models are capable of recognizing evaluation contexts and altering their behavior to reflect evaluator expectations rather than typical deployment behaviors, a phenomenon known as alignment faking.",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
+      "summary": "arXiv:2607.24758v2 Announce Type: new Abstract: Large language models are capable of recognizing evaluation contexts and altering their behavior to reflect evaluator expectations rather than typical deployment behaviors, a phenomenon known as alignment faking.",
       "tags": [
         "模型",
         "Agent",
@@ -52,7 +35,7 @@
       "url": "https://arxiv.org/abs/2607.24759",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.24759v1 Announce Type: new Abstract: Research projects, educational efforts, and adjacent knowledge work accumulate findings, decisions, and reasoning that future collaborators rarely recover. The parts most useful to that work, including dead ends ",
       "tags": [
         "模型",
@@ -67,7 +50,7 @@
       "url": "https://arxiv.org/abs/2607.24762",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.24762v1 Announce Type: new Abstract: Machine learning models are increasingly embedded in everyday software, and most of their runtime is spent in a small set of compute kernels such as matrix multiplication, convolution, and normalization. Optimizi",
       "tags": [
         "模型",
@@ -82,7 +65,7 @@
       "url": "https://arxiv.org/abs/2607.24763",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.24763v1 Announce Type: new Abstract: Masked diffusion language models (MDLMs) are advancing rapidly, yet the evaluation standards needed to reliably interpret their progress have not kept pace. Despite MDLMs becoming competitive with autoregressive ",
       "tags": [
         "模型",
@@ -97,7 +80,7 @@
       "url": "https://arxiv.org/abs/2607.24764",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.24764v1 Announce Type: new Abstract: The rapid growth of online grocery shopping requires recommendation systems that capture cyclical purchasing behavior and diverse user intents. Traditional item-level methods face scalability and accuracy challen",
       "tags": [
         "模型",
@@ -112,7 +95,7 @@
       "url": "https://arxiv.org/abs/2607.24766",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.24766v1 Announce Type: new Abstract: Large language models (LLMs) can generate individual charts, but coordinated multi-view visualizations (CMVs), where views share data flows and cross-view interactions, remain out of reach. Tight field-level coup",
       "tags": [
         "模型",
@@ -127,7 +110,7 @@
       "url": "https://arxiv.org/abs/2607.24768",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.24768v1 Announce Type: new Abstract: Prenatal care is an important preventive service designed to improve outcomes for pregnant individuals. The American College of Obstetricians and Gynecologists (ACOG) recently introduced guidelines advocating tai",
       "tags": [
         "模型",
@@ -142,7 +125,7 @@
       "url": "https://arxiv.org/abs/2607.24769",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.24769v1 Announce Type: new Abstract: With the growing capabilities of frontier models, AI alignment becomes increasingly critical in high-risk deployment settings. While recent work has empirically demonstrated in-context scheming -- the covert purs",
       "tags": [
         "模型",
@@ -157,7 +140,7 @@
       "url": "https://arxiv.org/abs/2607.24770",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.24770v1 Announce Type: new Abstract: Procedural tasks such as furniture assembly and home repair impose substantial cognitive demands because users must interpret instructions, track task progress, reason about spatial state, and recover from errors",
       "tags": [
         "模型",
@@ -172,7 +155,7 @@
       "url": "https://arxiv.org/abs/2607.24771",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.24771v1 Announce Type: new Abstract: Knowledge injection updates pretrained MLLMs with new factual or domain-specific knowledge, but fitting full authoritative answers can cause drift in non-updated behavior. Online distillation mitigates this drift",
       "tags": [
         "模型",
@@ -187,7 +170,7 @@
       "url": "https://arxiv.org/abs/2607.24772",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.24772v1 Announce Type: new Abstract: Geoscience research requires complex analysis and domain expertise, with remote sensing (RS) observations as a key foundation. However, existing RS agents built on general-purpose LLMs remain largely domain-agnos",
       "tags": [
         "Agent",
@@ -201,7 +184,7 @@
       "url": "https://arxiv.org/abs/2607.24773",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.24773v1 Announce Type: new Abstract: Managing cloud infrastructure efficiently, especially in environments of large cloud providers or hyperscalers, requires optimizing the use of physical resources to minimize costs and maximize performance. Select",
       "tags": [
         "模型",
@@ -216,7 +199,7 @@
       "url": "https://arxiv.org/abs/2607.24774",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.24774v1 Announce Type: new Abstract: Nuclear radiation, the energy released during atomic decay, poses persistent risks to public health and the environment, and concerns have only grown since the Fukushima accident and the recent commencement of tr",
       "tags": [
         "模型",
@@ -231,7 +214,7 @@
       "url": "https://arxiv.org/abs/2607.24777",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.24777v1 Announce Type: new Abstract: Architected metamaterials derive their functions from structure, creating vast opportunities to program physical responses through topology design. However, existing design methods are often tailored to individua",
       "tags": [
         "模型",
@@ -246,7 +229,7 @@
       "url": "https://arxiv.org/abs/2607.24779",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.24779v1 Announce Type: new Abstract: Online advertising bidding systems typically deploy multiple offline-trained expert models (e.g., PID controllers, model predictive control, offline RL policies) but face two critical limitations: lack of online ",
       "tags": [
         "模型",
@@ -261,7 +244,7 @@
       "url": "https://arxiv.org/abs/2607.24780",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.24780v1 Announce Type: new Abstract: Evaluating frontier LLMs is challenging: static benchmarks suffer from contamination and saturation -- leaving users unable to distinguish top models and developers blind to specific failure modes -- while human ",
       "tags": [
         "模型",
@@ -276,7 +259,7 @@
       "url": "https://arxiv.org/abs/2607.24782",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.24782v1 Announce Type: new Abstract: LLM behavior may be conditioned by human identity in several ways: they may be asked to adapt to users, role-play populations, or forecast how people would answer value-laden questions. We test whether these fram",
       "tags": [
         "模型",
@@ -291,7 +274,7 @@
       "url": "https://arxiv.org/abs/2607.24783",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.24783v1 Announce Type: new Abstract: Job understanding is critical to LinkedIn's mission of connecting talent with opportunity. This task involves transforming unstructured and noisy job postings into standardized or derived job attributes that powe",
       "tags": [
         "模型",
@@ -306,7 +289,7 @@
       "url": "https://arxiv.org/abs/2607.24784",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.24784v1 Announce Type: new Abstract: Specialised translation relies on the use of documentary and terminological resources, including corpora. These resources are particularly useful for terminology. However, their compilation and exploitation have ",
       "tags": [
         "模型",
@@ -320,7 +303,7 @@
       "url": "https://arxiv.org/abs/2607.24787",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.24787v1 Announce Type: new Abstract: Sparse Mixture-of-Experts (MoE) models expand foundation model capacity through conditional expert activation, but their full expert pools remain difficult to deploy under limited accelerator memory. Although exp",
       "tags": [
         "模型",
@@ -334,7 +317,7 @@
       "url": "https://arxiv.org/abs/2607.24788",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.24788v1 Announce Type: new Abstract: As Large Language Models scale to increasingly long contexts, the memory I/O and computational overhead of the Key-Value (KV) cache during decoding emerges as the primary throughput bottleneck. To address this, w",
       "tags": [
         "模型",
@@ -349,7 +332,7 @@
       "url": "https://arxiv.org/abs/2607.24790",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.24790v1 Announce Type: new Abstract: Low-Earth orbit (LEO) satellite Internet has become an important infrastructure for enabling ubiquitous connectivity to align with the International Telecommunications Union vision for 6G telecommunications netwo",
       "tags": [
         "模型",
@@ -364,7 +347,7 @@
       "url": "https://arxiv.org/abs/2607.24794",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.24794v1 Announce Type: new Abstract: While Multimodal Large Language Models (MLLMs) demonstrate superior generalization in fundamental video tasks, restricted context windows limit their long video understanding. To accommodate this constraint, mode",
       "tags": [
         "模型",
@@ -379,7 +362,7 @@
       "url": "https://arxiv.org/abs/2607.24795",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.24795v1 Announce Type: new Abstract: Older adults' independent mobility enables out-of-home participation, well-being and health, yet pedestrian navigation systems still optimize primarily for distance or time, often overlooking barriers, safety thr",
       "tags": [
         "模型",
@@ -394,7 +377,7 @@
       "url": "https://arxiv.org/abs/2607.24810",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.24810v1 Announce Type: new Abstract: Vision-language models (VLMs) have achieved strong performance on general remote sensing tasks. However, their capability for rare scenes remains insufficiently understood, because existing benchmarks are dominat",
       "tags": [
         "模型",
@@ -409,7 +392,7 @@
       "url": "https://arxiv.org/abs/2607.24814",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.24814v1 Announce Type: new Abstract: Access to specialist clinical expertise remains severely limited across sub-Saharan Africa, where physician-to-patient ratios can fall below 1:25,000 in rural settings. Existing AI-assisted diagnostic tools predo",
       "tags": [
         "模型",
@@ -424,7 +407,7 @@
       "url": "https://arxiv.org/abs/2607.24833",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.24833v1 Announce Type: new Abstract: Reinforcement learning with verifiable rewards is a powerful paradigm for eliciting reasoning in large language models, yet it suffers from severe reward sparsity on competition-level mathematics. A common remedy",
       "tags": [
         "模型",
@@ -438,7 +421,7 @@
       "url": "https://arxiv.org/abs/2607.24873",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.24873v1 Announce Type: new Abstract: Recent advances in AI music generation have enabled users to create complete musical pieces from natural-language prompts. However, most existing systems follow a prompt-and-regenerate paradigm, making iterative ",
       "tags": [
         "模型",
@@ -452,7 +435,7 @@
       "url": "https://arxiv.org/abs/2607.24995",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.24995v1 Announce Type: new Abstract: Semantic IDs (SIDs) are now a central component of generative recommendation. Current SID-based systems assign three roles to the same token sequence. Shared prefixes are intended to organize related items, the c",
       "tags": [
         "研究"
@@ -465,7 +448,7 @@
       "url": "https://arxiv.org/abs/2607.25020",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.25020v1 Announce Type: new Abstract: Vine copulas provide a flexible framework for modeling complex multivariate distributions through a hierarchical decomposition into bivariate pair-copulas. Fitting a D-vine requires selecting a copula family and ",
       "tags": [
         "模型",
@@ -479,7 +462,7 @@
       "url": "https://arxiv.org/abs/2607.25021",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.25021v1 Announce Type: new Abstract: Multimodal large language models (MLLMs) can connect visualization patterns to external causes, consequences, and domain knowledge, but the evidential basis of these interpretations is often unclear. We present a",
       "tags": [
         "模型",
@@ -494,7 +477,7 @@
       "url": "https://arxiv.org/abs/2607.25042",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.25042v1 Announce Type: new Abstract: The evolution of customer support systems is rapidly advancing with agentic chatbots, yet these systems face significant limitations when accessing enterprise data without predefined API endpoints. This paper pre",
       "tags": [
         "Agent",
@@ -509,7 +492,7 @@
       "url": "https://arxiv.org/abs/2607.25045",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.25045v1 Announce Type: new Abstract: Electroencephalography (EEG) analysis in cognitive studies requires specialized expertise and involves many defensible choices over contrasts, channels, time windows, and statistical tests. LLM agents can transla",
       "tags": [
         "模型",
@@ -524,12 +507,27 @@
       "url": "https://arxiv.org/abs/2607.25057",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
       "summary": "arXiv:2607.25057v1 Announce Type: new Abstract: As conversational AI systems become increasingly integrated into daily life, their potential effects on user well-being require ongoing attention. While consumer-facing generalist models can provide benefits, inc",
       "tags": [
         "模型",
         "产品",
         "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "10x809k",
+      "title": "Similar Models Learn Differently: Final-Window Pretraining Shapes Post-Training Beyond SFT",
+      "url": "https://arxiv.org/abs/2607.25063",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-07-30T04:00:00.000Z",
+      "summary": "arXiv:2607.25063v1 Announce Type: new Abstract: Developers judge a model checkpoint by how it behaves. After supervised fine-tuning (SFT), two checkpoints that perform about the same across relevant benchmarks are treated as interchangeable, equally ready for ",
+      "tags": [
+        "模型",
+        "研究",
+        "安全"
       ],
       "category": "研究论文"
     }
@@ -539,7 +537,7 @@
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
       "ok": true,
-      "count": 1055
+      "count": 1056
     },
     {
       "name": "Google AI",
@@ -557,13 +555,13 @@
       "name": "arXiv cs.LG",
       "url": "https://export.arxiv.org/rss/cs.LG",
       "ok": true,
-      "count": 488
+      "count": 237
     },
     {
       "name": "arXiv cs.CL",
       "url": "https://export.arxiv.org/rss/cs.CL",
       "ok": true,
-      "count": 115
+      "count": 132
     }
   ],
   "warnings": []
