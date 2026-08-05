@@ -1,17 +1,30 @@
 {
-  "generatedAt": "2026-08-04T00:16:04.267Z",
+  "generatedAt": "2026-08-05T00:15:43.017Z",
   "items": [
     {
-      "id": "1kmo8hd",
-      "title": "How we built a realtime system for responsive voice AI in six months",
-      "url": "https://openai.com/index/continuous-voice-interaction-with-gpt-live",
+      "id": "1x42kvf",
+      "title": "Third-party cyber evaluations involving OpenAI models",
+      "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
       "source": "OpenAI",
       "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-08-03T07:00:00.000Z",
-      "summary": "GPT-Live enables continuous voice interaction with AI, using a turnless speech model and low-latency architecture for faster, more natural conversations.",
+      "publishedAt": "2026-08-04T19:00:00.000Z",
+      "summary": "OpenAI explains recent third-party cybersecurity evaluation incidents and outlines new safeguards to strengthen AI model testing and evaluation.",
       "tags": [
         "模型",
-        "多模态"
+        "安全"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "fmeuhp",
+      "title": "The latest AI news we announced in July 2026",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026/",
+      "source": "Google AI",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/ai/rss/",
+      "publishedAt": "2026-08-04T13:00:00.000Z",
+      "summary": "Here are Google’s latest AI updates from July 2026",
+      "tags": [
+        "AI"
       ],
       "category": "公司动态"
     },
@@ -21,7 +34,7 @@
       "url": "https://arxiv.org/abs/2607.28629",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.28629v1 Announce Type: new Abstract: The rapid transition from reactive large language models (LLMs) to persistent, action-capable systems has exposed critical gaps in the architectural understanding of Agentic AI, particularly in separating inferen",
       "tags": [
         "模型",
@@ -36,7 +49,7 @@
       "url": "https://arxiv.org/abs/2607.28631",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.28631v1 Announce Type: new Abstract: AI Scientist systems capable of autonomous research have the potential to significantly accelerate scientific discovery. However, evaluating and comparing the quality of AI-generated papers remains an open challe",
       "tags": [
         "模型",
@@ -51,7 +64,7 @@
       "url": "https://arxiv.org/abs/2607.28632",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.28632v1 Announce Type: new Abstract: Major mathematical conjectures still depend heavily on expert intuition, so a unified method for the systematic generation and validation of conjectures with substantial mathematical potential remains unavailable",
       "tags": [
         "研究"
@@ -64,7 +77,7 @@
       "url": "https://arxiv.org/abs/2607.28642",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.28642v1 Announce Type: new Abstract: Long chain-of-thought reasoning improves performance on complex problems, but it also introduces redundancy accumulation, context overflow, and error anchoring. We argue that under bounded context windows, the co",
       "tags": [
         "模型",
@@ -78,7 +91,7 @@
       "url": "https://arxiv.org/abs/2607.28657",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.28657v1 Announce Type: new Abstract: Large Language Models (LLMs) often require carefully crafted prompts to unlock their full potential, which can be a barrier for non-expert users. This work addresses the challenge by introducing a Task-Aware Prom",
       "tags": [
         "模型",
@@ -93,7 +106,7 @@
       "url": "https://arxiv.org/abs/2607.28659",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.28659v1 Announce Type: new Abstract: Cross-domain sequential recommendation (CDSR) aims to model users' dynamic interest transitions and sequential patterns across multiple domains. Recently, generative recommendation (GR) has emerged. It first lear",
       "tags": [
         "模型",
@@ -108,7 +121,7 @@
       "url": "https://arxiv.org/abs/2607.28662",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.28662v1 Announce Type: new Abstract: Large language models extract entities and relationships from unstructured documents fluently but inconsistently: type vocabularies fracture across documents, the same person surfaces under several name variants,",
       "tags": [
         "模型",
@@ -123,7 +136,7 @@
       "url": "https://arxiv.org/abs/2607.28674",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.28674v1 Announce Type: new Abstract: Understanding how computational effort is allocated across individual chain-of-thought (CoT) reasoning steps remains an open challenge: existing interpretability methods rely on output-level signals or collapse p",
       "tags": [
         "模型",
@@ -138,7 +151,7 @@
       "url": "https://arxiv.org/abs/2607.28677",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.28677v1 Announce Type: new Abstract: LLM now pass medical licensing examinations and, in curated cases, can rival physicians at diagnostic reasoning. These developments have accelerated the use of LLMs for symptom assessment and clinical decision su",
       "tags": [
         "模型",
@@ -153,7 +166,7 @@
       "url": "https://arxiv.org/abs/2607.28678",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.28678v1 Announce Type: new Abstract: Multimodal agents operating in long-horizon environments must build and continually update multimedia memories to support entity-consistent, temporally grounded reasoning. However, existing agentic memory approac",
       "tags": [
         "模型",
@@ -168,7 +181,7 @@
       "url": "https://arxiv.org/abs/2607.28679",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.28679v1 Announce Type: new Abstract: Multi-agent planning problems arise in a variety of engineering applications, such as multi-robot wildfire fighting and unmanned aerial inspection in factories. A particular challenge is the existence of spatio-t",
       "tags": [
         "模型",
@@ -183,7 +196,7 @@
       "url": "https://arxiv.org/abs/2607.28684",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.28684v1 Announce Type: new Abstract: Existing benchmarks for scientific equation discovery are largely composed of well-known equations available in the public domain, making it difficult to determine whether a model is discovering laws from data or",
       "tags": [
         "模型",
@@ -197,7 +210,7 @@
       "url": "https://arxiv.org/abs/2607.28685",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.28685v1 Announce Type: new Abstract: Agent-safety benchmarks measure different behaviors, and their scores get quoted interchangeably as an agent's safety. We treat four of them (R-Judge, InjecAgent, AgentHarm, AgentDojo) as measurements to be valid",
       "tags": [
         "模型",
@@ -212,7 +225,7 @@
       "url": "https://arxiv.org/abs/2607.28692",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.28692v1 Announce Type: new Abstract: Large language model (LLM) agents have been increasingly adopted in scientific research for organizing and invoking specialized computational tools. However, their reliance on predefined tool spaces with static s",
       "tags": [
         "模型",
@@ -227,7 +240,7 @@
       "url": "https://arxiv.org/abs/2607.28788",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.28788v1 Announce Type: new Abstract: Clinical diagnosis at hospital admission must be made rapidly from limited, incomplete evidence. Existing diagnosis-prediction benchmarks are poorly suited to this setting: they restrict prediction to closed code",
       "tags": [
         "模型",
@@ -242,7 +255,7 @@
       "url": "https://arxiv.org/abs/2607.28802",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.28802v1 Announce Type: new Abstract: Existing evaluations often reduce agent failures to system-level outcomes, obscuring where the fault originated and which intervention would improve the agent system. This creates a repair-assignment problem: the",
       "tags": [
         "模型",
@@ -257,7 +270,7 @@
       "url": "https://arxiv.org/abs/2607.28818",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.28818v1 Announce Type: new Abstract: As AI companions increasingly mediate repeated social interaction, users may rely on a stable role and shared history, yet locally acceptable replies do not ensure that either persists. We study two observable lo",
       "tags": [
         "模型",
@@ -271,7 +284,7 @@
       "url": "https://arxiv.org/abs/2607.28881",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.28881v1 Announce Type: new Abstract: As more responsibility is placed upon AI systems, it becomes increasingly important to guarantee that these systems are aligned with humanity. A common fear in AI safety is that human value is fragile -- that is,",
       "tags": [
         "模型",
@@ -286,8 +299,8 @@
       "url": "https://arxiv.org/abs/2607.28894",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
-      "summary": "arXiv:2607.28894v1 Announce Type: new Abstract: Computational cognitive modeling seeks to infer latent cognitive mechanisms underlying observed behavior. Bayesian inverse planning provides a principled framework for such inference, but its success depends crit",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
+      "summary": "arXiv:2607.28894v2 Announce Type: new Abstract: Computational cognitive modeling seeks to infer latent cognitive mechanisms underlying observed behavior. Bayesian inverse planning provides a principled framework for such inference, but its success depends crit",
       "tags": [
         "模型",
         "产品",
@@ -301,7 +314,7 @@
       "url": "https://arxiv.org/abs/2607.28942",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.28942v1 Announce Type: new Abstract: Recently Large Language Models (LLMs) have been increasingly deployed as autonomous agents in applications such as self-reflection, retrieval-augmented generation, and scientific discovery. In these settings, age",
       "tags": [
         "模型",
@@ -316,7 +329,7 @@
       "url": "https://arxiv.org/abs/2607.28956",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.28956v1 Announce Type: new Abstract: Large language model agents are increasingly evaluated as autonomous tool users, yet most benchmarks focus on bounded tasks with immediate success criteria. Real-world deployments often require Long-Term Coherenc",
       "tags": [
         "模型",
@@ -331,7 +344,7 @@
       "url": "https://arxiv.org/abs/2607.28990",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.28990v1 Announce Type: new Abstract: Large language model agents have shown promising capabilities in data-driven scientific discovery tasks, where an agent interacts with an execution environment and produces a statistical claim. Long-horizon scien",
       "tags": [
         "模型",
@@ -346,7 +359,7 @@
       "url": "https://arxiv.org/abs/2607.29002",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.29002v1 Announce Type: new Abstract: Online shoppers increasingly turn to AI shopping assistants, using images and multi-turn dialogue to express and refine product needs that are difficult to articulate in text alone. However, existing benchmarks l",
       "tags": [
         "模型",
@@ -361,7 +374,7 @@
       "url": "https://arxiv.org/abs/2607.29058",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.29058v1 Announce Type: new Abstract: Professional-document review is a constraint-checking problem in which decisions depend on relations among text, geometry, pages, and document revisions. We present an evidence-grounded pipeline that normalizes e",
       "tags": [
         "产品",
@@ -376,7 +389,7 @@
       "url": "https://arxiv.org/abs/2607.29062",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.29062v1 Announce Type: new Abstract: Model capabilities have improved in large part due to scaling chain of thought. This has been a promising development for AI safety--where models verbalize their reasoning, it is possible to monitor it. However, ",
       "tags": [
         "模型",
@@ -391,7 +404,7 @@
       "url": "https://arxiv.org/abs/2607.29077",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.29077v1 Announce Type: new Abstract: Counterfactual explanations (CEs) enhance the interpretability of machine learning models by identifying the smallest change to an input required to obtain a desired output. Although CEs are conventionally formul",
       "tags": [
         "模型",
@@ -405,7 +418,7 @@
       "url": "https://arxiv.org/abs/2607.29087",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.29087v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly deployed in enterprise settings, yet individual models remain bounded by model-specific capability limitations. These heterogeneous boundaries pose a deployment chall",
       "tags": [
         "模型",
@@ -420,7 +433,7 @@
       "url": "https://arxiv.org/abs/2607.29190",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.29190v1 Announce Type: new Abstract: Tool-using LLM agents act on typed tool returns, records pairing provenance and categorical fields with numerical values. Runtime permission gates generally authorize the observed return and action, leaving the d",
       "tags": [
         "Agent",
@@ -435,7 +448,7 @@
       "url": "https://arxiv.org/abs/2607.29218",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.29218v1 Announce Type: new Abstract: With the prosperity of the large language models (LLMs), it has become an interesting topic: how do LLM-based agents work in Minecraft? Unfortunately, most existing benchmarks evaluate them under fixed game mecha",
       "tags": [
         "模型",
@@ -450,7 +463,7 @@
       "url": "https://arxiv.org/abs/2607.29246",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.29246v1 Announce Type: new Abstract: Modern large language models (LLMs) are expected not just to answer correctly, but to adapt their behavior to different human values and use cases. As a result, multi-reward reinforcement learning (RL) has become",
       "tags": [
         "模型",
@@ -465,7 +478,7 @@
       "url": "https://arxiv.org/abs/2607.29254",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.29254v1 Announce Type: new Abstract: AI agents extend large language models (LLMs) with external tools, enabling them to perform complex tasks and translate model outputs into consequential real-world actions. Yet LLMs often become substantially les",
       "tags": [
         "模型",
@@ -480,7 +493,7 @@
       "url": "https://arxiv.org/abs/2607.29320",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.29320v1 Announce Type: new Abstract: Graphical user interface (GUI) agents based on large language models are increasingly deployed across mobile, web, and desktop environments. However, existing agents are typically domain-specific, limiting the de",
       "tags": [
         "模型",
@@ -495,7 +508,7 @@
       "url": "https://arxiv.org/abs/2607.29405",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.29405v1 Announce Type: new Abstract: Agentic AI systems act through multi-step trajectories that combine planning, tool use, memory, interaction, and adaptation. This behavior stretches validation practice beyond component testing and one-shot input",
       "tags": [
         "Agent",
@@ -510,25 +523,10 @@
       "url": "https://arxiv.org/abs/2607.29431",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
       "summary": "arXiv:2607.29431v1 Announce Type: new Abstract: Large language models increasingly generate optimization models from natural language, but existing evaluation often reduces a generated model and its ground truth to a single equivalent/not-equivalent verdict or",
       "tags": [
         "模型",
-        "产品",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "10xan4n",
-      "title": "Beyond Retrieval: Analytic Memory for Multimodal Agents",
-      "url": "https://arxiv.org/abs/2607.29440",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-03T04:00:00.000Z",
-      "summary": "arXiv:2607.29440v1 Announce Type: new Abstract: Long-term multimodal memory must support not only retrieving relevant information but also computing over observations accumulated across interactions. Existing systems largely emphasize \\emph{retrieval memory}, ",
-      "tags": [
-        "Agent",
         "产品",
         "研究"
       ],
@@ -540,7 +538,7 @@
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
       "ok": true,
-      "count": 1106
+      "count": 1110
     },
     {
       "name": "Google AI",
@@ -558,13 +556,13 @@
       "name": "arXiv cs.LG",
       "url": "https://export.arxiv.org/rss/cs.LG",
       "ok": true,
-      "count": 247
+      "count": 565
     },
     {
       "name": "arXiv cs.CL",
       "url": "https://export.arxiv.org/rss/cs.CL",
       "ok": true,
-      "count": 110
+      "count": 302
     }
   ],
   "warnings": []
