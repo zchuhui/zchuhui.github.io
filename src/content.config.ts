@@ -1,5 +1,5 @@
 import { defineCollection, z } from 'astro:content';
-import { glob } from 'astro/loaders';
+import { glob } from 'astro/dist/content/loaders/index.js';
 
 // 项目作品（手动维护的精选卡片）
 const projects = defineCollection({

@@ -1,3 +1,13 @@
+---
+title: Git 常用命令指南
+summary: 从初始配置、日常提交、分支管理到撤销回退与远程协作，一份覆盖真实开发场景的 Git 命令速查与实战手册。
+category: 编程基础
+difficulty: 入门
+tags: [Git, 版本控制, 命令行]
+official: https://git-scm.com/
+created: 2026-08-07
+updated: 2026-08-07
+---
 
 ## 工具简介
 

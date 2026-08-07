@@ -1,3 +1,13 @@
+---
+title: Linux 常用命令指南
+summary: 从文件操作、文本处理、进程管理到网络与权限，一份覆盖日常开发与运维场景的 Linux 命令速查与实战手册。
+category: 编程基础
+difficulty: 入门
+tags: [Linux, 命令行, Shell]
+official: https://www.kernel.org/
+created: 2026-08-07
+updated: 2026-08-07
+---
 
 ## 工具简介
 

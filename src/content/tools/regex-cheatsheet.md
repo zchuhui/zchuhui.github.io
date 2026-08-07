@@ -1,3 +1,13 @@
+---
+title: 正则表达式速查指南
+summary: 从基础语法、字符类、量词到分组断言与贪婪回溯，一份覆盖日志排查、表单校验、代码搜索场景的正则实战手册。
+category: 编程基础
+difficulty: 入门
+tags: [正则表达式, 文本处理, 速查]
+official: https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions
+created: 2026-08-07
+updated: 2026-08-07
+---
 
 ## 工具简介
 

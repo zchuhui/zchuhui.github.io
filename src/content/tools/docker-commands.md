@@ -1,3 +1,13 @@
+---
+title: Docker 常用命令指南
+summary: 从镜像、容器、Compose 到数据卷、网络与排查实战，一份覆盖环境搭建与部署场景的 Docker 命令速查手册。
+category: 编程基础
+difficulty: 入门
+tags: [Docker, 容器, 部署]
+official: https://docs.docker.com/
+created: 2026-08-07
+updated: 2026-08-07
+---
 
 ## 工具简介
 

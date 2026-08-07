@@ -1,3 +1,13 @@
+---
+title: HTTP 与 curl 实用指南
+summary: 从请求方法、状态码、请求头到 curl 常用参数与认证，一份覆盖 API 调试、接口对接与网络排查的实战手册。
+category: 编程基础
+difficulty: 入门
+tags: [HTTP, curl, API, 网络]
+official: https://curl.se/
+created: 2026-08-07
+updated: 2026-08-07
+---
 
 ## 工具简介
 

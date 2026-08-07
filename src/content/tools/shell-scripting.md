@@ -1,3 +1,13 @@
+---
+title: Shell 脚本基础指南
+summary: 从变量、流程控制、函数到管道重定向与实战自动化，一份让命令行从「敲命令」进阶到「写脚本」的 Bash 入门手册。
+category: 编程基础
+difficulty: 入门
+tags: [Shell, Bash, 自动化, 脚本]
+official: https://www.gnu.org/software/bash/
+created: 2026-08-07
+updated: 2026-08-07
+---
 
 ## 工具简介
 

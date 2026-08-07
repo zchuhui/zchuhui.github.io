@@ -1,7 +1,7 @@
 ---
 title: Prompt 工程进阶：从"能跑"到"好用"
 summary: 面向生产级应用的 Prompt 设计方法：版本管理、自动优化、安全防护、长上下文编排与多模型协作。
-category: 进阶指南
+category: 工程实践
 difficulty: 进阶
 tags: [Prompt, 工程, 生产, 优化, 安全]
 created: 2026-07-17
