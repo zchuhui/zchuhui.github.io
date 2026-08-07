@@ -50,7 +50,7 @@ const tools = defineCollection({
   schema: z.object({
     title: z.string(),
     summary: z.string().optional(),
-    category: z.enum(['IDE 插件', 'AI 编辑器', '终端 Agent', '自托管 Agent']),
+    category: z.enum(['IDE 插件', 'AI 编辑器', '终端 Agent', '自托管 Agent', '编程基础']),
     difficulty: z.enum(['入门', '进阶', '高级']),
     tags: z.array(z.string()).default([]),
     vendor: z.string().optional(),
