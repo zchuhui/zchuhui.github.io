@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T23:37:25.082Z",
+  "generatedAt": "2026-08-15T23:34:43.029Z",
   "items": [
     {
       "id": "1fl0n2c",
@@ -7,7 +7,7 @@
       "url": "https://arxiv.org/abs/2608.12325",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12325v1 Announce Type: new Abstract: Autonomous reasoning is among the most scientifically and economically motivating topics in AI today. Historically the purview of symbolic AI, recent advances have mainly emerged from deep probabilistic generativ",
       "tags": [
         "模型",
@@ -22,7 +22,7 @@
       "url": "https://arxiv.org/abs/2608.12345",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12345v1 Announce Type: new Abstract: Language models are increasingly deployed as co-scientists, yet their ability to uphold research integrity under institutional pressure remains unmeasured. We introduce IntegrityBench, a benchmark evaluating misc",
       "tags": [
         "模型",
@@ -37,7 +37,7 @@
       "url": "https://arxiv.org/abs/2608.12346",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12346v1 Announce Type: new Abstract: This position paper argues that modern AI alignment methods - originally designed to prevent harmful output - are dual-use technologies that may easily be misused by malicious actors for censorship and manipulati",
       "tags": [
         "模型",
@@ -52,7 +52,7 @@
       "url": "https://arxiv.org/abs/2608.12368",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12368v1 Announce Type: new Abstract: Agreement with human judgments is a common proxy for evaluating the alignment of large language models (LLMs). Yet agreement in final labels does not show that human annotators and models rely on the same moral g",
       "tags": [
         "模型",
@@ -67,7 +67,7 @@
       "url": "https://arxiv.org/abs/2608.12371",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12371v1 Announce Type: new Abstract: Stream-processing systems increasingly operate across heterogeneous mobile edge--cloud infrastructures, where workload volatility, resource contention, and stringent quality-of-service (QoS) requirements complica",
       "tags": [
         "模型",
@@ -82,7 +82,7 @@
       "url": "https://arxiv.org/abs/2608.12372",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12372v1 Announce Type: new Abstract: AI systems are increasingly employed as decision aids, decision delegates, or autonomous decision-makers. This position paper argues that in many settings, particularly high-stakes decision-making, we need accura",
       "tags": [
         "模型",
@@ -97,7 +97,7 @@
       "url": "https://arxiv.org/abs/2608.12373",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12373v1 Announce Type: new Abstract: Large language models are increasingly used in strategic and advisory contexts, yet their safety alignment is typically evaluated in English only. We test nine models from six providers and ask whether the langua",
       "tags": [
         "模型",
@@ -112,7 +112,7 @@
       "url": "https://arxiv.org/abs/2608.12385",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12385v1 Announce Type: new Abstract: As large language models serve more requests, cumulative inference cost is becoming increasingly important relative to one-time training cost. The two inference phases stress hardware differently: prompt prefill ",
       "tags": [
         "模型",
@@ -126,7 +126,7 @@
       "url": "https://arxiv.org/abs/2608.12389",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12389v1 Announce Type: new Abstract: Cross-domain zero- or few-shot personalization aims to generate user-preferred responses in unseen conversational domains from only a handful of target-domain interactions. Existing adaptation methods struggle to",
       "tags": [
         "研究"
@@ -139,7 +139,7 @@
       "url": "https://arxiv.org/abs/2608.12395",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12395v1 Announce Type: new Abstract: We describe Research Assistant, an internal LLM-based system developed at AstraZeneca to help scientists and clinicians explore biomedical questions across a broad range of data sources. The system provides a cha",
       "tags": [
         "Agent",
@@ -154,7 +154,7 @@
       "url": "https://arxiv.org/abs/2608.12426",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12426v1 Announce Type: new Abstract: Large language models are increasingly deployed in settings that require simultaneous adherence to multiple explicit constraints - reasoning structure, safety boundaries, output schemas. Individual constraints ar",
       "tags": [
         "模型",
@@ -169,7 +169,7 @@
       "url": "https://arxiv.org/abs/2608.12428",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12428v1 Announce Type: new Abstract: Memory is a core component of AI agents, enabling them to accumulate experience, maintain personalization, and adapt over long-term interactions. However, existing memory systems often remain fixed after developm",
       "tags": [
         "模型",
@@ -184,7 +184,7 @@
       "url": "https://arxiv.org/abs/2608.12476",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12476v1 Announce Type: new Abstract: Long-term agent memory is usually treated as select--store--retrieve, but retrieval does not decide whether contradictory, superseded, retracted, deleted, or stale records may support an outgoing claim. We introd",
       "tags": [
         "模型",
@@ -199,7 +199,7 @@
       "url": "https://arxiv.org/abs/2608.12522",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12522v1 Announce Type: new Abstract: LLM-based program evolution systems such as FunSearch and AlphaEvolve have shown strong ability to discover novel algorithms, but typically optimize each task in isolation, discarding search experience after comp",
       "tags": [
         "模型",
@@ -214,7 +214,7 @@
       "url": "https://arxiv.org/abs/2608.12555",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12555v1 Announce Type: new Abstract: Predictive explanation methods attribute a model output; they do not, by themselves, attribute an intervention effect on the real-world outcome. We introduce the Causal Attribution Score (CAS), a compact score ar",
       "tags": [
         "模型",
@@ -228,7 +228,7 @@
       "url": "https://arxiv.org/abs/2608.12574",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12574v1 Announce Type: new Abstract: Large language models increasingly need to generate structured outputs that conform to predefined schemas, with one common constraint being selection from a finite set of valid strings. Current constrained decodi",
       "tags": [
         "模型",
@@ -242,7 +242,7 @@
       "url": "https://arxiv.org/abs/2608.12585",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12585v1 Announce Type: new Abstract: Improving reasoning LLMs requires the ability to judge the quality of long reasoning traces for effective reasoning data curation, strong training signals during reinforcement learning, and an in-depth understand",
       "tags": [
         "模型",
@@ -257,7 +257,7 @@
       "url": "https://arxiv.org/abs/2608.12590",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12590v1 Announce Type: new Abstract: Thyroid ultrasound diagnosis requires coordinated lesion localization, measurement, risk stratification and reporting, yet most AI systems address these tasks in isolation and provide limited support for clinical",
       "tags": [
         "模型",
@@ -272,7 +272,7 @@
       "url": "https://arxiv.org/abs/2608.12593",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12593v1 Announce Type: new Abstract: Discovery---formulating novel generalizations---is a central part of the scientific process. Despite its importance, there is a gap in the current AI benchmark landscape, with few benchmarks directly probing the ",
       "tags": [
         "模型",
@@ -287,7 +287,7 @@
       "url": "https://arxiv.org/abs/2608.12599",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12599v1 Announce Type: new Abstract: Multi-turn dialogues let users revoke constraints as easily as impose them, but revocation does not reliably take effect: models keep enacting withdrawn requirements (occasionally beneath comments asserting their",
       "tags": [
         "模型",
@@ -302,7 +302,7 @@
       "url": "https://arxiv.org/abs/2608.12610",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12610v1 Announce Type: new Abstract: There are 56,804 public agent skills today, and teams write many more privately. The dominant delivery model is installation: once installed, a skill's description remains in the system prompt, competing for fewe",
       "tags": [
         "模型",
@@ -317,7 +317,7 @@
       "url": "https://arxiv.org/abs/2608.12645",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12645v1 Announce Type: new Abstract: LLM judges have become central infrastructure for model evaluations, online grading, and reward modeling. Judges are typically validated by accuracy on golden data, but accuracy says little about whether they are",
       "tags": [
         "模型",
@@ -332,7 +332,7 @@
       "url": "https://arxiv.org/abs/2608.12654",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12654v1 Announce Type: new Abstract: Long-running LLM agents act through tools, and a single step can send an email, merge a pull request, or wire a payment. The steering decision is the pre-commit choice at that boundary: proceed, or hold for human",
       "tags": [
         "模型",
@@ -347,7 +347,7 @@
       "url": "https://arxiv.org/abs/2608.12657",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12657v1 Announce Type: new Abstract: Probabilities of causation (PoCs) characterize individual causal responses that cannot be directly observed and therefore generally require partial identification. Tian and Pearl first derived theoretically sharp",
       "tags": [
         "研究"
@@ -360,7 +360,7 @@
       "url": "https://arxiv.org/abs/2608.12670",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12670v1 Announce Type: new Abstract: IT service management (ITSM) systems accumulate large volumes of heterogeneous ticket data that are difficult for sales and executive stakeholders to convert into actionable intelligence. This paper presents a so",
       "tags": [
         "研究"
@@ -373,7 +373,7 @@
       "url": "https://arxiv.org/abs/2608.12671",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12671v1 Announce Type: new Abstract: Multi-layer transformers form the critical component of essentially all large language models (LLMs) in use today. Because of their ubiquity and computational capability, there is a rapidly growing body of work t",
       "tags": [
         "模型",
@@ -388,7 +388,7 @@
       "url": "https://arxiv.org/abs/2608.12674",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12674v1 Announce Type: new Abstract: Maintaining price consistency and executing an Every Day Low Price strategy is critical for global retailers. However, with catalogs spanning millions of active items, manual governance of price relationships is ",
       "tags": [
         "Agent",
@@ -403,7 +403,7 @@
       "url": "https://arxiv.org/abs/2608.12675",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12675v1 Announce Type: new Abstract: Retrieval-Augmented Generation (RAG) is widely used to improve the performance of Large Language Models (LLMs) in answering user queries. Existing privacy research on RAG has focused on preventing unauthorized us",
       "tags": [
         "模型",
@@ -417,7 +417,7 @@
       "url": "https://arxiv.org/abs/2608.12677",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12677v1 Announce Type: new Abstract: Detecting infection-related behavioral changes in mosquitoes from video data is challenging because mosquitoes are small, move rapidly and irregularly, and are affected by environmental factors such as background",
       "tags": [
         "模型",
@@ -432,7 +432,7 @@
       "url": "https://arxiv.org/abs/2608.12679",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12679v1 Announce Type: new Abstract: Large Language Models (LLMs) are increasingly deployed in discovery domains such as math and science. The usual approach is to present the problem to the model and use its answer as the proposed solution. However",
       "tags": [
         "模型",
@@ -447,7 +447,7 @@
       "url": "https://arxiv.org/abs/2608.12743",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12743v1 Announce Type: new Abstract: Spatial intelligence is becoming a foundation for embodied agents, robotic planning, and multimodal assistants. To improve the spatial reasoning ability of VLM agents, existing work has mainly followed two lines.",
       "tags": [
         "模型",
@@ -462,7 +462,7 @@
       "url": "https://arxiv.org/abs/2608.12761",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12761v1 Announce Type: new Abstract: Agentic workflows are commonly evaluated by whether they reach the correct outcome. That is insufficient in institutional settings, where a correct action may rely on the wrong authority, an unsupported completio",
       "tags": [
         "Agent",
@@ -476,7 +476,7 @@
       "url": "https://arxiv.org/abs/2608.12762",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12762v1 Announce Type: new Abstract: Schedulability analysis is essential for certifying real-time systems, but existing tests are often developed through pen-and-paper proofs that are difficult to scale, validate, and maintain. Mechanized verificat",
       "tags": [
         "模型",
@@ -490,7 +490,7 @@
       "url": "https://arxiv.org/abs/2608.12788",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12788v1 Announce Type: new Abstract: The rapid advancement of Auto-Research has surfaced a fundamental evaluation challenge: how can we measure the alignment, logical coherence, and evolutionary completeness of its research trajectory with human res",
       "tags": [
         "产品",
@@ -505,7 +505,7 @@
       "url": "https://arxiv.org/abs/2608.12842",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12842v1 Announce Type: new Abstract: Model merging has recently attracted significant attention as a promising paradigm for constructing unified multi-task models without requiring additional retraining. However, parameter conflicts and knowledge in",
       "tags": [
         "模型",
@@ -520,7 +520,7 @@
       "url": "https://arxiv.org/abs/2608.12847",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "summary": "arXiv:2608.12847v1 Announce Type: new Abstract: Retrieval can identify a past trajectory that may matter, yet it does not specify how an acting agent should use that trajectory after users, entities, constraints, or environment state have changed. We identify ",
       "tags": [
         "模型",
@@ -553,13 +553,13 @@
       "name": "arXiv cs.LG",
       "url": "https://export.arxiv.org/rss/cs.LG",
       "ok": true,
-      "count": 268
+      "count": 0
     },
     {
       "name": "arXiv cs.CL",
       "url": "https://export.arxiv.org/rss/cs.CL",
       "ok": true,
-      "count": 146
+      "count": 0
     }
   ],
   "warnings": []
