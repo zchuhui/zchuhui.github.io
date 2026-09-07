@@ -1,6 +1,34 @@
 {
-  "generatedAt": "2026-09-06T00:59:51.080Z",
+  "generatedAt": "2026-09-07T01:02:03.781Z",
   "items": [
+    {
+      "id": "1o415ig",
+      "title": "An Alien Mind",
+      "url": "https://openai.com/index/an-alien-mind",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-09-06T09:00:00.000Z",
+      "summary": "Jakub Pachocki reflects on increasingly capable AI and the challenge of keeping it aligned. He calls for stronger safeguards and international coordination.",
+      "tags": [
+        "AI"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "1gr8uti",
+      "title": "Research acceleration: The view inside OpenAI",
+      "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-09-06T08:00:00.000Z",
+      "summary": "Inside OpenAI, coding agents are reshaping AI research. Explore early data on agent usage, experiment velocity, task complexity, and research acceleration.",
+      "tags": [
+        "Agent",
+        "产品",
+        "研究"
+      ],
+      "category": "公司动态"
+    },
     {
       "id": "db9b6q",
       "title": "Daybreak for Frontline Defenders: $1B to protect essential services",
@@ -15,19 +43,6 @@
       "category": "公司动态"
     },
     {
-      "id": "lvwncm",
-      "title": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra",
-      "url": "https://openai.com/index/playco-game-prototyping-with-astra",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-03T12:00:00.000Z",
-      "summary": "Using GPT-6 Astra, Playco built three themed game prototypes from one grey box foundation and reported 50% fewer manual fixes than with the previous model.",
-      "tags": [
-        "模型"
-      ],
-      "category": "公司动态"
-    },
-    {
       "id": "1y1fg8g",
       "title": "Legora reviewed 41 documents in minutes with GPT-6 Astra",
       "url": "https://openai.com/index/legora-financial-statement-review-with-astra",
@@ -35,6 +50,19 @@
       "sourceUrl": "https://openai.com/news/rss.xml",
       "publishedAt": "2026-09-03T12:00:00.000Z",
       "summary": "Legora used GPT-6 Astra to review 41 documents in minutes, find all four planted errors, and improve performance by nearly 40% in this financial-review workflow.",
+      "tags": [
+        "模型"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "lvwncm",
+      "title": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra",
+      "url": "https://openai.com/index/playco-game-prototyping-with-astra",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-09-03T12:00:00.000Z",
+      "summary": "Using GPT-6 Astra, Playco built three themed game prototypes from one grey box foundation and reported 50% fewer manual fixes than with the previous model.",
       "tags": [
         "模型"
       ],
@@ -289,20 +317,6 @@
       "category": "公司动态"
     },
     {
-      "id": "o9q2a9",
-      "title": "Learning never stops: How AI makes learning continuous",
-      "url": "https://openai.com/index/learning-never-stops",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-08-26T10:00:00.000Z",
-      "summary": "OpenAI’s new report explores how students and educators use ChatGPT to make learning more continuous, with support that extends beyond the classroom.",
-      "tags": [
-        "模型",
-        "产品"
-      ],
-      "category": "公司动态"
-    },
-    {
       "id": "1dmbuis",
       "title": "Bringing ChatGPT for Teachers to more U.S. school districts",
       "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
@@ -314,6 +328,20 @@
         "模型",
         "产品",
         "研究"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "o9q2a9",
+      "title": "Learning never stops: How AI makes learning continuous",
+      "url": "https://openai.com/index/learning-never-stops",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-08-26T10:00:00.000Z",
+      "summary": "OpenAI’s new report explores how students and educators use ChatGPT to make learning more continuous, with support that extends beyond the classroom.",
+      "tags": [
+        "模型",
+        "产品"
       ],
       "category": "公司动态"
     },
@@ -465,32 +493,6 @@
         "安全"
       ],
       "category": "公司动态"
-    },
-    {
-      "id": "aiij5r",
-      "title": "5 new ways to level up your learning with Search",
-      "url": "https://blog.google/products-and-platforms/products/search/back-to-school-study-tools/",
-      "source": "Google AI",
-      "sourceUrl": "https://blog.google/innovation-and-ai/technology/ai/rss/",
-      "publishedAt": "2026-08-19T19:00:00.000Z",
-      "summary": "Here’s how you can use Google Search tools to study for classes and standardized tests.",
-      "tags": [
-        "AI"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "yu85wq",
-      "title": "Replit expands access to software creation with GPT-5.6 Luna",
-      "url": "https://openai.com/index/replit",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-08-19T07:00:00.000Z",
-      "summary": "Replit introduces Free Mode, powered by GPT-5.6 Luna, so anyone can turn ideas into working software without worrying about token costs.",
-      "tags": [
-        "模型"
-      ],
-      "category": "公司动态"
     }
   ],
   "sources": [
@@ -498,7 +500,7 @@
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
       "ok": true,
-      "count": 1170
+      "count": 1172
     },
     {
       "name": "Google AI",
