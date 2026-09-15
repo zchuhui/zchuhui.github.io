@@ -1,499 +1,524 @@
 {
-  "generatedAt": "2026-09-14T01:06:33.336Z",
+  "generatedAt": "2026-09-15T01:29:41.223Z",
   "items": [
     {
-      "id": "1pqjma3",
-      "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
-      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-14T00:00:00.000Z",
-      "summary": "Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models.",
-      "tags": [
-        "模型",
-        "产品"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "mdg06l",
-      "title": "Cognition helps Devin test its own work with GPT‑6 Astra",
-      "url": "https://openai.com/index/cognition-devin-testing-with-astra",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-11T16:00:00.000Z",
-      "summary": "GPT‑6 Astra improves Devin’s ability to test software and show that it works, with the goal of helping engineers review less code and ship more.",
-      "tags": [
-        "模型"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "1wz10ek",
-      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
-      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-11T10:00:00.000Z",
-      "summary": "Learn how OpenAI evolved Habitat from a Python library into a globally distributed storage platform serving 1 billion ChatGPT users and 22M requests per second.",
-      "tags": [
-        "模型",
-        "产品"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "6kytq0",
-      "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
-      "url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-10T16:00:00.000Z",
-      "summary": "César de la Fuente’s lab uses Codex and ChatGPT to search living and extinct genomes for antimicrobial candidates to fight drug-resistant infections.",
-      "tags": [
-        "模型",
-        "产品",
-        "研究"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "97orn0",
-      "title": "3 ways to prep for your next big race with Search",
-      "url": "https://blog.google/products-and-platforms/products/search/running-race-training-tips/",
+      "id": "7qw3md",
+      "title": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-christina-koch/",
       "source": "Google AI",
       "sourceUrl": "https://blog.google/innovation-and-ai/technology/ai/rss/",
-      "publishedAt": "2026-09-10T16:00:00.000Z",
-      "summary": "Search can help runners get race-day ready with registration alerts, tailored training plans, and more.",
+      "publishedAt": "2026-09-14T19:00:00.000Z",
+      "summary": "Christina Koch sits down with James Manyika, Google’s Senior Vice President of Research, Labs, Technology & Society.",
       "tags": [
         "研究"
       ],
       "category": "公司动态"
     },
     {
-      "id": "1gym4ni",
-      "title": "Now everyone can put data to work",
-      "url": "https://openai.com/index/put-data-to-work",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-10T15:00:00.000Z",
-      "summary": "Meet the Data agent in ChatGPT Work. Connect company data, uncover insights, and build interactive dashboards with AI using natural language.",
-      "tags": [
-        "模型",
-        "Agent",
-        "产品"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "ebsgn1",
-      "title": "Introducing ChatGPT for Financial Services",
-      "url": "https://openai.com/index/introducing-chatgpt-financial-services",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-10T07:00:00.000Z",
-      "summary": "Introducing ChatGPT for Financial Services, combining built-in financial data and GPT-6 Astra for research, modeling, and client-ready materials.",
-      "tags": [
-        "模型",
-        "产品",
-        "研究"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "ew8t53",
-      "title": "Expanding AI access and cyber defense for federal, state, local, and tribal governments",
-      "url": "https://openai.com/index/expanding-ai-access-us-government",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-10T07:00:00.000Z",
-      "summary": "OpenAI and GSA will offer eligible federal, state, local, and tribal governments $0 license fees, 50% off usage, and expanded cyber defense support.",
-      "tags": [
-        "AI"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "qj3jdc",
-      "title": "Build more natural voice experiences with GPT‑Live‑1 in the API",
-      "url": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-10T00:00:00.000Z",
-      "summary": "GPT‑Live‑1 brings natural, full-duplex voice conversations to the API, with stronger instruction following, custom voices, and telephony support.",
-      "tags": [
-        "模型",
-        "产品"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "12its48",
-      "title": "Introducing the Agents API",
-      "url": "https://openai.com/index/introducing-the-agents-api",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-10T00:00:00.000Z",
-      "summary": "Build and launch cloud agents with the Agents API, a managed service powered by the Codex harness for orchestration, long-running sessions, and tool use.",
-      "tags": [
-        "Agent",
-        "产品"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "1nm04ip",
-      "title": "Paul Christiano joins OpenAI Foundation Board",
-      "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-09T17:00:00.000Z",
-      "summary": "Paul Christiano joins the OpenAI Foundation Board and its Safety and Security Committee, bringing experience in AI alignment, safety, and standards.",
-      "tags": [
-        "安全"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "tlsxt5",
-      "title": "Get ready for the game with new football features in Search",
-      "url": "https://blog.google/products-and-platforms/products/search/football-features-google-search/",
+      "id": "758liy",
+      "title": "DevFest is back",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026/",
       "source": "Google AI",
       "sourceUrl": "https://blog.google/innovation-and-ai/technology/ai/rss/",
-      "publishedAt": "2026-09-09T16:00:00.000Z",
-      "summary": "Track live game feeds, explore detailed stats, and get custom fantasy recommendations directly in Search this season.",
+      "publishedAt": "2026-09-14T16:00:00.000Z",
+      "summary": "DevFest 2026 is back and here’s how you can connect with one of the more than 800 global events to build, secure, and scale in the agentic AI era.",
       "tags": [
-        "AI"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "1hf13rx",
-      "title": "Recreating a 70-year love story frame by frame",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film/",
-      "source": "Google AI",
-      "sourceUrl": "https://blog.google/innovation-and-ai/technology/ai/rss/",
-      "publishedAt": "2026-09-09T16:00:00.000Z",
-      "summary": "Discover how filmmakers and Google DeepMind used AI to recreate a couple's unrecorded past in the short film \"Love, Rendered.\"",
-      "tags": [
-        "AI"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "1f7w55i",
-      "title": "The AI policy window is open. We need to act.",
-      "url": "https://openai.com/index/ai-policy-window",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-09T13:00:00.000Z",
-      "summary": "Chris Lehane argues that stronger AI capabilities require stronger safety evidence, shared standards, and durable policy action while the policy window remains open.",
-      "tags": [
-        "安全"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "1hr8o29",
-      "title": "GPT-6 Astra: The next generation in intelligence for work",
-      "url": "https://openai.com/index/gpt-6-astra-next-generation-work",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-09T11:00:00.000Z",
-      "summary": "Meet GPT-6 Astra, OpenAI’s most capable model for business, with advanced reasoning, computer use, and stronger writing and design judgment.",
-      "tags": [
-        "模型",
         "Agent"
       ],
       "category": "公司动态"
     },
     {
-      "id": "ba6n4p",
-      "title": "How GPT-5.6 Sol helps run quantum computing experiments",
-      "url": "https://openai.com/index/codex-quantum-computing-experiments",
+      "id": "13wi9uq",
+      "title": "How Fyxer built an AI executive assistant people trust",
+      "url": "https://openai.com/index/fyxer",
       "source": "OpenAI",
       "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-08T17:00:00.000Z",
-      "summary": "See how an MIT researcher uses GPT-5.6 Sol with Codex to autonomously run quantum computing experiments, analyze results, and calibrate qubits.",
+      "publishedAt": "2026-09-14T12:00:00.000Z",
+      "summary": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice.",
       "tags": [
-        "模型",
+        "模型"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "1q47yvr",
+      "title": "Fundamental Dynamical Units for Physics-Informed Structural Inference from Perturbation Time-Series in Networked Systems",
+      "url": "https://arxiv.org/abs/2609.11934",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.11934v1 Announce Type: new Abstract: In networked dynamical systems, the parameter of primary mechanistic interest is signed interaction structure. Recovering this structure from perturbation time-series data is a fundamental identification problem,",
+      "tags": [
+        "产品",
         "研究"
       ],
-      "category": "公司动态"
+      "category": "研究论文"
     },
     {
-      "id": "ya1d6g",
-      "title": "The Work Now Within Reach",
-      "url": "https://openai.com/index/the-work-now-within-reach",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-08T13:00:00.000Z",
-      "summary": "Explore how more capable, affordable AI can expand the work people and businesses can accomplish—and make growth more economical.",
-      "tags": [
-        "AI"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "owmd9c",
-      "title": "Introducing ChatGPT Images 2.5",
-      "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-08T11:30:00.000Z",
-      "summary": "ChatGPT Images 2.5 helps turn your ideas, sketches, and reference photos into more personalized, polished images that better reflect your ideas.",
-      "tags": [
-        "模型",
-        "产品",
-        "多模态"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "197mr3l",
-      "title": "On the Navier–Stokes Millennium Prize Problem",
-      "url": "https://openai.com/index/navier-stokes-solution",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-08T10:00:00.000Z",
-      "summary": "We’re sharing an AI-generated solution to the Navier–Stokes Millennium Prize Problem, including a writeup and a formal proof in Lean.",
-      "tags": [
-        "AI"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "ai5z6c",
-      "title": "Funding grants for new research into AI and teen development",
-      "url": "https://openai.com/index/teen-development-research-grants",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-08T09:00:00.000Z",
-      "summary": "Apply now for OpenAI’s $5 million grant program supporting independent research on how generative AI affects teen development, well-being, and safety.",
+      "id": "1q47yvs",
+      "title": "Physics-Informed Conformal Prediction: Embedding PDE Consistency into Distribution-Free Uncertainty Quantification for Neural Operators",
+      "url": "https://arxiv.org/abs/2609.11935",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.11935v1 Announce Type: new Abstract: Neural operators such as the Fourier Neural Operator (FNO) achieve remarkable accuracy in approximating solutions to partial differential equations (PDEs). However, providing rigorous uncertainty estimates remain",
       "tags": [
         "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1q47yvu",
+      "title": "Fed-Equilibrium Framework for Topological Pareto Control in Robust and Fair Clinical Federated Learning",
+      "url": "https://arxiv.org/abs/2609.11937",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.11937v1 Announce Type: new Abstract: The deployment of Federated Learning (FL) in multi-center clinical networks faces the challenge of \"knowledge dominance,\" where high-volume hubs naturally overwhelm minority community nodes, implicitly treating t",
+      "tags": [
         "研究",
         "安全"
       ],
-      "category": "公司动态"
+      "category": "研究论文"
     },
     {
-      "id": "ygn910",
-      "title": "OpenAI expands initiatives to support journalism from classrooms to newsrooms",
-      "url": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-08T00:00:00.000Z",
-      "summary": "OpenAI is expanding support for journalism with tools, training, and partnerships for students, educators, journalists, and news organizations.",
+      "id": "1q47yxh",
+      "title": "Efficient AI Model Deployment Using Quantization Analysis Tool",
+      "url": "https://arxiv.org/abs/2609.11954",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.11954v1 Announce Type: new Abstract: As deep learning models are increasingly deployed on resource constrained devices, the demand for efficient model optimization techniques continues to grow. Effective deployment of AI models on edge and low power",
       "tags": [
+        "模型",
+        "产品",
         "研究"
       ],
-      "category": "公司动态"
+      "category": "研究论文"
     },
     {
-      "id": "1md6hfg",
-      "title": "1Password increases engineering productivity 21% with Codex",
-      "url": "https://openai.com/index/1password",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-08T00:00:00.000Z",
-      "summary": "Engineers at 1Password use Codex to rapidly build new features and internal tools, reaching production-readiness while maintaining rigorous security policies.",
+      "id": "1q47yxj",
+      "title": "Performance, Efficiency and Collapse -- Advantages and Challenges in Offline Post-training of Code LLMs",
+      "url": "https://arxiv.org/abs/2609.11956",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.11956v1 Announce Type: new Abstract: Post-training with reinforcement learning (RL) is a critical phase in the development of code-generating large language models (LLMs), as it ensures adherence to instructions and the production of functionally co",
       "tags": [
+        "模型",
         "产品",
-        "安全"
+        "研究"
       ],
-      "category": "公司动态"
+      "category": "研究论文"
     },
     {
-      "id": "flhuif",
-      "title": "Supporting independent journalism in Ukraine",
-      "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-07T00:00:00.000Z",
-      "summary": "OpenAI, AIRPPU and WAN-IFRA launch an AI program to help Ukrainian news organizations strengthen innovation, resilience, and independent journalism.",
-      "tags": [
-        "AI"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "1o415ig",
-      "title": "An Alien Mind",
-      "url": "https://openai.com/index/an-alien-mind",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-06T09:00:00.000Z",
-      "summary": "Jakub Pachocki reflects on increasingly capable AI and the challenge of keeping it aligned. He calls for stronger safeguards and international coordination.",
-      "tags": [
-        "AI"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "1gr8uti",
-      "title": "Research acceleration: The view inside OpenAI",
-      "url": "https://openai.com/index/research-acceleration-view-inside-openai",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-06T08:00:00.000Z",
-      "summary": "Inside OpenAI, coding agents are reshaping AI research. Explore early data on agent usage, experiment velocity, task complexity, and research acceleration.",
+      "id": "1q47yxk",
+      "title": "Look Before You Leap: Pre-Action Verification for LLM Agents",
+      "url": "https://arxiv.org/abs/2609.11957",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.11957v1 Announce Type: new Abstract: An LLM agent acts on the world by emitting actions: shell commands to run, edits to apply. A wrong action does not always fail loudly; it can fail silently, producing a plausible but incorrect effect that raises ",
       "tags": [
         "Agent",
         "产品",
         "研究"
       ],
-      "category": "公司动态"
+      "category": "研究论文"
     },
     {
-      "id": "db9b6q",
-      "title": "Daybreak for Frontline Defenders: $1B to protect essential services",
-      "url": "https://openai.com/index/daybreak-for-frontline-defenders",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-03T13:15:00.000Z",
-      "summary": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services.",
+      "id": "1q47yxl",
+      "title": "Decoding Mixture Perception through Computational Modeling of Component Interactions",
+      "url": "https://arxiv.org/abs/2609.11958",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.11958v1 Announce Type: new Abstract: Olfaction played an indispensable role throughout human evolution and civilization. Even in the contemporary era of advanced technology, olfaction remains a critical channel for person to conduct danger discrimin",
       "tags": [
+        "模型",
+        "Agent",
         "研究"
       ],
-      "category": "公司动态"
+      "category": "研究论文"
     },
     {
-      "id": "lvwncm",
-      "title": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra",
-      "url": "https://openai.com/index/playco-game-prototyping-with-astra",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-03T12:00:00.000Z",
-      "summary": "Using GPT-6 Astra, Playco built three themed game prototypes from one grey box foundation and reported 50% fewer manual fixes than with the previous model.",
+      "id": "1q47yxm",
+      "title": "Space as an Interventional Invariant: Cross-Modal Predictive Geometry for Stratified Cities and Em-Spaced Intelligence",
+      "url": "https://arxiv.org/abs/2609.11959",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.11959v1 Announce Type: new Abstract: Space is a foundational concept across mathematics, physics, spatial cognition, urban science, and embodied intelligence, yet these fields often treat spatial structure either as a shared geometric container or a",
       "tags": [
-        "模型"
+        "产品",
+        "研究"
       ],
-      "category": "公司动态"
+      "category": "研究论文"
     },
     {
-      "id": "1y1fg8g",
-      "title": "Legora reviewed 41 documents in minutes with GPT-6 Astra",
-      "url": "https://openai.com/index/legora-financial-statement-review-with-astra",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-03T12:00:00.000Z",
-      "summary": "Legora used GPT-6 Astra to review 41 documents in minutes, find all four planted errors, and improve performance by nearly 40% in this financial-review workflow.",
-      "tags": [
-        "模型"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "13qy2zs",
-      "title": "GPT-6 Astra: A new generation of intelligence",
-      "url": "https://openai.com/index/gpt-6-astra",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-03T11:00:00.000Z",
-      "summary": "Introducing GPT-6 Astra, our most intelligent and aligned model yet, with state-of-the-art capabilities across computer use, coding, cybersecurity, and science.",
+      "id": "1q47yy9",
+      "title": "On-Device Language Models for Privacy-Preserving Stress Prediction: A Multimodal Evaluation on Mobile Health",
+      "url": "https://arxiv.org/abs/2609.11961",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.11961v1 Announce Type: new Abstract: Stress is a pervasive determinant of mental health and a key target for mobile health interventions. On-device language models (ODLMs) offer privacy-preserving inference without cloud dependency, yet their feasib",
       "tags": [
         "模型",
-        "Agent",
-        "安全"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "v2qrfz",
-      "title": "Safety overview: GPT-6 Astra",
-      "url": "https://openai.com/index/safety-overview-gpt-6-astra",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-03T00:00:00.000Z",
-      "summary": "GPT-6 Astra is our most capable broadly deployed model and our first to reach the Critical level of cybersecurity capability under our Preparedness Framework.",
-      "tags": [
-        "模型",
-        "安全"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "qussle",
-      "title": "Proactive cyber defense for governments and enterprises",
-      "url": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/",
-      "source": "Google AI",
-      "sourceUrl": "https://blog.google/innovation-and-ai/technology/ai/rss/",
-      "publishedAt": "2026-09-02T15:40:00.000Z",
-      "summary": "The Fairwind Program is a limited access program for governments and trusted partners to use our cyber defense tools.",
-      "tags": [
-        "AI"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "1p4gisi",
-      "title": "ATV Big Air Tour turned 3 days of work into 3 hours with ChatGPT",
-      "url": "https://openai.com/index/atv-big-air-tour",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-02T12:00:00.000Z",
-      "summary": "ATV Big Air Tour uses ChatGPT Work to speed up marketing, merchandising, and more. It even turned merchandise photos into an inventory website in 15 minutes.",
-      "tags": [
-        "模型",
-        "产品"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "16p7ep9",
-      "title": "The latest AI news we announced in August 2026",
-      "url": "https://blog.google/innovation-and-ai/technology/google-ai-updates-august-2026/",
-      "source": "Google AI",
-      "sourceUrl": "https://blog.google/innovation-and-ai/technology/ai/rss/",
-      "publishedAt": "2026-09-01T20:45:00.000Z",
-      "summary": "Here are Google’s latest AI updates from August 2026",
-      "tags": [
-        "AI"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "1tosetf",
-      "title": "How AI-native companies turn workflows into operating capability",
-      "url": "https://openai.com/index/ai-native-company-workflows",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-01T17:00:00.000Z",
-      "summary": "Basis, Clay, and Exa Labs use AI agents to improve onboarding, account management, and developer integrations. See what enterprise leaders can apply.",
-      "tags": [
-        "Agent",
-        "产品"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "rgnzhp",
-      "title": "Try Google Pics: Easy image creation and editing in Google Workspace",
-      "url": "https://blog.google/products-and-platforms/products/workspace/google-pics/",
-      "source": "Google AI",
-      "sourceUrl": "https://blog.google/innovation-and-ai/technology/ai/rss/",
-      "publishedAt": "2026-09-01T16:00:00.000Z",
-      "summary": "Built on our latest Nano Banana model, Google Pics — our image creation and editing tool — is now available.",
-      "tags": [
-        "模型",
+        "研究",
         "多模态"
       ],
-      "category": "公司动态"
+      "category": "研究论文"
     },
     {
-      "id": "1t5t6f",
-      "title": "Path to Astra: critical capabilities and frontier safeguards",
-      "url": "https://openai.com/index/path-to-astra",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-01T13:00:00.000Z",
-      "summary": "Astra is the first OpenAI model to meet the Critical cybersecurity capability threshold under the Preparedness Framework, with stronger safeguards for release.",
+      "id": "1q47z0w",
+      "title": "FINESSE: An Agent-Based Simulator and Benchmark Dataset for Multimodal Financial Event Sequences",
+      "url": "https://arxiv.org/abs/2609.11993",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.11993v1 Announce Type: new Abstract: Machine learning research in financial services is limited by the scarcity of representative open-source datasets. Existing resources are often narrowly focused on a single modality or task and fail to reflect th",
       "tags": [
         "模型",
+        "Agent",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1q47z0y",
+      "title": "Explainable Prediction from Mobile Sensing Data through LLM-guided Concept Integration",
+      "url": "https://arxiv.org/abs/2609.11995",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.11995v1 Announce Type: new Abstract: Mobile sensing enables longitudinal monitoring of behavioral and physiological patterns in everyday settings. However, accurate prediction remains challenging in small-cohort health-sensing studies, where task-sp",
+      "tags": [
+        "模型",
+        "研究",
+        "多模态"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1q47z10",
+      "title": "DCRA: Diffusion-Conditioned Representation Alignment for Robust Time-Series Learning",
+      "url": "https://arxiv.org/abs/2609.11997",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.11997v1 Announce Type: new Abstract: Learning robust representations for time-series signals under noise and distribution shifts remains challenging, especially in clinical applications such as electroencephalogram (EEG) and electrocardiogram (ECG) ",
+      "tags": [
+        "模型",
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1q47z11",
+      "title": "Fixed State, Long Reach: What a Constant-Size Cache Buys Block Diffusion at Scale",
+      "url": "https://arxiv.org/abs/2609.11998",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.11998v1 Announce Type: new Abstract: Diffusion language models decode tokens in parallel, but their bidirectional denoiser rules out the naive key--value (KV) cache behind fast autoregressive inference. Block diffusion restores caching by decoding b",
+      "tags": [
+        "模型",
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1q48f4e",
+      "title": "Can We Trust LLM Judges: A Study of Capability-Dependent Biases and Multi-Judge Ensemble for Bias Calibration",
+      "url": "https://arxiv.org/abs/2609.12002",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.12002v1 Announce Type: new Abstract: LLMs are increasingly used as automated judges for model training and evaluation, yet individual judges exhibit systematic biases that undermine reliability. Much of prior work has studied biases in pairwise LLM-",
+      "tags": [
+        "模型",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1q48f58",
+      "title": "QTrans: A Quantum Transformer for Sentiment Classification",
+      "url": "https://arxiv.org/abs/2609.12011",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.12011v1 Announce Type: new Abstract: In small-scale binary sentiment classification scenarios, factors such as negation, contrastive shifts, and cross-word dependencies lead to the non-linear coupling of sentiment cues, making it difficult for conve",
+      "tags": [
+        "模型",
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1q48f5b",
+      "title": "Certified Safety Curation: Distribution-Free Guarantees for Safe Offline Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2609.12014",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.12014v1 Announce Type: new Abstract: Safe offline reinforcement learning assumes a cost function on every transition. We ask what remains possible when safety can be judged only by comparing short clips and occasionally asking whether an episode exc",
+      "tags": [
+        "研究",
         "安全"
       ],
-      "category": "公司动态"
+      "category": "研究论文"
+    },
+    {
+      "id": "1q48f5d",
+      "title": "Inverting Self-Triggered Control: Adversarial Reinforcement Learning for Sparse Denial-of-Service Attacks",
+      "url": "https://arxiv.org/abs/2609.12016",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.12016v1 Announce Type: new Abstract: Self-triggered reinforcement learning control (RL-STC) learns the sparsest control schedule that preserves Lyapunov-decreasing stability under a Run-Time Assurance (RTA) override. We invert this: an adversarial R",
+      "tags": [
+        "Agent",
+        "研究",
+        "安全"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1q48f5f",
+      "title": "Toward Reliable Railway-Bogie Response Prediction Using Multifidelity TDNN and Physics-Informed Residual Learning",
+      "url": "https://arxiv.org/abs/2609.12018",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.12018v1 Announce Type: new Abstract: Railway engineers need simulation models that predict vehicle responses across operating scenarios that cannot be tested exhaustively. Agreement with representative measurements provides essential evidence, but c",
+      "tags": [
+        "模型",
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1q48f62",
+      "title": "Reinforcement Learning for Syndrome Extraction",
+      "url": "https://arxiv.org/abs/2609.12020",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.12020v1 Announce Type: new Abstract: A key subtask of quantum error correction is to extract a syndrome that, if nontrivial, signals an error. The number of possible ways to extract a syndrome grows exponentially with the syndrome size, and these im",
+      "tags": [
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1q48f9p",
+      "title": "Scalable Discrete-to-Continuous Channel Simulation for Compression and Privacy",
+      "url": "https://arxiv.org/abs/2609.12067",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.12067v1 Announce Type: new Abstract: Channel simulation has recently emerged as a useful component in machine learning systems where samples from a prescribed probability distribution are to be compressed. Yet, general channel simulation algorithms ",
+      "tags": [
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1q48fvz",
+      "title": "Score-based Outlier Generation via Controlling the Radon-Nikodym Derivative",
+      "url": "https://arxiv.org/abs/2609.12113",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.12113v1 Announce Type: new Abstract: Outliers are important for stress-testing algorithms and understanding system behaviour under rare conditions. Despite being commonly described as low-likelihood events, existing generative approaches rarely cont",
+      "tags": [
+        "模型",
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1q48fw5",
+      "title": "Almost Sure Convergence Analysis of Stochastic Gradient Methods with Clipping and Additive Noise",
+      "url": "https://arxiv.org/abs/2609.12119",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.12119v1 Announce Type: new Abstract: Stochastic gradient descent (SGD) with gradient clipping and additive noise has become a standard technique for training machine learning models, particularly in applications requiring robustness or privacy guara",
+      "tags": [
+        "模型",
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1q48fwu",
+      "title": "Rank-Efficient LoRA via Joint Tangent-Space Optimization under Isotropic Curvature",
+      "url": "https://arxiv.org/abs/2609.12123",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.12123v1 Announce Type: new Abstract: Low-Rank Adaptation (LoRA) is an effective approach for adapting large pretrained models by learning low-rank weight updates. In practice, the LoRA rank is used to control an adapter's parameter budget and repres",
+      "tags": [
+        "模型",
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1q48fxt",
+      "title": "GUIDE: Generative Utility Inference and Decision Engine",
+      "url": "https://arxiv.org/abs/2609.12137",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.12137v1 Announce Type: new Abstract: Measuring the preferences of human users remains a fundamental challenge of AI alignment. Existing elicitation approaches struggle to efficiently discover multidimensional preferences or accurately ground these i",
+      "tags": [
+        "模型",
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1q48g0a",
+      "title": "Certifying Concept Unlearning in Text-to-Image Diffusion Models",
+      "url": "https://arxiv.org/abs/2609.12163",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.12163v1 Announce Type: new Abstract: Existing evaluations of concept unlearning in text-to-image (T2I) diffusion models primarily rely on attack success rates obtained through automated adversarial prompt search. However, these metrics provide only ",
+      "tags": [
+        "模型",
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1q48g15",
+      "title": "Estimating Pedestrian Volumes from GIS-Derived Built-Environment Features: A Machine Learning Framework",
+      "url": "https://arxiv.org/abs/2609.12173",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.12173v1 Announce Type: new Abstract: Transportation agencies need pedestrian volume estimates across entire road networks to prioritize safety investments, yet manual counts are expensive and cover only a small share of intersections. We present a m",
+      "tags": [
+        "模型",
+        "研究",
+        "安全"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1q48g1b",
+      "title": "Explanations-Driven Active Feature Acquisition for Algorithmic Recourse",
+      "url": "https://arxiv.org/abs/2609.12179",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.12179v1 Announce Type: new Abstract: Algorithmic recourse methods typically assume that a predictive model has access to all features of an individual. In practice, decisions are often made with partial information, because features are costly to ac",
+      "tags": [
+        "模型",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1q48gnj",
+      "title": "Predicting Collision Cross Sections with GRACE: Geometric Residual Adduct Conditioning via Early-fusion",
+      "url": "https://arxiv.org/abs/2609.12223",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.12223v1 Announce Type: new Abstract: Collision cross section (CCS), derived from ion mobility mass spectrometry, is a common descriptor for molecular annotation. Prediction is challenging for machine learning models because it reflects the size, sha",
+      "tags": [
+        "模型",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1q48gnk",
+      "title": "Patient-Reported Survey Data Improve Prediction of Opioid Use Disorder",
+      "url": "https://arxiv.org/abs/2609.12224",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.12224v1 Announce Type: new Abstract: Electronic health records (EHRs) may incompletely capture patient-reported factors associated with opioid use disorder (OUD). We evaluated whether survey data improve prediction of a first recorded OUD diagnosis ",
+      "tags": [
+        "模型",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1q48gnl",
+      "title": "PLSP (Pre-hoc Liminal Space Profiling): OOD Prediction over Detection -- An Anticipatory Approach for Machine Learning Model Reliability",
+      "url": "https://arxiv.org/abs/2609.12225",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.12225v1 Announce Type: new Abstract: Out-of-Distribution (OOD) data poses a significant threat to machine learning models, often leading to model failure during deployment. All existing OOD detection methods are post-hoc, relying on evaluation metri",
+      "tags": [
+        "模型",
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1q48gpa",
+      "title": "CRFCAN: A Complex-Valued Cross-Domain Residual Network for Joint Channel and Phase Noise Estimation in Sub-THz OFDM Systems",
+      "url": "https://arxiv.org/abs/2609.12244",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.12244v1 Announce Type: new Abstract: In sub-terahertz (sub-THz) communications, the coupling of ultra-wide bandwidth and severe phase noise (PN) impairments renders conventional joint channel and PN estimation highly complex and computationally proh",
+      "tags": [
+        "模型",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1q48gqa",
+      "title": "The Rank the Task Demands: A Causal Rank Law for Matrix Memories Trained on Group Composition",
+      "url": "https://arxiv.org/abs/2609.12259",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.12259v1 Announce Type: new Abstract: Matrix-valued memories make rank the natural budget of a learned representation: the number of independent directions a state spans bounds what it can bind, compose, and track. We report causal evidence, on a gro",
+      "tags": [
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1q48gr0",
+      "title": "Adaptive Chemotherapy Control under Tumor Heterogeneity via Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2609.12264",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "summary": "arXiv:2609.12264v1 Announce Type: new Abstract: Designing effective chemotherapy regimens is hindered by tumor heterogeneity and drug resistance, which complicate the deployment of patient-specific model-based optimal control across diverse populations. We dev",
+      "tags": [
+        "模型",
+        "研究"
+      ],
+      "category": "研究论文"
     }
   ],
   "sources": [
@@ -501,7 +526,7 @@
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
       "ok": true,
-      "count": 1192
+      "count": 1193
     },
     {
       "name": "Google AI",
@@ -519,13 +544,13 @@
       "name": "arXiv cs.LG",
       "url": "https://export.arxiv.org/rss/cs.LG",
       "ok": true,
-      "count": 0
+      "count": 260
     },
     {
       "name": "arXiv cs.CL",
       "url": "https://export.arxiv.org/rss/cs.CL",
       "ok": true,
-      "count": 0
+      "count": 115
     }
   ],
   "warnings": []
