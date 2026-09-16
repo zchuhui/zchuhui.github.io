@@ -1,0 +1,219 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>Docker 常用命令指南 · 庄楚辉</title><meta name="description" content="从镜像、容器、Compose 到数据卷、网络与排查实战，一份覆盖环境搭建与部署场景的 Docker 命令速查手册。"><link rel="canonical" href="https://zchuhui.github.io/tools/docker-commands/"><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:title" content="Docker 常用命令指南 · 庄楚辉"><meta property="og:description" content="从镜像、容器、Compose 到数据卷、网络与排查实战，一份覆盖环境搭建与部署场景的 Docker 命令速查手册。"><meta property="og:image" content="https://zchuhui.github.io/og.svg"><meta property="og:url" content="https://zchuhui.github.io/tools/docker-commands/"><meta name="twitter:card" content="summary_large_image"><meta name="generator" content="Astro v5.18.2"><link rel="stylesheet" href="/_astro/about.HQWu7ZSl.css">
+<style>.detail[data-astro-cid-6kazcgig]{max-width:46rem;padding-top:2rem}.back[data-astro-cid-6kazcgig]{font-family:var(--font-mono);font-size:.85rem;color:var(--color-ink-dim)}.back[data-astro-cid-6kazcgig]:hover{color:var(--color-cyan)}.detail-head[data-astro-cid-6kazcgig]{margin:1.5rem 0 2rem}.tool-cat[data-astro-cid-6kazcgig]{color:var(--color-cyan);border-color:#22d3ee4d}.detail-title[data-astro-cid-6kazcgig]{font-size:clamp(1.9rem,4.5vw,2.6rem);font-weight:900;margin:.7rem 0 0;line-height:1.2}.detail-desc[data-astro-cid-6kazcgig]{color:var(--color-ink-soft);font-size:1.05rem;line-height:1.7;margin:1rem 0}.detail-meta[data-astro-cid-6kazcgig]{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center}.d-date[data-astro-cid-6kazcgig]{font-family:var(--font-mono);font-size:.8rem;color:var(--color-ink-dim);margin-right:.4rem}.official-link[data-astro-cid-6kazcgig]{display:inline-block;margin-top:1rem;font-family:var(--font-mono);font-size:.85rem;color:var(--color-cyan)}.official-link[data-astro-cid-6kazcgig]:hover{text-decoration:underline}
+</style></head> <body> <canvas id="starfield" aria-hidden="true" data-astro-cid-ra7sfcwn></canvas>  <script type="module">const a=document.getElementById("starfield"),m=window.matchMedia("(prefers-reduced-motion: reduce)").matches;if(a){let s=function(){n=window.innerWidth,o=window.innerHeight,a.width=n*i,a.height=o*i,a.style.width=n+"px",a.style.height=o+"px",t.setTransform(i,0,0,i,0,0);const e=Math.min(160,Math.floor(n*o/9e3));h=Array.from({length:e},()=>({x:Math.random()*n,y:Math.random()*o,z:Math.random()*.8+.2,r:Math.random()*1.4+.3,hue:Math.random()>.5?188:270}))},d=function(){t.clearRect(0,0,n,o);for(const e of h){const c=e.x+(r.x-n/2)*.02*e.z,l=e.y+(r.y-o/2)*.02*e.z;t.beginPath(),t.arc(c,l,e.r*e.z,0,Math.PI*2),t.fillStyle=`hsla(${e.hue}, 90%, 70%, ${.25+e.z*.55})`,t.shadowBlur=8*e.z,t.shadowColor=`hsla(${e.hue}, 90%, 70%, 0.8)`,t.fill(),e.y-=e.z*.12,e.y<-2&&(e.y=o+2,e.x=Math.random()*n)}t.shadowBlur=0,m||requestAnimationFrame(d)};const t=a.getContext("2d");let n=0,o=0,i=Math.min(window.devicePixelRatio||1,2),h=[];const r={x:0,y:0};window.addEventListener("resize",s,{passive:!0}),window.addEventListener("mousemove",e=>{r.x=e.clientX,r.y=e.clientY},{passive:!0}),s(),d()}</script> <header class="nav-wrap" data-astro-cid-dmqpwcec> <nav class="container-x nav glass" data-astro-cid-dmqpwcec> <a href="/" class="brand" data-astro-cid-dmqpwcec> <span class="brand-dot" data-astro-cid-dmqpwcec></span> <span class="brand-name" data-astro-cid-dmqpwcec>庄楚辉</span> <span class="brand-tag" data-astro-cid-dmqpwcec>/ AI Builder</span> </a> <button id="nav-toggle" class="nav-toggle" aria-label="菜单" aria-expanded="false" data-astro-cid-dmqpwcec> <span data-astro-cid-dmqpwcec></span><span data-astro-cid-dmqpwcec></span><span data-astro-cid-dmqpwcec></span> </button> <ul id="nav-menu" class="nav-menu" data-astro-cid-dmqpwcec> <li data-astro-cid-dmqpwcec> <a href="/" class="nav-link" data-astro-cid-dmqpwcec>首页</a> </li><li data-astro-cid-dmqpwcec> <a href="/about" class="nav-link" data-astro-cid-dmqpwcec>关于</a> </li><li data-astro-cid-dmqpwcec> <a href="/projects" class="nav-link" data-astro-cid-dmqpwcec>项目</a> </li><li data-astro-cid-dmqpwcec> <a href="/blog" class="nav-link" data-astro-cid-dmqpwcec>文章</a> </li><li data-astro-cid-dmqpwcec> <a href="/news" class="nav-link" data-astro-cid-dmqpwcec>AI 要闻</a> </li><li data-astro-cid-dmqpwcec> <a href="/tools" class="nav-link active" data-astro-cid-dmqpwcec>工具</a> </li><li data-astro-cid-dmqpwcec> <a href="/kb" class="nav-link" data-astro-cid-dmqpwcec>知识库</a> </li> </ul> </nav> </header>  <script type="module">const e=document.getElementById("nav-toggle"),n=document.getElementById("nav-menu");e?.addEventListener("click",()=>{const t=n?.classList.toggle("open");e.setAttribute("aria-expanded",String(!!t))});</script> <main>  <article class="container-x detail" data-astro-cid-6kazcgig> <a href="/tools" class="back" data-astro-cid-6kazcgig>← 返回工具指南</a> <header class="detail-head" data-astro-cid-6kazcgig> <span class="chip tool-cat" data-astro-cid-6kazcgig>编程基础</span> <h1 class="detail-title" data-astro-cid-6kazcgig>Docker 常用命令指南</h1> <p class="detail-desc" data-astro-cid-6kazcgig>从镜像、容器、Compose 到数据卷、网络与排查实战，一份覆盖环境搭建与部署场景的 Docker 命令速查手册。</p> <div class="detail-meta" data-astro-cid-6kazcgig> <span class="d-date" data-astro-cid-6kazcgig>更新于 2026年8月7日</span>   <span class="chip" data-astro-cid-6kazcgig>Docker</span><span class="chip" data-astro-cid-6kazcgig>容器</span><span class="chip" data-astro-cid-6kazcgig>部署</span> </div> <a href="https://docs.docker.com/" target="_blank" rel="noopener" class="official-link" data-astro-cid-6kazcgig>访问官网 ↗</a> </header> <div class="prose-space" data-astro-cid-6kazcgig> <h2 id="工具简介">工具简介</h2>
+<p>Docker 把应用及其依赖打包成标准化容器，解决「在我机器上能跑」的环境差异问题。无论本地起数据库、部署后端服务，还是做 CI/CD，Docker 都是现代开发的必备基础。本篇按「镜像 → 容器 → Compose → 数据 → 网络 → 排查」梳理高频命令，并给出真实场景用法与避坑提示。</p>
+<h2 id="基础配置">基础配置</h2>
+<h3 id="1-安装与验证">1. 安装与验证</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#82AAFF"> --version</span><span style="color:#637777;font-style:italic">             # 查看版本</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> info</span><span style="color:#637777;font-style:italic">                  # 查看 Docker 引擎详情</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> version</span><span style="color:#637777;font-style:italic">               # 客户端 + 服务端版本</span></span></code></pre>
+<h3 id="2-配置镜像加速">2. 配置镜像加速</h3>
+<p>国内拉镜像慢，编辑 <code>/etc/docker/daemon.json</code>（Windows/Mac 在 Docker Desktop 设置里）：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="json"><code><span class="line"><span style="color:#D6DEEB">{</span></span>
+<span class="line"><span style="color:#7FDBCA">  "registry-mirrors"</span><span style="color:#D6DEEB">: [</span><span style="color:#D9F5DD">"</span><span style="color:#C789D6">https://mirror.example.com</span><span style="color:#D9F5DD">"</span><span style="color:#D6DEEB">]</span></span>
+<span class="line"><span style="color:#D6DEEB">}</span></span></code></pre>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">sudo</span><span style="color:#ECC48D"> systemctl</span><span style="color:#ECC48D"> restart</span><span style="color:#ECC48D"> docker</span></span></code></pre>
+<h2 id="镜像操作">镜像操作</h2>
+<h3 id="1-拉取与查看">1. 拉取与查看</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> pull</span><span style="color:#ECC48D"> nginx:1.27</span><span style="color:#637777;font-style:italic">        # 拉取指定版本镜像</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> pull</span><span style="color:#ECC48D"> nginx</span><span style="color:#637777;font-style:italic">             # 拉取 latest（不推荐生产用）</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> images</span><span style="color:#637777;font-style:italic">                 # 列出本地镜像</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> image</span><span style="color:#ECC48D"> ls</span><span style="color:#82AAFF"> -a</span><span style="color:#637777;font-style:italic">            # 同上</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> image</span><span style="color:#ECC48D"> rm</span><span style="color:#ECC48D"> nginx:1.27</span><span style="color:#637777;font-style:italic">    # 删除镜像</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> rmi</span><span style="color:#7FDBCA"> &#x3C;</span><span style="color:#ECC48D">image-i</span><span style="color:#D6DEEB">d</span><span style="color:#7FDBCA">></span><span style="color:#637777;font-style:italic">         # 删除镜像（旧命令）</span></span></code></pre>
+<h3 id="2-构建镜像">2. 构建镜像</h3>
+<p><code>Dockerfile</code> 示例：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="dockerfile"><code><span class="line"><span style="color:#7FDBCA">FROM</span><span style="color:#D6DEEB"> node:20-alpine</span></span>
+<span class="line"><span style="color:#7FDBCA">WORKDIR</span><span style="color:#D6DEEB"> /app</span></span>
+<span class="line"><span style="color:#7FDBCA">COPY</span><span style="color:#D6DEEB"> package*.json ./</span></span>
+<span class="line"><span style="color:#7FDBCA">RUN</span><span style="color:#D6DEEB"> npm ci --omit=dev</span></span>
+<span class="line"><span style="color:#7FDBCA">COPY</span><span style="color:#D6DEEB"> . .</span></span>
+<span class="line"><span style="color:#7FDBCA">EXPOSE</span><span style="color:#D6DEEB"> 3000</span></span>
+<span class="line"><span style="color:#7FDBCA">CMD</span><span style="color:#D6DEEB"> [</span><span style="color:#ECC48D">"node"</span><span style="color:#D6DEEB">, </span><span style="color:#ECC48D">"app.js"</span><span style="color:#D6DEEB">]</span></span></code></pre>
+<p>构建命令：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> build</span><span style="color:#82AAFF"> -t</span><span style="color:#ECC48D"> myapp:1.0</span><span style="color:#ECC48D"> .</span><span style="color:#637777;font-style:italic">                # 在当前目录构建，打标签</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> build</span><span style="color:#82AAFF"> -t</span><span style="color:#ECC48D"> myapp:1.0</span><span style="color:#82AAFF"> -f</span><span style="color:#ECC48D"> Dockerfile.prod</span><span style="color:#ECC48D"> .</span><span style="color:#637777;font-style:italic">  # 指定 Dockerfile</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> build</span><span style="color:#82AAFF"> -t</span><span style="color:#ECC48D"> myapp:1.0</span><span style="color:#82AAFF"> --no-cache</span><span style="color:#ECC48D"> .</span><span style="color:#637777;font-style:italic">     # 不用缓存（排查构建问题）</span></span></code></pre>
+<h3 id="3-清理镜像">3. 清理镜像</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> image</span><span style="color:#ECC48D"> prune</span><span style="color:#637777;font-style:italic">            # 删除悬空镜像（无标签的中间层）</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> image</span><span style="color:#ECC48D"> prune</span><span style="color:#82AAFF"> -a</span><span style="color:#637777;font-style:italic">         # 删除所有未被容器使用的镜像</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> system</span><span style="color:#ECC48D"> prune</span><span style="color:#82AAFF"> -a</span><span style="color:#637777;font-style:italic">        # 一键清理镜像、停止的容器、网络、构建缓存</span></span></code></pre>
+<h2 id="容器操作">容器操作</h2>
+<h3 id="1-运行容器">1. 运行容器</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> run</span><span style="color:#82AAFF"> -d</span><span style="color:#82AAFF"> --name</span><span style="color:#ECC48D"> web</span><span style="color:#82AAFF"> -p</span><span style="color:#ECC48D"> 8080:80</span><span style="color:#ECC48D"> nginx:1.27</span></span>
+<span class="line"><span style="color:#637777;font-style:italic"># -d 后台运行</span></span>
+<span class="line"><span style="color:#637777;font-style:italic"># --name 容器名</span></span>
+<span class="line"><span style="color:#637777;font-style:italic"># -p 主机端口:容器端口</span></span>
+<span class="line"><span style="color:#637777;font-style:italic"># -v 主机路径:容器路径（挂载卷）</span></span>
+<span class="line"><span style="color:#637777;font-style:italic"># -e KEY=value（环境变量）</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> run</span><span style="color:#82AAFF"> -it</span><span style="color:#82AAFF"> --rm</span><span style="color:#ECC48D"> alpine</span><span style="color:#ECC48D"> sh</span><span style="color:#637777;font-style:italic">    # 交互式进入，退出即删</span></span></code></pre>
+<h3 id="2-查看与日志">2. 查看与日志</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> ps</span><span style="color:#637777;font-style:italic">                     # 查看运行中的容器</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> ps</span><span style="color:#82AAFF"> -a</span><span style="color:#637777;font-style:italic">                  # 查看所有容器（含已停止）</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> logs</span><span style="color:#ECC48D"> web</span><span style="color:#637777;font-style:italic">               # 查看日志</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> logs</span><span style="color:#82AAFF"> -f</span><span style="color:#ECC48D"> web</span><span style="color:#637777;font-style:italic">            # 持续追踪日志</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> logs</span><span style="color:#82AAFF"> --tail</span><span style="color:#F78C6C"> 100</span><span style="color:#ECC48D"> web</span><span style="color:#637777;font-style:italic">    # 最后 100 行</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> logs</span><span style="color:#82AAFF"> -t</span><span style="color:#ECC48D"> web</span><span style="color:#637777;font-style:italic">            # 带时间戳</span></span></code></pre>
+<h3 id="3-生命周期">3. 生命周期</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> start</span><span style="color:#ECC48D"> web</span><span style="color:#637777;font-style:italic">              # 启动已停止的容器</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> stop</span><span style="color:#ECC48D"> web</span><span style="color:#637777;font-style:italic">               # 优雅停止（发 SIGTERM）</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> restart</span><span style="color:#ECC48D"> web</span><span style="color:#637777;font-style:italic">            # 重启</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> kill</span><span style="color:#ECC48D"> web</span><span style="color:#637777;font-style:italic">               # 强制停止（SIGKILL）</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> rm</span><span style="color:#ECC48D"> web</span><span style="color:#637777;font-style:italic">                 # 删除已停止的容器</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> rm</span><span style="color:#82AAFF"> -f</span><span style="color:#ECC48D"> web</span><span style="color:#637777;font-style:italic">              # 强制删除运行中的容器</span></span></code></pre>
+<h3 id="4-进入与执行">4. 进入与执行</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> exec</span><span style="color:#82AAFF"> -it</span><span style="color:#ECC48D"> web</span><span style="color:#ECC48D"> sh</span><span style="color:#637777;font-style:italic">        # 进入运行中的容器（推荐 sh，alpine 没 bash）</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> exec</span><span style="color:#ECC48D"> web</span><span style="color:#ECC48D"> ls</span><span style="color:#ECC48D"> /app</span><span style="color:#637777;font-style:italic">       # 在容器内执行命令</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> cp</span><span style="color:#ECC48D"> web:/app/log.txt</span><span style="color:#ECC48D"> ./</span><span style="color:#637777;font-style:italic">  # 从容器拷文件到主机</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> cp</span><span style="color:#ECC48D"> ./app.js</span><span style="color:#ECC48D"> web:/app/</span><span style="color:#637777;font-style:italic">  # 从主机拷进容器</span></span></code></pre>
+<h3 id="5-查看详情">5. 查看详情</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> inspect</span><span style="color:#ECC48D"> web</span><span style="color:#637777;font-style:italic">            # 完整配置（IP、挂载、环境变量等）</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> stats</span><span style="color:#637777;font-style:italic">                  # 实时资源占用（CPU/内存/网络）</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> top</span><span style="color:#ECC48D"> web</span><span style="color:#637777;font-style:italic">                # 容器内进程</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> port</span><span style="color:#ECC48D"> web</span><span style="color:#637777;font-style:italic">               # 端口映射</span></span></code></pre>
+<h2 id="docker-compose">Docker Compose</h2>
+<p>多容器编排，用 <code>docker-compose.yml</code> 描述。</p>
+<h3 id="1-示例文件">1. 示例文件</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="yaml"><code><span class="line"><span style="color:#7FDBCA">services</span><span style="color:#D6DEEB">:</span></span>
+<span class="line"><span style="color:#7FDBCA">  web</span><span style="color:#D6DEEB">:</span></span>
+<span class="line"><span style="color:#7FDBCA">    build</span><span style="color:#D6DEEB">: </span><span style="color:#F78C6C">.</span></span>
+<span class="line"><span style="color:#7FDBCA">    ports</span><span style="color:#D6DEEB">:</span></span>
+<span class="line"><span style="color:#D6DEEB">      - </span><span style="color:#D9F5DD">"</span><span style="color:#ECC48D">8080:3000</span><span style="color:#D9F5DD">"</span></span>
+<span class="line"><span style="color:#7FDBCA">    environment</span><span style="color:#D6DEEB">:</span></span>
+<span class="line"><span style="color:#D6DEEB">      - </span><span style="color:#ECC48D">DB_HOST=db</span></span>
+<span class="line"><span style="color:#7FDBCA">    depends_on</span><span style="color:#D6DEEB">:</span></span>
+<span class="line"><span style="color:#D6DEEB">      - </span><span style="color:#ECC48D">db</span></span>
+<span class="line"><span style="color:#7FDBCA">  db</span><span style="color:#D6DEEB">:</span></span>
+<span class="line"><span style="color:#7FDBCA">    image</span><span style="color:#D6DEEB">: </span><span style="color:#ECC48D">postgres:16</span></span>
+<span class="line"><span style="color:#7FDBCA">    environment</span><span style="color:#D6DEEB">:</span></span>
+<span class="line"><span style="color:#7FDBCA">      POSTGRES_PASSWORD</span><span style="color:#D6DEEB">: </span><span style="color:#ECC48D">secret</span></span>
+<span class="line"><span style="color:#7FDBCA">    volumes</span><span style="color:#D6DEEB">:</span></span>
+<span class="line"><span style="color:#D6DEEB">      - </span><span style="color:#ECC48D">db-data:/var/lib/postgresql/data</span></span>
+<span class="line"><span style="color:#7FDBCA">volumes</span><span style="color:#D6DEEB">:</span></span>
+<span class="line"><span style="color:#7FDBCA">  db-data</span><span style="color:#D6DEEB">:</span></span></code></pre>
+<h3 id="2-常用命令">2. 常用命令</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> compose</span><span style="color:#ECC48D"> up</span><span style="color:#82AAFF"> -d</span><span style="color:#637777;font-style:italic">          # 构建并后台启动所有服务</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> compose</span><span style="color:#ECC48D"> up</span><span style="color:#82AAFF"> -d</span><span style="color:#82AAFF"> --build</span><span style="color:#637777;font-style:italic">  # 强制重新构建镜像</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> compose</span><span style="color:#ECC48D"> down</span><span style="color:#637777;font-style:italic">           # 停止并删除容器/网络</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> compose</span><span style="color:#ECC48D"> down</span><span style="color:#82AAFF"> -v</span><span style="color:#637777;font-style:italic">        # 同时删除数据卷（清数据，谨慎）</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> compose</span><span style="color:#ECC48D"> ps</span><span style="color:#637777;font-style:italic">             # 查看服务状态</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> compose</span><span style="color:#ECC48D"> logs</span><span style="color:#82AAFF"> -f</span><span style="color:#ECC48D"> web</span><span style="color:#637777;font-style:italic">    # 追踪某服务日志</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> compose</span><span style="color:#ECC48D"> exec</span><span style="color:#ECC48D"> web</span><span style="color:#ECC48D"> sh</span><span style="color:#637777;font-style:italic">    # 进入服务容器</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> compose</span><span style="color:#ECC48D"> restart</span><span style="color:#ECC48D"> web</span><span style="color:#637777;font-style:italic">    # 重启某服务</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> compose</span><span style="color:#ECC48D"> pull</span><span style="color:#637777;font-style:italic">           # 拉取服务镜像更新</span></span></code></pre>
+<h2 id="数据持久化">数据持久化</h2>
+<h3 id="1-数据卷">1. 数据卷</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> volume</span><span style="color:#ECC48D"> create</span><span style="color:#ECC48D"> db-data</span><span style="color:#637777;font-style:italic">          # 创建命名卷</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> volume</span><span style="color:#ECC48D"> ls</span><span style="color:#637777;font-style:italic">                      # 列出卷</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> volume</span><span style="color:#ECC48D"> inspect</span><span style="color:#ECC48D"> db-data</span><span style="color:#637777;font-style:italic">         # 查看卷在主机路径</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> volume</span><span style="color:#ECC48D"> rm</span><span style="color:#ECC48D"> db-data</span><span style="color:#637777;font-style:italic">              # 删除卷</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> volume</span><span style="color:#ECC48D"> prune</span><span style="color:#637777;font-style:italic">                   # 删除未被使用的卷</span></span></code></pre>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#637777;font-style:italic"># 命名卷：由 Docker 管理，跨容器共享、迁移方便</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> run</span><span style="color:#82AAFF"> -v</span><span style="color:#ECC48D"> db-data:/var/lib/postgresql/data</span><span style="color:#ECC48D"> postgres:16</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#637777;font-style:italic"># 绑定挂载：直接映射主机目录，开发时改代码即时生效</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> run</span><span style="color:#82AAFF"> -v</span><span style="color:#ECC48D"> /home/me/app:/app</span><span style="color:#ECC48D"> myapp:1.0</span></span></code></pre>
+<h3 id="2-临时卷">2. 临时卷</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> run</span><span style="color:#82AAFF"> --rm</span><span style="color:#82AAFF"> -v</span><span style="color:#ECC48D"> /cache</span><span style="color:#ECC48D"> tmp-img</span><span style="color:#637777;font-style:italic">     # 容器停止自动删</span></span></code></pre>
+<h2 id="网络">网络</h2>
+<h3 id="1-网络管理">1. 网络管理</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> network</span><span style="color:#ECC48D"> ls</span><span style="color:#637777;font-style:italic">                      # 列出网络</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> network</span><span style="color:#ECC48D"> create</span><span style="color:#ECC48D"> my-net</span><span style="color:#637777;font-style:italic">           # 创建自定义网络</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> network</span><span style="color:#ECC48D"> inspect</span><span style="color:#ECC48D"> my-net</span><span style="color:#637777;font-style:italic">          # 查看网络详情</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> network</span><span style="color:#ECC48D"> rm</span><span style="color:#ECC48D"> my-net</span><span style="color:#637777;font-style:italic">               # 删除网络</span></span></code></pre>
+<h3 id="2-容器互联">2. 容器互联</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#637777;font-style:italic"># 同一自定义网络内容器可用服务名互相访问</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> run</span><span style="color:#82AAFF"> -d</span><span style="color:#82AAFF"> --name</span><span style="color:#ECC48D"> app</span><span style="color:#82AAFF"> --network</span><span style="color:#ECC48D"> my-net</span><span style="color:#ECC48D"> myapp:1.0</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> run</span><span style="color:#82AAFF"> -d</span><span style="color:#82AAFF"> --name</span><span style="color:#ECC48D"> db</span><span style="color:#82AAFF"> --network</span><span style="color:#ECC48D"> my-net</span><span style="color:#ECC48D"> postgres:16</span></span>
+<span class="line"><span style="color:#637777;font-style:italic"># app 容器内可直接用主机名 db 连数据库</span></span></code></pre>
+<blockquote>
+<p>默认 bridge 网络不支持用容器名访问，要用 IP。自定义 bridge 网络才支持 DNS 解析容器名。</p>
+</blockquote>
+<h2 id="镜像仓库">镜像仓库</h2>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> login</span><span style="color:#ECC48D"> registry.example.com</span><span style="color:#637777;font-style:italic">        # 登录私有仓库</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> tag</span><span style="color:#ECC48D"> myapp:1.0</span><span style="color:#ECC48D"> registry.example.com/team/myapp:1.0</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> push</span><span style="color:#ECC48D"> registry.example.com/team/myapp:1.0</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> pull</span><span style="color:#ECC48D"> registry.example.com/team/myapp:1.0</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> logout</span><span style="color:#ECC48D"> registry.example.com</span></span></code></pre>
+<h2 id="实用技巧">实用技巧</h2>
+<h3 id="1-多阶段构建减小镜像">1. 多阶段构建减小镜像</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="dockerfile"><code><span class="line"><span style="color:#637777;font-style:italic"># 构建阶段</span></span>
+<span class="line"><span style="color:#7FDBCA">FROM</span><span style="color:#D6DEEB"> node:20 </span><span style="color:#7FDBCA">AS</span><span style="color:#D6DEEB"> build</span></span>
+<span class="line"><span style="color:#7FDBCA">WORKDIR</span><span style="color:#D6DEEB"> /app</span></span>
+<span class="line"><span style="color:#7FDBCA">COPY</span><span style="color:#D6DEEB"> . .</span></span>
+<span class="line"><span style="color:#7FDBCA">RUN</span><span style="color:#D6DEEB"> npm ci &#x26;&#x26; npm run build</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#637777;font-style:italic"># 运行阶段：只带产物</span></span>
+<span class="line"><span style="color:#7FDBCA">FROM</span><span style="color:#D6DEEB"> nginx:alpine</span></span>
+<span class="line"><span style="color:#7FDBCA">COPY</span><span style="color:#D6DEEB"> --from=build /app/dist /usr/share/nginx/html</span></span></code></pre>
+<p>最终镜像只有 nginx + 静态文件，体积从 1GB 降到几十 MB。</p>
+<h3 id="2-dockerignore-别忘">2. .dockerignore 别忘</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="plaintext"><code><span class="line"><span>node_modules</span></span>
+<span class="line"><span>dist</span></span>
+<span class="line"><span>.git</span></span>
+<span class="line"><span>*.log</span></span>
+<span class="line"><span>.env</span></span></code></pre>
+<p>避免把本地依赖、构建产物打进镜像，加快构建、减小体积、防泄密。</p>
+<h3 id="3-合并-run-层">3. 合并 RUN 层</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="dockerfile"><code><span class="line"><span style="color:#637777;font-style:italic"># 不好：3 个层</span></span>
+<span class="line"><span style="color:#7FDBCA">RUN</span><span style="color:#D6DEEB"> apt-get update</span></span>
+<span class="line"><span style="color:#7FDBCA">RUN</span><span style="color:#D6DEEB"> apt-get install -y curl</span></span>
+<span class="line"><span style="color:#7FDBCA">RUN</span><span style="color:#D6DEEB"> rm -rf /var/lib/apt/lists/*</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#637777;font-style:italic"># 好：1 个层，清理在同一层</span></span>
+<span class="line"><span style="color:#7FDBCA">RUN</span><span style="color:#D6DEEB"> apt-get update \</span></span>
+<span class="line"><span style="color:#D6DEEB">    &#x26;&#x26; apt-get install -y --no-install-recommends curl \</span></span>
+<span class="line"><span style="color:#D6DEEB">    &#x26;&#x26; rm -rf /var/lib/apt/lists/*</span></span></code></pre>
+<h3 id="4-别用-latest-标签">4. 别用 latest 标签</h3>
+<p><code>latest</code> 会随上游变化，今天能跑明天可能崩。生产环境一律用具体版本号，可追溯可回滚。</p>
+<h3 id="5-一键导出导入镜像">5. 一键导出/导入镜像</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> save</span><span style="color:#82AAFF"> -o</span><span style="color:#ECC48D"> myapp.tar</span><span style="color:#ECC48D"> myapp:1.0</span><span style="color:#637777;font-style:italic">      # 导出</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> load</span><span style="color:#82AAFF"> -i</span><span style="color:#ECC48D"> myapp.tar</span><span style="color:#637777;font-style:italic">                # 导入（内网部署常用）</span></span></code></pre>
+<h2 id="注意事项">注意事项</h2>
+<ul>
+<li><strong>数据别存在容器里</strong>：容器删除数据就没了，数据库类服务务必挂卷。</li>
+<li><strong><code>down -v</code> 是清数据开关</strong>：调试时慎用，会删掉所有命名卷。</li>
+<li><strong>权限问题</strong>：Linux 上挂载卷常出现容器内写不进去（uid 不匹配），用 <code>chown</code> 或指定 <code>user</code>。</li>
+<li><strong>端口冲突</strong>：<code>-p 8080:80</code> 时主机 8080 被占会启动失败，<code>docker ps</code> 看状态或换端口。</li>
+<li><strong>镜像别太大</strong>：用 alpine 变体、多阶段构建，生产镜像控制在几百 MB 内。</li>
+<li><strong>不要在镜像里放密钥</strong>：用环境变量或 secrets 管理，<code>.env</code> 别打进镜像。</li>
+<li><strong>磁盘易爆</strong>：旧镜像、停止容器会累积，定期 <code>docker system prune</code> 清理。</li>
+<li><strong>CMD 与 ENTRYPOINT</strong>：<code>CMD</code> 可被 <code>docker run</code> 参数覆盖，<code>ENTRYPOINT</code> 更固定，配合 <code>CMD</code> 当默认参数。</li>
+</ul>
+<h2 id="实战案例">实战案例</h2>
+<h3 id="案例-1本地一键起数据库--缓存">案例 1：本地一键起数据库 + 缓存</h3>
+<p>开发时不想装 MySQL、Redis，用 Compose 起依赖：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> compose</span><span style="color:#ECC48D"> up</span><span style="color:#82AAFF"> -d</span></span>
+<span class="line"><span style="color:#637777;font-style:italic"># 几秒后 MySQL、Redis 就绪，应用连 localhost:3306 / localhost:6379</span></span></code></pre>
+<p>用完 <code>docker compose down</code>，环境干净。</p>
+<h3 id="案例-2容器频繁退出排查原因">案例 2：容器频繁退出，排查原因</h3>
+<p><code>docker ps</code> 看不到容器，<code>docker ps -a</code> 发现已退出：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> ps</span><span style="color:#82AAFF"> -a</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> logs</span><span style="color:#7FDBCA"> &#x3C;</span><span style="color:#ECC48D">container-i</span><span style="color:#D6DEEB">d</span><span style="color:#7FDBCA">></span><span style="color:#637777;font-style:italic">        # 看退出前的报错</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> inspect</span><span style="color:#7FDBCA"> &#x3C;</span><span style="color:#ECC48D">container-i</span><span style="color:#D6DEEB">d</span><span style="color:#7FDBCA">></span><span style="color:#82AAFF"> --format</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">{{.State.ExitCode}}</span><span style="color:#D9F5DD">'</span><span style="color:#637777;font-style:italic">  # 退出码</span></span></code></pre>
+<p>退出码 137 多为 OOM 被杀，加 <code>--memory</code> 限制并排查内存泄漏。</p>
+<h3 id="案例-3构建缓存失效变慢">案例 3：构建缓存失效变慢</h3>
+<p>每次 <code>docker build</code> 都重新 <code>npm ci</code>，几秒钟变几分钟。检查 <code>Dockerfile</code> 顺序：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="dockerfile"><code><span class="line"><span style="color:#637777;font-style:italic"># 不好：COPY . . 在 npm ci 之前，改任意代码都重装依赖</span></span>
+<span class="line"><span style="color:#7FDBCA">COPY</span><span style="color:#D6DEEB"> . .</span></span>
+<span class="line"><span style="color:#7FDBCA">RUN</span><span style="color:#D6DEEB"> npm ci</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#637777;font-style:italic"># 好：先拷 package.json 装依赖，再拷代码，依赖层可缓存</span></span>
+<span class="line"><span style="color:#7FDBCA">COPY</span><span style="color:#D6DEEB"> package*.json ./</span></span>
+<span class="line"><span style="color:#7FDBCA">RUN</span><span style="color:#D6DEEB"> npm ci</span></span>
+<span class="line"><span style="color:#7FDBCA">COPY</span><span style="color:#D6DEEB"> . .</span></span></code></pre>
+<h3 id="案例-4进入容器调试">案例 4：进入容器调试</h3>
+<p>容器起不来或行为异常，进去看个究竟：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> exec</span><span style="color:#82AAFF"> -it</span><span style="color:#ECC48D"> web</span><span style="color:#ECC48D"> sh</span></span>
+<span class="line"><span style="color:#637777;font-style:italic"># 容器内</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">ls</span><span style="color:#ECC48D"> /app</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">cat</span><span style="color:#ECC48D"> /etc/hosts</span></span>
+<span class="line"><span style="color:#637777;font-style:italic"># 容器已退出？用镜像起一个临时容器</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">docker</span><span style="color:#ECC48D"> run</span><span style="color:#82AAFF"> -it</span><span style="color:#82AAFF"> --rm</span><span style="color:#82AAFF"> --entrypoint</span><span style="color:#ECC48D"> sh</span><span style="color:#ECC48D"> myapp:1.0</span></span></code></pre>
+<h2 id="相关条目">相关条目</h2>
+<ul>
+<li><a href="../linux-commands">Linux 常用命令指南</a></li>
+<li><a href="../shell-scripting">Shell 脚本基础</a></li>
+<li><a href="../http-curl">HTTP 与 curl 实用指南</a></li>
+</ul> </div> </article>  </main> <footer class="footer" data-astro-cid-sz7xmlte> <div class="container-x footer-inner glass" data-astro-cid-sz7xmlte> <div data-astro-cid-sz7xmlte> <p class="f-name text-gradient" data-astro-cid-sz7xmlte>庄楚辉</p> <p class="f-desc" data-astro-cid-sz7xmlte>一名 AI Builder —— 构建智能产品、分享思考与知识。</p> </div> <div class="f-socials" data-astro-cid-sz7xmlte> <a href="https://github.com/zchuhui" target="_blank" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>GitHub</a><a href="https://x.com/zch94622737" target="_blank" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>X</a><a href="mailto:943339564g@gmail.com" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>Email</a> </div> </div> <p class="f-copy" data-astro-cid-sz7xmlte>© 2026 庄楚辉 · Built with Astro · 部署于 GitHub Pages</p> </footer>  <!-- 全局滚动揭示 --> <script type="module">const s=new IntersectionObserver(e=>{for(const r of e)r.isIntersecting&&(r.target.classList.add("is-visible"),s.unobserve(r.target))},{threshold:.12});document.querySelectorAll(".reveal").forEach(e=>s.observe(e));</script> </body> </html> 
