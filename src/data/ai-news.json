@@ -1,56 +1,44 @@
 {
-  "generatedAt": "2026-09-22T01:36:53.203Z",
+  "generatedAt": "2026-09-23T01:30:56.241Z",
   "items": [
     {
-      "id": "16xq74h",
-      "title": "Advisory Group on Mathematics and Artificial Intelligence",
-      "url": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
+      "id": "mar8qu",
+      "title": "Better prompt caching for GPT-6",
+      "url": "https://openai.com/index/better-prompt-caching-for-gpt-6",
       "source": "OpenAI",
       "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-21T12:00:00.000Z",
-      "summary": "OpenAI is working with an independent Advisory Group on Mathematics and Artificial Intelligence to guide the review and communication of emerging AI results.",
+      "publishedAt": "2026-09-22T21:00:00.000Z",
+      "summary": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs.",
       "tags": [
-        "AI"
+        "模型"
       ],
       "category": "公司动态"
     },
     {
-      "id": "r5d3mv",
-      "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
-      "url": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
+      "id": "1cojc95",
+      "title": "Introducing GPT-6 Sol and Luna",
+      "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
       "source": "OpenAI",
       "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-21T12:00:00.000Z",
-      "summary": "With GPT-6 Astra, Higgsfield AI makes video ad creation easier for small businesses and brings new creative tools to market faster.",
+      "publishedAt": "2026-09-22T18:00:00.000Z",
+      "summary": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost.",
+      "tags": [
+        "模型"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "1d20wm2",
+      "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
+      "url": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-09-22T12:00:00.000Z",
+      "summary": "GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models.",
       "tags": [
         "模型",
-        "多模态"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "crlhqs",
-      "title": "Building standards for the next phase of AI",
-      "url": "https://openai.com/index/building-standards-next-phase-ai",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-21T10:00:00.000Z",
-      "summary": "OpenAI outlines a path to shared global AI standards, calling for coordinated evaluation, reporting, and governance to improve safety.",
-      "tags": [
-        "安全"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "lge7vw",
-      "title": "Expanding OpenAI Academy with new learning paths",
-      "url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-21T07:00:00.000Z",
-      "summary": "Explore new OpenAI Academy learning paths for employees, developers, leaders, educators, and students to build and demonstrate practical AI skills.",
-      "tags": [
-        "AI"
+        "Agent",
+        "研究"
       ],
       "category": "公司动态"
     },
@@ -60,7 +48,7 @@
       "url": "https://arxiv.org/abs/2609.20971",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.20971v1 Announce Type: new Abstract: Long-context large language model inference is increasingly limited by prefill, where dense self-attention processes the entire prompt before generation begins. Sparse block selection can reduce this cost, but a ",
       "tags": [
         "模型",
@@ -75,7 +63,7 @@
       "url": "https://arxiv.org/abs/2609.20974",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.20974v1 Announce Type: new Abstract: In Mixture-of-Experts language models, the router typically selects and weights experts based on the token's hidden state, utilizing limited contextual information. We propose Attention-Aware Routing (AAR), which",
       "tags": [
         "模型",
@@ -90,7 +78,7 @@
       "url": "https://arxiv.org/abs/2609.20981",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.20981v1 Announce Type: new Abstract: Autoregressive (AR) models suffer from local greediness, while diffusion language models (DLMs) often lack the strict causal structure required for reasoning. To combine the advantages and overcome the drawbacks ",
       "tags": [
         "模型",
@@ -105,7 +93,7 @@
       "url": "https://arxiv.org/abs/2609.21061",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.21061v1 Announce Type: new Abstract: Automatic target recognition (ATR) with synthetic aperture sonar (SAS) supports advanced naval capabilities, but deep learning is constrained by scarce target imagery, background clutter, and human-in-the-loop as",
       "tags": [
         "模型",
@@ -120,7 +108,7 @@
       "url": "https://arxiv.org/abs/2609.21096",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.21096v1 Announce Type: new Abstract: In this work, we examine the topology of information flow patterns within attention graphs to effectively distinguish hallucinated from non-hallucinated responses. We analyze the Forman-Ricci curvature to identif",
       "tags": [
         "产品",
@@ -134,7 +122,7 @@
       "url": "https://arxiv.org/abs/2609.21113",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.21113v1 Announce Type: new Abstract: Fine-tuning has emerged as a widely adopted approach for adapting LLMs to a variety of downstream tasks. However, how it reshapes their internal mechanisms remains poorly understood. To address this, we investiga",
       "tags": [
         "模型",
@@ -149,7 +137,7 @@
       "url": "https://arxiv.org/abs/2609.21139",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.21139v1 Announce Type: new Abstract: Replacing attention in a pretrained language model is a compatibility problem: a plausible substitute may alter representations expected by later layers. TinyCeNN-LM introduces a \\emph{quality-gated post-training",
       "tags": [
         "模型",
@@ -163,7 +151,7 @@
       "url": "https://arxiv.org/abs/2609.21149",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.21149v1 Announce Type: new Abstract: Before patients can use AI-assisted psychiatric intake systems, health systems need practical ways to routinely evaluate these tools against their clinical standards for quality assurance. Because clinicians may ",
       "tags": [
         "模型",
@@ -178,7 +166,7 @@
       "url": "https://arxiv.org/abs/2609.21157",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.21157v1 Announce Type: new Abstract: Large Language Model (LLM) agents are increasingly being explored for chip design, but most existing approaches operate directly at RTL. We ask whether agents can design better chips by leveraging higher-level ab",
       "tags": [
         "模型",
@@ -193,7 +181,7 @@
       "url": "https://arxiv.org/abs/2609.21165",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.21165v1 Announce Type: new Abstract: Off-target protein binding is a major source of adverse effects for small-molecule drugs, yet most structure-based molecular design methods focus on generating selective compounds de novo rather than improving th",
       "tags": [
         "模型",
@@ -208,7 +196,7 @@
       "url": "https://arxiv.org/abs/2609.21181",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.21181v1 Announce Type: new Abstract: The Abstraction and Reasoning Corpus and related benchmarks evaluate whether AI models can solve novel reasoning tasks, but often leave unclear whether success reflects inference of the intended underlying rule o",
       "tags": [
         "模型",
@@ -223,7 +211,7 @@
       "url": "https://arxiv.org/abs/2609.21192",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.21192v1 Announce Type: new Abstract: Organizations deploying agentic artificial intelligence must determine more than whether a model is trustworthy; they must establish what to validate, control, and observe for a use case to deliver its intended o",
       "tags": [
         "模型",
@@ -238,7 +226,7 @@
       "url": "https://arxiv.org/abs/2609.21208",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.21208v1 Announce Type: new Abstract: Self-play methods that co-train a single language model as both coder and test author promise to move code-generation RL beyond fixed test suites, but they suffer from two coupled pathologies: permissiveness coll",
       "tags": [
         "模型",
@@ -253,7 +241,7 @@
       "url": "https://arxiv.org/abs/2609.21214",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.21214v1 Announce Type: new Abstract: Cognitive diagnosis infers students' concept mastery from response logs. However, students' responses are not determined by mastery alone: non-cognitive factors such as emotion, engagement, and fatigue can also a",
       "tags": [
         "模型",
@@ -268,7 +256,7 @@
       "url": "https://arxiv.org/abs/2609.21221",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.21221v1 Announce Type: new Abstract: Perceptual planning tasks require two key capabilities: accurately perceiving uncertain scenes and planning valid action sequences following logical rules. Conventional methods convert perception into discrete sy",
       "tags": [
         "模型",
@@ -282,7 +270,7 @@
       "url": "https://arxiv.org/abs/2609.21259",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.21259v1 Announce Type: new Abstract: Understanding and modeling human intelligence are parallel goals shared by artificial intelligence (AI) and cognitive science. As AI systems grow increasingly capable, in what ways do model responses resemble hum",
       "tags": [
         "模型",
@@ -297,7 +285,7 @@
       "url": "https://arxiv.org/abs/2609.21263",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.21263v1 Announce Type: new Abstract: Automated macro placement remains a fundamental challenge in VLSI physical design. Despite decades of research, existing approaches predominantly optimize hand-crafted proxy objectives, such as estimated wireleng",
       "tags": [
         "模型",
@@ -312,7 +300,7 @@
       "url": "https://arxiv.org/abs/2609.21267",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.21267v1 Announce Type: new Abstract: Production LLM agents are evaluated repeatedly as they evolve, but full agent benchmarks are costly to rerun. We study efficient recurring evaluation for a production analytics agent serving tens of thousands of ",
       "tags": [
         "Agent",
@@ -327,7 +315,7 @@
       "url": "https://arxiv.org/abs/2609.21293",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.21293v1 Announce Type: new Abstract: Autonomous software generation (ASG) aims to turn human requirements into executable applications, but delivering these applications does not necessarily establish that their interacting components satisfy the sp",
       "tags": [
         "模型",
@@ -342,7 +330,7 @@
       "url": "https://arxiv.org/abs/2609.21325",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.21325v1 Announce Type: new Abstract: Agentic marketplaces are emerging where AI agents with varying capabilities autonomously complete specialized tasks for buyers. A major challenge of such marketplaces is that buyers cannot easily determine which ",
       "tags": [
         "模型",
@@ -357,7 +345,7 @@
       "url": "https://arxiv.org/abs/2609.21390",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.21390v1 Announce Type: new Abstract: Air operations rely on complex rules, established procedures, and time-critical analysis under limited connectivity and strict security constraints. In such environments, analysts must combine written doctrine wi",
       "tags": [
         "模型",
@@ -372,7 +360,7 @@
       "url": "https://arxiv.org/abs/2609.21423",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.21423v1 Announce Type: new Abstract: Online agent deployments produce abundant execution traces, while task-specific verification and expert annotation are costly to scale. We study how to distill these traces into reusable feedback without post-hoc",
       "tags": [
         "模型",
@@ -387,7 +375,7 @@
       "url": "https://arxiv.org/abs/2609.21432",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.21432v1 Announce Type: new Abstract: Post-training plays a pivotal role in enhancing the reasoning capabilities and task-specific expertise of large language models (LLMs). Despite recent advances in post-training methods, such as Group Relative Pol",
       "tags": [
         "模型",
@@ -402,7 +390,7 @@
       "url": "https://arxiv.org/abs/2609.21470",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.21470v1 Announce Type: new Abstract: Sparse representation formulates the environment perception for the end-to-end driving system as a set of discrete elements like objects and lane lines. This formulation meets safety risks in crowded, occluded sc",
       "tags": [
         "Agent",
@@ -417,7 +405,7 @@
       "url": "https://arxiv.org/abs/2609.21486",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.21486v1 Announce Type: new Abstract: Multimodal trajectory prediction improves behavioral coverage in end-to-end autonomous driving, but existing methods remain limited by sparse scene representations. Incomplete evidence leads to low-quality candid",
       "tags": [
         "模型",
@@ -432,7 +420,7 @@
       "url": "https://arxiv.org/abs/2609.21492",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.21492v1 Announce Type: new Abstract: Chain-of-Thought (CoT) reasoning has been shown to improve the performance of large language models (LLMs), yet existing optimization methods largely rely on outcome-based feedback, leaving the logical validity o",
       "tags": [
         "模型",
@@ -446,7 +434,7 @@
       "url": "https://arxiv.org/abs/2609.21493",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.21493v1 Announce Type: new Abstract: Multimodal large language models, or MLLMs, perform well at visual understanding and structured generation, yet these capabilities do not establish whether an engineering design will work when executed. Existing ",
       "tags": [
         "模型",
@@ -461,8 +449,8 @@
       "url": "https://arxiv.org/abs/2609.21509",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
-      "summary": "arXiv:2609.21509v1 Announce Type: new Abstract: When language models reason in chain-of-thought or exchange free-text intermediates, they serialize structured information into natural language. How much tree-structured compositional content survives this bottl",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
+      "summary": "arXiv:2609.21509v2 Announce Type: new Abstract: When language models reason in chain-of-thought or exchange free-text intermediates, they serialize structured information into natural language. How much tree-structured compositional content survives this bottl",
       "tags": [
         "模型",
         "产品",
@@ -476,7 +464,7 @@
       "url": "https://arxiv.org/abs/2609.21519",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.21519v1 Announce Type: new Abstract: Artificial Intelligence (AI) is becoming a fundamental design principle of future AI-native communication networks, enabling autonomous resource management, adaptive control, and zero-touch network operation. Whi",
       "tags": [
         "模型",
@@ -491,7 +479,7 @@
       "url": "https://arxiv.org/abs/2609.21548",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.21548v1 Announce Type: new Abstract: Sequential recommendation aims to predict the next item a user will interact with based on their historical behavior. Advances in Transformers have significantly improved sequential recommendation but are still l",
       "tags": [
         "模型",
@@ -506,7 +494,7 @@
       "url": "https://arxiv.org/abs/2609.21599",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.21599v1 Announce Type: new Abstract: Fraudulent job posting detection aims to identify job advertisements that are corrupted either through fake content, misleading information, or negative intent, disrupting the online eco-system of job-seekers and",
       "tags": [
         "模型",
@@ -520,11 +508,26 @@
       "url": "https://arxiv.org/abs/2609.21600",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
       "summary": "arXiv:2609.21600v1 Announce Type: new Abstract: Access to academic support is a key determinant of student success, yet students experience it unequally: some readily seek help from lecturers or tutors, while others hesitate due to anxiety, fear of judgement, ",
       "tags": [
         "产品",
         "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1u9y53j",
+      "title": "Calibrating Teacher--Student Discrepancy for On-Policy Distillation",
+      "url": "https://arxiv.org/abs/2609.21619",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
+      "summary": "arXiv:2609.21619v1 Announce Type: new Abstract: On-policy distillation (OPD) improves reasoning models by learning the token-level discrepancy between a stronger teacher and an on-policy student. However, this discrepancy does not purely reflect the capability",
+      "tags": [
+        "模型",
+        "研究",
+        "安全"
       ],
       "category": "研究论文"
     }
@@ -534,7 +537,7 @@
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
       "ok": true,
-      "count": 1215
+      "count": 1219
     },
     {
       "name": "Google AI",
@@ -552,13 +555,13 @@
       "name": "arXiv cs.LG",
       "url": "https://export.arxiv.org/rss/cs.LG",
       "ok": true,
-      "count": 237
+      "count": 636
     },
     {
       "name": "arXiv cs.CL",
       "url": "https://export.arxiv.org/rss/cs.CL",
       "ok": true,
-      "count": 138
+      "count": 355
     }
   ],
   "warnings": []
