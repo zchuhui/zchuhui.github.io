@@ -1,14 +1,57 @@
 {
-  "generatedAt": "2026-09-25T01:32:10.033Z",
+  "generatedAt": "2026-09-26T01:35:43.199Z",
   "items": [
     {
-      "id": "1ua1dk7",
-      "title": "Silent Failures in Agent-Tool Interaction: An Audit of ToolUniverse",
-      "url": "https://arxiv.org/abs/2609.26836",
+      "id": "1r8vcb7",
+      "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
+      "url": "https://openai.com/index/proaction",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-09-25T19:00:00.000Z",
+      "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster.",
+      "tags": [
+        "模型"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "1ua2knw",
+      "title": "When Should Forecasting Agents Reason? Behavioral Stress Tests for Reliability Routing",
+      "url": "https://arxiv.org/abs/2609.28475",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.26836v1 Announce Type: new Abstract: Agentic AI systems are increasingly adopting automated pipelines that integrate multiple tools. While prior research and benchmarks have studied about task success and task completion of these agentic systems, th",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.28475v1 Announce Type: new Abstract: Forecasting agents increasingly combine language-model reasoning, retrieval, ensembling, and calibration, but it remains unclear when each behavior should be trusted. We study this question on ForecastBench-style",
+      "tags": [
+        "模型",
+        "Agent",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1ua2l8l",
+      "title": "TW3Cast: A Frozen Router of Lightly Fine-Tuned Foundation Models for Time-Series Forecasting on GIFT-Eval, Selected Entirely on the Training Split",
+      "url": "https://arxiv.org/abs/2609.28506",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.28506v1 Announce Type: new Abstract: TW3Cast is a time-series forecasting system that reaches position 3 of 130 entries on the GIFT-Eval benchmark by mean MASE rank, as of 2026-09-14. The two entries above it belong to the leaderboard's agentic cate",
+      "tags": [
+        "模型",
+        "Agent",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1ua2lc2",
+      "title": "PAWS: Policy-driven Agentic World Simulation",
+      "url": "https://arxiv.org/abs/2609.28547",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.28547v1 Announce Type: new Abstract: Policy interventions propagate through public communication, institutional decisions, and stakeholder responses, yet datasets for financial multi-agent simulation rarely connect these processes to temporally alig",
       "tags": [
         "Agent",
         "产品",
@@ -17,13 +60,28 @@
       "category": "研究论文"
     },
     {
-      "id": "1ua1dp8",
-      "title": "Harness as a Language: A Minimalist Agent Framework With Maximal Expressivity",
-      "url": "https://arxiv.org/abs/2609.26891",
+      "id": "1ua2lcu",
+      "title": "Pistis Technical Report",
+      "url": "https://arxiv.org/abs/2609.28554",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.26891v1 Announce Type: new Abstract: Modern language-model agents are built around the \\textit{agent loop}, where the LLM is placed in an environment exposing a set of tools, and the LLM has full control over the workflow by alternating between tool",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.28554v1 Announce Type: new Abstract: We introduce the Pistis model family, comprising 27B- and 9B-parameter multimodal large language models built on Qwen3.6 and Qwen3.5, respectively, and developed through a general and scalable post-training frame",
+      "tags": [
+        "模型",
+        "Agent",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1ua2lcx",
+      "title": "BaseCamp --- An Agentic AI Framework for Automating DNA Sequencing Data Pipelines",
+      "url": "https://arxiv.org/abs/2609.28557",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.28557v1 Announce Type: new Abstract: DNA sequencing pipelines, spanning quality control, alignment, variant calling, and annotation, are now reliably executed by workflow management systems that orchestrate established bioinformatics tools at scale.",
       "tags": [
         "模型",
         "Agent",
@@ -32,13 +90,87 @@
       "category": "研究论文"
     },
     {
-      "id": "1ua1e91",
-      "title": "TwinCheck: Evidence-Grounded Negative-Twin Verification for Stateful Tool Agents",
-      "url": "https://arxiv.org/abs/2609.26911",
+      "id": "1ua2leg",
+      "title": "DEEPO: Dual-Entropy Enhanced Policy Optimization for Hallucination in MLLMs",
+      "url": "https://arxiv.org/abs/2609.28570",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.26911v1 Announce Type: new Abstract: A single locally plausible tool call can derail an otherwise successful agent trajectory. Suspicion alone does not justify intervention, because the replacement itself can introduce the very failure verification ",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.28570v1 Announce Type: new Abstract: Reinforcement learning (RL) is widely used to sharpen reasoning in multimodal large language models (MLLMs), yet its effect on hallucination is uneven. We trace this to two weak points in the \\emph{correction cha",
+      "tags": [
+        "模型",
+        "研究",
+        "多模态"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1ua2lel",
+      "title": "TWIST: A Proposed Benchmark for Intervention Quality in Conversational Memory, with a Human-Validated Draft-Alignment",
+      "url": "https://arxiv.org/abs/2609.28575",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.28575v1 Announce Type: new Abstract: Long-conversation memory benchmarks increasingly test recall and prompted knowledge updates, and recent work studies evolving user beliefs and memory state. TWIST is a proposed benchmark suite for a complementary",
+      "tags": [
+        "模型",
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1ua2lzd",
+      "title": "Adversarial Closed-Loop Curriculum for Evolving Role-Playing Agents",
+      "url": "https://arxiv.org/abs/2609.28609",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.28609v1 Announce Type: new Abstract: Role-playing agents based on large language models have been widely applied in areas such as personalized assistance and social simulation. Recent RL methods typically train on a fixed scenario pool collected bef",
+      "tags": [
+        "模型",
+        "Agent",
+        "产品"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1ua2m3j",
+      "title": "Training Object Permanence in World Models",
+      "url": "https://arxiv.org/abs/2609.28654",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.28654v1 Announce Type: new Abstract: Object permanence and solidity are hallmarks of human cognitive priors. Recent studies show that video generation models, a paradigmatic class of current world models, have begun to show emerged reasoning abiliti",
+      "tags": [
+        "模型",
+        "研究",
+        "多模态"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1ua2m6v",
+      "title": "Beyond Surface Style: Aligning Multi-Turn User Simulators with Behavioral Consistency",
+      "url": "https://arxiv.org/abs/2609.28690",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.28690v1 Announce Type: new Abstract: Faithful user simulation is fundamental to building, evaluating, and improving interactive AI at scale. However, plausible individual responses do not ensure that simulated users reproduce the intent evolution an",
+      "tags": [
+        "模型",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1ua2m6x",
+      "title": "Driving Epidemic Models with AI Agents: the Epydemix Agent Framework",
+      "url": "https://arxiv.org/abs/2609.28692",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.28692v1 Announce Type: new Abstract: Artificial Intelligence agents based on large language models provide convenient natural language interfaces to scientific software, but reliability is not automatic. Here we introduce the Epydemix Agent Framewor",
       "tags": [
         "模型",
         "Agent",
@@ -47,13 +179,13 @@
       "category": "研究论文"
     },
     {
-      "id": "1ua1ea2",
-      "title": "Building Socio-Affective Artificial Intelligence for Interactive Multi-Agent Simulations",
-      "url": "https://arxiv.org/abs/2609.26927",
+      "id": "1ua2m6y",
+      "title": "Progressive Skill Discovery as Access Control for Tool-Using LLM Agents: Structural Governance through Role-Scoped Capability Delivery",
+      "url": "https://arxiv.org/abs/2609.28693",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.26927v1 Announce Type: new Abstract: The objective of this article is to provide design principles and a software architecture for enabling interaction between humans and multiple agents in simulated dynamic worlds. This connects the current era of ",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.28693v1 Announce Type: new Abstract: Large Language Model (LLM) agents struggle to scale safely when exposed to vast enterprise toolsets. Providing an agent with access to every internal tool leads to oversized context windows, degraded tool selecti",
       "tags": [
         "模型",
         "Agent",
@@ -62,13 +194,281 @@
       "category": "研究论文"
     },
     {
-      "id": "1ua1ea4",
-      "title": "Which Objectives Need a Dial? Predicting Objective Conflict and Covering Trade-offs in Steerable Pluralistic Alignment",
-      "url": "https://arxiv.org/abs/2609.26929",
+      "id": "1ua2mv4",
+      "title": "Reinforcement Learning with Verifiable Rewards for Small Search Agents",
+      "url": "https://arxiv.org/abs/2609.28765",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.26929v1 Announce Type: new Abstract: People hold diverse, sometimes conflicting values, so no single aligned model can satisfy everyone. Pluralistic alignment therefore calls for steerable models that can balance competing objectives differently. Mu",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.28765v1 Announce Type: new Abstract: Reinforcement Learning with Verifiable Rewards (RLVR) performs well on problems with clear rewards, such as mathematics and coding, but whether it also works where the reward is less clear remains open. The reaso",
+      "tags": [
+        "模型",
+        "Agent",
+        "产品"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1ua2mvv",
+      "title": "Agent Memory with Episodic Retrieval for Financial Decision-Making",
+      "url": "https://arxiv.org/abs/2609.28771",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.28771v1 Announce Type: new Abstract: Large language models (LLMs) have demonstrated strong capabilities in financial analysis and reasoning, inspiring recent advances in agent-based trading frameworks. While these systems show promise, prior approac",
+      "tags": [
+        "模型",
+        "Agent",
+        "产品"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1ua2mw0",
+      "title": "Learned Cross-Task Relationships in Multi-Task Models",
+      "url": "https://arxiv.org/abs/2609.28776",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.28776v1 Announce Type: new Abstract: We propose a framework that learns cross-task relationships in multi-task models by approximating the joint distribution of task labels through targeted pairwise relationships. This approach improves performance ",
+      "tags": [
+        "模型",
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1ua2nkt",
+      "title": "RECLAIM: Can Agents Reproduce the Claims of Machine Learning Papers?",
+      "url": "https://arxiv.org/abs/2609.28850",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.28850v1 Announce Type: new Abstract: Reproducing a machine learning paper involves most research steps, from installing software and debugging to running experiments, work that AI agents increasingly do. We introduce RECLAIM, a benchmark of 100 Neur",
+      "tags": [
+        "模型",
+        "Agent",
+        "产品"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1ua2nl2",
+      "title": "Human-AI-Powered Hypothesis Testing: Cost-Aware Selective AI Scoring and Sequential Human Escalation",
+      "url": "https://arxiv.org/abs/2609.28859",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.28859v1 Announce Type: new Abstract: Large language models are increasingly used as inexpensive judges to evaluate outputs, label data, and assess whether a system meets a desired quality standard. Yet using AI judgments for formal statistical infer",
+      "tags": [
+        "模型",
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1ua2nmp",
+      "title": "Forecast-Dojo: Replayable Environments for Benchmarking and Training LLM Forecasting Agents",
+      "url": "https://arxiv.org/abs/2609.28876",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.28876v1 Announce Type: new Abstract: We introduce Forecast-Dojo, a replayable environment for benchmarking and training LLM forecasting agents. It combines resolved prediction-market questions with dated news, allowing agents to research an event an",
+      "tags": [
+        "模型",
+        "Agent",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1ua2o8b",
+      "title": "Control the Harness, Control the Cost: Routing and Governing AI Coding Agents in the Enterprise",
+      "url": "https://arxiv.org/abs/2609.28919",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.28919v1 Announce Type: new Abstract: Harnesses, the products that run AI coding agents, are multiplying, and enterprises are rolling them out to their employees: what started as pilots with a few hundred seats is scaling to tens of thousands. Most e",
+      "tags": [
+        "模型",
+        "Agent",
+        "产品"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1ua2o8y",
+      "title": "PFArena: Benchmarking Language Models for Protein Modification",
+      "url": "https://arxiv.org/abs/2609.28921",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.28921v1 Announce Type: new Abstract: Protein modification requires navigating an immense sequence space, yet wet-lab validation remains low-throughput and costly. Although computational paradigms including protein language models (PLMs), large langu",
+      "tags": [
+        "模型",
+        "Agent",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1ua2oap",
+      "title": "From Static Personal Values to Contextualized Personalization: Bayesian Personalized Value Alignment for LLMs",
+      "url": "https://arxiv.org/abs/2609.28942",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.28942v1 Announce Type: new Abstract: Personalized value alignment has become increasingly important as large language models (LLMs) are expected to accommodate diverse user preferences. However, existing methods typically align model outputs with a ",
+      "tags": [
+        "模型",
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1ua2ocg",
+      "title": "Back to the Definition: Estimating Step-Level Advantages via Trajectory Graphs for Agentic Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2609.28963",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.28963v1 Announce Type: new Abstract: Group-based reinforcement learning (RL) methods, such as GRPO and its variants, have become a leading paradigm for training reasoning and agentic large language models (LLMs). While their group-normalized advanta",
+      "tags": [
+        "模型",
+        "Agent",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1ua34io",
+      "title": "When Does Action Credit Need Updating?",
+      "url": "https://arxiv.org/abs/2609.29007",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.29007v1 Announce Type: new Abstract: Tool-using agents are continually updated with new interaction data. After each policy update, however, previously estimated action credits may become stale. Recomputing them from scratch can require many additio",
+      "tags": [
+        "Agent",
+        "研究",
+        "安全"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1ua34jg",
+      "title": "AlphaDiverse: Post-Training Local Quantitative Research Agents for Diverse Exploration in Alpha Factor Mining",
+      "url": "https://arxiv.org/abs/2609.29014",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.29014v1 Announce Type: new Abstract: Large language model (LLM)-based multi-agent systems can automate alpha factor mining, but their reliance on external APIs limits control over cost, availability, and confidentiality. Long research loops also ten",
+      "tags": [
+        "模型",
+        "Agent",
+        "产品"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1ua34jh",
+      "title": "MeshHeal: Two-Timescale Self-Healing for Gray Failures in Decentralized LLM Agent Networks",
+      "url": "https://arxiv.org/abs/2609.29015",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.29015v1 Announce Type: new Abstract: Decentralized LLM-based multi-agent systems coordinate through local interactions, but an agent can remain responsive while its task-solving quality persistently degrades. Such gray failures require protecting cu",
+      "tags": [
+        "模型",
+        "Agent",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1ua34ms",
+      "title": "SLCA-GRPO: Resolving Cross-Segment Credit Misattribution in Tool-Calling RL",
+      "url": "https://arxiv.org/abs/2609.29050",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.29050v1 Announce Type: new Abstract: Tool-calling agents produce heterogeneous outputs, interleaving structured tool invocations with user-facing natural language summaries. This output heterogeneity presents a structural failure mode in standard on",
+      "tags": [
+        "Agent",
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1ua34mt",
+      "title": "From Self-Distillation to Self-Practice: Privileged Information for Multi-Turn Agents",
+      "url": "https://arxiv.org/abs/2609.29051",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.29051v1 Announce Type: new Abstract: On-policy self-distillation (OPSD) has become a popular recipe for post-training LLM agents. It supervises the agent model at the token level with a stronger teacher view of the same model, obtained by conditioni",
+      "tags": [
+        "模型",
+        "Agent",
+        "产品"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1ua34on",
+      "title": "CRISS: A Retrieval-Augmented AI Chatbot for Assisting Cancer Registrars",
+      "url": "https://arxiv.org/abs/2609.29075",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.29075v1 Announce Type: new Abstract: Cancer registrars, including Oncology Data Specialists (ODSs), must interpret complex and frequently updated coding and staging standards. We developed CRISS (Cancer Registry Intelligent Support System), a retrie",
+      "tags": [
+        "模型",
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1ua34ph",
+      "title": "A Rapid Pipeline for Training and Deploying ML Models on WeBe Band",
+      "url": "https://arxiv.org/abs/2609.29084",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.29084v1 Announce Type: new Abstract: Developing optimized machine-learning algorithms for edge devices with limited computational and memory resources is challenging, time-consuming, and highly dependent on device-specific constraints. In this work,",
+      "tags": [
+        "模型",
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1ua359e",
+      "title": "Functional Architecture of European Electricity Trading Markets: Requirements for AI Supported Trading Systems under Regulatory Constraints",
+      "url": "https://arxiv.org/abs/2609.29108",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.29108v1 Announce Type: new Abstract: European electricity trading in the EU operates as a constrained multi-layer system in which legal design, exchange microstructure, and network physics are executed jointly across forward, day-ahead, intraday, an",
+      "tags": [
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1ua359f",
+      "title": "CounterRoute: Self-Routed Reasoning via Hierarchical Counterfactual Credit Assignment",
+      "url": "https://arxiv.org/abs/2609.29109",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.29109v1 Announce Type: new Abstract: Reasoning-capable language models often produce long chains of thought when direct answers suffice, wasting inference compute. Many dual-mode models leave this choice to users. Automating it is challenging becaus",
       "tags": [
         "模型",
         "研究",
@@ -77,43 +477,27 @@
       "category": "研究论文"
     },
     {
-      "id": "1ua1eci",
-      "title": "Escaping Python Dependency Hell: A Hybrid Replay-and-Repair Pipeline for Python Dependency Resolution",
-      "url": "https://arxiv.org/abs/2609.26952",
+      "id": "1ua35cm",
+      "title": "Sharp Limits for Honest Uncertainty in Hard-Budget Repeated Evaluation",
+      "url": "https://arxiv.org/abs/2609.29140",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.26952v1 Announce Type: new Abstract: Dependency conflicts in Python ecosystems arise from incompatible version constraints, missing packages, and undocumented compatibility relationships, causing many real-world code snippets to fail at execution. T",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.29140v1 Announce Type: new Abstract: Repeated evaluation can estimate a benchmark score accurately while still requiring replication to certify narrow uncertainty. We characterize that requirement on a fixed grid of $M$ tasks with $L$ binary paths p",
       "tags": [
-        "Agent",
-        "产品",
+        "模型",
         "研究"
       ],
       "category": "研究论文"
     },
     {
-      "id": "1ua1ef7",
-      "title": "Same evidence, different judgments: Evidence noncommutative in vision/speech-text conflicts",
-      "url": "https://arxiv.org/abs/2609.26986",
+      "id": "1ua35cq",
+      "title": "Scope Before You Persist: Preventing Cross-Family Interference in Agent Memory",
+      "url": "https://arxiv.org/abs/2609.29144",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.26986v1 Announce Type: new Abstract: For multimodal large language models, when images or speech conflict with accompanying text, measured text reliance can entangle modality preference with evidence position. Earlier studies of text bias often used",
-      "tags": [
-        "模型",
-        "研究",
-        "多模态"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "1ua1um5",
-      "title": "Reinforcement Learning with Decomposed Subtasks",
-      "url": "https://arxiv.org/abs/2609.27035",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.27035v1 Announce Type: new Abstract: Group Relative Policy Optimization (GRPO) and related policy-gradient methods for training language model agents collapse an entire multi-turn rollout into a single scalar trajectory reward before it enters the p",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.29144v1 Announce Type: new Abstract: Persistent memory lets language-model agents improve prompts and skills without updating model weights. We show that matching retrieval scope to certification scope enables these edits to support reliable repeate",
       "tags": [
         "模型",
         "Agent",
@@ -122,418 +506,30 @@
       "category": "研究论文"
     },
     {
-      "id": "1ua1um7",
-      "title": "Training Intelligent Voice Assistant Wakeup with Controllable Synthetic Conversations",
-      "url": "https://arxiv.org/abs/2609.27037",
+      "id": "1ua35cr",
+      "title": "Claim-Gated Source-Risk Auditing for Generative Search",
+      "url": "https://arxiv.org/abs/2609.29145",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.27037v1 Announce Type: new Abstract: Wake word detection is a critical component of virtual assistants, serving as the gateway to seamless user interactions. This paper introduces a novel wake-up system that extends traditional direct keyword detect",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.29145v1 Announce Type: new Abstract: A generative search answer can cite a supported passage yet omit a source relationship that changes its interpretation. We specify a claim-gated audit of the query-source-answer tuple. An omission is resolved onl",
       "tags": [
-        "模型",
-        "产品",
         "研究"
       ],
       "category": "研究论文"
     },
     {
-      "id": "1ua1um8",
-      "title": "Are Stated Reasoning Steps Causally Load-Bearing?",
-      "url": "https://arxiv.org/abs/2609.27038",
+      "id": "1ua35dl",
+      "title": "A Wrong Turn Does Not Ruin the Journey: Deviation-Guided Skill Self-Evolution for LLM Agents",
+      "url": "https://arxiv.org/abs/2609.29154",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.27038v1 Announce Type: new Abstract: Chain-of-thought (CoT) monitoring assumes that the reasoning a model writes reflects the computation that directly produces its answer. Previous faithfulness metrics have been predominantly behavioral, as they si",
-      "tags": [
-        "模型",
-        "产品",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "1ua1umw",
-      "title": "Math Reasoning in LLMs is Organized by Approach, Not Topic",
-      "url": "https://arxiv.org/abs/2609.27041",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.27041v1 Announce Type: new Abstract: Mathematical reasoning benchmarks are typically organized by topic, but language models may organize their internal computation by reusable reasoning approach instead. In this paper, we investigate whether open m",
-      "tags": [
-        "模型",
-        "产品",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "1ua1unr",
-      "title": "Propose, Don't Judge: An Anytime-Valid Referee for LLM Agents That Mine Investment Factors",
-      "url": "https://arxiv.org/abs/2609.27051",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.27051v1 Announce Type: new Abstract: Language-model agents now run the whole of quantitative factor research: they propose investment factors, backtest them, select the survivors and retire them. We ask which of those jobs an agent should keep. Our ",
-      "tags": [
-        "模型",
-        "Agent",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "1ua1uqi",
-      "title": "Policy-as-Skill: Governed LLM Decision Support with Evidence, Deterministic Control, and Audit",
-      "url": "https://arxiv.org/abs/2609.27087",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.27087v1 Announce Type: new Abstract: Organizations increasingly use LLMs for policy, compliance, risk, and operational decision support, requiring evidence validation, review routing, version control, and auditability. We introduce Policy-as-Skill (",
-      "tags": [
-        "研究",
-        "安全"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "1ua1va9",
-      "title": "Provably Complete Generalized Planning with LLMs",
-      "url": "https://arxiv.org/abs/2609.27105",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.27105v1 Announce Type: new Abstract: Generalized planning aims to compute a plan that solves all instances of a planning domain. Recent work has used LLMs to automatically generate and debug such generalized plans in the form of Python programs and ",
-      "tags": [
-        "模型",
-        "产品",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "1ua1vef",
-      "title": "Do We Need Complex Topology Control? Distinct-Peer Random Routing Improves Cost-Efficiency in Sparse Multi-Agent Debate",
-      "url": "https://arxiv.org/abs/2609.27150",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.27150v1 Announce Type: new Abstract: Multi-agent debate (MAD) has emerged as a promising paradigm for improving the reasoning accuracy of large language models (LLMs) through iterative peer interaction. Communication topology plays a central role in",
-      "tags": [
-        "模型",
-        "Agent",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "1ua1vi2",
-      "title": "Enhancing Small Language Models for Power Outage Report Generation via Minimum Risk Training",
-      "url": "https://arxiv.org/abs/2609.27197",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.27197v1 Announce Type: new Abstract: Minimum Risk Training (MRT) enables neural machine translation models to directly optimize sequence-level evaluation metrics instead of relying only on token- level maximum-likelihood objectives Shen et al. [2016",
-      "tags": [
-        "模型",
-        "产品",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "1ua1w0w",
-      "title": "XLOG: A CUDA-Native Engine for Neurosymbolic Integration",
-      "url": "https://arxiv.org/abs/2609.27203",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.27203v1 Announce Type: new Abstract: xlog is a CUDA-native logic programming engine integrating neural perception with deterministic Datalog, probabilistic inference, and epistemic world views through a typed frontend and provider-owned CUDA runtime",
-      "tags": [
-        "模型",
-        "研究",
-        "多模态"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "1ua1w6x",
-      "title": "CAVEAT: Towards Robust Computer-Use Agents in Incentive-Misaligned Environments",
-      "url": "https://arxiv.org/abs/2609.27273",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.27273v1 Announce Type: new Abstract: Computer-use agents (CUAs) increasingly act on behalf of users online. What happens when the environments they operate in have incentives that do not align with the user's? In online marketplaces, for example, pl",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "summary": "arXiv:2609.29154v1 Announce Type: new Abstract: Large language model agents increasingly rely on natural-language skills to solve complex tool-use tasks. However, such tasks often admit multiple valid solution paths, making it inappropriate to improve skills b",
       "tags": [
         "模型",
         "Agent",
         "产品"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "1ua1w70",
-      "title": "DRSR: Learning Set-Level Deletion Risk for Efficient Long-Horizon Agents",
-      "url": "https://arxiv.org/abs/2609.27276",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.27276v1 Announce Type: new Abstract: Long-horizon language-model agents accumulate reasoning traces, tool exchanges, and observations whose relevance changes with the current decision. Existing compression strategies often score historical units ind",
-      "tags": [
-        "模型",
-        "Agent",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "1ua1w71",
-      "title": "TimeEvo: Failure-Driven Self-Evolution of a Time Series Agent",
-      "url": "https://arxiv.org/abs/2609.27277",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.27277v1 Announce Type: new Abstract: Time series agents answer analytical questions by calling external tools, and which tools they carry is decided by people before the agent runs. However, we identify two failures in this setup. Human-Agent Tool M",
-      "tags": [
-        "模型",
-        "Agent",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "1ua1w73",
-      "title": "EnSIMem: Entity-Structured Indexing for Long-Term Agent Memory",
-      "url": "https://arxiv.org/abs/2609.27279",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.27279v1 Announce Type: new Abstract: An agent that interacts with users over long periods must recall facts, preferences, events, and changes from a continuously growing interaction history. Existing memory systems often compress interactions into g",
-      "tags": [
-        "模型",
-        "Agent",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "1ua1w7t",
-      "title": "Hunyuan-A13B Technical Report",
-      "url": "https://arxiv.org/abs/2609.27284",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.27284v1 Announce Type: new Abstract: We present Hunyuan-A13B, an open-source large language model based on a Mixture-of-Experts architecture. It contains 80 billion total parameters but activates only 13 billion during inference, balancing model cap",
-      "tags": [
-        "模型",
-        "Agent",
-        "产品"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "1ua1w7v",
-      "title": "Memory Control Signals Emerge Before Action in Long Horizon Agents",
-      "url": "https://arxiv.org/abs/2609.27286",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.27286v1 Announce Type: new Abstract: Long horizon language model agents continuously accumulate interaction history, increasing computational cost while making relevant information harder to preserve and reuse. Existing context management methods ma",
-      "tags": [
-        "模型",
-        "Agent",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "1ua1w7x",
-      "title": "PotARCin: Multi-Dimensional Evaluation of Skill Acquisition in Abstract Reasoning Tasks",
-      "url": "https://arxiv.org/abs/2609.27288",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.27288v1 Announce Type: new Abstract: The Abstraction and Reasoning Corpus (ARC) has become a prominent benchmark for evaluating general abstract reasoning and fluid intelligence in AI models. Yet standard ARC evaluation considers only a single capab",
-      "tags": [
-        "模型",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "1ua1w8k",
-      "title": "Sparse-Observation Atmospheric Thermal Forecasting with Physics-Informed Neural Networks for Climate-Aware Digital Twins",
-      "url": "https://arxiv.org/abs/2609.27290",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.27290v1 Announce Type: new Abstract: Short-horizon forecasts of atmospheric temperature are needed to support climate-aware digital-twin systems, but such forecasts must be produced where thermal observations are incomplete. This study evaluates a p",
-      "tags": [
-        "模型",
-        "产品",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "1ua1w8r",
-      "title": "Large Knowledge Model: From Papers to a Scientific Reasoning Landscape",
-      "url": "https://arxiv.org/abs/2609.27297",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.27297v1 Announce Type: new Abstract: Accumulated scientific knowledge advances inquiry when prior findings help researchers choose new questions, design investigations, and interpret results. Realizing this value at scale requires access to the reas",
-      "tags": [
-        "模型",
-        "Agent",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "1ua1w8s",
-      "title": "StateComp: Learning When to Compress History in Long Horizon Agents",
-      "url": "https://arxiv.org/abs/2609.27298",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.27298v1 Announce Type: new Abstract: Long-horizon agents continuously accumulate interaction history during task execution, yet the importance of past interactions changes as the agent state evolves. Existing context management methods largely compr",
-      "tags": [
-        "模型",
-        "Agent",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "1ua1wrp",
-      "title": "Learn How to Act from Your Own Interactions: On-Policy Self-Distillation for GUI Agents",
-      "url": "https://arxiv.org/abs/2609.27307",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.27307v1 Announce Type: new Abstract: Graphical User Interface (GUI) agents enable the fulfillment of complex user instructions through multi-turn interactions with software environments, requiring step-wise reasoning and long-horizon memory to guide",
-      "tags": [
-        "模型",
-        "Agent",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "1ua1wt9",
-      "title": "Verifiable Hidden Dynamics Play: Generating Agentic RL Environments from Solved Mechanisms",
-      "url": "https://arxiv.org/abs/2609.27321",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.27321v1 Announce Type: new Abstract: Language-model agents increasingly face long-horizon tasks with evolving state, interdependent decisions, and delayed outcomes. Scaling their training requires diverse agentic environments, dependable outcome sig",
-      "tags": [
-        "模型",
-        "Agent",
-        "产品"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "1ua1wu5",
-      "title": "Stable Geometry with Divergent Task Evidence for Efficient Long-Horizon Agent Compression",
-      "url": "https://arxiv.org/abs/2609.27332",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.27332v1 Announce Type: new Abstract: Long horizon agents accumulate growing interaction histories that increase context and inference costs. We find that geometric redundancy alone is an insufficient criterion for safe compression. Although agent hi",
-      "tags": [
-        "Agent",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "1ua1wu6",
-      "title": "Alignment Inertia: Auditing the Durability of Training Data Influence Through Policy Override Resistance",
-      "url": "https://arxiv.org/abs/2609.27333",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.27333v1 Announce Type: new Abstract: Platform operators increasingly rely on system prompts and fine-tuning to govern model behavior, yet it remains unclear how reliably these interventions override behavior inherited from prior training. We propose",
-      "tags": [
-        "模型",
-        "产品",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "1ua1wu7",
-      "title": "Just-in-Time Memory: Learning to Curate Task-Adaptive Memory for LLM Agents",
-      "url": "https://arxiv.org/abs/2609.27334",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.27334v1 Announce Type: new Abstract: Agentic memory systems reuse past experience to improve future performance, yet most existing designs curate memory at write time: once a task is completed, its trajectory is distilled into a fixed artifact, such",
-      "tags": [
-        "模型",
-        "Agent",
-        "产品"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "1ua1wu9",
-      "title": "CART: Closed-Loop Adaptive Red Teaming for Large Language Models",
-      "url": "https://arxiv.org/abs/2609.27336",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.27336v1 Announce Type: new Abstract: Automated red teaming often replays a fixed set of prompts, which measures known risks but cannot learn from failures found during testing. We present CART (Closed-Loop Adaptive Red Teaming), a framework that use",
-      "tags": [
-        "模型",
-        "Agent",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "1ua1wv7",
-      "title": "MolDesignBench: Evaluating LLM-based Agent for Scenario-grounded Molecular Design",
-      "url": "https://arxiv.org/abs/2609.27349",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.27349v1 Announce Type: new Abstract: Real-world molecular design remains challenging for large language model (LLM)-based agents. It requires them to interpret design contexts, satisfy multiple constraints, identify infeasible specifications, and re",
-      "tags": [
-        "模型",
-        "Agent",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "1ua1xj9",
-      "title": "Emergi-PersonaOS: A Persona Agent Operating System for Situational Adaptation and Controllable Evolution",
-      "url": "https://arxiv.org/abs/2609.27417",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.27417v1 Announce Type: new Abstract: Symbiosis between humans and digital beings offers a vision for the future of human--machine interaction. In enduring human--machine relationships, personality provides a foundation for continuity of identity, in",
-      "tags": [
-        "Agent",
-        "研究",
-        "多模态"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "1ua1xpy",
-      "title": "WhatWorkedBench: Benchmarking Experimental Understanding in AI Agents",
-      "url": "https://arxiv.org/abs/2609.27490",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "summary": "arXiv:2609.27490v1 Announce Type: new Abstract: AI research agents need reliable knowledge of how their experiments change outcomes. We introduce WhatWorkedBench to measure experimental understanding, the accuracy of predictions about component changes after b",
-      "tags": [
-        "Agent",
-        "研究"
       ],
       "category": "研究论文"
     }
@@ -543,7 +539,7 @@
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
       "ok": true,
-      "count": 1229
+      "count": 1230
     },
     {
       "name": "Google AI",
@@ -555,19 +551,19 @@
       "name": "arXiv cs.AI",
       "url": "https://export.arxiv.org/rss/cs.AI",
       "ok": true,
-      "count": 295
+      "count": 357
     },
     {
       "name": "arXiv cs.LG",
       "url": "https://export.arxiv.org/rss/cs.LG",
       "ok": true,
-      "count": 310
+      "count": 331
     },
     {
       "name": "arXiv cs.CL",
       "url": "https://export.arxiv.org/rss/cs.CL",
       "ok": true,
-      "count": 163
+      "count": 191
     }
   ],
   "warnings": []
