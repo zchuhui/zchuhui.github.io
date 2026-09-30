@@ -1,42 +1,33 @@
 {
-  "generatedAt": "2026-09-29T02:35:08.619Z",
+  "generatedAt": "2026-09-30T02:08:37.538Z",
   "items": [
     {
-      "id": "bqi9a0",
-      "title": "How we will do better for Australia",
-      "url": "https://openai.com/index/how-we-will-do-better-for-australia",
+      "id": "1xg6rlm",
+      "title": "Introducing GPT-6.1 Sol",
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol",
       "source": "OpenAI",
       "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-28T19:00:00.000Z",
-      "summary": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences.",
+      "publishedAt": "2026-09-29T10:00:00.000Z",
+      "summary": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.",
       "tags": [
-        "AI"
+        "模型",
+        "Agent",
+        "产品"
       ],
       "category": "公司动态"
     },
     {
-      "id": "17bvam5",
-      "title": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize/",
-      "source": "Google AI",
-      "sourceUrl": "https://blog.google/innovation-and-ai/technology/ai/rss/",
-      "publishedAt": "2026-09-28T19:00:00.000Z",
-      "summary": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
-      "tags": [
-        "多模态"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "bgbt56",
-      "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
-      "url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
+      "id": "txf9l6",
+      "title": "DevDay 2026 Recap",
+      "url": "https://openai.com/index/devday-2026-recap",
       "source": "OpenAI",
       "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-09-28T07:00:00.000Z",
-      "summary": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support.",
+      "publishedAt": "2026-09-29T10:00:00.000Z",
+      "summary": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.",
       "tags": [
-        "AI"
+        "模型",
+        "产品",
+        "安全"
       ],
       "category": "公司动态"
     },
@@ -46,7 +37,7 @@
       "url": "https://arxiv.org/abs/2609.30291",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30291v1 Announce Type: new Abstract: The purpose of this article is to highlight the central role of autonomous systems as the ultimate stage in the development of AI, to explain the underlying technical challenges that require a combination of conn",
       "tags": [
         "Agent",
@@ -61,7 +52,7 @@
       "url": "https://arxiv.org/abs/2609.30325",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30325v1 Announce Type: new Abstract: Agents are increasingly deployed with real autonomy in web application and network penetration testing, where a single out-of-scope action can breach a client's engagement boundary. Existing offensive-security be",
       "tags": [
         "模型",
@@ -76,7 +67,7 @@
       "url": "https://arxiv.org/abs/2609.30328",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30328v1 Announce Type: new Abstract: When one language model judges whether another's code is correct, it does not report the absence of evidence. It returns a confident verdict with reasoning attached, indistinguishable from a verdict it had ground",
       "tags": [
         "模型",
@@ -91,7 +82,7 @@
       "url": "https://arxiv.org/abs/2609.30341",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30341v1 Announce Type: new Abstract: Data Spaces enable sovereign and governed data sharing across organizational boundaries, but their integration with AI agents remains challenging due to mismatches between probabilistic language model interaction",
       "tags": [
         "模型",
@@ -106,7 +97,7 @@
       "url": "https://arxiv.org/abs/2609.30383",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30383v1 Announce Type: new Abstract: A skill is a modular package of natural-language instructions, executable scripts, and reference resources that an agent can load at runtime to extend its capabilities for a specific task. Skill-based agent syste",
       "tags": [
         "模型",
@@ -121,7 +112,7 @@
       "url": "https://arxiv.org/abs/2609.30397",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30397v1 Announce Type: new Abstract: Evaluating explainable Artificial Intelligence (XAI) methods is a challenging task due to the lack of reliable evaluation procedures and, in particular, the absence of ground truth explanations. In the literature",
       "tags": [
         "模型",
@@ -136,7 +127,7 @@
       "url": "https://arxiv.org/abs/2609.30446",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30446v1 Announce Type: new Abstract: This paper presents a novel approach to infer protein topology using the state-of-the-art graph neural network (GNN), SchNet. The model is trained on the same dataset used to develop the recent DeepTMHMM model wi",
       "tags": [
         "模型",
@@ -151,7 +142,7 @@
       "url": "https://arxiv.org/abs/2609.30456",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30456v1 Announce Type: new Abstract: Reward maximization alignment methods for discrete diffusion models have primarily focused on steering the reverse process, either by influencing token logits or by selecting favorable sequences at intermediate s",
       "tags": [
         "模型",
@@ -166,7 +157,7 @@
       "url": "https://arxiv.org/abs/2609.30469",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30469v1 Announce Type: new Abstract: Pretrained ASR systems perform poorly on noisy Broadcast Police Communication (BPC), hindering efforts to understand police decision-making. Pseudo-labeling offers an unsupervised path to improve ASR without expe",
       "tags": [
         "模型",
@@ -181,7 +172,7 @@
       "url": "https://arxiv.org/abs/2609.30484",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30484v1 Announce Type: new Abstract: While large language models (LLMs) have achieved remarkable linguistic capabilities, a profound question lingers at their core: do these models truly comprehend context or simply excel at pattern matching on an u",
       "tags": [
         "模型",
@@ -195,7 +186,7 @@
       "url": "https://arxiv.org/abs/2609.30489",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30489v1 Announce Type: new Abstract: Large Language Models (LLMs) have demonstrated historic breakthroughs in general reasoning with early successes in biomedical science. However, existing LLM benchmarking emphasizes factual recall, offering limite",
       "tags": [
         "模型",
@@ -210,7 +201,7 @@
       "url": "https://arxiv.org/abs/2609.30550",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30550v1 Announce Type: new Abstract: Benchy is a semantic language and execution engine for benchmarking AI programs. A benchmark is completely specified by a program, a scoring function, and a dataset, B=(P,S,D), and is separate from the AI-system ",
       "tags": [
         "模型",
@@ -225,7 +216,7 @@
       "url": "https://arxiv.org/abs/2609.30553",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30553v1 Announce Type: new Abstract: Expensive evolutionary search does not always need an exact fitness estimate for every candidate. It often needs a reliable answer to a simpler question: which candidate is better? We address this need through Te",
       "tags": [
         "产品",
@@ -239,7 +230,7 @@
       "url": "https://arxiv.org/abs/2609.30563",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30563v1 Announce Type: new Abstract: Platform policies are increasingly tested on artificial users, making agent fidelity important. Yet convincing fake profiles could also manipulate perceived public opinion before elections. Validation has concent",
       "tags": [
         "模型",
@@ -254,7 +245,7 @@
       "url": "https://arxiv.org/abs/2609.30569",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30569v1 Announce Type: new Abstract: CryoEM map interpretation requires features that are spatially localized, consistent across samples, and informative across spatial scales. Most deep learning methods for map annotation extract features from fixe",
       "tags": [
         "模型",
@@ -268,7 +259,7 @@
       "url": "https://arxiv.org/abs/2609.30571",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30571v1 Announce Type: new Abstract: Language models are often evaluated on curated benchmarks that underrepresent the complexity of enterprise deployments. We introduce HARDEN, a constrained evolutionary search method to adapt the input of existing",
       "tags": [
         "模型",
@@ -282,7 +273,7 @@
       "url": "https://arxiv.org/abs/2609.30576",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30576v1 Announce Type: new Abstract: Large-scale recommenders increasingly adopt the sequential generative recipe behind large language models, bringing the Transformer into recommendation along with design choices made for text, including Rotary Po",
       "tags": [
         "模型",
@@ -297,7 +288,7 @@
       "url": "https://arxiv.org/abs/2609.30625",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30625v1 Announce Type: new Abstract: Audio large language models allow users to interact with the model through speech. When an input recording is too degraded, the model may misinterpret the user's query and respond based on an incorrect transcript",
       "tags": [
         "模型",
@@ -312,7 +303,7 @@
       "url": "https://arxiv.org/abs/2609.30662",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30662v1 Announce Type: new Abstract: Large language models (LLMs) can plan, use tools, write code, and execute long-horizon workflows, yet strong local competence does not guarantee project-level executive control. Agents may continue acting after t",
       "tags": [
         "模型",
@@ -327,7 +318,7 @@
       "url": "https://arxiv.org/abs/2609.30705",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30705v1 Announce Type: new Abstract: While inference-time reasoning in large language models (LLMs) promises better decision making, its higher computational cost may not yield better economic outcomes. Yet reasoning controls are rarely evaluated as",
       "tags": [
         "模型",
@@ -341,7 +332,7 @@
       "url": "https://arxiv.org/abs/2609.30706",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30706v1 Announce Type: new Abstract: \"System One\" decision models such as TypeSafe's Jev and its open counterpart Laya answer typed questions about a text in a single forward pass with calibrated probabilities, but they cannot ask for missing inform",
       "tags": [
         "模型",
@@ -356,7 +347,7 @@
       "url": "https://arxiv.org/abs/2609.30714",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30714v1 Announce Type: new Abstract: Agentic AI systems are increasingly being explored in medical imaging to improve throughput and reduce clinician workload; however, safe deployment remains challenging because autonomous errors may propagate into",
       "tags": [
         "模型",
@@ -371,8 +362,8 @@
       "url": "https://arxiv.org/abs/2609.30725",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
-      "summary": "arXiv:2609.30725v1 Announce Type: new Abstract: Although effective, coding agents often incur substantial monetary costs. Their recurring cost-inefficient behaviors remain underexplored. We conduct the first study of behavioral cost inefficiencies in coding ag",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
+      "summary": "arXiv:2609.30725v2 Announce Type: new Abstract: Although effective, coding agents often incur substantial monetary costs. Their recurring cost-inefficient behaviors remain underexplored. We conduct the first study of behavioral cost inefficiencies in coding ag",
       "tags": [
         "模型",
         "Agent",
@@ -386,7 +377,7 @@
       "url": "https://arxiv.org/abs/2609.30734",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30734v1 Announce Type: new Abstract: Multi-agent LLM workflows use planning, execution, verification, and summarization to improve task performance, yet the value of each component depends on the state already produced. Executing every component can",
       "tags": [
         "模型",
@@ -401,7 +392,7 @@
       "url": "https://arxiv.org/abs/2609.30743",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30743v1 Announce Type: new Abstract: A key challenge in machine consciousness research is translating theoretical models into computational-level implementations. In this paper, we address this challenge by proposing a five-layer implementation arch",
       "tags": [
         "模型",
@@ -415,7 +406,7 @@
       "url": "https://arxiv.org/abs/2609.30749",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30749v1 Announce Type: new Abstract: Data Science Code Translation (DSCT) is the process of converting code between data science libraries while preserving functional equivalence and enabling interoperability across data science ecosystems. While La",
       "tags": [
         "模型",
@@ -429,7 +420,7 @@
       "url": "https://arxiv.org/abs/2609.30751",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30751v1 Announce Type: new Abstract: Pairwise language-model judges can gather evidence through direct comparison, reasoning, or reference-based verification, but no single protocol is best across benchmarks and judge backbones. We introduce Backbon",
       "tags": [
         "模型",
@@ -444,7 +435,7 @@
       "url": "https://arxiv.org/abs/2609.30756",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30756v1 Announce Type: new Abstract: Generative image communication transmits compact semantic tokens under a limited packet budget, where token selection directly affects the final reconstruction quality after the complete packet is decoded. Howeve",
       "tags": [
         "模型",
@@ -459,7 +450,7 @@
       "url": "https://arxiv.org/abs/2609.30763",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30763v1 Announce Type: new Abstract: Biomedical language models (LMs) encode textual semantics but do not explicitly preserve medical code hierarchies. We present Hyperbolic Clinical Ontology Embeddings (HCOE) for hierarchy-aware clinical concept re",
       "tags": [
         "模型",
@@ -473,7 +464,7 @@
       "url": "https://arxiv.org/abs/2609.30765",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30765v1 Announce Type: new Abstract: Insurance reserve estimation is a fundamental actuarial task supporting premium pricing, solvency assessment, financial reporting, capital planning, and risk management. Classical reserve methods based on Thiele'",
       "tags": [
         "模型",
@@ -488,7 +479,7 @@
       "url": "https://arxiv.org/abs/2609.30768",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30768v1 Announce Type: new Abstract: Thinking in reasoning language models (RLMs) has been subject to debate on whether it resolves or amplifies bias. Prior works have shown competing conclusions in both directions. Using a within-model thinking-vs.",
       "tags": [
         "模型",
@@ -502,7 +493,7 @@
       "url": "https://arxiv.org/abs/2609.30796",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30796v1 Announce Type: new Abstract: Diagnostic consultation is an online sequential decision-making process in which clinicians gather evidence through patient interaction until a diagnosis is sufficiently supported. Automating this process require",
       "tags": [
         "模型",
@@ -517,8 +508,23 @@
       "url": "https://arxiv.org/abs/2609.30797",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
       "summary": "arXiv:2609.30797v1 Announce Type: new Abstract: Text-based memory and context compression support reuse of past interactions. Resizing continuous memory changes the input to a frozen LLM, coupling capacity allocation with readout. We propose Hard-Origin Adapti",
+      "tags": [
+        "模型",
+        "Agent",
+        "产品"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1uahbmx",
+      "title": "Evaluating Real-Time Voice Agents: From Component Quality to Grounded Outcomes",
+      "url": "https://arxiv.org/abs/2609.30798",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-09-29T04:00:00.000Z",
+      "summary": "arXiv:2609.30798v1 Announce Type: new Abstract: Real-time voice agents have moved from research prototypes to production deployments, yet the literature describing them is fragmented across three communities that rarely cite one another: speech foundation mode",
       "tags": [
         "模型",
         "Agent",
@@ -532,7 +538,7 @@
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
       "ok": true,
-      "count": 1234
+      "count": 1238
     },
     {
       "name": "Google AI",
@@ -550,13 +556,13 @@
       "name": "arXiv cs.LG",
       "url": "https://export.arxiv.org/rss/cs.LG",
       "ok": true,
-      "count": 0
+      "count": 332
     },
     {
       "name": "arXiv cs.CL",
       "url": "https://export.arxiv.org/rss/cs.CL",
       "ok": true,
-      "count": 132
+      "count": 0
     }
   ],
   "warnings": []
