@@ -1,13 +1,40 @@
 {
-  "generatedAt": "2026-10-13T03:34:54.984Z",
+  "generatedAt": "2026-10-14T01:54:54.133Z",
   "items": [
+    {
+      "id": "1npc405",
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+      "source": "Google AI",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/ai/rss/",
+      "publishedAt": "2026-10-13T16:00:00.000Z",
+      "summary": "We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model.",
+      "tags": [
+        "模型"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "19ujxkc",
+      "title": "Higgsfield takes AI video from 1 minute to over 10",
+      "url": "https://openai.com/index/higgsfield-longer-videos-voice",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-13T12:00:00.000Z",
+      "summary": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live.",
+      "tags": [
+        "模型",
+        "多模态"
+      ],
+      "category": "公司动态"
+    },
     {
       "id": "y0kx83",
       "title": "Faithfulness Without Anchors: A Position Paper on the Structural Misalignments of Explainable AI Faithfulness Metrics for Feature Importance",
       "url": "https://arxiv.org/abs/2610.12493",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12493v1 Announce Type: new Abstract: Explainable Artificial Intelligence (XAI) tools have often been presented as methods to increase trust in machine learning models by making aspects of their algorithms more human-understandable. However, evidence",
       "tags": [
         "模型",
@@ -22,7 +49,7 @@
       "url": "https://arxiv.org/abs/2610.12536",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12536v1 Announce Type: new Abstract: EliteTable is a self-improving program-search algorithm guided by large language models (LLMs) that uses a fixed-capacity table of high-scoring solutions to guide new proposals, edits of existing solutions, and r",
       "tags": [
         "模型",
@@ -36,7 +63,7 @@
       "url": "https://arxiv.org/abs/2610.12542",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12542v1 Announce Type: new Abstract: Monte Carlo Tree Search (MCTS) is often proposed for scheduling directed-acyclic-graph (DAG) workflows, yet most studies never run the comparison that could refute it - giving a much simpler method the same searc",
       "tags": [
         "产品",
@@ -50,7 +77,7 @@
       "url": "https://arxiv.org/abs/2610.12593",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12593v1 Announce Type: new Abstract: The continued improvement of large language models increasingly depends on synthetic experience, yet effective data synthesis for interactive agents requires not only executable and verifiable trajectories, but a",
       "tags": [
         "模型",
@@ -65,7 +92,7 @@
       "url": "https://arxiv.org/abs/2610.12596",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12596v1 Announce Type: new Abstract: Agentic large language models now tackle complex tasks, yet strategic reasoning over long horizons is under-studied: most agentic benchmarks are short and episodic, and performance on long tasks is hard to dissec",
       "tags": [
         "模型",
@@ -80,7 +107,7 @@
       "url": "https://arxiv.org/abs/2610.12598",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12598v1 Announce Type: new Abstract: Reinforcement learning with verifiable rewards (RLVR) provides reliable supervision for software engineering agents through executable tests, but binary rewards fail to distinguish trajectories with substantially",
       "tags": [
         "模型",
@@ -95,7 +122,7 @@
       "url": "https://arxiv.org/abs/2610.12655",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12655v1 Announce Type: new Abstract: LLM agents can execute increasingly complex tasks, but effective assistance also requires aligning their actions with goals and constraints that users may leave unstated. We study this problem as interactive inte",
       "tags": [
         "Agent",
@@ -110,7 +137,7 @@
       "url": "https://arxiv.org/abs/2610.12659",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12659v1 Announce Type: new Abstract: Data-centric scaling of RLVR has focused on collecting or generating verifiable training problems. However, corpus size alone does not determine whether the dataset provides a useful learning signal for a target ",
       "tags": [
         "模型",
@@ -125,7 +152,7 @@
       "url": "https://arxiv.org/abs/2610.12762",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12762v1 Announce Type: new Abstract: Hardware datasheets contain engineering specifications essential for component selection, system integration, and hardware compatibility verification. However, manual inspection is tedious and error-prone because",
       "tags": [
         "模型",
@@ -140,7 +167,7 @@
       "url": "https://arxiv.org/abs/2610.12781",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12781v1 Announce Type: new Abstract: Aligning two independently pretrained unimodal encoders typically demands millions of paired examples. In this paper, we study the regime where only $N \\sim 100$--$500$ pairs are available, while unpaired data on",
       "tags": [
         "产品",
@@ -155,7 +182,7 @@
       "url": "https://arxiv.org/abs/2610.12789",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12789v1 Announce Type: new Abstract: Self-evolving LLM agents typically improve how they act through accumulated experience, reflection, or skills. Yet even procedurally capable agents can fail when their beliefs about environment dynamics are incom",
       "tags": [
         "模型",
@@ -170,7 +197,7 @@
       "url": "https://arxiv.org/abs/2610.12813",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12813v1 Announce Type: new Abstract: LLM agents increasingly operate over sensitive resources, such as private documents and mutable system states, which can create serious safety and security risks. Runtime guardrails should therefore make inspecta",
       "tags": [
         "Agent",
@@ -185,7 +212,7 @@
       "url": "https://arxiv.org/abs/2610.12822",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12822v1 Announce Type: new Abstract: Multi-agent systems are increasingly used to solve coding tasks by coordinating agents that share code and plans. These agents are often optimized with reinforcement learning (RL) using automated evaluators, but ",
       "tags": [
         "模型",
@@ -200,7 +227,7 @@
       "url": "https://arxiv.org/abs/2610.12842",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12842v1 Announce Type: new Abstract: Neural networks routinely develop representations in which individual neurons contribute to multiple distinct functions, leading to the widespread view that such networks lack modular organization. We challenge t",
       "tags": [
         "模型",
@@ -215,7 +242,7 @@
       "url": "https://arxiv.org/abs/2610.12845",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12845v1 Announce Type: new Abstract: Despite extensive research, computational creativity still lacks a conceptually grounded, practically relevant, and empirically applicable formal definition across contexts such as art, scientific research, and g",
       "tags": [
         "产品",
@@ -229,7 +256,7 @@
       "url": "https://arxiv.org/abs/2610.12855",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12855v1 Announce Type: new Abstract: On-Policy Self-distillation is a self-improvement paradigm that enables large language models (LLMs) to improve their capabilities by leveraging the same model as both teacher and student under different conditio",
       "tags": [
         "模型",
@@ -244,7 +271,7 @@
       "url": "https://arxiv.org/abs/2610.12872",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12872v1 Announce Type: new Abstract: Large language models (LLMs) demonstrate strong individual task performance, yet still struggle to collaborate with users over extended, multi-turn interactions, for example by attempting solutions before underst",
       "tags": [
         "模型",
@@ -259,7 +286,7 @@
       "url": "https://arxiv.org/abs/2610.12879",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12879v1 Announce Type: new Abstract: Diffusion language models generate tokens in parallel, but still require multiple sampling steps to produce high-quality text. In this paper, we investigate whether a model can learn to generate an entire sequenc",
       "tags": [
         "模型",
@@ -274,7 +301,7 @@
       "url": "https://arxiv.org/abs/2610.12881",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12881v1 Announce Type: new Abstract: Understanding and manipulating spatial relations is fundamental to AI systems that reason about physical environments and construct grounded world models. However, existing evaluations of multimodal large languag",
       "tags": [
         "模型",
@@ -289,7 +316,7 @@
       "url": "https://arxiv.org/abs/2610.12914",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12914v1 Announce Type: new Abstract: Vision-language-action (VLA) models have shown strong promise in robotic manipulation, yet their post-training still predominantly relies on trajectory-level supervised imitation over robot demonstrations. While ",
       "tags": [
         "模型",
@@ -304,7 +331,7 @@
       "url": "https://arxiv.org/abs/2610.12916",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12916v1 Announce Type: new Abstract: Existing governance approaches in decentralized financial networks rely on manual review processes conducted by human committees, which introduces subjective bias, creates a scalability bottleneck under high netw",
       "tags": [
         "模型",
@@ -319,7 +346,7 @@
       "url": "https://arxiv.org/abs/2610.12917",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12917v1 Announce Type: new Abstract: AI shopping assistants increasingly influence which products consumers consider. We study retail assortment planning under AI mediation, where a retailer chooses a catalog, an AI intermediary forms a customer-fac",
       "tags": [
         "模型",
@@ -334,7 +361,7 @@
       "url": "https://arxiv.org/abs/2610.12921",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12921v1 Announce Type: new Abstract: Brain-computer interfaces decode neural activity, yet class-label supervision (CLS) leaves relationships among classes implicit. We propose Language as Supervision (LaS), which aligns neural features with natural",
       "tags": [
         "模型",
@@ -349,7 +376,7 @@
       "url": "https://arxiv.org/abs/2610.12927",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12927v1 Announce Type: new Abstract: Large language models (LLMs) excel across diverse tasks, benefiting from knowledge priors, in-context reasoning, and test-time computation. Despite these strengths, single-model reasoning remains vulnerable to er",
       "tags": [
         "模型",
@@ -364,7 +391,7 @@
       "url": "https://arxiv.org/abs/2610.12933",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12933v1 Announce Type: new Abstract: Large language models have achieved remarkable advances in complex reasoning. However, scaling reasoning post-training with ever-larger corpora can substantially increase training cost without proportional perfor",
       "tags": [
         "模型",
@@ -379,7 +406,7 @@
       "url": "https://arxiv.org/abs/2610.12954",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12954v1 Announce Type: new Abstract: This paper introduces MathVis, a benchmark designed to evaluate LLMs' ability to visualize frontier mathematical problems and perform diagram-assisted reasoning. The benchmark consists of 512 tasks, each comprisi",
       "tags": [
         "模型",
@@ -393,7 +420,7 @@
       "url": "https://arxiv.org/abs/2610.12975",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12975v1 Announce Type: new Abstract: We present SmartSalesBench, the first multi-turn conversational benchmark explicitly designed to evaluate large language model (LLM) sales agents against psychologically grounded, resistant buyer personas. Existi",
       "tags": [
         "模型",
@@ -408,7 +435,7 @@
       "url": "https://arxiv.org/abs/2610.12977",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12977v1 Announce Type: new Abstract: Generative recommendation (GR) of social media platforms commonly retrieves items by autoregressively decoding discrete Semantic IDs (SIDs) with finite-width beam search. This work examines how this output interf",
       "tags": [
         "模型",
@@ -423,7 +450,7 @@
       "url": "https://arxiv.org/abs/2610.12984",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12984v1 Announce Type: new Abstract: Computer-use agents can perform increasingly complex GUI tasks, yet unfamiliar software and workflows requiring human domain knowledge remain challenging. Human demonstrations convey procedural knowledge through ",
       "tags": [
         "模型",
@@ -438,7 +465,7 @@
       "url": "https://arxiv.org/abs/2610.12997",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.12997v1 Announce Type: new Abstract: Prior-art retrieval systems are structurally organized around classification codes, making cross-code discovery difficult. This paper asks if an unsupervised representation trained on patent text can recover rele",
       "tags": [
         "模型",
@@ -453,7 +480,7 @@
       "url": "https://arxiv.org/abs/2610.13000",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.13000v1 Announce Type: new Abstract: Language-model agents are used for specialized work such as financial research, healthcare and law. Such agents are often capable enough for a task but still miss its details. In finance, for example, these detai",
       "tags": [
         "模型",
@@ -468,7 +495,7 @@
       "url": "https://arxiv.org/abs/2610.13002",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.13002v1 Announce Type: new Abstract: Empowerment measures the capacity of an agent to actively control its environment. In this work, we explain the connection between skill learning and empowerment. While skill learning is not empowerment, we intro",
       "tags": [
         "Agent",
@@ -483,7 +510,7 @@
       "url": "https://arxiv.org/abs/2610.13008",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.13008v1 Announce Type: new Abstract: In repeated human-AI interaction, a single observation can be quoted, summarized, and returned to a model as multiple reports, making repetition look like independent corroboration. We study whether language mode",
       "tags": [
         "模型",
@@ -498,38 +525,8 @@
       "url": "https://arxiv.org/abs/2610.13021",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
       "summary": "arXiv:2610.13021v1 Announce Type: new Abstract: Continual learning requires models to accumulate past experience and transfer it to new tasks. Despite substantial research on continual learning, existing work remains largely confined to non-embodied settings, ",
-      "tags": [
-        "模型",
-        "Agent",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y0lh5j",
-      "title": "Travel Back To Move Forward: Retrospective Exploration and Evolving for Long Horizon Agents",
-      "url": "https://arxiv.org/abs/2610.13058",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
-      "summary": "arXiv:2610.13058v1 Announce Type: new Abstract: Large language model agents increasingly operate in long-horizon environments where early mistakes can trigger cascading failures and trap agents in dead-end trajectories. Agents must therefore be able to proacti",
-      "tags": [
-        "模型",
-        "Agent",
-        "产品"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y0lh76",
-      "title": "LongHarness: Advancing Agentic Reasoning over 100M-Token Corpora via Stateful Evidence Management",
-      "url": "https://arxiv.org/abs/2610.13075",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-12T04:00:00.000Z",
-      "summary": "arXiv:2610.13075v1 Announce Type: new Abstract: Corpus-level long-context reasoning requires agents to acquire and integrate evidence across document collections that exceed their context windows. Existing agent harnesses enable incremental access to these cor",
       "tags": [
         "模型",
         "Agent",
@@ -543,7 +540,7 @@
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
       "ok": true,
-      "count": 1287
+      "count": 1288
     },
     {
       "name": "Google AI",
@@ -561,7 +558,7 @@
       "name": "arXiv cs.LG",
       "url": "https://export.arxiv.org/rss/cs.LG",
       "ok": true,
-      "count": 413
+      "count": 0
     },
     {
       "name": "arXiv cs.CL",
