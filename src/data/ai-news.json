@@ -1,6 +1,47 @@
 {
-  "generatedAt": "2026-10-20T01:51:04.428Z",
+  "generatedAt": "2026-10-21T01:36:38.790Z",
   "items": [
+    {
+      "id": "1eexuxp",
+      "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
+      "url": "https://openai.com/index/ted-taylor-restaurant",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-20T10:00:00.000Z",
+      "summary": "An independent Schlotzsky’s and Cinnabon franchisee cut menu repricing time by 95% and built a workflow that could free up $100K in cash flow.",
+      "tags": [
+        "模型",
+        "产品"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "18gumpj",
+      "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
+      "url": "https://openai.com/index/terminal-x",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-20T07:00:00.000Z",
+      "summary": "Terminal X’s Eval Agent grades outputs against a 54-criterion rubric, catching 25% more deviances from a fund’s mandate with GPT-6.1 Sol.",
+      "tags": [
+        "模型",
+        "Agent"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "sq8822",
+      "title": "OpenAI acquires Orchestra Bio",
+      "url": "https://openai.com/index/openai-to-acquire-orchestra-bio",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-20T00:00:00.000Z",
+      "summary": "OpenAI is acquiring Orchestra Bio to bring AI-powered operations to life sciences R&D, helping biopharma teams accelerate drug development and advance new treatments.",
+      "tags": [
+        "AI"
+      ],
+      "category": "公司动态"
+    },
     {
       "id": "1ah95qp",
       "title": "Advancing coding in low‑resource programming languages",
@@ -16,525 +57,442 @@
       "category": "公司动态"
     },
     {
-      "id": "y14p11",
-      "title": "Structured Authority Injection: Persistent Human Control for LLM Agents via Typed MCP Overrides",
-      "url": "https://arxiv.org/abs/2610.22373",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22373v1 Announce Type: new Abstract: LLM-based agents are increasingly used as autonomous orchestrators in distributed and multi-agent systems, yet a control gap remains: no protocol-level mechanism allows human operators to inject binding directive",
+      "id": "1flhk0f",
+      "title": "How Itaú is building generative AI for its entire customer base",
+      "url": "https://openai.com/index/itau-generative-ai",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-16T19:00:00.000Z",
+      "summary": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors.",
+      "tags": [
+        "产品"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "1d0l7u7",
+      "title": "Benefit Street Partners answers questions faster with Codex",
+      "url": "https://openai.com/index/benefit-street-partners",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "summary": "Anant Kumar builds tools to compare loan valuations and analyze credit agreements, using Codex for code review and faster follow-ups.",
+      "tags": [
+        "AI"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "yzhkz",
+      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+      "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "summary": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation.",
       "tags": [
         "模型",
         "Agent",
         "产品"
       ],
-      "category": "研究论文"
+      "category": "公司动态"
     },
     {
-      "id": "y14plm",
-      "title": "Rethinking User Encoders: Routing Diffusion States for Scenario-Adaptive User Representation",
-      "url": "https://arxiv.org/abs/2610.22400",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22400v1 Announce Type: new Abstract: Existing large language model (LLM)-based user encoders serialize heterogeneous behavioral logs and compress them into static representations through autoregressive (AR) prediction. However, their unidirectional ",
+      "id": "18rmuu5",
+      "title": "Bringing GPT-Rosalind to academic research labs",
+      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-15T19:00:00.000Z",
+      "summary": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research.",
       "tags": [
         "模型",
-        "研究",
-        "多模态"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y14plp",
-      "title": "From Events to Reasoning: Hierarchical Rule Composition over Explicit States",
-      "url": "https://arxiv.org/abs/2610.22403",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22403v1 Announce Type: new Abstract: What a reasoning system emits is a conclusion; what it owes is a justification. Producing one requires every operation to be admissible on the facts actually available, the dependencies of intermediate results to",
-      "tags": [
-        "模型",
-        "研究",
-        "多模态"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y14plu",
-      "title": "ECHOES: Seeing Beyond the Current Image via Recursive History Compression and Privileged On-Policy Distillation",
-      "url": "https://arxiv.org/abs/2610.22408",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22408v1 Announce Type: new Abstract: Long-horizon GUI agents rely on visual history to maintain task states, but retaining historical screenshots increases visual-token usage and inference costs, while textual summaries can discard critical state in",
-      "tags": [
-        "模型",
-        "Agent",
         "研究"
       ],
-      "category": "研究论文"
+      "category": "公司动态"
     },
     {
-      "id": "y14pnc",
-      "title": "Sensitivity Analysis of Decision Rules in an Agent-Based Agro-Ecological Model",
-      "url": "https://arxiv.org/abs/2610.22420",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22420v1 Announce Type: new Abstract: Agent-based models are well-suited for modelling agro-ecological systems for decision-making, yet turning their simulations into actionable insight requires identifying which decisions actually drive the behaviou",
+      "id": "1pmqeta",
+      "title": "Teaching students to think and learn through questions",
+      "url": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-15T13:00:00.000Z",
+      "summary": "Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning.",
+      "tags": [
+        "AI"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "19eaha4",
+      "title": "Sullivan & Cromwell brings legal expertise into agreement review",
+      "url": "https://openai.com/index/sullivan-cromwell",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-15T00:00:00.000Z",
+      "summary": "In collaboration with OpenAI, Sullivan & Cromwell developed Agreement Analyzer, an AI tool for identifying issues in a draft agreement.",
+      "tags": [
+        "AI"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "nm42vj",
+      "title": "Amp puts AI agents to work beyond code with OpenAI models",
+      "url": "https://openai.com/index/amp-beyond-coding",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-14T12:00:00.000Z",
+      "summary": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT.",
       "tags": [
         "模型",
         "Agent",
         "产品"
       ],
-      "category": "研究论文"
+      "category": "公司动态"
     },
     {
-      "id": "y14pni",
-      "title": "PRIME: Towards Verifiable Evidence-Grounded Reasoning in LLM Agents",
-      "url": "https://arxiv.org/abs/2610.22426",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22426v1 Announce Type: new Abstract: LLM agents are used to check records against an organization's requirements, for example whether a vulnerability report is ready for investigation. Requirements often allow several ways to be met, such as a sever",
+      "id": "ovl2uq",
+      "title": "SentinelOne cuts malware analysis from weeks to hours",
+      "url": "https://openai.com/index/sentinelone",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-14T12:00:00.000Z",
+      "summary": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats.",
+      "tags": [
+        "AI"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "191wyfm",
+      "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
+      "url": "https://openai.com/index/third-moment-research",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-14T07:00:00.000Z",
+      "summary": "With GPT-6 Astra and GPT-6.1 Sol, Codex, and Daybreak for cybersecurity, this AI lab builds agents that focus for days and improve with use.",
       "tags": [
         "模型",
         "Agent",
         "研究"
       ],
-      "category": "研究论文"
+      "category": "公司动态"
     },
     {
-      "id": "y14pp3",
-      "title": "From Natural Language Intent to Executable Control: Hierarchical Feedback-Guided LLM Planning for Multi-component Cyber-Physical Systems",
-      "url": "https://arxiv.org/abs/2610.22441",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22441v1 Announce Type: new Abstract: Large language models (LLMs) provide a convenient interface for translating natural language commands into task plans for cyber-physical systems (CPSs). However, two gaps hinder their use for real execution: gene",
+      "id": "xynm0u",
+      "title": "How Block is building AI-powered security with OpenAI technology",
+      "url": "https://openai.com/index/block-ai-powered-security",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-14T07:00:00.000Z",
+      "summary": "Block is building AI-powered security with OpenAI. Its security team investigates threats faster and proposes patches in minutes.",
       "tags": [
-        "模型",
-        "产品",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y14pp7",
-      "title": "Null Controls Are Necessary but Not Sufficient: Evaluating Acceptance Guards for Scientific Discovery and Interpretability",
-      "url": "https://arxiv.org/abs/2610.22445",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22445v1 Announce Type: new Abstract: Automated discovery systems propose scientific explanations and test which to accept. Does passing a test establish the intended claim? We develop four executable operations for changing physical descriptions: id",
-      "tags": [
-        "模型",
-        "产品",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y14pp8",
-      "title": "Learnable Splines for Unstructured Neural Operators",
-      "url": "https://arxiv.org/abs/2610.22446",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22446v1 Announce Type: new Abstract: Neural operators approximate solution operators of partial differential equations at a fraction of the cost of numerical solvers. Efficient grid-based architectures such as the Fourier neural operator (FNO) assum",
-      "tags": [
-        "模型",
-        "产品",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y14pqs",
-      "title": "Functional Welfare for AI Safety",
-      "url": "https://arxiv.org/abs/2610.22460",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22460v1 Announce Type: new Abstract: AI welfare is generally treated purely as an ethical issue rather than also as a safety issue. We argue this is a mistake. Whatever their moral status, models exhibit welfare-like states that causally influence t",
-      "tags": [
-        "模型",
-        "产品",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y14pqx",
-      "title": "Author-in-the-loop Agentic Reproducibility Auditing for a Machine Learning Conference",
-      "url": "https://arxiv.org/abs/2610.22465",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22465v1 Announce Type: new Abstract: Reproducibility checks during peer review require a shared understanding of what authors' code is expected to reproduce. We present an author-in-the-loop collaborative audit that makes author declarations explici",
-      "tags": [
-        "Agent",
-        "产品",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y14pqy",
-      "title": "Harness-Delta Attribution: Dissecting Gains From Harness Evolution",
-      "url": "https://arxiv.org/abs/2610.22466",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22466v1 Announce Type: new Abstract: Harness evolution automatically optimizes the prompts, skills, tools, and orchestration code around a fixed-weight model, offering a way to improve agentic systems without updating model weights. The agent harnes",
-      "tags": [
-        "模型",
-        "Agent",
-        "产品"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y14pr1",
-      "title": "Testing the Planning Claims of LLM-Based Agents against Formal Semantics",
-      "url": "https://arxiv.org/abs/2610.22469",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22469v1 Announce Type: new Abstract: LLM-based agents are increasingly credited with the competences of practical reasoning: planning, monitoring, and correcting their own actions. Their success is attributed to the prompting strategies and agent ar",
-      "tags": [
-        "模型",
-        "Agent",
-        "产品"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y14qf4",
-      "title": "Are Large Reasoning Models Good Everyday Reasoners? A Comparison with Non-Reasoning Models on Logical Reasoning Tasks",
-      "url": "https://arxiv.org/abs/2610.22538",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22538v1 Announce Type: new Abstract: Large reasoning models (LRMs) that leverage test-time computation achieve strong performance on mathematical and scientific benchmarks and are increasingly deployed in real-world applications. However, their abil",
-      "tags": [
-        "模型",
-        "产品",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y14qhi",
-      "title": "FRACTAL: A Self-Similar Multi-Agent Orchestration Architecture with Formal Communication, Convergence, and Depth Bounds",
-      "url": "https://arxiv.org/abs/2610.22561",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22561v1 Announce Type: new Abstract: We present FRACTAL, a self-similar multi-agent architecture for recursive goal decomposition, in which the same five-component organizational pattern -- Orchestrator, Ensemble, Knowledge Ledger, Decision Maker, M",
-      "tags": [
-        "模型",
-        "Agent",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y14qhp",
-      "title": "Repairing LLM-Generated Specifications with Deterministic Diagnosis",
-      "url": "https://arxiv.org/abs/2610.22568",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22568v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly used as formalizers: given a reasoning problem expressed in natural language, they produce a formal specification that a symbolic solver can then solve, with guarante",
-      "tags": [
-        "模型",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y14r33",
-      "title": "At the Limits of Computability: Steps Towards Autonomous AI Discovery on the Busy Beaver Frontier",
-      "url": "https://arxiv.org/abs/2610.22603",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22603v1 Announce Type: new Abstract: Recent breakthroughs in AI for mathematics---ranging from Olympiad medal performances to resolving long-standing open conjectures---have rapidly expanded what automated systems can achieve. Yet these successes pr",
-      "tags": [
-        "模型",
-        "Agent",
-        "产品"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y14r8e",
-      "title": "From Relevant Memories to Sufficient Evidence: Rethinking Memory Utilization in LLM Agents",
-      "url": "https://arxiv.org/abs/2610.22668",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22668v1 Announce Type: new Abstract: Long-term memory enables LLM agents to reuse past experiences, yet retrieving relevant memories does not necessarily provide sufficient evidence for answering a query. Essential information may remain fragmented ",
-      "tags": [
-        "模型",
-        "Agent",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y14r93",
-      "title": "Not All Graphs Are Maps: A Task-Agnostic Exploration Framework for Mobile GUI Navigation",
-      "url": "https://arxiv.org/abs/2610.22672",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22672v1 Announce Type: new Abstract: Modern mobile GUI agents can perceive visible screens and execute local actions, but they still lack persistent app-specific navigation knowledge: where functions live, which pages contain them, and which screens",
-      "tags": [
-        "Agent",
-        "产品",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y14r9y",
-      "title": "FlexUMM: Flexible Representation Learning for Unified Multimodal Models",
-      "url": "https://arxiv.org/abs/2610.22682",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22682v1 Announce Type: new Abstract: Unified multimodal models (UMMs) can integrate understanding and generation within a single backbone. However, it is commonly known that these two capabilities can cause conflicting representations, leading to a ",
-      "tags": [
-        "模型",
-        "研究",
-        "多模态"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y14raz",
-      "title": "Repair, Retry, and the Cost of Hindsight: Verifier Feedback in Formal Theorem Proving",
-      "url": "https://arxiv.org/abs/2610.22698",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22698v1 Announce Type: new Abstract: Verifier-guided self-repair conditions a model on feedback from failed attempts before it tries again, without weight updates. Yet two findings in prior work are in tension: verifier feedback can improve repair o",
-      "tags": [
-        "模型",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y14rtv",
-      "title": "Brain-Aligned Multimodal LLMs for Social and Emotional Understanding of Cartoon Movies",
-      "url": "https://arxiv.org/abs/2610.22706",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22706v1 Announce Type: new Abstract: Multimodal large language models (MLLMs) offer scalable annotations of social and affective content, but their temporal agreement with human judgments and neural predictive value require further evaluation. We co",
-      "tags": [
-        "模型",
-        "研究",
-        "多模态"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y14rtx",
-      "title": "GlobeBench: Evaluating Text-Based World Model Capabilities for Scalable Environment Simulations",
-      "url": "https://arxiv.org/abs/2610.22708",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22708v1 Announce Type: new Abstract: Text-based world models have recently shown potential to simulate complex RL environment state transitions for a diverse set of use cases. However, no standardized benchmark exists to compare, study and improve t",
-      "tags": [
-        "模型",
-        "Agent",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y14rvi",
-      "title": "LEMON: Equivariant Learning over Attention Maps for Zero-Shot Misbehavior Monitoring on New LLMs",
-      "url": "https://arxiv.org/abs/2610.22723",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22723v1 Announce Type: new Abstract: Large language models exhibit misbehaviors that hinder deployment in high-stakes settings. One approach to monitor such failures is to use an external LLM as a monitor, but this is prohibitively expensive. A well",
-      "tags": [
-        "模型",
-        "产品",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y14rwe",
-      "title": "Graph Serializations for Reasoning LLMs: A Study Across Knowledge Extraction and Structural Reasoning",
-      "url": "https://arxiv.org/abs/2610.22734",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22734v1 Announce Type: new Abstract: The way a knowledge graph is serialized as text for inclusion into LLM context can substantially affect downstream LLM performance, with prior work reporting tens of percentage points variations across formats. H",
-      "tags": [
-        "模型",
-        "产品",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y14rx5",
-      "title": "R$^2$Orch: Recursive Self-Improvement for Agent Orchestration via Self-Play within a Skill-Internalization Loop",
-      "url": "https://arxiv.org/abs/2610.22740",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22740v1 Announce Type: new Abstract: In recent years, agentic orchestration has been widely applied to solve complex human tasks. However, existing orchestration learning still faces key challenges, including hand-designed curricula, advantage colla",
-      "tags": [
-        "Agent",
-        "产品",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y14ryv",
-      "title": "Between Spoilers and Guesswork: Avoiding Over-Specification in Coding Benchmarks",
-      "url": "https://arxiv.org/abs/2610.22760",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22760v1 Announce Type: new Abstract: Benchmarks drive AI progress, but are hampered by task under-specification and over-specification. Task under-specification causes guesswork, where solutions have to make things up, or worse, resort to contaminat",
-      "tags": [
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y14rz3",
-      "title": "StoBasket: Joint Upsell and Cross-Sell Optimization for Contribution Margin",
-      "url": "https://arxiv.org/abs/2610.22768",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22768v1 Announce Type: new Abstract: Retail recommenders rank relevance, but retailers earn contribution margin: an upsell earns the margin difference over the item it replaces, whereas a cross-sell earns its full margin. We introduce joint stochast",
-      "tags": [
-        "模型",
-        "研究",
         "安全"
       ],
-      "category": "研究论文"
+      "category": "公司动态"
     },
     {
-      "id": "y14rzz",
-      "title": "When Can You Trust an Agent's Own Verifier? Stress-Testing Counterfactual Rationale Verification Under Search Pressure and Oracle Access",
-      "url": "https://arxiv.org/abs/2610.22779",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22779v1 Announce Type: new Abstract: Automated agent design increasingly trusts a single score to decide whether a change is an improvement -- but a score optimized aggressively enough ceases to measure what it was meant to. When an agent also expla",
+      "id": "u7m35p",
+      "title": "The EU’s next chapter in AI is agentic",
+      "url": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "summary": "New analysis shows how agentic AI adoption is growing across EU enterprises and small businesses—and where deeper use could unlock more value.",
+      "tags": [
+        "Agent"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "1npc405",
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+      "source": "Google AI",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/ai/rss/",
+      "publishedAt": "2026-10-13T16:00:00.000Z",
+      "summary": "We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model.",
+      "tags": [
+        "模型"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "19ujxkc",
+      "title": "Higgsfield takes AI video from 1 minute to over 10",
+      "url": "https://openai.com/index/higgsfield-longer-videos-voice",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-13T12:00:00.000Z",
+      "summary": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live.",
       "tags": [
         "模型",
-        "Agent",
-        "产品"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y14skj",
-      "title": "Compression Precedes, Content Decides: Emergent Misalignment in Reward Models",
-      "url": "https://arxiv.org/abs/2610.22805",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22805v1 Announce Type: new Abstract: Emergent Misalignment - the out of domain generalization of narrow harmful fine-tuning first shown by Betley et al. [2025] has been widely studied in language models but not in reward models that supervise them. ",
-      "tags": [
-        "模型",
-        "产品",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y14sm9",
-      "title": "World Action Critic (WAC) Model: Joint Foresight and Criticism for Policy Learning",
-      "url": "https://arxiv.org/abs/2610.22825",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22825v1 Announce Type: new Abstract: World models have shown considerable promise in sequential decision-making by anticipating the consequences of actions and providing predictive foresight for policy learning. However, learning to reason about cou",
-      "tags": [
-        "模型",
-        "产品",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y14spl",
-      "title": "Evo-B&B: Behavior-Aware LLM-Guided Joint Evolution of Branching and Node Selection Policies for MILP",
-      "url": "https://arxiv.org/abs/2610.22861",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22861v1 Announce Type: new Abstract: In branch-and-bound for Mixed-Integer Linear Programming (MILP), branching and node selection are two critical and tightly coupled decisions, yet most existing learning-based approaches focus on optimizing them s",
-      "tags": [
-        "产品",
-        "研究",
-        "安全"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y14spt",
-      "title": "MS-Eval: Benchmarking Sub-Agent Delegation and Orchestration in MCP-Intensive Working Scenarios",
-      "url": "https://arxiv.org/abs/2610.22869",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22869v1 Announce Type: new Abstract: LLM agents are increasingly integrated into real-world works, yet they must handle diverse domain-specific tools and complex multi-sub-task problems that sequential tool invocation resolves inefficiently and with",
-      "tags": [
-        "模型",
-        "Agent",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y14sqg",
-      "title": "ShadowFPT: Backdooring Federated Prompt Tuning via Shadow Triggers",
-      "url": "https://arxiv.org/abs/2610.22871",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22871v1 Announce Type: new Abstract: Federated Prompt Tuning (FPT) adapts large vision--language models by freezing the pretrained backbone and optimizing only lightweight prompt parameters across clients. Although this design improves communication",
-      "tags": [
-        "模型",
-        "研究",
         "多模态"
       ],
-      "category": "研究论文"
+      "category": "公司动态"
     },
     {
-      "id": "y14sqh",
-      "title": "Look Back, Correct Forward: Error Feedback Calibration for Time Series Forecasting",
-      "url": "https://arxiv.org/abs/2610.22872",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-10-19T04:00:00.000Z",
-      "summary": "arXiv:2610.22872v1 Announce Type: new Abstract: Time series forecasting models are increasingly deployed in continuously evolving environments. After a forecast is issued, future observations gradually arrive and reveal how the model has failed. Existing metho",
+      "id": "zgrnew",
+      "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+      "url": "https://openai.com/index/sophos",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-09T07:00:00.000Z",
+      "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
+      "tags": [
+        "AI"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "1ozd6ud",
+      "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+      "url": "https://openai.com/index/asana-browser-agent",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-09T07:00:00.000Z",
+      "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.",
+      "tags": [
+        "模型",
+        "Agent"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "xlyv0u",
+      "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+      "url": "https://openai.com/index/oracle",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-08T16:00:00.000Z",
+      "summary": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex.",
+      "tags": [
+        "模型",
+        "产品"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "15jdod1",
+      "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+      "url": "https://openai.com/index/pollo-ai",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-08T12:00:00.000Z",
+      "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+      "tags": [
+        "模型",
+        "多模态"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "13j72ul",
+      "title": "LegalOn halves Codex costs while maintaining development speed",
+      "url": "https://openai.com/index/legalon-halves-codex-costs",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-08T12:00:00.000Z",
+      "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
+      "tags": [
+        "AI"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "yyo4aj",
+      "title": "Disrupting AI-enabled “false front” operations",
+      "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-08T00:00:00.000Z",
+      "summary": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging.",
+      "tags": [
+        "AI"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "etmuz0",
+      "title": "Helping teens learn, plan, and shape the future of AI",
+      "url": "https://openai.com/index/teens-learn-and-plan",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-07T12:00:00.000Z",
+      "summary": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council.",
+      "tags": [
+        "模型",
+        "产品"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "177ra0y",
+      "title": "Introducing Playground: Create and play custom games",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
+      "source": "Google AI",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/ai/rss/",
+      "publishedAt": "2026-10-07T12:00:00.000Z",
+      "summary": "Playground is a new experimental gaming platform that lets you create, play, and share custom games.",
+      "tags": [
+        "产品"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "vxeekj",
+      "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
+      "url": "https://openai.com/index/radisson",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-07T07:00:00.000Z",
+      "summary": "Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips.",
+      "tags": [
+        "模型",
+        "产品"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "pyopeg",
+      "title": "GPT-6 and Intelligent UI for everyone",
+      "url": "https://openai.com/index/gpt-6-for-everyone",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-07T00:00:00.000Z",
+      "summary": "GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and use directly.",
+      "tags": [
+        "模型",
+        "产品"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "rkancl",
+      "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
+      "url": "https://openai.com/index/atlassian-partnership",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-06T16:00:00.000Z",
+      "summary": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work.",
+      "tags": [
+        "模型"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "16jhbiq",
+      "title": "How Jump Trading is scaling quant research with ChatGPT",
+      "url": "https://openai.com/index/jump-trading",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-06T12:00:00.000Z",
+      "summary": "Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review.",
       "tags": [
         "模型",
         "产品",
         "研究"
       ],
-      "category": "研究论文"
+      "category": "公司动态"
+    },
+    {
+      "id": "dyfxsa",
+      "title": "Sharing AI progress in mathematics",
+      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-06T12:00:00.000Z",
+      "summary": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub.",
+      "tags": [
+        "模型",
+        "研究"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "18xhbtt",
+      "title": "Advancing computer use with Ironclad",
+      "url": "https://openai.com/index/advancing-computer-use-with-ironclad",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-06T10:00:00.000Z",
+      "summary": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work.",
+      "tags": [
+        "Agent",
+        "研究"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "i5eb3o",
+      "title": "Our approach to EU text provenance rules",
+      "url": "https://openai.com/index/eu-text-provenance",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-05T15:00:00.000Z",
+      "summary": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers.",
+      "tags": [
+        "产品",
+        "研究"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "1gvwybo",
+      "title": "Building advertising for the way people use AI",
+      "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-05T10:00:00.000Z",
+      "summary": "OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers.",
+      "tags": [
+        "模型",
+        "产品"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "19p8fzo",
+      "title": "A model guide for the GPT-6 family",
+      "url": "https://openai.com/index/practical-guide-building-gpt-6",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-02T16:15:00.000Z",
+      "summary": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production.",
+      "tags": [
+        "模型",
+        "产品"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "1sydjxo",
+      "title": "The latest AI news we announced in September 2026",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+      "source": "Google AI",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/ai/rss/",
+      "publishedAt": "2026-10-02T15:00:00.000Z",
+      "summary": "Here are Google’s latest AI updates from September 2026",
+      "tags": [
+        "AI"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "icj9yg",
+      "title": "Chatham scales its capital markets expertise with OpenAI",
+      "url": "https://openai.com/index/chatham-financial",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-10-02T00:00:00.000Z",
+      "summary": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4.",
+      "tags": [
+        "模型",
+        "产品"
+      ],
+      "category": "公司动态"
     }
   ],
   "sources": [
@@ -542,7 +500,7 @@
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
       "ok": true,
-      "count": 1300
+      "count": 1303
     },
     {
       "name": "Google AI",
@@ -554,19 +512,19 @@
       "name": "arXiv cs.AI",
       "url": "https://export.arxiv.org/rss/cs.AI",
       "ok": true,
-      "count": 344
+      "count": 0
     },
     {
       "name": "arXiv cs.LG",
       "url": "https://export.arxiv.org/rss/cs.LG",
       "ok": true,
-      "count": 391
+      "count": 0
     },
     {
       "name": "arXiv cs.CL",
       "url": "https://export.arxiv.org/rss/cs.CL",
       "ok": true,
-      "count": 226
+      "count": 0
     }
   ],
   "warnings": []
