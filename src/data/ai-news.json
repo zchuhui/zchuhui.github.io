@@ -1,161 +1,55 @@
 {
-  "generatedAt": "2026-11-04T03:00:25.103Z",
+  "generatedAt": "2026-11-05T03:30:23.767Z",
   "items": [
     {
-      "id": "fa0sl5",
-      "title": "Accelerating engineering for the physical world",
-      "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+      "id": "1l7y8on",
+      "title": "OpenAI to acquire Pierre Computer Company, Inc.",
+      "url": "https://openai.com/index/openai-to-acquire-pierre",
       "source": "OpenAI",
       "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-11-03T12:00:00.000Z",
-      "summary": "Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world.",
+      "publishedAt": "2026-11-04T14:30:00.000Z",
+      "summary": "OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code.",
       "tags": [
-        "模型",
-        "产品"
+        "AI"
       ],
       "category": "公司动态"
     },
     {
-      "id": "1b8ybud",
-      "title": "How Cisco defends at machine speed with OpenAI",
-      "url": "https://openai.com/index/cisco-cyber",
+      "id": "58or2y",
+      "title": "A thousand fewer paths to root",
+      "url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
       "source": "OpenAI",
       "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-11-03T08:00:00.000Z",
-      "summary": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses.",
+      "publishedAt": "2026-11-04T08:00:00.000Z",
+      "summary": "OpenAI built an autonomous pipeline that found, validated, and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kernel.",
+      "tags": [
+        "AI"
+      ],
+      "category": "公司动态"
+    },
+    {
+      "id": "109z9u5",
+      "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
+      "url": "https://openai.com/index/daybreak-red-aws-govcloud",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-11-04T07:00:00.000Z",
+      "summary": "Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work.",
       "tags": [
         "模型",
+        "产品",
         "安全"
       ],
       "category": "公司动态"
     },
     {
-      "id": "15zazha",
-      "title": "Heimstaden is changing residential real estate management with AI",
-      "url": "https://openai.com/index/heimstaden",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-11-03T08:00:00.000Z",
-      "summary": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.",
-      "tags": [
-        "模型",
-        "产品"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "y27lqt",
-      "title": "Context as Infrastructure: Knowledge Compilation for Retrieval in Agentic Systems with Harnesses",
-      "url": "https://arxiv.org/abs/2610.41172",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41172v1 Announce Type: cross Abstract: Retrieval-augmented generation is becoming agentic. A search harness writes queries, reads results, reformulates, and decides when to stop. This largely solves accuracy: a harness with only BM25/grep and MiniMa",
-      "tags": [
-        "模型",
-        "Agent",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y27lsq",
-      "title": "Beyond CLIP: Calibrated (Few-Shot) Defect Detection With System One Decision Models",
-      "url": "https://arxiv.org/abs/2610.41199",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41199v1 Announce Type: cross Abstract: Cameras and vision sensors are widely used for product and process inspection in manufacturing environments. Traditionally, this process required thousands of images of both nominal and defective products to tr",
-      "tags": [
-        "模型",
-        "Agent",
-        "产品"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y27mca",
-      "title": "From Evaluation to Evolution: Benchmarking Image Editing and Evolving Image Models",
-      "url": "https://arxiv.org/abs/2610.41210",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41210v1 Announce Type: cross Abstract: Real-world image editing requires coordinating multiple visual transformations with content preservation and reference constraints, yet aggregate scores can readily obscure unmet local requirements. Effective e",
-      "tags": [
-        "模型",
-        "Agent",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y27me1",
-      "title": "Coarse3D: Controllable and Faithful Sparse Structure Generation for Image-to-3D",
-      "url": "https://arxiv.org/abs/2610.41231",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41231v1 Announce Type: cross Abstract: Coarse-to-fine 3D-native generation relies heavily on the first-stage sparse structure, which determines the global orientation and overall geometry for subsequent refinement. However, existing coarse generator",
-      "tags": [
-        "模型",
-        "研究",
-        "多模态"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y27mhi",
-      "title": "ANGLER: Verifier-Grounded Benchmarking with an Adaptive Attacker for Web Agents",
-      "url": "https://arxiv.org/abs/2610.41272",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41272v1 Announce Type: cross Abstract: Web agents are increasingly deployed to complete tasks autonomously on real websites, where adversarially injected content can induce them to perform unauthorized actions. Existing evaluations primarily use fix",
-      "tags": [
-        "Agent",
-        "产品",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y27mj7",
-      "title": "In-Model Context Compression with Agentic Soft Tokens for Long-Horizon LLM Agents",
-      "url": "https://arxiv.org/abs/2610.41291",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41291v1 Announce Type: cross Abstract: Long-horizon LLM agents play an important role in solving complex and sustained tasks, with ever-growing interaction contexts. However, these accumulated contexts will raise substantial computational cost and o",
-      "tags": [
-        "模型",
-        "Agent",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y27n28",
-      "title": "ART of PIV: Agentic Real-Time Particle Image Velocimetry for Active Flow Control",
-      "url": "https://arxiv.org/abs/2610.41304",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41304v1 Announce Type: cross Abstract: Particle image velocimetry (PIV) measures fluid motion from images of tracer particles, but its accuracy depends on choices throughout the estimation pipeline, including image preprocessing, flow estimation, an",
-      "tags": [
-        "Agent",
-        "研究",
-        "多模态"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y27n2b",
-      "title": "Erase the Injected Region: Multimodal Prompt-Injection Defense with On-Policy Self-Distillation",
-      "url": "https://arxiv.org/abs/2610.41307",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41307v1 Announce Type: cross Abstract: Multimodal indirect prompt injection embeds malicious instructions in external media that also contains information needed for the user's task. Existing defenses can block the attack yet impair the model's use ",
+      "id": "1rq6tnq",
+      "title": "Community detection in complex networks via node similarity, graph representation learning, and hierarchical clustering",
+      "url": "https://arxiv.org/abs/2303.12212",
+      "source": "arXiv cs.LG",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.LG",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2303.12212v3 Announce Type: replace-cross Abstract: Community detection is a significant challenge in analysing real graphs, including social, citation, biological, and many other networks. This article proposes three new, general, hierarchical framework",
       "tags": [
         "模型",
         "产品",
@@ -164,260 +58,13 @@
       "category": "研究论文"
     },
     {
-      "id": "y27n33",
-      "title": "GenDSR: Transferring Representations from Video Generation Models for Dynamic Spatial Reasoning",
-      "url": "https://arxiv.org/abs/2610.41314",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41314v1 Announce Type: cross Abstract: Dynamic spatial reasoning is essential for connecting visual intelligence to thephysical world, yet remains challenging for vision-language models (VLMs), which must preserve scene state while tracking how spat",
-      "tags": [
-        "模型",
-        "研究",
-        "多模态"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y27n3w",
-      "title": "Transferring Peptide-Target Interaction Patterns to Small Molecules by Joint Guidance for Diffusion and Flow Matching",
-      "url": "https://arxiv.org/abs/2610.41322",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41322v1 Announce Type: cross Abstract: Generating small molecules to target protein-protein interactions (PPIs) remains one of the most challenging yet high-reward frontiers in drug discovery. Unlike traditional small-molecule drugs that bind to dee",
-      "tags": [
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y27n42",
-      "title": "With foundation-model features, aggregator complexity does not improve cross-hospital discrimination in gastric whole-slide image classification",
-      "url": "https://arxiv.org/abs/2610.41328",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41328v1 Announce Type: cross Abstract: Whole-slide image classifiers are usually developed within one hospital and often go untested at unseen hospitals. We assembled 5,036 haematoxylin-and-eosin-stained gastric slides from five Korean hospitals, sc",
-      "tags": [
-        "模型",
-        "研究",
-        "多模态"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y27n90",
-      "title": "Pinching Antennas for ISAC: Waveguide Architectures, Solutions, and Future Directions",
-      "url": "https://arxiv.org/abs/2610.41380",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41380v1 Announce Type: cross Abstract: Integrated sensing and communication (ISAC) is a core design principle for sixth-generation (6G) wireless systems, yet fixed antenna geometry limits its performance. Pinching antenna systems (PASS) guide electr",
-      "tags": [
-        "模型",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y27n91",
-      "title": "From prediction error to sparse events: Biologically inspired signed-dyadic coding for Mandarin keyword spotting",
-      "url": "https://arxiv.org/abs/2610.41381",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41381v1 Announce Type: cross Abstract: In continuous spiking keyword spotting, temporally correlated acoustic frames can repeatedly trigger memory access and neural computation at a dense input interface, even when hidden activity is sparse. Predict",
-      "tags": [
-        "研究",
-        "多模态"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y27na1",
-      "title": "ProSearch: Benchmarking Multi-Constraint Protocol Retrieval in Experimental Science",
-      "url": "https://arxiv.org/abs/2610.41396",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41396v1 Announce Type: cross Abstract: In AI for Science scenarios, experimental design and method reproduction require retrieving protocols that satisfy multiple interdependent constraints, yet existing benchmarks lack systematic evaluation of this",
-      "tags": [
-        "产品",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y27na3",
-      "title": "Distilling Knowledge from Search: Decoder Model Factory for Quantum LDPC Codes",
-      "url": "https://arxiv.org/abs/2610.41398",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41398v1 Announce Type: cross Abstract: We introduce GraphMP, a learning-based message-passing decoder for quantum low-density parity-check codes that transfers without fine-tuning across code families, code sizes, physical error rates, and noise mod",
-      "tags": [
-        "模型",
-        "产品",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y27nsu",
-      "title": "When Safety Checks Become Privacy Risks: A Privacy-Preserving Paradigm for LLM Agent Safety Auditing",
-      "url": "https://arxiv.org/abs/2610.41401",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41401v1 Announce Type: cross Abstract: Large language model agents interact with online services through tool calls that may access private data or perform sensitive actions. Specialized providers can supply and maintain pre-execution safety auditin",
-      "tags": [
-        "模型",
-        "Agent",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y27nuj",
-      "title": "SparseGDN: Chunk Sparse in Linear Attention",
-      "url": "https://arxiv.org/abs/2610.41420",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41420v1 Announce Type: cross Abstract: Gated Delta Networks (GDNs) offer linear-time sequence modeling, yet long-context prefill remains costly due to dense intra-chunk computation, recurrent-state updates, and intermediate state storage. We introdu",
-      "tags": [
-        "模型",
-        "产品",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y27nvj",
-      "title": "BlindToChange: AI Agents Can Find Changes When Asked But Do They Look When Needed?",
-      "url": "https://arxiv.org/abs/2610.41435",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41435v1 Announce Type: cross Abstract: Given that AI agents can search the web broadly and deeply in real time, it is tempting to conclude that their outputs account for recent world events. We show that this conclusion does not hold in practice. Wh",
-      "tags": [
-        "模型",
-        "Agent",
-        "产品"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y27nwe",
-      "title": "From Representation to Readout: Mechanistic Analysis of Membership Signals in Language Models",
-      "url": "https://arxiv.org/abs/2610.41445",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41445v1 Announce Type: cross Abstract: Membership inference aims to determine whether a particular example was included in a model's training data. Such membership signals are often broadly described as memorization, while the underlying mechanisms ",
-      "tags": [
-        "模型",
-        "产品",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y27nzr",
-      "title": "KEEPER: Learning Control-Sufficient Textual Memory for Long-Horizon LLM Agents",
-      "url": "https://arxiv.org/abs/2610.41482",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41482v1 Announce Type: cross Abstract: Recursive textual memory can carry earlier errors into later updates, yet task performance alone does not establish memory reliability. We define self-consistency bias as the persistence of incorrect claims alr",
-      "tags": [
-        "Agent",
-        "研究",
-        "多模态"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y27nzw",
-      "title": "Sparse Text Diffusion under Dual Budgets: Context Connectivity and Expert Activation",
-      "url": "https://arxiv.org/abs/2610.41487",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41487v1 Announce Type: cross Abstract: Long-context diffusion repeatedly pays for both token interaction and feed-forward computation. We formulate these costs as two separate budgets: the edges available to an attention graph and the experts activa",
-      "tags": [
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y27oor",
-      "title": "ORION: An Outcome-Driven LLM Advisor for RL-Based Multi-Domain 6G Slice Placement",
-      "url": "https://arxiv.org/abs/2610.41563",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41563v1 Announce Type: cross Abstract: Deploying 6G network slices across administrative domains requires an online decision for each arriving request: which domain hosts each virtual network function, how traffic crosses domain boundaries, and whet",
-      "tags": [
-        "Agent",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y27pag",
-      "title": "VLA Policies Do Not Know When Not to Act: Unintended Task Execution and Start Suppression",
-      "url": "https://arxiv.org/abs/2610.41609",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41609v1 Announce Type: cross Abstract: A robot should act only on an instruction from a person or on an intent that the robot explicitly represents and generates. Unintended actions taken without such an instruction can cause risk or inconvenience t",
-      "tags": [
-        "模型",
-        "产品",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y27pba",
-      "title": "Attention Maps Know When to Think: Training-Free Difficulty-Aware Chain-of-Thought for Reasoning Segmentation",
-      "url": "https://arxiv.org/abs/2610.41618",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41618v1 Announce Type: cross Abstract: Chain-of-Thought (CoT) prompting has become a standard reasoning strategy in Multi-modal Large Language Models (MLLMs), showing strong performance in complex vision-language tasks such as reasoning segmentation",
-      "tags": [
-        "模型",
-        "产品",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y27pc6",
-      "title": "GRIT: Gradient Masking for Visually Misgrounded Tokens in Text-Rich Reasoning",
-      "url": "https://arxiv.org/abs/2610.41629",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41629v1 Announce Type: cross Abstract: Reinforcement learning with verifiable rewards (RLVR) has recently been extended to vision-language models (VLMs), yet its effectiveness remains limited for text-rich reasoning tasks. We highlight a key factor ",
-      "tags": [
-        "模型",
-        "研究",
-        "多模态"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y27pfe",
-      "title": "When Steering Shifts Discourse: Identifying and Intervening on Discourse-Level Changes due to Activation Steering in LLMs",
-      "url": "https://arxiv.org/abs/2610.41661",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41661v1 Announce Type: cross Abstract: Activation steering is an inference-time technique used to control or modify the behavior, tone, or safety properties of a large language model (LLM) without retraining the model's weights or editing its input ",
+      "id": "ekflw2",
+      "title": "From Fragmentation to Fusion: A Survey and Roadmap for Omnimodal Embeddings",
+      "url": "https://arxiv.org/abs/2611.00172",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00172v1 Announce Type: new Abstract: Embedding models underpin virtually every modern AI system, from search engines to recommendation systems. Despite shared mathematical foundations, research on embedding models remains fragmented by modality: the",
       "tags": [
         "模型",
         "研究",
@@ -426,28 +73,13 @@
       "category": "研究论文"
     },
     {
-      "id": "y27pgf",
-      "title": "OT-CAL: Optimal-Transport-Guided Adaptive Sample Selection for Efficient Visual Learning",
-      "url": "https://arxiv.org/abs/2610.41677",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41677v1 Announce Type: cross Abstract: Deep neural networks for image recognition are typically trained using mini-batches, with a forward pass to compute predictions and losses followed by a more computationally expensive backward pass to update mo",
-      "tags": [
-        "模型",
-        "研究",
-        "多模态"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y27phb",
-      "title": "When the Past Shapes Action: Understanding Embodied Memory",
-      "url": "https://arxiv.org/abs/2610.41688",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41688v1 Announce Type: cross Abstract: Recent advances in generative foundation models have expanded the capabilities of embodied AI, enabling increasingly general navigation, manipulation, and long-horizon task execution. However, effective interac",
+      "id": "ekfmk8",
+      "title": "MEMENTO: Learning Context Management for Long Context Processing Agents",
+      "url": "https://arxiv.org/abs/2611.00244",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00244v1 Announce Type: new Abstract: LLM agents that operate over long inputs must perform context management: deciding what to retain in a fixed-size context window. A common approach is compaction, where the model replaces its history with a self-",
       "tags": [
         "模型",
         "Agent",
@@ -456,28 +88,13 @@
       "category": "研究论文"
     },
     {
-      "id": "y27q1u",
-      "title": "Simple Features Beat Most AI Control Monitors",
-      "url": "https://arxiv.org/abs/2610.41713",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41713v1 Announce Type: cross Abstract: AI control relies on monitors to catch a capable model that sabotages its work. These monitors are evaluated on their ability to differentiate honest from backdoored code. We show that on a standard evaluation ",
-      "tags": [
-        "模型",
-        "产品",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y27q58",
-      "title": "Latent-Lens: Visual Perception in Small Language Models Through Latent Communication",
-      "url": "https://arxiv.org/abs/2610.41751",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41751v1 Announce Type: cross Abstract: Bridging independent vision-language models (VLMs) and small language models (SLMs) in a modular multi-agent system typically forces them to exchange information as discrete text, which creates a lossy bottlene",
+      "id": "ekfn7d",
+      "title": "Cross-Lingual Persona Effects in LLM Negotiation",
+      "url": "https://arxiv.org/abs/2611.00300",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00300v1 Announce Type: new Abstract: Tell an LLM negotiator to be \"headstrong\" and it should hold firm on price, but does that instruction retain the same behavior in every language? To test this, we use identical buyer and seller instances of Gemin",
       "tags": [
         "模型",
         "Agent",
@@ -486,27 +103,13 @@
       "category": "研究论文"
     },
     {
-      "id": "y27q8n",
-      "title": "Different Models, Shared Failures: Auditing Frozen-Encoder Pools for Medical Segmentation",
-      "url": "https://arxiv.org/abs/2610.41790",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41790v1 Announce Type: cross Abstract: Average segmentation accuracy and model count do not reveal whether models fail on the same cases. We present CoFailMed, an audit of correlated failures in pretrained-encoder pools for medical segmentation. Acr",
-      "tags": [
-        "模型",
-        "研究"
-      ],
-      "category": "研究论文"
-    },
-    {
-      "id": "y27q8p",
-      "title": "Implicit Assumptions About Tasks in Continual Learning",
-      "url": "https://arxiv.org/abs/2610.41792",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41792v1 Announce Type: cross Abstract: Continual learning is the study of how a model accumulates knowledge from data received over time, rather than all at once. In practice, this is typically achieved by dividing a dataset into tasks and presentin",
+      "id": "ekfn8h",
+      "title": "GAVAGAI: Referential Alignment for Infant-Scale Vision-Language Models via Balanced Optimal Transport",
+      "url": "https://arxiv.org/abs/2611.00319",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00319v1 Announce Type: new Abstract: A child learns which words name which things from roughly 100 million words of input. Vision-language models trained at a comparable scale bind words to referents far less reliably, and we argue that part of the ",
       "tags": [
         "模型",
         "产品",
@@ -515,13 +118,411 @@
       "category": "研究论文"
     },
     {
-      "id": "y27q8s",
-      "title": "Accurate and Auditable ECG Classification via Visibility Graph Neural Networks",
-      "url": "https://arxiv.org/abs/2610.41795",
-      "source": "arXiv cs.AI",
-      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-03T05:00:00.000Z",
-      "summary": "arXiv:2610.41795v1 Announce Type: cross Abstract: Physicians read electrocardiograms (ECGs) from waveform shape and timing, yet accurate deep-learning classifiers rarely show which waveform regions drive their predictions. We introduce LYNX-ECG, a graph neural",
+      "id": "ekfnay",
+      "title": "Queering the Audits: Community-Based Auditing of AI Harms to Queer Communities",
+      "url": "https://arxiv.org/abs/2611.00345",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00345v1 Announce Type: new Abstract: AI systems embed majority-group defaults into training data, evaluation metrics, and category definitions, producing documented harms for queer communities including erasure, misclassification, and discrimination",
+      "tags": [
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "ekfnbq",
+      "title": "Cross-Prompt Reuse of Entity-Replacement Responses",
+      "url": "https://arxiv.org/abs/2611.00352",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00352v1 Announce Type: new Abstract: With model weights fixed, we measure how much of an entity-replacement response transfers between English factual questions, beyond whether answers change. We add the hidden-state change from two source questions",
+      "tags": [
+        "模型",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "ekfnbx",
+      "title": "Humanized but Still True? Auditing Facts and Detection in AI-Text Humanizers",
+      "url": "https://arxiv.org/abs/2611.00359",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00359v1 Announce Type: new Abstract: AI \"humanizers\" rewrite machine-generated text so that detectors classify it as human-written. Public leaderboards score evasion and embedding similarity, but not whether checkable details survive. We check wheth",
+      "tags": [
+        "模型",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "ekfnzs",
+      "title": "Circuit Oracle: Automating Attribution Graph Analysis via Natural-Language Queries",
+      "url": "https://arxiv.org/abs/2611.00420",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00420v1 Announce Type: new Abstract: Attribution graphs, an emerging tool in mechanistic interpretability, use transcoders to decompose language model computations into sparse interpretable features connected by causal edges. However, turning a grap",
+      "tags": [
+        "模型",
+        "Agent",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "ekfo1k",
+      "title": "Fidelity Collapses with Table Size, Not Turn Count: Delivery Architecture in a Deployed Tool-Using Agent",
+      "url": "https://arxiv.org/abs/2611.00442",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00442v1 Announce Type: new Abstract: When a multi-turn agent delivers a tool's structured records into the model's context and re-emits them each turn, every turn can corrupt data the tool computed correctly. We measure this in a production award-tr",
+      "tags": [
+        "模型",
+        "Agent",
+        "产品"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "ekfo2d",
+      "title": "From Lookups to Lessons: Turning Retrieved Knowledge into Parametric Memory",
+      "url": "https://arxiv.org/abs/2611.00450",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00450v1 Announce Type: new Abstract: Retrieval-augmented generation (RAG) helps large language models (LLMs) answer factual questions beyond their training data, but it adds storage and inference costs. Distilling previously retrieved information in",
+      "tags": [
+        "模型",
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "ekfo3h",
+      "title": "Steering Readerly Dynamics: Trajectory-Guided Story Generation with Large Language Models",
+      "url": "https://arxiv.org/abs/2611.00469",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00469v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly used to generate stories, but these stories struggle to reproduce engaging readerly dynamics, the evolving reader responses that shape narrative experience. To addres",
+      "tags": [
+        "模型",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "ekfo5v",
+      "title": "Spotting the Artificial: Dialogic Humor Improvisation in Humans and LLMs",
+      "url": "https://arxiv.org/abs/2611.00492",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00492v1 Announce Type: new Abstract: We propose a methodology for investigating the differences between natural and synthetic language in a challenging setting: humorous improvisational dialogue. Our experimental setting compares human-produced come",
+      "tags": [
+        "模型",
+        "Agent",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "ekfopr",
+      "title": "AStockArena: Beyond Returns, Can We Entrust Real Capital to the Decisions of Financial Agents?",
+      "url": "https://arxiv.org/abs/2611.00515",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00515v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly used in dynamic financial trading, yet real-time trading benchmarks mainly evaluate agents by cumulative returns and risk-adjusted performance. Such outcome metrics c",
+      "tags": [
+        "模型",
+        "Agent",
+        "产品"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "ekfori",
+      "title": "Dual-Axis Policy Entailment: A Benchmark for Policy-Change Reasoning",
+      "url": "https://arxiv.org/abs/2611.00536",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00536v1 Announce Type: new Abstract: Whether a policy shifts domains and, by extension, continues, broadens, narrows, or reverses previous policy is of paramount importance to the study of public policy. We propose Dual-Axis Policy Entailment (DAPE)",
+      "tags": [
+        "模型",
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "ekfot7",
+      "title": "Distinguishing among reasoning levels of GPT 5.5 Pro via a grammar lens benchmark",
+      "url": "https://arxiv.org/abs/2611.00555",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00555v1 Announce Type: new Abstract: Does the level of test-time processing effort affect a language model's computational capability? A formal grammar-lens benchmark method, derived from the theory of computation, generates novel data at specified ",
+      "tags": [
+        "模型",
+        "研究",
+        "安全"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "ekfov1",
+      "title": "From Apparent Search Gains to Selection Failures: Auditing Test-Time Inference in Structured Workflow Planning",
+      "url": "https://arxiv.org/abs/2611.00579",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00579v1 Announce Type: new Abstract: Test-time search can improve structured planning, but when methods differ in prompts, post-processing, and selection, it is unclear what an observed gain should be attributed to. We study this question on Disaste",
+      "tags": [
+        "模型",
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "ekfowk",
+      "title": "Saidzoda-Tajik-E5-Large: Fine-Tuning a 560M Embedder for Tajik Retrieval",
+      "url": "https://arxiv.org/abs/2611.00592",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00592v1 Announce Type: new Abstract: Finding the passage that answers a question is the first step of most practical systems built on documents, and for Tajik we found no openly described model for it. We present Saidzoda-Tajik-E5-Large, a Tajik tex",
+      "tags": [
+        "模型",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "ekfowp",
+      "title": "Multi-Estimate Elicitation Does Not Uniformly Debias Language Model Judgments",
+      "url": "https://arxiv.org/abs/2611.00597",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00597v1 Announce Type: new Abstract: Does eliciting five weighted estimates within a single response change how a language model responds to information? Across anchoring, hindsight, base-rate, conjunction, and status-quo/default tasks, we compare d",
+      "tags": [
+        "模型",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "ekfpgh",
+      "title": "Enhancing Language Model Reasoning with Structured Multi-Level Modeling",
+      "url": "https://arxiv.org/abs/2611.00616",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00616v1 Announce Type: new Abstract: Inference-time scaling enhances a model's reasoning by extending its chain-of-thought (CoT). However, existing approaches typically rely on a single policy trained with outcome-reward reinforcement learning (RL),",
+      "tags": [
+        "模型",
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "ekfpi9",
+      "title": "ElectroChemLLM: A Multimodal LLM Pipeline for High-Fidelity Electrochemical Informatics",
+      "url": "https://arxiv.org/abs/2611.00638",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00638v1 Announce Type: new Abstract: Electrochemistry is central to solving many modern-day challenges, including energy storage systems for a sustainable future, and its advancement relies heavily on the data from past findings. Existing automated ",
+      "tags": [
+        "模型",
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "ekfpkr",
+      "title": "Audit at the Precision You Deploy: Quantization Reshapes a Subliminally Learned Preference",
+      "url": "https://arxiv.org/abs/2611.00665",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00665v1 Announce Type: new Abstract: Subliminal learning allows AI models to inherit hidden preferences from seemingly unrelated training data, such as number sequences. Safety audits may evaluate models at standard 16-bit precision, while deploymen",
+      "tags": [
+        "模型",
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "ekfplj",
+      "title": "Precedent Labels and Facts Shift LLM Approval Decisions in Opposite Directions",
+      "url": "https://arxiv.org/abs/2611.00672",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00672v1 Announce Type: new Abstract: When a language model decides refund or claim requests under written policies, the system can show it similar past cases. Each past case has two parts: its facts and the decision recorded for it. We separate the ",
+      "tags": [
+        "模型",
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "ekfq81",
+      "title": "Constructing Budgeted KGW Evasion through Token-Event Evidence Replacement",
+      "url": "https://arxiv.org/abs/2611.00726",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00726v1 Announce Type: new Abstract: KGW watermarks bias sampling to accumulate keyed detection evidence. We construct budgeted evasion through token-event evidence replacement using ordinary phrase rewrites. Our construction jointly selects composi",
+      "tags": [
+        "模型",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "ekfqal",
+      "title": "DuSE-Bench: Benchmarking Joint Reasoning over Evolving Dialogue and Documents",
+      "url": "https://arxiv.org/abs/2611.00755",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00755v1 Announce Type: new Abstract: Persistent Web information assistants must combine evolving document facts with user requirements established and revised across sessions. Yet systematic evaluation of how changes in both sources affect response ",
+      "tags": [
+        "模型",
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "ekfqd6",
+      "title": "CheXPoT: Post-Hoc Visual Verification and Correction of VLM-Generated Radiology Reports",
+      "url": "https://arxiv.org/abs/2611.00785",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00785v1 Announce Type: new Abstract: Vision-language models (VLMs) have shown promise for chest radiograph report generation, but adoption remains limited because of hallucinated findings that are not grounded in the image. Correcting these hallucin",
+      "tags": [
+        "模型",
+        "研究",
+        "多模态"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "ekfqe2",
+      "title": "Steer, Don't Tell: Breaking Reasoning Plateaus with Reachability-Aligned Self-Distillation",
+      "url": "https://arxiv.org/abs/2611.00796",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00796v1 Announce Type: new Abstract: Post training for large reasoning models remains insufficient on challenging problems, whose correct trajectories are hard to sample. Though prior works address this difficulty by integrating supervised fine tuni",
+      "tags": [
+        "模型",
+        "研究",
+        "多模态"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "ekfr17",
+      "title": "Adaptive-Policy Distillation: Knowledge Injection under Information Asymmetry",
+      "url": "https://arxiv.org/abs/2611.00852",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00852v1 Announce Type: new Abstract: On-policy distillation (OPD), which uses reverse-KL supervision on student rollouts to transfer a context-conditioned model's behavior into student model parameters for closed-book inference, has shown strong res",
+      "tags": [
+        "模型",
+        "研究",
+        "多模态"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "ekfr2w",
+      "title": "ShiftRAG: Bypassing the Textual Bottleneck via Decoupled Learning and Continuous Soft Tokens",
+      "url": "https://arxiv.org/abs/2611.00871",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00871v1 Announce Type: new Abstract: Despite advances in retrieval-augmented generation (RAG), suppressing hallucinations during complex reasoning remains a persistent challenge. We identify that existing RAG pipelines suffer from a textual bottlene",
+      "tags": [
+        "模型",
+        "研究",
+        "安全"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "ekfr32",
+      "title": "What Breaks and What Comes Back: Capability Damage and Recovery in Depth-Pruned Small Language Models",
+      "url": "https://arxiv.org/abs/2611.00877",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00877v1 Announce Type: new Abstract: Depth pruning removes whole Transformer blocks to make a language model smaller and faster, but the damage is not spread evenly across what the model can do, and a short fine-tuning run, called healing, decides w",
+      "tags": [
+        "模型",
+        "Agent",
+        "产品"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "ekfr3t",
+      "title": "Random Is Almost Enough? Stable and Low-Cost Benchmark Compression via BestRand",
+      "url": "https://arxiv.org/abs/2611.00883",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00883v1 Announce Type: new Abstract: Benchmark compression reduces the often prohibitive time and cost of model evaluation by evaluating models on a small benchmark subset that closely matches full-benchmark results. To quantify estimation error, we",
+      "tags": [
+        "模型",
+        "Agent",
+        "产品"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "ekfrof",
+      "title": "S1CogBench: What System One Decision Models Can and Cannot Do on Cognitive Experiments",
+      "url": "https://arxiv.org/abs/2611.00911",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00911v1 Announce Type: new Abstract: Language models are no longer used only to generate text. Software also asks them for decisions, in routing, guardrails, and automated gates. System One decision models, also called typed decision models, such as",
+      "tags": [
+        "模型",
+        "研究",
+        "多模态"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "ekfrq9",
+      "title": "Labadain-MedQA: A Tetun Medical QA Dataset for Fine-Tuning and Evaluating Large Language Models",
+      "url": "https://arxiv.org/abs/2611.00935",
+      "source": "arXiv cs.CL",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.CL",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "summary": "arXiv:2611.00935v1 Announce Type: new Abstract: Advances in large language models (LLMs) have created opportunities for cross-lingual transfer of medical knowledge from high-resource to low-resource languages to support access to healthcare information. Howeve",
       "tags": [
         "模型",
         "研究"
@@ -534,7 +535,7 @@
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
       "ok": true,
-      "count": 1354
+      "count": 1359
     },
     {
       "name": "Google AI",
@@ -546,19 +547,19 @@
       "name": "arXiv cs.AI",
       "url": "https://export.arxiv.org/rss/cs.AI",
       "ok": true,
-      "count": 297
+      "count": 0
     },
     {
       "name": "arXiv cs.LG",
       "url": "https://export.arxiv.org/rss/cs.LG",
       "ok": true,
-      "count": 0
+      "count": 1
     },
     {
       "name": "arXiv cs.CL",
       "url": "https://export.arxiv.org/rss/cs.CL",
       "ok": true,
-      "count": 0
+      "count": 381
     }
   ],
   "warnings": []
