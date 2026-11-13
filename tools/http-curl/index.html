@@ -1,0 +1,247 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>HTTP 与 curl 实用指南 · 庄楚辉</title><meta name="description" content="从请求方法、状态码、请求头到 curl 常用参数与认证，一份覆盖 API 调试、接口对接与网络排查的实战手册。"><link rel="canonical" href="https://zchuhui.github.io/tools/http-curl/"><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:title" content="HTTP 与 curl 实用指南 · 庄楚辉"><meta property="og:description" content="从请求方法、状态码、请求头到 curl 常用参数与认证，一份覆盖 API 调试、接口对接与网络排查的实战手册。"><meta property="og:image" content="https://zchuhui.github.io/og.svg"><meta property="og:url" content="https://zchuhui.github.io/tools/http-curl/"><meta name="twitter:card" content="summary_large_image"><meta name="generator" content="Astro v5.18.2"><link rel="stylesheet" href="/_astro/about.HQWu7ZSl.css">
+<style>.detail[data-astro-cid-6kazcgig]{max-width:46rem;padding-top:2rem}.back[data-astro-cid-6kazcgig]{font-family:var(--font-mono);font-size:.85rem;color:var(--color-ink-dim)}.back[data-astro-cid-6kazcgig]:hover{color:var(--color-cyan)}.detail-head[data-astro-cid-6kazcgig]{margin:1.5rem 0 2rem}.tool-cat[data-astro-cid-6kazcgig]{color:var(--color-cyan);border-color:#22d3ee4d}.detail-title[data-astro-cid-6kazcgig]{font-size:clamp(1.9rem,4.5vw,2.6rem);font-weight:900;margin:.7rem 0 0;line-height:1.2}.detail-desc[data-astro-cid-6kazcgig]{color:var(--color-ink-soft);font-size:1.05rem;line-height:1.7;margin:1rem 0}.detail-meta[data-astro-cid-6kazcgig]{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center}.d-date[data-astro-cid-6kazcgig]{font-family:var(--font-mono);font-size:.8rem;color:var(--color-ink-dim);margin-right:.4rem}.official-link[data-astro-cid-6kazcgig]{display:inline-block;margin-top:1rem;font-family:var(--font-mono);font-size:.85rem;color:var(--color-cyan)}.official-link[data-astro-cid-6kazcgig]:hover{text-decoration:underline}
+</style></head> <body> <canvas id="starfield" aria-hidden="true" data-astro-cid-ra7sfcwn></canvas>  <script type="module">const a=document.getElementById("starfield"),m=window.matchMedia("(prefers-reduced-motion: reduce)").matches;if(a){let s=function(){n=window.innerWidth,o=window.innerHeight,a.width=n*i,a.height=o*i,a.style.width=n+"px",a.style.height=o+"px",t.setTransform(i,0,0,i,0,0);const e=Math.min(160,Math.floor(n*o/9e3));h=Array.from({length:e},()=>({x:Math.random()*n,y:Math.random()*o,z:Math.random()*.8+.2,r:Math.random()*1.4+.3,hue:Math.random()>.5?188:270}))},d=function(){t.clearRect(0,0,n,o);for(const e of h){const c=e.x+(r.x-n/2)*.02*e.z,l=e.y+(r.y-o/2)*.02*e.z;t.beginPath(),t.arc(c,l,e.r*e.z,0,Math.PI*2),t.fillStyle=`hsla(${e.hue}, 90%, 70%, ${.25+e.z*.55})`,t.shadowBlur=8*e.z,t.shadowColor=`hsla(${e.hue}, 90%, 70%, 0.8)`,t.fill(),e.y-=e.z*.12,e.y<-2&&(e.y=o+2,e.x=Math.random()*n)}t.shadowBlur=0,m||requestAnimationFrame(d)};const t=a.getContext("2d");let n=0,o=0,i=Math.min(window.devicePixelRatio||1,2),h=[];const r={x:0,y:0};window.addEventListener("resize",s,{passive:!0}),window.addEventListener("mousemove",e=>{r.x=e.clientX,r.y=e.clientY},{passive:!0}),s(),d()}</script> <header class="nav-wrap" data-astro-cid-dmqpwcec> <nav class="container-x nav glass" data-astro-cid-dmqpwcec> <a href="/" class="brand" data-astro-cid-dmqpwcec> <span class="brand-dot" data-astro-cid-dmqpwcec></span> <span class="brand-name" data-astro-cid-dmqpwcec>庄楚辉</span> <span class="brand-tag" data-astro-cid-dmqpwcec>/ AI Builder</span> </a> <button id="nav-toggle" class="nav-toggle" aria-label="菜单" aria-expanded="false" data-astro-cid-dmqpwcec> <span data-astro-cid-dmqpwcec></span><span data-astro-cid-dmqpwcec></span><span data-astro-cid-dmqpwcec></span> </button> <ul id="nav-menu" class="nav-menu" data-astro-cid-dmqpwcec> <li data-astro-cid-dmqpwcec> <a href="/" class="nav-link" data-astro-cid-dmqpwcec>首页</a> </li><li data-astro-cid-dmqpwcec> <a href="/about" class="nav-link" data-astro-cid-dmqpwcec>关于</a> </li><li data-astro-cid-dmqpwcec> <a href="/projects" class="nav-link" data-astro-cid-dmqpwcec>项目</a> </li><li data-astro-cid-dmqpwcec> <a href="/blog" class="nav-link" data-astro-cid-dmqpwcec>文章</a> </li><li data-astro-cid-dmqpwcec> <a href="/news" class="nav-link" data-astro-cid-dmqpwcec>AI 要闻</a> </li><li data-astro-cid-dmqpwcec> <a href="/tools" class="nav-link active" data-astro-cid-dmqpwcec>工具</a> </li><li data-astro-cid-dmqpwcec> <a href="/kb" class="nav-link" data-astro-cid-dmqpwcec>知识库</a> </li> </ul> </nav> </header>  <script type="module">const e=document.getElementById("nav-toggle"),n=document.getElementById("nav-menu");e?.addEventListener("click",()=>{const t=n?.classList.toggle("open");e.setAttribute("aria-expanded",String(!!t))});</script> <main>  <article class="container-x detail" data-astro-cid-6kazcgig> <a href="/tools" class="back" data-astro-cid-6kazcgig>← 返回工具指南</a> <header class="detail-head" data-astro-cid-6kazcgig> <span class="chip tool-cat" data-astro-cid-6kazcgig>编程基础</span> <h1 class="detail-title" data-astro-cid-6kazcgig>HTTP 与 curl 实用指南</h1> <p class="detail-desc" data-astro-cid-6kazcgig>从请求方法、状态码、请求头到 curl 常用参数与认证，一份覆盖 API 调试、接口对接与网络排查的实战手册。</p> <div class="detail-meta" data-astro-cid-6kazcgig> <span class="d-date" data-astro-cid-6kazcgig>更新于 2026年8月7日</span>   <span class="chip" data-astro-cid-6kazcgig>HTTP</span><span class="chip" data-astro-cid-6kazcgig>curl</span><span class="chip" data-astro-cid-6kazcgig>API</span><span class="chip" data-astro-cid-6kazcgig>网络</span> </div> <a href="https://curl.se/" target="_blank" rel="noopener" class="official-link" data-astro-cid-6kazcgig>访问官网 ↗</a> </header> <div class="prose-space" data-astro-cid-6kazcgig> <h2 id="工具简介">工具简介</h2>
+<p>HTTP 是 Web 世界的通用语言，无论调接口、做爬虫、排查线上问题，还是配合 AI 编程工具联调 API，都绕不开它。curl 是最通用的命令行 HTTP 客户端，几乎预装在所有系统。本篇按「方法与状态码 → 请求头与参数 → curl 用法 → 认证 → 调试 → 实战」梳理，帮你把接口调试从「猜」变成「看」。</p>
+<h2 id="http-基础">HTTP 基础</h2>
+<h3 id="1-请求方法">1. 请求方法</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>方法</th><th>语义</th><th>幂等</th><th>典型用途</th></tr></thead><tbody><tr><td>GET</td><td>获取资源</td><td>是</td><td>查询列表、详情</td></tr><tr><td>POST</td><td>新建资源</td><td>否</td><td>提交表单、创建记录</td></tr><tr><td>PUT</td><td>全量替换</td><td>是</td><td>更新整条记录</td></tr><tr><td>PATCH</td><td>部分更新</td><td>否</td><td>改单个字段</td></tr><tr><td>DELETE</td><td>删除</td><td>是</td><td>删除记录</td></tr><tr><td>HEAD</td><td>只取响应头</td><td>是</td><td>检查资源是否存在</td></tr><tr><td>OPTIONS</td><td>查询支持的方法</td><td>是</td><td>预检请求（CORS）</td></tr></tbody></table>
+<blockquote>
+<p>幂等：多次执行结果相同。GET/PUT/DELETE 幂等，POST/PATCH 不幂等。</p>
+</blockquote>
+<h3 id="2-状态码">2. 状态码</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>2xx 成功</span></span>
+<span class="line"><span>  200 OK               请求成功</span></span>
+<span class="line"><span>  201 Created          资源已创建</span></span>
+<span class="line"><span>  204 No Content       成功但无内容（DELETE 常用）</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>3xx 重定向</span></span>
+<span class="line"><span>  301 Moved            永久重定向</span></span>
+<span class="line"><span>  302 Found            临时重定向</span></span>
+<span class="line"><span>  304 Not Modified     缓存命中</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>4xx 客户端错误</span></span>
+<span class="line"><span>  400 Bad Request      参数错误</span></span>
+<span class="line"><span>  401 Unauthorized     未认证（没登录或 token 无效）</span></span>
+<span class="line"><span>  403 Forbidden        无权限（登录了但没权限）</span></span>
+<span class="line"><span>  404 Not Found        资源不存在</span></span>
+<span class="line"><span>  409 Conflict         冲突（如重复创建）</span></span>
+<span class="line"><span>  422 Unprocessable    语法对但语义错（校验失败）</span></span>
+<span class="line"><span>  429 Too Many Requests 限流</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>5xx 服务端错误</span></span>
+<span class="line"><span>  500 Internal Error   服务器内部错误</span></span>
+<span class="line"><span>  502 Bad Gateway      网关错误（上游挂了）</span></span>
+<span class="line"><span>  503 Service Unavailable  服务不可用（过载/维护）</span></span>
+<span class="line"><span>  504 Gateway Timeout  网关超时</span></span></code></pre>
+<h3 id="3-请求与响应结构">3. 请求与响应结构</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>POST /api/users HTTP/1.1          # 请求行：方法 路径 协议</span></span>
+<span class="line"><span>Host: api.example.com             # 请求头</span></span>
+<span class="line"><span>Content-Type: application/json</span></span>
+<span class="line"><span>Authorization: Bearer xxx</span></span>
+<span class="line"><span>                                 # 空行</span></span>
+<span class="line"><span>{"name":"alice"}                  # 请求体</span></span></code></pre>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>HTTP/1.1 201 Created              # 状态行</span></span>
+<span class="line"><span>Content-Type: application/json    # 响应头</span></span>
+<span class="line"><span>Location: /api/users/123</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>{"id":123,"name":"alice"}         # 响应体</span></span></code></pre>
+<h2 id="curl-基础用法">curl 基础用法</h2>
+<h3 id="1-最简单的请求">1. 最简单的请求</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#ECC48D"> https://example.com</span><span style="color:#637777;font-style:italic">                    # GET 请求，输出响应体</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -I</span><span style="color:#ECC48D"> https://example.com</span><span style="color:#637777;font-style:italic">                 # 只看响应头（HEAD）</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -i</span><span style="color:#ECC48D"> https://example.com</span><span style="color:#637777;font-style:italic">                 # 响应头 + 响应体</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -s</span><span style="color:#ECC48D"> https://example.com</span><span style="color:#637777;font-style:italic">                 # 静默（不显示进度条）</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -o</span><span style="color:#ECC48D"> file.html</span><span style="color:#ECC48D"> https://example.com</span><span style="color:#637777;font-style:italic">       # 保存到文件</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -O</span><span style="color:#ECC48D"> https://example.com/file.tar.gz</span><span style="color:#637777;font-style:italic">     # 用原文件名保存</span></span></code></pre>
+<h3 id="2-指定方法与数据">2. 指定方法与数据</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -X</span><span style="color:#ECC48D"> POST</span><span style="color:#ECC48D"> https://api.example.com/users</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -X</span><span style="color:#ECC48D"> PUT</span><span style="color:#ECC48D"> https://api.example.com/users/1</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -X</span><span style="color:#ECC48D"> DELETE</span><span style="color:#ECC48D"> https://api.example.com/users/1</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#637777;font-style:italic"># 发送表单</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -d</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">name=alice&#x26;age=20</span><span style="color:#D9F5DD">"</span><span style="color:#ECC48D"> https://api.example.com/users</span></span>
+<span class="line"><span style="color:#637777;font-style:italic"># -d 默认 POST，Content-Type 自动设为 application/x-www-form-urlencoded</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#637777;font-style:italic"># 发送 JSON</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -H</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">Content-Type: application/json</span><span style="color:#D9F5DD">"</span><span style="color:#F78C6C"> \</span></span>
+<span class="line"><span style="color:#82AAFF">     -d</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">{"name":"alice","age":20}</span><span style="color:#D9F5DD">'</span><span style="color:#F78C6C"> \</span></span>
+<span class="line"><span style="color:#ECC48D">     https://api.example.com/users</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#637777;font-style:italic"># 从文件读请求体</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -H</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">Content-Type: application/json</span><span style="color:#D9F5DD">"</span><span style="color:#F78C6C"> \</span></span>
+<span class="line"><span style="color:#82AAFF">     -d</span><span style="color:#ECC48D"> @body.json</span><span style="color:#F78C6C"> \</span></span>
+<span class="line"><span style="color:#ECC48D">     https://api.example.com/users</span></span></code></pre>
+<h3 id="3-请求头与查询参数">3. 请求头与查询参数</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#637777;font-style:italic"># 添加请求头</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -H</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">Authorization: Bearer xxx</span><span style="color:#D9F5DD">"</span><span style="color:#F78C6C"> \</span></span>
+<span class="line"><span style="color:#82AAFF">     -H</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">Accept: application/json</span><span style="color:#D9F5DD">"</span><span style="color:#F78C6C"> \</span></span>
+<span class="line"><span style="color:#ECC48D">     https://api.example.com/users</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#637777;font-style:italic"># 查询参数直接拼在 URL</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">https://api.example.com/users?page=1&#x26;size=20</span><span style="color:#D9F5DD">"</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#637777;font-style:italic"># 用 --data-urlencode 自动编码</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -G</span><span style="color:#ECC48D"> https://api.example.com/search</span><span style="color:#F78C6C"> \</span></span>
+<span class="line"><span style="color:#82AAFF">     --data-urlencode</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">q=hello world</span><span style="color:#D9F5DD">"</span><span style="color:#F78C6C"> \</span></span>
+<span class="line"><span style="color:#82AAFF">     --data-urlencode</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">lang=zh</span><span style="color:#D9F5DD">"</span></span></code></pre>
+<h3 id="4-跟随重定向与超时">4. 跟随重定向与超时</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -L</span><span style="color:#ECC48D"> https://example.com</span><span style="color:#637777;font-style:italic">         # 跟随 3xx 重定向</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> --max-time</span><span style="color:#F78C6C"> 10</span><span style="color:#ECC48D"> https://example.com</span><span style="color:#637777;font-style:italic">   # 总超时 10 秒</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> --connect-timeout</span><span style="color:#F78C6C"> 5</span><span style="color:#ECC48D"> https://...</span><span style="color:#637777;font-style:italic">     # 连接超时 5 秒</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> --retry</span><span style="color:#F78C6C"> 3</span><span style="color:#ECC48D"> https://example.com</span><span style="color:#637777;font-style:italic">       # 失败重试 3 次</span></span></code></pre>
+<h3 id="5-详细调试">5. 详细调试</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -v</span><span style="color:#ECC48D"> https://example.com</span><span style="color:#637777;font-style:italic">         # 显示完整请求/响应过程（排查必备）</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -v</span><span style="color:#82AAFF"> --trace-ascii</span><span style="color:#ECC48D"> -</span><span style="color:#ECC48D"> https://...</span><span style="color:#637777;font-style:italic">  # 更底层，含传输细节</span></span></code></pre>
+<p><code>-v</code> 会把请求头、响应头、TLS 握手都打出来，是排查「为什么接口不通」的第一工具。</p>
+<h2 id="认证方式">认证方式</h2>
+<h3 id="1-bearer-token">1. Bearer Token</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -H</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">Authorization: Bearer eyJhbGci...</span><span style="color:#D9F5DD">"</span><span style="color:#ECC48D"> https://api.example.com/me</span></span></code></pre>
+<h3 id="2-basic-auth">2. Basic Auth</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -u</span><span style="color:#ECC48D"> user:pass</span><span style="color:#ECC48D"> https://api.example.com/data</span></span>
+<span class="line"><span style="color:#637777;font-style:italic"># 等价于 -H "Authorization: Basic base64(user:pass)"</span></span></code></pre>
+<h3 id="3-api-keyheader-或-query">3. API Key（Header 或 Query）</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#637777;font-style:italic"># Header</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -H</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">X-API-Key: abc123</span><span style="color:#D9F5DD">"</span><span style="color:#ECC48D"> https://api.example.com/data</span></span>
+<span class="line"><span style="color:#637777;font-style:italic"># Query</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">https://api.example.com/data?api_key=abc123</span><span style="color:#D9F5DD">"</span></span></code></pre>
+<h3 id="4-cookie--session">4. Cookie / Session</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#637777;font-style:italic"># 保存返回的 cookie</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -c</span><span style="color:#ECC48D"> cookies.txt</span><span style="color:#82AAFF"> -d</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">user=alice&#x26;pass=xxx</span><span style="color:#D9F5DD">"</span><span style="color:#ECC48D"> https://example.com/login</span></span>
+<span class="line"><span style="color:#637777;font-style:italic"># 后续请求带上 cookie</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -b</span><span style="color:#ECC48D"> cookies.txt</span><span style="color:#ECC48D"> https://example.com/dashboard</span></span></code></pre>
+<h3 id="5-oauth-客户端凭证机器对机器">5. OAuth 客户端凭证（机器对机器）</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#637777;font-style:italic"># 1. 换 token</span></span>
+<span class="line"><span style="color:#C5E478">TOKEN</span><span style="color:#C792EA">=</span><span style="color:#D6DEEB">$(</span><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -s</span><span style="color:#82AAFF"> -u</span><span style="color:#ECC48D"> clientId:clientSecret</span><span style="color:#F78C6C"> \</span></span>
+<span class="line"><span style="color:#82AAFF">  -d</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">grant_type=client_credentials</span><span style="color:#D9F5DD">"</span><span style="color:#F78C6C"> \</span></span>
+<span class="line"><span style="color:#ECC48D">  https://auth.example.com/oauth/token</span><span style="color:#7FDBCA"> |</span><span style="color:#82AAFF;font-style:italic"> jq</span><span style="color:#82AAFF"> -r</span><span style="color:#ECC48D"> .access_token</span><span style="color:#D6DEEB">)</span></span>
+<span class="line"><span style="color:#637777;font-style:italic"># 2. 用 token 调接口</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -H</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">Authorization: Bearer </span><span style="color:#C5E478">$TOKEN</span><span style="color:#D9F5DD">"</span><span style="color:#ECC48D"> https://api.example.com/data</span></span></code></pre>
+<h2 id="实用技巧">实用技巧</h2>
+<h3 id="1-美化-json-输出">1. 美化 JSON 输出</h3>
+<p>curl 返回的 JSON 是一坨，配合 <code>jq</code> 格式化与查询：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -s</span><span style="color:#ECC48D"> https://api.example.com/users</span><span style="color:#7FDBCA"> |</span><span style="color:#82AAFF;font-style:italic"> jq</span><span style="color:#ECC48D"> .</span></span>
+<span class="line"><span style="color:#637777;font-style:italic"># 取字段</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -s</span><span style="color:#ECC48D"> https://api.example.com/users</span><span style="color:#7FDBCA"> |</span><span style="color:#82AAFF;font-style:italic"> jq</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">.[0].name</span><span style="color:#D9F5DD">'</span></span>
+<span class="line"><span style="color:#637777;font-style:italic"># 过滤</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -s</span><span style="color:#ECC48D"> https://api.example.com/users</span><span style="color:#7FDBCA"> |</span><span style="color:#82AAFF;font-style:italic"> jq</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">.[] | select(.age>18)</span><span style="color:#D9F5DD">'</span></span></code></pre>
+<h3 id="2-只看关键信息">2. 只看关键信息</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#637777;font-style:italic"># 只看状态码</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -s</span><span style="color:#82AAFF"> -o</span><span style="color:#ECC48D"> /dev/null</span><span style="color:#82AAFF"> -w</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">%{http_code}\n</span><span style="color:#D9F5DD">"</span><span style="color:#ECC48D"> https://example.com</span></span>
+<span class="line"><span style="color:#637777;font-style:italic"># 看耗时</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -s</span><span style="color:#82AAFF"> -o</span><span style="color:#ECC48D"> /dev/null</span><span style="color:#82AAFF"> -w</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">dns:%{time_namelookup} connect:%{time_connect} total:%{time_total}\n</span><span style="color:#D9F5DD">"</span><span style="color:#ECC48D"> https://example.com</span></span></code></pre>
+<h3 id="3-调试-https-证书问题">3. 调试 HTTPS 证书问题</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -v</span><span style="color:#ECC48D"> https://example.com</span><span style="color:#637777;font-style:italic">            # 看证书链</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> --cacert</span><span style="color:#ECC48D"> custom-ca.pem</span><span style="color:#ECC48D"> https://...</span><span style="color:#637777;font-style:italic"> # 用自签 CA</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -k</span><span style="color:#ECC48D"> https://self-signed.example.com</span><span style="color:#637777;font-style:italic"> # 跳过证书校验（仅调试，别生产用）</span></span></code></pre>
+<h3 id="4-上传文件">4. 上传文件</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#637777;font-style:italic"># multipart/form-data 上传</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -F</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">file=@photo.jpg</span><span style="color:#D9F5DD">"</span><span style="color:#ECC48D"> https://upload.example.com</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -F</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">file=@photo.jpg</span><span style="color:#D9F5DD">"</span><span style="color:#82AAFF"> -F</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">name=alice</span><span style="color:#D9F5DD">"</span><span style="color:#ECC48D"> https://upload.example.com</span></span></code></pre>
+<h3 id="5-用配置文件存公共参数">5. 用配置文件存公共参数</h3>
+<p><code>~/.curlrc</code>：</p>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="text"><code><span class="line"><span>silent</span></span>
+<span class="line"><span>show-error</span></span>
+<span class="line"><span>write-out "\n"</span></span></code></pre>
+<p>之后所有 curl 默认带这些参数。</p>
+<h3 id="6-复制浏览器请求为-curl">6. 复制浏览器请求为 curl</h3>
+<p>Chrome DevTools → Network → 右键某请求 → Copy → Copy as cURL。粘贴到终端即可复现，含完整 cookie/header，排查问题极快。</p>
+<h2 id="注意事项">注意事项</h2>
+<ul>
+<li><strong>URL 要加引号</strong>：<code>curl "https://...?a=1&#x26;b=2"</code>，否则 <code>&#x26;</code> 会被 shell 当后台执行符。</li>
+<li><strong><code>-d</code> 默认 POST</strong>：想用 GET 带 body 要显式 <code>-X GET</code>，但多数服务器不接受 GET body。</li>
+<li><strong>JSON 要单引号包</strong>：<code>-d '{"a":1}'</code>，内部双引号不冲突；若 JSON 里要单引号需转义。</li>
+<li><strong><code>-k</code> 别进生产</strong>：跳过证书校验是调试用，生产代码里关掉会有中间人风险。</li>
+<li><strong>敏感信息别进命令历史</strong>：<code>-u user:pass</code> 会留在 <code>~/.bash_history</code>，用 <code>.netrc</code> 或环境变量。</li>
+<li><strong>POST/PUT 别忘 <code>Content-Type</code></strong>：服务器靠它解析 body，错了会 415 或解析失败。</li>
+<li><strong>重试要幂等</strong>：<code>--retry</code> 只对网络错误重试，非幂等的 POST 自动重试可能重复创建，需谨慎。</li>
+<li><strong>超时必设</strong>：不设超时的 curl 会一直挂，尤其在脚本里调用接口时。</li>
+</ul>
+<h2 id="实战案例">实战案例</h2>
+<h3 id="案例-1调试接口返回-500">案例 1：调试接口返回 500</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -v</span><span style="color:#82AAFF"> -H</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">Authorization: Bearer xxx</span><span style="color:#D9F5DD">"</span><span style="color:#F78C6C"> \</span></span>
+<span class="line"><span style="color:#82AAFF">     -H</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">Content-Type: application/json</span><span style="color:#D9F5DD">"</span><span style="color:#F78C6C"> \</span></span>
+<span class="line"><span style="color:#82AAFF">     -d</span><span style="color:#D9F5DD"> '</span><span style="color:#ECC48D">{"name":"alice"}</span><span style="color:#D9F5DD">'</span><span style="color:#F78C6C"> \</span></span>
+<span class="line"><span style="color:#ECC48D">     https://api.example.com/users</span></span></code></pre>
+<p><code>-v</code> 看请求是否带对了头、body 格式对不对，响应头里常有错误细节。确认请求无误后再找后端。</p>
+<h3 id="案例-2批量测试接口性能">案例 2：批量测试接口性能</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#C792EA;font-style:italic">for</span><span style="color:#C5E478"> i</span><span style="color:#C792EA;font-style:italic"> in</span><span style="color:#D6DEEB"> $(</span><span style="color:#82AAFF;font-style:italic">seq</span><span style="color:#F78C6C"> 1</span><span style="color:#F78C6C"> 100</span><span style="color:#D6DEEB">); </span><span style="color:#C792EA;font-style:italic">do</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">  curl</span><span style="color:#82AAFF"> -s</span><span style="color:#82AAFF"> -o</span><span style="color:#ECC48D"> /dev/null</span><span style="color:#82AAFF"> -w</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">%{http_code} %{time_total}\n</span><span style="color:#D9F5DD">"</span><span style="color:#F78C6C"> \</span></span>
+<span class="line"><span style="color:#ECC48D">       https://api.example.com/users</span></span>
+<span class="line"><span style="color:#C792EA;font-style:italic">done</span></span></code></pre>
+<p>看 100 次的状态码与耗时分布，判断是否稳定、是否有限流。</p>
+<h3 id="案例-3调用第三方-api带鉴权">案例 3：调用第三方 API（带鉴权）</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#637777;font-style:italic"># 1. 拿 token</span></span>
+<span class="line"><span style="color:#C5E478">TOKEN</span><span style="color:#C792EA">=</span><span style="color:#D6DEEB">$(</span><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -s</span><span style="color:#82AAFF"> -X</span><span style="color:#ECC48D"> POST</span><span style="color:#ECC48D"> https://auth.example.com/oauth/token</span><span style="color:#F78C6C"> \</span></span>
+<span class="line"><span style="color:#82AAFF">  -H</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">Content-Type: application/x-www-form-urlencoded</span><span style="color:#D9F5DD">"</span><span style="color:#F78C6C"> \</span></span>
+<span class="line"><span style="color:#82AAFF">  -d</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">grant_type=client_credentials&#x26;client_id=xxx&#x26;client_secret=yyy</span><span style="color:#D9F5DD">"</span><span style="color:#F78C6C"> \</span></span>
+<span class="line"><span style="color:#7FDBCA">  |</span><span style="color:#82AAFF;font-style:italic"> jq</span><span style="color:#82AAFF"> -r</span><span style="color:#ECC48D"> .access_token</span><span style="color:#D6DEEB">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#637777;font-style:italic"># 2. 调业务接口</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -s</span><span style="color:#82AAFF"> -H</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">Authorization: Bearer </span><span style="color:#C5E478">$TOKEN</span><span style="color:#D9F5DD">"</span><span style="color:#F78C6C"> \</span></span>
+<span class="line"><span style="color:#D9F5DD">     "</span><span style="color:#ECC48D">https://api.example.com/orders?status=paid</span><span style="color:#D9F5DD">"</span><span style="color:#7FDBCA"> |</span><span style="color:#82AAFF;font-style:italic"> jq</span><span style="color:#ECC48D"> .</span></span></code></pre>
+<h3 id="案例-4排查浏览器能访问curl-不行">案例 4：排查「浏览器能访问、curl 不行」</h3>
+<pre class="astro-code night-owl" style="background-color:#011627;color:#d6deeb; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#637777;font-style:italic"># 浏览器复制完整请求头，逐个减，定位是哪个头关键</span></span>
+<span class="line"><span style="color:#82AAFF;font-style:italic">curl</span><span style="color:#82AAFF"> -H</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">User-Agent: Mozilla/5.0...</span><span style="color:#D9F5DD">"</span><span style="color:#F78C6C"> \</span></span>
+<span class="line"><span style="color:#82AAFF">     -H</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">Referer: https://example.com</span><span style="color:#D9F5DD">"</span><span style="color:#F78C6C"> \</span></span>
+<span class="line"><span style="color:#82AAFF">     -H</span><span style="color:#D9F5DD"> "</span><span style="color:#ECC48D">Cookie: ...</span><span style="color:#D9F5DD">"</span><span style="color:#F78C6C"> \</span></span>
+<span class="line"><span style="color:#ECC48D">     https://example.com/api</span></span></code></pre>
+<p>常见原因：服务器校验 <code>User-Agent</code>、<code>Referer</code>、或需要 <code>Cookie</code>。用 <code>-v</code> 对比浏览器请求头逐项排查。</p>
+<h2 id="相关条目">相关条目</h2>
+<ul>
+<li><a href="../linux-commands">Linux 常用命令指南</a></li>
+<li><a href="../regex-cheatsheet">正则表达式速查指南</a></li>
+<li><a href="../docker-commands">Docker 常用命令指南</a></li>
+</ul> </div> </article>  </main> <footer class="footer" data-astro-cid-sz7xmlte> <div class="container-x footer-inner glass" data-astro-cid-sz7xmlte> <div data-astro-cid-sz7xmlte> <p class="f-name text-gradient" data-astro-cid-sz7xmlte>庄楚辉</p> <p class="f-desc" data-astro-cid-sz7xmlte>一名 AI Builder —— 构建智能产品、分享思考与知识。</p> </div> <div class="f-socials" data-astro-cid-sz7xmlte> <a href="https://github.com/zchuhui" target="_blank" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>GitHub</a><a href="https://x.com/zch94622737" target="_blank" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>X</a><a href="mailto:943339564g@gmail.com" rel="noopener" class="chip f-social" data-astro-cid-sz7xmlte>Email</a> </div> </div> <p class="f-copy" data-astro-cid-sz7xmlte>© 2026 庄楚辉 · Built with Astro · 部署于 GitHub Pages</p> </footer>  <!-- 全局滚动揭示 --> <script type="module">const s=new IntersectionObserver(e=>{for(const r of e)r.isIntersecting&&(r.target.classList.add("is-visible"),s.unobserve(r.target))},{threshold:.12});document.querySelectorAll(".reveal").forEach(e=>s.observe(e));</script> </body> </html> 
