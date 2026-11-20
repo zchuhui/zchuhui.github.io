@@ -1,88 +1,45 @@
 {
-  "generatedAt": "2026-11-19T04:12:24.547Z",
+  "generatedAt": "2026-11-20T03:59:11.271Z",
   "items": [
     {
-      "id": "1xx44jm",
-      "title": "The Gemini app is now available on lower-memory Android devices.",
-      "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/",
+      "id": "vas09z",
+      "title": "Introducing Tool Retrieval in the Gemini API",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
       "source": "Google AI",
       "sourceUrl": "https://blog.google/innovation-and-ai/technology/ai/rss/",
-      "publishedAt": "2026-11-18T17:00:00.000Z",
-      "summary": "The Google Gemini app now supports lower-memory Android devices. Access Gemini Live and custom image creation on your phone. Download the app today.",
+      "publishedAt": "2026-11-19T18:00:00.000Z",
+      "summary": "Give your agents access to hundreds of tools while using fewer tokens with Tool Retrieval, now in preview in the Gemini API.",
       "tags": [
         "模型",
-        "产品",
-        "多模态"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "1kepxij",
-      "title": "The Silent Consensus",
-      "url": "https://openai.com/index/the-silent-consensus",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-11-18T10:00:00.000Z",
-      "summary": "Dean Ball, Head of Strategic Futures at OpenAI, examines how more capable AI could reshape society and how people can retain control of their institutions.",
-      "tags": [
-        "AI"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "1dnb87t",
-      "title": "Research acceleration: The jagged frontier",
-      "url": "https://openai.com/index/research-acceleration-jagged-frontier",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-11-18T08:00:00.000Z",
-      "summary": "OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement.",
-      "tags": [
         "Agent",
-        "研究"
+        "产品"
       ],
       "category": "公司动态"
     },
     {
-      "id": "1vxj3hb",
-      "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise",
-      "url": "https://openai.com/business/customer-stories/sumitomo-life",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-11-18T08:00:00.000Z",
-      "summary": "Sumitomo Life uses ChatGPT Enterprise to research insurers, prepare proposals, and draft code for investment analysis. Early use by executives helped drive adoption.",
-      "tags": [
-        "模型",
-        "产品",
-        "研究"
-      ],
-      "category": "公司动态"
-    },
-    {
-      "id": "1rf6m2w",
-      "title": "Inside the Codex sandbox",
-      "url": "https://openai.com/index/inside-the-codex-sandbox",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-11-18T08:00:00.000Z",
-      "summary": "See how Codex runs commands on your machine while enforcing the filesystem and network limits you control across macOS, Linux, and Windows.",
+      "id": "1h21gff",
+      "title": "Walter Isaacson on curiosity and creativity in the AI age.",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/",
+      "source": "Google AI",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/ai/rss/",
+      "publishedAt": "2026-11-19T17:00:00.000Z",
+      "summary": "Walter Isaacson joins Google to discuss how history’s greatest innovators inspire creativity and human judgment in the AI age. Watch the episode.",
       "tags": [
         "AI"
       ],
       "category": "公司动态"
     },
     {
-      "id": "1ahv28f",
-      "title": "Managing frontier AI risk: From training to deployment",
-      "url": "https://openai.com/index/managing-frontier-ai-risk",
+      "id": "gxi4ar",
+      "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+      "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
       "source": "OpenAI",
       "sourceUrl": "https://openai.com/news/rss.xml",
-      "publishedAt": "2026-11-18T06:00:00.000Z",
-      "summary": "OpenAI explains how it manages frontier AI risk from training through deployment with model alignment, sandboxing, blocking safeguards, and monitoring.",
+      "publishedAt": "2026-11-19T08:00:00.000Z",
+      "summary": "Learn how OpenAI built the Performance Factory, a system of Codex-powered workflows that finds and fixes performance issues to help keep ChatGPT fast.",
       "tags": [
         "模型",
-        "研究",
-        "安全"
+        "产品"
       ],
       "category": "公司动态"
     },
@@ -92,7 +49,7 @@
       "url": "https://arxiv.org/abs/2611.21682",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
       "summary": "arXiv:2611.21682v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly being explored for knowledge-intensive and safety-critical applications in nuclear engineering. However, existing nuclear-domain benchmarks provide limited content co",
       "tags": [
         "模型",
@@ -107,7 +64,7 @@
       "url": "https://arxiv.org/abs/2611.21799",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
       "summary": "arXiv:2611.21799v1 Announce Type: new Abstract: Chain-of-thought (CoT) monitoring is a promising tool for detecting hidden goals, off-task behavior, and other failures in AI agents. One risk is that models could deliberately shape their reasoning to make it op",
       "tags": [
         "模型",
@@ -122,7 +79,7 @@
       "url": "https://arxiv.org/abs/2611.21827",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
       "summary": "arXiv:2611.21827v1 Announce Type: new Abstract: Deep networks score near 99% on the MSTAR vehicle benchmark, and the newer ATRNet-STAR benchmark was built to be harder. We ask how much of these scores comes from the vehicle itself. With a modern network (ConvN",
       "tags": [
         "模型",
@@ -137,7 +94,7 @@
       "url": "https://arxiv.org/abs/2611.21832",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
       "summary": "arXiv:2611.21832v1 Announce Type: new Abstract: As AI systems are increasingly used to automate AI R&D, misaligned systems could sabotage research intended to improve model safety and alignment. To stress-test defenses against such sabotage, we use a human exp",
       "tags": [
         "模型",
@@ -152,8 +109,8 @@
       "url": "https://arxiv.org/abs/2611.21885",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
-      "summary": "arXiv:2611.21885v1 Announce Type: new Abstract: Language models are trained once, frozen and deployed: improving one again takes another training run, and a prompt, a scaffold or extra computation at inference is gone once the task ends. A frontier model has b",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
+      "summary": "arXiv:2611.21885v2 Announce Type: new Abstract: A language model is trained once and frozen. Making it better takes another training run, or a prompt, a harness or extra computation at inference that is gone once the task ends. We show a third way: to our know",
       "tags": [
         "模型",
         "研究",
@@ -167,7 +124,7 @@
       "url": "https://arxiv.org/abs/2611.21925",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
       "summary": "arXiv:2611.21925v1 Announce Type: new Abstract: Speculative-diffusion decoding uses a small parallel drafter model to generate b draft tokens in one forward pass, which then undergo parallel verification via a larger target model. Faster inference can be achie",
       "tags": [
         "模型",
@@ -182,7 +139,7 @@
       "url": "https://arxiv.org/abs/2611.21937",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
       "summary": "arXiv:2611.21937v1 Announce Type: new Abstract: Modern sensing systems generate large volumes of heterogeneous data streams from multiple sensor modalities, increasing reliance on datacenters for computation, artificial intelligence/superintelligence (AI/SI) i",
       "tags": [
         "Agent",
@@ -196,7 +153,7 @@
       "url": "https://arxiv.org/abs/2611.21946",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
       "summary": "arXiv:2611.21946v1 Announce Type: new Abstract: A reasoning model that has reached a correct answer can lose it by continuing to think. Deciding whether to stop means comparing two probabilities at the same point of a chain: that the answer the model would giv",
       "tags": [
         "模型",
@@ -210,7 +167,7 @@
       "url": "https://arxiv.org/abs/2611.21948",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
       "summary": "arXiv:2611.21948v1 Announce Type: new Abstract: The regulation of Artificial Intelligence is susceptible to various forms of capture by industry actors that hold undue influence over the policymaking process, due in part to their information advantage in devel",
       "tags": [
         "研究",
@@ -224,7 +181,7 @@
       "url": "https://arxiv.org/abs/2611.21950",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
       "summary": "arXiv:2611.21950v1 Announce Type: new Abstract: AI agents can assist scientific research, but balancing autonomous investigation with scientists' ability to inspect and redirect ongoing work remains a central design challenge. We present DiscoveryAgent, a doma",
       "tags": [
         "模型",
@@ -239,7 +196,7 @@
       "url": "https://arxiv.org/abs/2611.21978",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
       "summary": "arXiv:2611.21978v1 Announce Type: new Abstract: Large language models are moving from isolated assistants toward autonomous agents that can plan, use tools, and coordinate with others, motivating an emerging Agentic Web of independently developed agents and se",
       "tags": [
         "模型",
@@ -254,7 +211,7 @@
       "url": "https://arxiv.org/abs/2611.21998",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
       "summary": "arXiv:2611.21998v1 Announce Type: new Abstract: Personal assistants accumulate months of conversations, but today's long-term memory stacks put derivation or selection between a question and its evidence. In a system-level comparison on LongMemEval, two commer",
       "tags": [
         "模型",
@@ -269,7 +226,7 @@
       "url": "https://arxiv.org/abs/2611.22010",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
       "summary": "arXiv:2611.22010v1 Announce Type: new Abstract: Counterfactual explanations are often seen as counterfactual conditionals under closest-world semantics, requiring one to reason over all minimally distant counterexamples. In contrast, formal XAI typically relie",
       "tags": [
         "产品",
@@ -283,7 +240,7 @@
       "url": "https://arxiv.org/abs/2611.22017",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
       "summary": "arXiv:2611.22017v1 Announce Type: new Abstract: Agent Skills, file-based packages of procedural knowledge that a coding agent can discover and load on demand, are now shipped by every major agent harness, yet the evidence for how much they help comes almost en",
       "tags": [
         "模型",
@@ -298,7 +255,7 @@
       "url": "https://arxiv.org/abs/2611.22030",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
       "summary": "arXiv:2611.22030v1 Announce Type: new Abstract: An agent resource's value depends on its backbone and companion resources and is known only after execution. Token-based generators remain tied to their training catalog, while independent resource scoring misses",
       "tags": [
         "模型",
@@ -313,7 +270,7 @@
       "url": "https://arxiv.org/abs/2611.22033",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
       "summary": "arXiv:2611.22033v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly deployed as autonomous shopping agents that process multimodal product listings (consisting of visual and text data) and recommend purchases on behalf of consumers. N",
       "tags": [
         "模型",
@@ -328,8 +285,8 @@
       "url": "https://arxiv.org/abs/2611.22043",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
-      "summary": "arXiv:2611.22043v1 Announce Type: new Abstract: We describe the solver we submitted to the second round of the SOICT 2026 contest on the Integrated Passenger and Parcel Transportation problem, a selective pickup-and-delivery routing problem with time windows, ",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
+      "summary": "arXiv:2611.22043v2 Announce Type: new Abstract: We describe the solver we submitted to the second round of the SOICT 2026 contest on the Integrated Passenger and Parcel Transportation problem, a selective pickup-and-delivery routing problem with time windows, ",
       "tags": [
         "研究"
       ],
@@ -341,7 +298,7 @@
       "url": "https://arxiv.org/abs/2611.22069",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
       "summary": "arXiv:2611.22069v1 Announce Type: new Abstract: Safety is personal: the same action can be safe for one person but unsafe for another. Yet current guardrails judge content without considering who is affected. Using medication safety, we introduce \\textit{patie",
       "tags": [
         "模型",
@@ -356,7 +313,7 @@
       "url": "https://arxiv.org/abs/2611.22075",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
       "summary": "arXiv:2611.22075v1 Announce Type: new Abstract: Tool-using AI agents change files, databases, access rights and public information, yet permission to call a tool does not establish whether a mistake can be undone. We present Reversibility Classes, a declared f",
       "tags": [
         "Agent",
@@ -371,7 +328,7 @@
       "url": "https://arxiv.org/abs/2611.22084",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
       "summary": "arXiv:2611.22084v1 Announce Type: new Abstract: An expert who corrects a concept prediction, such as a BI-RADS descriptor in breast ultrasound, expects the diagnosis to improve. Objectives that reduce the harm of such corrections are judged by harm and accurac",
       "tags": [
         "模型",
@@ -385,7 +342,7 @@
       "url": "https://arxiv.org/abs/2611.22085",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
       "summary": "arXiv:2611.22085v1 Announce Type: new Abstract: Professional work involves under-specified assignments, where relevant information is spread across workplace applications and may conflict or change over time. To evaluate how well frontier agents can perform ec",
       "tags": [
         "模型",
@@ -400,7 +357,7 @@
       "url": "https://arxiv.org/abs/2611.22102",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
       "summary": "arXiv:2611.22102v1 Announce Type: new Abstract: Large language model agents accumulate experience in memory, and how that memory evolves during interaction is as important as what it stores. Recent methods update memory online, yet both the operators that tran",
       "tags": [
         "模型",
@@ -415,7 +372,7 @@
       "url": "https://arxiv.org/abs/2611.22103",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
       "summary": "arXiv:2611.22103v1 Announce Type: new Abstract: Large language models (LLMs) can now generate Lean proof scripts that capture the high-level structure of many mathematical arguments. However, these scripts frequently fail on complex theorems: a single missing ",
       "tags": [
         "模型",
@@ -430,7 +387,7 @@
       "url": "https://arxiv.org/abs/2611.22113",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
       "summary": "arXiv:2611.22113v1 Announce Type: new Abstract: Language agents rely on long-term memory to personalize responses across extended interactions, yet stored facts quietly go stale as the world changes, and an agent often learns that using memory hurt only throug",
       "tags": [
         "模型",
@@ -445,7 +402,7 @@
       "url": "https://arxiv.org/abs/2611.22115",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
       "summary": "arXiv:2611.22115v1 Announce Type: new Abstract: We present Xing 4, a series of large language models that extends the TeleChat lineage through coordinated advances in model architecture and training infrastructure on Ascend. This report describes the design pr",
       "tags": [
         "模型",
@@ -460,7 +417,7 @@
       "url": "https://arxiv.org/abs/2611.22131",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
       "summary": "arXiv:2611.22131v1 Announce Type: new Abstract: Whole image embeddings can under represent small objects and local attributes that distinguish relevant images for localized queries. We present LoCaR, a training free framework for localized text to image retrie",
       "tags": [
         "模型",
@@ -475,7 +432,7 @@
       "url": "https://arxiv.org/abs/2611.22136",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
       "summary": "arXiv:2611.22136v1 Announce Type: new Abstract: Many biology experiments are limited by the availability and ease of use of instruments that monitor and record them. For example, the timing of pupariation in the fruit fly Drosophila melanogaster, a widely used",
       "tags": [
         "模型",
@@ -490,7 +447,7 @@
       "url": "https://arxiv.org/abs/2611.22148",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
       "summary": "arXiv:2611.22148v1 Announce Type: new Abstract: Open-weight language models are widely observed to get worse the longer they generate. Often, attempts to fix this involve more training. At high temperature, The sampler, i.e. the rule that picks the next token ",
       "tags": [
         "模型",
@@ -505,7 +462,7 @@
       "url": "https://arxiv.org/abs/2611.22169",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
       "summary": "arXiv:2611.22169v1 Announce Type: new Abstract: Tool-augmented medical agents treat whatever their tools return as evidence. We show that this default is costly: medical tools fail silently, and a frozen reasoner cannot ignore what enters its context, so many ",
       "tags": [
         "模型",
@@ -520,10 +477,54 @@
       "url": "https://arxiv.org/abs/2611.22171",
       "source": "arXiv cs.AI",
       "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
-      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
       "summary": "arXiv:2611.22171v1 Announce Type: new Abstract: From quantitative research to personal assistance, AI agents act by iteratively generating and executing code. To decouple the agent harness from code execution, many agents offload execution to dedicated systems",
       "tags": [
         "Agent",
+        "产品",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1cpixrp",
+      "title": "Reconfiguring Procedural Knowledge for Compositional Robot Skill Adaptation",
+      "url": "https://arxiv.org/abs/2611.22174",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
+      "summary": "arXiv:2611.22174v1 Announce Type: new Abstract: General-purpose behavior models increasingly internalize broad procedural knowledge during training, making their adaptation to new goals and skill interfaces less a problem of learning entirely new behaviors tha",
+      "tags": [
+        "模型",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1cpixrs",
+      "title": "The Only Edge Was Memorized in Training: LLM Trading Agents Around Earnings and Bad News",
+      "url": "https://arxiv.org/abs/2611.22177",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
+      "summary": "arXiv:2611.22177v1 Announce Type: new Abstract: Large language model (LLM) trading agents are tested on news, but news reaches stock prices within minutes, and a benchmark that replays headlines at their publication time finds no alpha in trading on them. Mone",
+      "tags": [
+        "模型",
+        "Agent",
+        "研究"
+      ],
+      "category": "研究论文"
+    },
+    {
+      "id": "1cpixrt",
+      "title": "CorrectCast: Selective Multimodal Context for Scale-Aware Residual Correction in Precipitation Nowcasting",
+      "url": "https://arxiv.org/abs/2611.22178",
+      "source": "arXiv cs.AI",
+      "sourceUrl": "https://export.arxiv.org/rss/cs.AI",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
+      "summary": "arXiv:2611.22178v1 Announce Type: new Abstract: Precipitation nowcasting models suffer from errors in intensity, location, and spatial structure. Addressing these errors by retraining nowcaster backbones can be computationally expensive and requires architectu",
+      "tags": [
+        "模型",
         "产品",
         "研究"
       ],
@@ -535,7 +536,7 @@
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
       "ok": true,
-      "count": 1413
+      "count": 1418
     },
     {
       "name": "Google AI",
@@ -547,19 +548,19 @@
       "name": "arXiv cs.AI",
       "url": "https://export.arxiv.org/rss/cs.AI",
       "ok": true,
-      "count": 319
+      "count": 401
     },
     {
       "name": "arXiv cs.LG",
       "url": "https://export.arxiv.org/rss/cs.LG",
       "ok": true,
-      "count": 284
+      "count": 370
     },
     {
       "name": "arXiv cs.CL",
       "url": "https://export.arxiv.org/rss/cs.CL",
       "ok": true,
-      "count": 128
+      "count": 162
     }
   ],
   "warnings": []
